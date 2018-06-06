@@ -58,7 +58,7 @@ $(".job-description").click(function() {
 
 	$('.navbar-toggler').click( function() {
 		 $(".mobile").toggleClass("opaque");
-	});
+	});file:///Users/dimitriotero/Desktop/doteroredesign/main-test.html#carouselExampleControls
 
 $('.navbar-nav>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
