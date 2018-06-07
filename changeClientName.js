@@ -54,8 +54,8 @@ $(".job-description").click(function() {
 
 	$('.navbar-toggler').click( function() {
 		 $(".mobile").toggleClass("opaque");
+		 $(".navbar-nav").toggleClass("mobile-menu-center");
 	});
-
 $('.navbar-nav>a').on('click', function() {
     $('.navbar-collapse').collapse('hide');
     $(".mobile").removeClass("opaque");
