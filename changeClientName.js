@@ -54,13 +54,14 @@ console.log(navToggle);
 
 $(".job-description").click(function() {
    $('footer').toggleClass("opaque");
+   $(".job-description").toggleClass("push-back-text");
    });
 
 	$('.navbar-toggler').click( function() {
 		 $(".mobile").toggleClass("opaque");
-	});file:///Users/dimitriotero/Desktop/doteroredesign/main-test.html#carouselExampleControls
+	});
 
-$('.navbar-nav>a').on('click', function(){
+$('.navbar-nav>a').on('click', function() {
     $('.navbar-collapse').collapse('hide');
     $(".mobile").removeClass("opaque");
 });
