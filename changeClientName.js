@@ -38,19 +38,14 @@ window.addEventListener("hashchange", hashchanged, false);
 
 
 
-//TOGGLE BG COLOR OF MOBILE NAVIGATION//
+
+
+//TOGGLE BG COLOR OF MOBILE NAVIGATION && JOB-DESCRIPTION FOOTER//
 var navbarNav = $('.navbar-nav');
 var navToggle = $('.navbar-toggler');
 var currentSize = $('div').css('font-size');
  var currentSizeChange = parseFloat(currentSize)*0.8;
 
-
-console.log(navbarNav);
-console.log(navToggle);
-
-// $('.job-description').click( function() {
-// 	$('footer').toggleClass("opaque");
-// });
 
 $(".job-description").click(function() {
    $('footer').toggleClass("opaque");

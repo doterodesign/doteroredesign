@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,900');
+
 * {
 	padding: 0;
 	margin: 0;
 }
-
+body {
+	font-family: 'Maven Pro', sans-serif;
+	font-style: normal;
+	font-weight: 900;
+}
 .all-content {
 	display: -ms-grid;
 	display: grid;
@@ -18,7 +24,6 @@
 	max-height: 100vh;
 	width: 100vw;
 	min-width: 100vw;
-	font-family: Gibson-Bold, sans-serif;
 }
 
 /*--HEADER AND FOOTER --*/
@@ -26,7 +31,6 @@ header, footer {
 	display: flex;
 	position: absolute;
 	width: 100%;
-	padding: 0% 0 2% 0;
 	justify-content: space-between;
 	background: rgba(216, 216, 216, 20%);
 	align-content: center;
@@ -54,7 +58,7 @@ header {
 	display: -ms-grid;
 	display: grid;
 	    grid-template-columns: 1fr 1fr 1fr;
-	-ms-grid-row: 1;
+	    grid-template-rows: 50px;
 	-ms-grid-column: 1;
 	-ms-grid-column-span: 3;
 	grid-area: header;
@@ -63,6 +67,8 @@ header {
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 10%);
 	z-index: 9997;
 }
+	/*--HEADER --*/
+
 
 footer {
 	display: flex;
@@ -82,7 +88,8 @@ footer {
 	    justify-self: start;
 	-ms-grid-row-align: center;
 	    align-self: center;
-	margin-top: 20px;
+	    padding: 0 15px;
+		margin-top: 10px;
 }
 /*-- MAIN LOGO OPTIONS --*/
 .main-logo {
@@ -102,9 +109,12 @@ footer {
 	-ms-grid-column: 2;
 	-ms-grid-column-span: 2;
 	grid-column: 2 /span 2;
+	grid-row: 1 / span 6;
+	-ms-grid-row: 1;
+	-ms-grid-column-span: 6;
 	flex: auto;
 	-ms-grid-row-align: center;
-	    align-self: center;
+	   align-self: center;
 	justify-content: flex-end;
 }
 .navbar-main a {
@@ -143,6 +153,9 @@ span {
 	padding: 0 20px;
 }
 /*--DEFAULT TEXT SIZES--*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 900;
+}
 h1 {
 	font-size: calc(1.6vw + 1.6vh + .8vmin);
 }
@@ -159,7 +172,6 @@ h5 {
 	font-size: 0.75em
 }
 p {
-	font-family: Gibson, sans-serif;
 	font-size:  calc(1vw + 1vh + .5vmin);
 }
 /*--ANCHOR--*/
@@ -211,12 +223,11 @@ button:focus {
 }
 /*--CAROUSEL CAPTION--*/
 .carousel-caption {
-	font-family: Gibson-Bold, sans-serif;
-	font-style: bold;
 	margin-bottom: -30px;
 	top: auto;
 	text-shadow: 0px 2px 4px #000000;
 	font-size:  calc(5vw + 5vh + .3vmin);
+	justify-content: center;
 }
 .carousel-inner .carousel-item {
   transition: -webkit-transform .5s ease;
@@ -274,7 +285,7 @@ button:focus {
 	padding: 50px 0 0 4%;
 	font-family: abril-fatface, serif;
 	font-style: italic;
-	font-weight: 400;
+	font-weight: 900;
 }
 .center, #toclientwork {
 	display: flex;
@@ -354,7 +365,7 @@ form {
 	padding: 6% 0 0 0;
 }
 input, textarea {
-	font-family: Gibson, sans-serif;
+
 }
 .btn, .btn-primary {
 	color: #111;
@@ -395,11 +406,7 @@ div > [data-image-height-100] {
 }
 /*--JOB DESCRIPTION FOOTER--*/
 .job-description {
-	display: block;
-	display: flex;
-	right: 0;
-	clear: both;
-	justify-content: flex-start;
+	padding-left: 22px;
 	font-size: calc(1.2vw, 1.2vh, 1vmin);
 }
 .job-description h2 {
@@ -417,7 +424,10 @@ div > [data-image-height-100] {
 	width: 100vw;
 }
 .card {
+	position: absolute;
 	width: 100%;
+	background-color: rgba(0, 0, 0, 0%);
+	justify-content: left;
 }
 .card-footer {
 	display: flex;
@@ -427,16 +437,19 @@ div > [data-image-height-100] {
 	background-color: rgba(1, 1, 1, 90%);
 	color: rgba(252, 252, 252, 100%);
 }
+.push-back-text {
+	color: rgba(252, 252, 252, 60%);
+	font-size: 1em;
+}
 .white-text {
 	color: rgba(252, 252, 252, 100%);
 }
 /*--CAROUSEL BUTTONS --*/
 .carousel-control-prev-icon, .carousel-control-next-icon {
-	-webkit-transform: scale(.8);
-	        transform: scale(.8); 
-	height: 60%;
-	top: 21%;
+	height: 20%;
 }
+
+
 /*-- TABLET --*/
 @media (min-width: 574px) { 
 	h1 {
@@ -460,11 +473,10 @@ div > [data-image-height-100] {
 	p {
 		font-size:  calc(.75vw + .75vh + .6vmin);
 	}
-	/*--HEADER --*/
-	.client {
-		padding: 0 15px;
-		margin-top: 13px;
+	header {
+	 grid-template-rows: 70px;
 	}
+
 	/*--NAVBAR--*/
 	nav .navbar {
 		width: 100vw;
@@ -521,7 +533,7 @@ div > [data-image-height-100] {
 		-ms-grid-columns: 1fr 60% 1fr;
 		    grid-template-columns: 1fr 60% 1fr;
 	}
-		#mobileNav {
+	#mobileNav {
 		display: none; 
 	}
 	a.carousel-control-prev-icon {
