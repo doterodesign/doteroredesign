@@ -34,7 +34,7 @@ header, footer {
 	justify-content: space-between;
 	background: rgba(216, 216, 216, 20%);
 	align-content: center;
-/*	opacity: .2;*/
+
 }
 
 /*-- FOOTER --*/
@@ -64,12 +64,11 @@ header {
 	-ms-grid-column: 1;
 	-ms-grid-column-span: 3;
 	grid-area: header;
-	  grid-template-areas: 
+	 grid-template-areas: 
 	"client navbarmain navbarmain";
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 10%);
 	z-index: 9997;
 }
-	/*--FOOTER --*/
 
 
 /*-- CLIENT TAG OPTIONS --*/
@@ -549,6 +548,34 @@ div > [data-image-height-100] {
 }
 
 @media (min-width: 716px) {
+	header, footer {
+	animation-name: bounceDownOut;
+	animation-fill-mode: forwards;
+	animation-delay: 4s;
+}
+
+/*-- FOOTER --*/
+footer {
+	animation-name: bounceUpOut;
+	animation-duration: 2.5s;
+}
+
+footer:hover, footer:focus, footer:active {
+	animation-name: bounceUpIn;
+	animation-direction: normal;
+	animation-fill-mode: both;
+	animation-duration: 1.5s;
+	animation-delay: 0s;
+}
+
+header:hover, header:focus, header:active {
+	animation-name: bounceDownIn;
+	animation-fill-mode: both;
+	animation-direction: normal;
+	animation-delay: .01s;
+	animation-duration: 1.5s;
+}
+
 	/*--CONTACT PAGE--*/
 	#contact {
 		-ms-grid-columns: 1fr 50% 1fr;
@@ -595,3 +622,34 @@ div > [data-image-height-100] {
 		    grid-template-columns: 1fr 40% 1fr;
 	}
 }
+
+
+/*--CUSTOM ANIMATIONS --*/
+
+@keyframes bounceDownOut {
+	0% {opacity: 1.0; transform: translateY(0px);}
+	40%{opacity: 1.0; transform: translateY(20%);}
+	80%{ opacity: 1.0; transform: translateY(-200%);}
+	81%{ opacity: 0; transform: translateY(-10%);}
+	100%{ opacity: 0.0; transform: translateY(0%);}
+}
+@keyframes bounceUpOut {
+	0% {opacity: 1.0; transform: translateY(0px);}
+	40%{opacity: 1.0; transform: translateY(-20%);}
+	80%{ opacity: 1.0; transform: translateY(200%);}
+	81%{ opacity: 0; transform: translateY(10%);}
+	100%{ opacity: 0.0; transform: translateY(0%);}
+}
+@keyframes bounceDownIn {
+	0%{opacity: 0;}
+	40%{opacity: 1.0; transform: translateY(10%);}
+	60%{opacity: 1.0; transform: translateY(0);}
+	100%{opacity: 1.0; transform: translateY(0);}
+}
+@keyframes bounceUpIn {
+	0%{opacity: 0;}
+	40%{opacity: 1.0; transform: translateY(-10%);}
+	60%{opacity: 1.0; transform: translateY(0);}
+	100%{opacity: 1.0; transform: translateY(0);}
+}
+
