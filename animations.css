@@ -1,0 +1,90 @@
+@media (min-width: 716px) { 
+
+	.bounceDownIn {
+		animation-name: bounceDownIn;
+		animation-fill-mode: both;
+		animation-direction: normal;
+		animation-delay: .01s;
+		animation-duration: 1.5s;
+		animation-play-state: paused;
+	}
+
+	.bounceUpIn {
+		animation-name: bounceUpIn;
+		animation-direction: normal;
+		animation-fill-mode: both;
+		animation-duration: 1.5s;
+		animation-delay: 0s;
+		animation-play-state: paused;
+	}
+
+	.bounceDownOut {
+		animation-name: bounceDownOut;
+		animation-fill-mode: forwards;
+		animation-delay: 4s;
+		animation-duration: 1.5s;
+	}
+
+	.bounceUpOut {
+		animation-name: bounceUpOut;
+		animation-fill-mode: forwards;
+		animation-duration: 1.2s;
+		animation-delay: 4s;
+	}
+
+	header {
+		animation: 2s 4s bounceDownOut forwards ease-in;
+	}
+	footer.card {
+		animation: 2s 4s bounceUpOut forwards ease-out;
+	}
+	header:hover, header:focus, header:active {
+		animation: bounceDownIn 1.5s normal forwards;
+	}
+	footer:hover, footer:focus, footer:active {
+		animation: bounceUpIn 1.5s normal;
+	}
+
+
+
+	Keyframes
+/*	@keyframes dimOpacity {
+		0%{opacity: 1;}
+		100%{opacity: 0;}
+	}*/
+	@keyframes lowerOpacity {
+		100%{opacity: 0.2;}
+		0%{opacity: 1.0;}
+	}	
+	@keyframes raiseOpacity {
+		0%{opacity: 0;}
+		100%{opacity: 1.0;}
+	}
+
+	@keyframes bounceDownOut {
+		0% {opacity: 1.0; transform: translateY(0px);}
+		40%{opacity: 1.0; transform: translateY(20%);}
+		80%{ opacity: 1.0; transform: translateY(-200%);}
+		81%{ opacity: 0; transform: translateY(-10%);}
+		100%{ opacity: 0.0; transform: translateY(0%);}
+	}
+	@keyframes bounceUpOut {
+		0% {opacity: 1.0; transform: translateY(0px);}
+		40%{opacity: 1.0; transform: translateY(-20%);}
+		80%{ opacity: 1.0; transform: translateY(200%);}
+		81%{ opacity: 0; transform: translateY(10%);}
+		100%{ opacity: 0.0; transform: translateY(0%);}
+	}
+	@keyframes bounceDownIn {
+		0%{opacity: 0;}
+		40%{opacity: 1.0; transform: translateY(10%);}
+		60%{opacity: 1.0; transform: translateY(0);}
+		100%{opacity: 1.0; transform: translateY(0);}
+	}
+	@keyframes bounceUpIn {
+		0%{opacity: 0;}
+		40%{opacity: 1.0; transform: translateY(-10%);}
+		60%{opacity: 1.0; transform: translateY(0);}
+		100%{opacity: 1.0; transform: translateY(0);}
+	}
+}

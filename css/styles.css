@@ -454,6 +454,7 @@ div > [data-image-height-100] {
 }
 .card-footer {
 	display: flex;
+	justify-content: left;
 }
 .opaque {
 	background-color: rgba(1, 1, 1, .9);
