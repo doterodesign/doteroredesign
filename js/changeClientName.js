@@ -25,14 +25,43 @@ var hideCurrentContainerAndShow = function(newContainer) {
 			$(container[i]).show();
 		}
 	}
+};
+//PREVIOUS AND NEXT BUTTON FUNCTIONALITY
+var clients = $("[data-client='']");
+function changeCarousel(location) {
+	for(var k = 0; k < clients.length; k++) {
+		var clientID = $(clients[k]).attr("id");
+		if(k < clients.length && location == clientID) {
+				$(".prev").prop("href", "#" + $(clients[k-=1]).prop("id"));
+				$(".next").prop("href", "#" + $(clients[k+=2]).prop("id"));
+				$(".prev[href='#undefined']").attr("href", "#" + $(clients[6]).attr("id"));
+				$(".next[href='#undefined']").attr("href", "#" + $(clients[0]).attr("id"));
+		} 
+	}
 }
+changeCarousel(removeHash());
+
+//HEADER ANIMATIONS ON HOVER AND ON HASHCHANGE
+function header() {
+	$("header").toggleClass("bounceDownOut")
+	.toggleClass("bounceDownIn")
+	.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+		$("header").removeClass("bounceDownIn")
+		.addClass("bounceDownOut");
+	});
+};
+header();
+
 
 //remove hash from location.hash, hideCurrentContainerAndShow location.hash, changeClientName(location.hash)
 function hashchanged(hashChanged) {
 		hashChanged = removeHash();
 		 hideCurrentContainerAndShow(hashChanged);
 		 changeClientName(location.hash);
+		 changeCarousel(hashChanged);
+		 header($("header"));
 }
+$("header").hover(header, false);
 window.addEventListener("hashchange", hashchanged, false);
 
 
@@ -48,7 +77,6 @@ var currentSize = $('div').css('font-size');
 
 $(".job-description").click(function() {
    $('footer').toggleClass("opaque");
-   $(".job-description").toggleClass("push-back-text");
    });
 
 	$('.navbar-toggler').click( function() {
@@ -56,7 +84,7 @@ $(".job-description").click(function() {
 		 $(".navbar-nav").toggleClass("mobile-menu-center");
 	});
 $('.navbar-nav>a').on('click', function() {
-    $('.navbar-collapse').collapse('hide');
+    $('.navbar-collapse').toggleClass('hide');
     $(".mobile").removeClass("opaque");
 });
 

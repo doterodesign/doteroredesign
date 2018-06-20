@@ -6,7 +6,6 @@
 		animation-direction: normal;
 		animation-delay: .01s;
 		animation-duration: 1.5s;
-		animation-play-state: paused;
 	}
 
 	.bounceUpIn {
@@ -15,13 +14,12 @@
 		animation-fill-mode: both;
 		animation-duration: 1.5s;
 		animation-delay: 0s;
-		animation-play-state: paused;
 	}
 
 	.bounceDownOut {
 		animation-name: bounceDownOut;
 		animation-fill-mode: forwards;
-		animation-delay: 4s;
+		animation-delay: 3s;
 		animation-duration: 1.5s;
 	}
 
@@ -29,18 +27,18 @@
 		animation-name: bounceUpOut;
 		animation-fill-mode: forwards;
 		animation-duration: 1.2s;
-		animation-delay: 4s;
+		animation-delay: 3s;
 	}
 
-	header {
+/*	header {
 		animation: 2s 4s bounceDownOut forwards ease-in;
-	}
+	}*/
 	footer.card {
 		animation: 2s 4s bounceUpOut forwards ease-out;
 	}
-	header:hover, header:focus, header:active {
+/*	header:hover, header:focus, header:active {
 		animation: bounceDownIn 1.5s normal forwards;
-	}
+	}*/
 	footer:hover, footer:focus, footer:active {
 		animation: bounceUpIn 1.5s normal;
 	}
