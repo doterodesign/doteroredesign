@@ -1,0 +1,65 @@
+$primary-red: #EE7777;
+$primary-red-darken: #cc6464;
+$heart: #ec0000;
+$primary-white: #FFFFFF;
+$primary-grey: rgb(62, 62, 62);
+$primary-black: #1e1e1e;
+$blah-primary: #007EFE;
+$blah-secondary: #0073CB;
+$blah-primary-light: hsl(210, 100%, 56%);
+$cuny-primary: #FFB81C;
+$cuny-secondary: #FFD780;
+$cuny-primary-light: rgb(255, 199, 77);
+$cuny-primary-blue: #1D3A83;
+
+.blah-primary {
+    background: $blah-primary;
+    color: $primary-white;
+}
+.blah-secondary {
+    background: $blah-secondary;
+    color: $primary-white;
+}
+
+.blah-primary-light {
+    background: $blah-primary-light;
+    color: $primary-white;
+}
+
+.cuny-primary {
+    background: $cuny-primary;
+    color: $primary-black;
+}
+
+.cuny-primary-light {
+    background: $cuny-primary-light;
+    color: $primary-white;
+}
+
+.cuny-primary-blue {
+    background: $cuny-primary-blue;
+    color: $primary-white;
+}
+
+.blah-primary-text {
+    color: $blah-primary;
+}
+.blah-secondary-text{
+    color: $blah-secondary;
+}
+
+.cuny-primary-text {
+    color: $cuny-primary;
+}
+
+.cuny-primary-blue-text {
+    color: $cuny-primary-blue;
+}
+
+.primary-white-text {
+    color: $primary-white;
+}
+
+.primary-black-text {
+    color: $primary-black;
+}

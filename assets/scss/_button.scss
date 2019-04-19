@@ -1,0 +1,133 @@
+@mixin background($color) {
+    background: $color;
+}
+
+button {
+    padding: .75rem 4rem;
+    text-align: center;
+    border: 0px solid $primary-grey;
+    box-shadow: inset 0px 0px 0px 3px $primary-red;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 70%;
+    white-space: nowrap;
+    min-width: max-content;
+    max-width: 220px;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        width: 28%;
+    }
+    @media screen and (min-width: $breakpoint) {
+        padding: .8rem 5rem;
+        width: 100%;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+        padding: 1rem 5rem;
+    }
+
+    & + & {
+        margin: 1rem .5rem 0 0rem;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            margin: 1rem .5rem 0 1rem;
+        }
+        @media screen and (min-width: $breakpoint) {
+            margin: 1rem .5rem 0 0rem;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            margin: 1rem .5rem 0 1rem;
+        }
+    }
+
+    &.primary {
+        @include background($primary-red);
+        color: $primary-white;
+        box-shadow: inset 0px 0px 0px 3px $primary-red;
+
+
+        #nav-container &:focus, #nav-container &:hover {
+            @include background($primary-white);
+            color: $primary-black;
+            border-color: $primary-red;
+            transition: border-color, color, background .3s ease-in-out;
+        }
+    }
+
+    &.secondary {
+        @include background($primary-white);
+        border-color: $primary-red;
+        // border: 6px solid $primary-grey;
+        // border-radius: 10px;
+
+        
+        #nav-container &:focus, #nav-container &:hover {
+            @include background($primary-red);
+            color: $primary-white;
+            transition: color, background .3s ease-in-out;
+        }
+    }
+
+    &.blah-primary {
+        @include background($blah-primary);
+        box-shadow: inset 0px 0px 0px 3px $primary-white;
+
+        &:focus, &:hover {
+            @include background($blah-secondary);
+            transition: color, background .3s ease-in-out;
+        }
+    }
+    
+    &.cuny-primary{
+        @include background($cuny-primary);
+        color: $primary-white;
+        box-shadow: inset 0px 0px 0px 3px $primary-white;
+
+        &:focus, &:hover {
+            @include background($cuny-secondary);
+            color: $primary-black;
+            transition: color, background .3s ease-in-out;
+        }
+    }
+
+    &.blah-secondary {
+        @include background($blah-secondary);
+        box-shadow: inset 0px 0px 0px 3px $primary-white;
+
+        &:focus, &:hover {
+            @include background($blah-primary);
+            transition: color, background .3s ease-in-out;
+        }
+    }
+    
+    &.cuny-secondary{
+        @include background($cuny-secondary);
+        color: $primary-black;
+        box-shadow: inset 0px 0px 0px 3px $primary-white;
+
+        &:focus, &:hover {
+            @include background($cuny-primary);
+            color: $primary-white;
+            transition: color, background .3s ease-in-out;
+        }
+    }
+}
+
+.circle-arrow {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 1rem;
+    align-self: flex-end;
+    background: rgba($primary-grey, .5);
+    stroke: $primary-black;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background: $primary-black;
+        stroke: $primary-white;
+    }
+}

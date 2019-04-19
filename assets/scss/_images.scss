@@ -1,0 +1,124 @@
+// .cs-image-small {
+//     position: relative;
+//     height: 100%;
+//     width: 100%;
+//     margin-bottom: 4rem;
+
+
+
+//     * {
+//         width: 100%;
+//     }
+
+//     @media screen and (min-width: $breakpoint-md) {
+//         & {
+//             height: 30%;
+//             padding: 0 10%;
+//         }
+//     }
+
+//     @media screen and (min-width: $breakpoint) {
+//         & {
+//             height: 30%;
+//             padding: 0 25%;
+//         }
+//     }
+// }
+
+// .cs-image {
+//     position: relative;
+//     height: 100%;
+//     width: 100%;
+//     padding: 4rem 0;
+
+//     * {
+//         width: 100%;
+//     }
+
+//     @media screen and (min-width: $breakpoint) {
+//         & {
+//             height: 50%;
+//             padding: 4rem 15%;
+//         }
+//     }
+// }
+
+// .cs-image-full {
+//     position: relative;
+//     height: 100%;
+//     width: 100%;
+//     padding: 0;
+
+//     * {
+//         width: 100%;
+//     }
+// }
+
+
+
+// // & section:not(.content__block) {
+// //     & .video {
+// //         justify-self: center;
+// //         -ms-flex-item-align: center;
+// //             align-self: center;
+// //         margin: 0 auto;
+// //     }
+// // }
+
+
+// .cs-image-contain {
+// display: grid;
+// width: 100%;
+// align-content: center;
+// justify-content: center;
+// }
+
+img {
+    width: 100%;
+}
+
+%image__container {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
+        justify-content: center;
+        grid-row-gap: 3rem;
+        grid-column-gap: 3rem;
+        padding: 0 2rem;
+        text-align: end;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            & {
+                width: 100%;
+            }
+        }   
+}
+
+.image__container {
+
+        &-xs {
+            @extend %image__container;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 22rem));
+        }
+
+        &-sm {
+            @extend %image__container;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+        }
+
+        &-md {
+            @extend %image__container;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
+        }
+
+        &-lg {
+            @extend %image__container;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
+        }
+
+        &-full {
+            @extend %image__container;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            padding: 0;
+        }
+}

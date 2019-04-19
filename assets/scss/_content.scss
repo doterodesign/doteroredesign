@@ -1,0 +1,81 @@
+$intro-width: 40%;
+$nav-height: 80px;
+    //CONTENT CONTAINER
+
+    #content-container {
+        width: 100%;
+        height: auto;
+    }
+
+    //PROJECT PREVIEW CONTAINER
+
+    .project-preview {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+        height: calc(100% - $nav-height);
+        min-height: 40rem;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+       
+
+        //SET BACKGROUND COLOR FOR EACH PREVIEW
+
+        .video {
+            width: auto;
+            height: 50%;
+            margin: auto;
+        }
+
+        .video + .info-container{
+            margin-top: 0;
+        }
+
+        & .info-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+
+            h2 {
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+
+
+    @media screen and (min-width: $breakpoint-sm) {
+        button {
+            -ms-flex-item-align: end;
+                align-self: flex-end;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint) {
+
+        #content-container {
+            width: calc(100% - #{$intro-width});
+            margin-left: $intro-width;
+        }
+
+        .project-preview {
+            height: 90vh;
+            padding: 0 3rem;
+        }
+    }
+
+    @media screen and(min-width: $breakpoint-lg) and (min-height: $breakpoint-lg) {
+        .video {
+            height: 60%;
+        }
+    }

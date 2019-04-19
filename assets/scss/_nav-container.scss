@@ -1,0 +1,201 @@
+//NAV CONTAINER
+
+#nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    // transition: all 1s ease-in-out;
+
+    @media screen and (min-width: $breakpoint) {
+        overflow: hidden;
+        width: $intro-width;
+    }
+
+    & nav {
+        position: fixed;
+        width: 100vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        top: 0;
+        left: 0;
+        height: $nav-height;
+        z-index: 9999;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background: $primary-white;
+        
+        & #mobile-menu {
+            position: fixed;
+                margin: 0 2rem;
+        
+        }
+
+        @media screen and (min-width: $breakpoint) {
+            position: fixed;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            background: none;
+            width: 100%;
+        }
+    }
+    & h1 {
+        margin-bottom: 2rem;
+        line-height: 115%;
+    }
+
+    & p:last-of-type{
+        margin-bottom: 3rem;
+    }
+
+    & button {
+        -ms-flex-item-align: center;
+            align-self: center;
+        justify-self: flex-start;
+    }
+
+    & .love {
+        color: $heart;
+        font-weight: 600;
+    }
+
+      //IF A CASE STUDY IS ACTIVE
+
+    &.cs-active {
+
+        & {
+            position: fixed;
+            width: 100vw;
+            height: $nav-height;
+            background: $primary-white;
+            z-index: 9999;
+
+            nav {
+                position: relative;
+                // width: 100vw;
+            }
+        }
+          
+        .info-container {
+            display: none;
+            width: 80px;
+            // transition: all 1s ease-in-out;
+        }
+
+        & + #content-container {
+            padding-top: $nav-height;
+            width: 100%;
+        }
+
+        @media screen and (min-width: $breakpoint){
+            width: 100vw;
+            height: $nav-height;
+        
+
+            & + #content-container {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+.nav-test {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background: $primary-white;
+    z-index: 10001;
+
+    & .content-container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & .content-list-items {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 3rem;
+
+            & article {
+                color: $primary-red;
+                font-weight: 800;
+                padding: 0 2.5rem;
+                // text-transform: uppercase;
+
+                @media screen and (min-width: $breakpoint) {
+                    padding: 0 1.5rem;
+                }
+            }
+        }
+
+        & .content {
+            display: flex;
+            flex-direction: row;
+            width:100%;
+            padding: 0 20%;
+            line-height: 150%;
+            justify-content: space-between;
+
+            @media screen and (min-width: $breakpoint) {
+                flex-direction: column;
+                padding: 0 5%;
+            }
+        }
+
+        & #self-portrait {
+            display: inherit;
+            height: 4rem;
+            justify-content: center;
+            & img {
+                height: 100%;
+            }
+        }
+
+        & #social-media {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3.2rem;
+            justify-self: flex-end;
+            background: $primary-red;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint) {
+        width: 40vw;
+        padding: 0;
+    }
+}
+
+#current-section {
+        position: fixed;
+        right: 0;
+        padding-right: 2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+}

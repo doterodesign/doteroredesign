@@ -1,0 +1,60 @@
+h1 {
+    font-size: calc(2.5rem + ((1vw - 3.2px) * 0.7143));
+}
+
+h2 {
+    font-size: calc(1.75rem + ((1vw - 3.2px) * 0.3571));
+    font-weight: 300;
+}
+
+h3,p {
+    font-size: calc(1rem + ((1vw - 3.2px) * 0.1786));
+    font-weight: 800;
+}
+
+h4 {
+    font-size: calc(0.8125rem + ((1vw - 3.2px) * 0.1593));
+    font-weight: 800;
+}
+
+p {
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@media (min-width:1440px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.125rem;
+    }
+    h4 {
+        font-size: .875rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+.bold {
+    font-weight: 800;
+}
+
+
+
+image-caption {
+    display: block;
+    font-size: .75rem;
+    margin-top: .5rem;
+    font-weight: 600;
+
+    color: $primary-grey;
+
+    &::before {
+        content: '*';
+    }
+}
