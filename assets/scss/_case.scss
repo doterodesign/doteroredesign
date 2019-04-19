@@ -18,11 +18,10 @@
         margin: 0 auto;
 
         &-list {
-            // width: 100vw;
-            grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
             display: grid;
             padding: 0 5%;
-            grid-row-gap: 2rem;
+            grid-row-gap: 3rem;
             grid-column-gap: 3rem;
 
             h4 {
@@ -31,6 +30,10 @@
 
             p {
                 max-width: 100%;
+            }
+
+            title-caption {
+                font-weight: 800;
             }
 
             @media screen and (min-width: $breakpoint-md) {
@@ -55,7 +58,6 @@
 
         .section-name {
             grid-column: 1 / -1;
-            margin-bottom: 1rem;
         }
 
         &-info {
@@ -63,7 +65,7 @@
             padding: 2rem;
             display: grid;
             grid-row-gap: .5rem;
-            align-content: start;
+            align-content: center;
 
 
             @media screen and (min-width: $breakpoint-sm) {
@@ -115,7 +117,7 @@
 
         p {
             grid-column: 2 / span 8;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             line-height: 150%;
 
             @media screen and (min-width: $breakpoint) {
@@ -128,10 +130,10 @@
     }
 
     .content__article + .content__block {
-        margin-bottom: 4rem;
+        margin: 4rem 0;
     }
 
-    .content__article + .content__article {
-        margin-top: 4rem;
-    }
+    // .content__article + .content__article {
+    //     margin-top: 2rem;
+    // }
 

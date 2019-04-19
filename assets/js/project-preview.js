@@ -5,11 +5,13 @@ function navConstructor(p) {
         `
         <nav>
             <svg id="mobile-menu" width="40" height="25" viewBox="0 0 40 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="1.5" x2="40" y2="1.5" stroke="black" stroke-width="3"/>
-            <path d="M0 12.2683H27" stroke="black" stroke-width="3"/>
-            <path d="M0 23H18" stroke="black" stroke-width="3"/>
+                <line y1="1.5" x2="40" y2="1.5" stroke="black" stroke-width="3"/>
+                <path d="M0 12.2683H27" stroke="black" stroke-width="3"/>
+                <path d="M0 23H18" stroke="black" stroke-width="3"/>
+            </svg>
+
+            <current-section></current-section>
         </nav>
-        </svg>
         <section class="info-container">
             <h1>${p.intro}</h1>
             <p class='semi-bold'>${p.description}</p>
@@ -58,7 +60,7 @@ function caseStudyConstructor(p) {
         `
     <section class="cs-container">
         <section class="content__full">
-            <section id="opening" class="content__block-info ${p.secondaryColor}" data-section-start="">
+            <section id="opening" class="content__block-info ${p.secondaryColor}" data-section-start="Let's Begin">
                 <h2>${p.name}</h2>
                 <h3>${p.project} <title-caption> (${p.platform})</title-caption></h3>
                 <h4>${p.role}</h4>
@@ -71,7 +73,7 @@ function caseStudyConstructor(p) {
     </section>
 
 
-        <section id="spoilers" class="content__block content__block-list" data-section-start="">
+        <section id="spoilers" class="content__block content__block-list" data-section-start="Spoilers">
             <h2 class="section-name">SPOILERS <title-caption class="${p.secondaryColor}-text"></br>(I understand if you’re in a rush)</title-caption></h2>
                     <article>
                         <h4 class='bold ${p.secondaryColor}-text'>Problem</h4>
@@ -113,26 +115,14 @@ function caseStudyConstructor(p) {
             </div>
 
 
-            <article id="introduction" class="content__article" data-section-start="">
-                <h2 class="section-name">Introduction</h2>
-                <title-caption class="${p.secondaryColor}-text">${p.introductionSub}</title-caption>
+            <article id="introduction" class="content__article" data-section-start="Introduction">
+                <h2 class="section-name">${p.introductionSub}</h2>
                 <p>${p.introduction}</p>
             </article>
 
             <article class="content__article">
-            <h2 class="section-name">Why is ${p.project} being tackled?</h2>
-            <title-caption class="${p.secondaryColor}-text">Problem and goal</title-caption>
-                `
-            
-            for (m in p.goals.goal) {
-                caseStudy +=
-                `
-                        <p>${p.goals.goal[m].content}</p>
-                `
-            }      
-            caseStudy +=
-            
-            `    
+                <h2 class="section-name">Why is ${p.project} being tackled?</h2>
+                <p>${p.goals}</p>
             </article>
 
             <section class="image__container-md">
@@ -153,11 +143,10 @@ function caseStudyConstructor(p) {
 
             </section>
 
-            <h1 id="research" class="section-divider ${p.supportColor}" data-section-start="">RESEARCH</h1>
+            <h1 id="research" class="section-divider ${p.supportColor}" data-section-start="Research">RESEARCH</h1>
 
             <article class="content__article">
-                    <h2 class="section-name">User Research</h2>
-                    <title-caption class="${p.secondaryColor}-text">${p.urSub}</title-caption>
+                    <h2 class="section-name">${p.urSub}</h2>
                     <p>${p.ur}</p>
             </article>
 
@@ -179,12 +168,11 @@ function caseStudyConstructor(p) {
             `
             </section>
             <article class="content__article">
-                <h2 class="section-name">Competitor Research</h2>
-                <title-caption class="${p.secondaryColor}-text">${p.crSub}</title-caption>
+                <h2 class="section-name">${p.crSub}</h2>
                 <p>${p.cr}</p>
             </article>
 
-            <h1 id="features" class="section-divider ${p.supportColor}" data-section-start="features">FEATURES</h1>
+            <h1 id="features" class="section-divider ${p.supportColor}" data-section-start="Features">FEATURES</h1>
 
             `
                     
@@ -192,8 +180,7 @@ function caseStudyConstructor(p) {
             caseStudy +=
             `
                 <article class="content__article">
-                    <h2 class="section-name">${p.approaches.approach[n].name}</h2>
-                    <title-caption class="${p.secondaryColor}-text">${p.approaches.approach[n].sub}</title-caption>
+                    <h2 class="section-name">${p.approaches.approach[n].sub}</h2>
                     <p>${p.approaches.approach[n].content}</p>
                 </article>
             `
@@ -214,7 +201,12 @@ function caseStudyConstructor(p) {
         caseStudy +=
 
         `
-            <h1 class="section-divider ${p.supportColor}">FUTURE</br> FEATURES</h1>
+            <h1 class="section-divider ${p.supportColor}">FUTURE</h1>
+
+            <article class="content__article">
+                <h2 class="section-name">${p.futureSub}</h2>
+                <p>${p.future}</p>
+            </article>
 
 
     `

@@ -3,8 +3,12 @@ var navContainer = $('#nav-container');
 var children = $(contentContainer).children();
 var noHash = location.hash.replace(/^#/, '');
 // var activeElement = $(location.hash).attr('id');
-activeElement = $(location.hash);
-activeChildren = $(activeElement).children();
+var activeElement = $(location.hash);
+var activeChildren = $(activeElement).children();
+
+var sectionStart = Array.from(document.querySelectorAll('[data-section-start]'));
+var currentSectionPlaceholder = document.querySelector('current-section');
+
 
 function reset() {
     window.scrollTo(0,0);
@@ -28,9 +32,48 @@ function active() {
 }
 // active();
 
-// function currentSection() {
-
+// function currentSection(e) {
+//     console.log('working ALSO');
+//     currentSectionPlaceholder.innerHTML = e;
 // }
+
+// window.addEventListener('scroll', function () {
+
+//     for (var i = 0; i < sectionStart.length; i++) {
+//         // console.log(sectionStart[i]);
+//         // var ypos = window.pageYOffset;
+//         // var r = sectionStart[i].getBoundingClientRect();
+//         // var top = r.top;
+    
+//         if (window.scrollY < (sectionStart[this].offsetTop + sectionStart[this].offsetHeight)) {
+//             var current = sectionStart[this];
+//             console.log(current);
+//             // console.log(current);
+//             // var data = current.getAttribute('section-name').innerHTML;
+//             // currentSection(data);
+//         }
+//     }
+// })
+
+
+// window.addEventListener('scroll', function () {
+//     var ypos = window.pageYOffset;
+
+//     // sectionStart.forEach(function (e) {
+//     //     var r = e.getBoundingClientRect();
+//     //     console.log(r.top);
+//     // });
+
+//     sectionStart.filter(e => {
+//         var r = e.getBoundingClientRect();
+
+//         if (r.top <= ypos) {
+//             console.log('its working')
+//         }
+//     });
+// });
+
+    
 
 
 

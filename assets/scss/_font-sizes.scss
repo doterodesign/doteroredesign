@@ -44,6 +44,12 @@ p {
     font-weight: 800;
 }
 
+.section-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
 
 
 image-caption {
@@ -57,4 +63,15 @@ image-caption {
     &::before {
         content: '*';
     }
+}
+
+current-section {
+	position: fixed;
+	height: min-content;
+	width: min-content;
+	right: 0;
+	padding-right: 4rem;
+	font-weight: 600;
+	/* font-size: 1.2rem; */
+	text-transform: uppercase;
 }
