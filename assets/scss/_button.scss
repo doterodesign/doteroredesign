@@ -117,8 +117,8 @@ button {
 }
 
 .circle-arrow {
-    width: 4rem;
-    height: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
     border-radius: 50%;
     padding: 1rem;
     align-self: flex-end;

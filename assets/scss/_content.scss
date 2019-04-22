@@ -1,5 +1,4 @@
-$intro-width: 40%;
-$nav-height: 80px;
+
     //CONTENT CONTAINER
 
     #content-container {
@@ -30,7 +29,7 @@ $nav-height: 80px;
 
         .video {
             width: auto;
-            height: 50%;
+            max-width: 100%;
             margin: auto;
         }
 
@@ -62,6 +61,7 @@ $nav-height: 80px;
     }
 
     @media screen and (min-width: $breakpoint) {
+        $nav-height: 80px;
 
         #content-container {
             width: calc(100% - #{$intro-width});
@@ -70,6 +70,7 @@ $nav-height: 80px;
 
         .project-preview {
             height: 90vh;
+            min-height: max-content;
             padding: 0 3rem;
         }
     }
@@ -78,4 +79,9 @@ $nav-height: 80px;
         .video {
             height: 60%;
         }
+    }
+
+
+    .noScroll {
+        overflow: hidden;
     }

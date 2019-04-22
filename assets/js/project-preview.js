@@ -11,15 +11,28 @@ function navConstructor(p) {
             </svg>
 
             <current-section></current-section>
+
+            <div class="progress-bar" id="myBar"></div>
+
+
+        <div id="nav__items">
+            <a href="#"><h1>Case Studies</h1></a>
+            <a href="#"><h1>Visual Design</h1></a>
+            <a href="#"><h1>About</h1></a>
+        </div>
         </nav>
         <section class="info-container">
             <h1>${p.intro}</h1>
             <p class='semi-bold'>${p.description}</p>
-            <p class='love'>${p.love}</p>
-            <div>
-                <button class="button primary" type='button' data-href="${p.about}">${p.primaryButton}</button>
-                <button class="button secondary" type='button' data-href="${p.contact}">${p.secondaryButton}</button>
+
+            <div id="social-media">
+                <a href="#"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-linkedin"></use></svg></a>
+                <a href="#"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-behance"></use></svg></a>
+                <a href="#"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-instagram"></use></svg></a>
+                <a href="#"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-pinterest"></use></svg></a>
             </div>
+
+            <h4 class="love">Coded with love</h4>
         </section>
         `
     return nav;
@@ -49,8 +62,10 @@ function templateConstructor(p) {
     }
     return projects;
 };
-homeContainer.innerHTML = templateConstructor(cases);
 
+var csVisual = templateConstructor(visual);
+homeContainer.innerHTML = templateConstructor(cases);
+homeContainer.insertAdjacentHTML('beforeend',csVisual);
 
 
 function caseStudyConstructor(p) {
@@ -59,8 +74,8 @@ function caseStudyConstructor(p) {
     caseStudy +=
         `
     <section class="cs-container">
-        <section class="content__full">
-            <section id="opening" class="content__block-info ${p.secondaryColor}" data-section-start="Let's Begin">
+        <section class="content__full" data-section-name="Let's Begin!">
+            <section id="opening" class="content__block-info ${p.secondaryColor}">
                 <h2>${p.name}</h2>
                 <h3>${p.project} <title-caption> (${p.platform})</title-caption></h3>
                 <h4>${p.role}</h4>
@@ -73,8 +88,8 @@ function caseStudyConstructor(p) {
     </section>
 
 
-        <section id="spoilers" class="content__block content__block-list" data-section-start="Spoilers">
-            <h2 class="section-name">SPOILERS <title-caption class="${p.secondaryColor}-text"></br>(I understand if you’re in a rush)</title-caption></h2>
+        <section id="spoilers" class="content__block content__block-list" data-section-name="Spoilers">
+            <h2 class="section-name">SPOILERS <title-caption class="${p.secondaryColor}-text"></br>It's okay to skim. I won't notice</title-caption></h2>
                     <article>
                         <h4 class='bold ${p.secondaryColor}-text'>Problem</h4>
                         <p>${p.problem}</p>
@@ -92,6 +107,10 @@ function caseStudyConstructor(p) {
                         <p>${p.solution}</p>
                     </article>
                     <article>
+                        <h4 class=' ${p.secondaryColor}-text'>Lessons</h4>
+                            <p>${p.lesson}</p>                    
+                        </article>
+                    <article>
                         <h4 class='bold ${p.secondaryColor}-text'>Tools Used</h4>
                         `
     //INPUT ALL TOOLS USED IN THE PROJECT
@@ -104,10 +123,6 @@ function caseStudyConstructor(p) {
         caseStudy +=
                         `
                 </article>
-                    <article>
-                        <h4 class=' ${p.secondaryColor}-text'>Prototype</h4>
-                        <button class="button primary ${p.buttonColor}" href="${p.proto}" alt="">View Prototype</a>
-                    </article>
         </section>
 
             <div class="image__container-full">
@@ -115,7 +130,7 @@ function caseStudyConstructor(p) {
             </div>
 
 
-            <article id="introduction" class="content__article" data-section-start="Introduction">
+            <article id="introduction" class="content__article" data-section-name="Introduction">
                 <h2 class="section-name">${p.introductionSub}</h2>
                 <p>${p.introduction}</p>
             </article>
@@ -143,7 +158,7 @@ function caseStudyConstructor(p) {
 
             </section>
 
-            <h1 id="research" class="section-divider ${p.supportColor}" data-section-start="Research">RESEARCH</h1>
+            <h1 id="research" class="section-divider ${p.supportColor}" data-section-name="Research">RESEARCH</h1>
 
             <article class="content__article">
                     <h2 class="section-name">${p.urSub}</h2>
@@ -172,7 +187,7 @@ function caseStudyConstructor(p) {
                 <p>${p.cr}</p>
             </article>
 
-            <h1 id="features" class="section-divider ${p.supportColor}" data-section-start="Features">FEATURES</h1>
+            <h1 id="features" class="section-divider ${p.supportColor}" data-section-name="Features">FEATURES</h1>
 
             `
                     
@@ -184,118 +199,32 @@ function caseStudyConstructor(p) {
                     <p>${p.approaches.approach[n].content}</p>
                 </article>
             `
-                // for (var o in p.approaches.approach[n].image) {
-                //     caseStudy +=
-                //         `
-                //         <div>
-                //             <img src="images/${p.approaches.approach[n].image[o].name}" alt="">
-                //             <image-caption>${p.approaches.approach[n].image[o].caption}</image-caption>
-                //         </div>
-                //         </section>
-                //         `
-                // }
-            
-            // `
-            
         }
         caseStudy +=
 
         `
-            <h1 class="section-divider ${p.supportColor}">FUTURE</h1>
+            <h1 class="section-divider ${p.supportColor}" data-section-name="Future Feats">FUTURE FEATS</h1>
 
             <article class="content__article">
                 <h2 class="section-name">${p.futureSub}</h2>
                 <p>${p.future}</p>
             </article>
 
+            <h1 class="section-divider ${p.supportColor}" data-section-name="Prototype">PROTOTYPE</h1>
 
+            <article class="content__article">
+                <h2 class="section-name">${p.protoSub}</h2>
+                <p>${p.protoContent}</p>
+            </article>
+
+            <section class="image__container-full">
+                <section class="prototype">
+                    ${p.proto}
+                </section>
+            </section>
     `
     return caseStudy;
 };
 
 
 
-
-
-//INJECT PROJECT PREVIEWS INTO CONTAINER
-// function reset(e) {
-//     if (location.hash != '#work' && location.hash == '' || location.hash === undefined || location.hash === '#work') {
-//         location.hash = '#work';
-//         navContainer.classList.remove('cs-active');
-//         navContainer.innerHTML = navConstructor(navigation);
-//         contentContainer.innerHTML = templateConstructor(cases);
-//     } else {
-//         nextPage(e);
-//     }
-// }
-// reset();
-// contentContainer.innerHTML = caseStudyConstructor(cases[0]);
-// var blah = blahContainer.innerHTML = caseStudyConstructor(cases[0]);
-// navContainer.innerHTML = navConstructor(navigation);
-
-
-// //GET HREF OF ELEMENT WITH DATA ATTRIBUTE HREF
-// function gethref(e, attr) {
-//     return e.getAttribute(attr);
-// }
-
-// // //CHANGES LOCATION HREF
-// function locationHref(e) {
-//     location.hash = `#${e}`; 
-// }
-
-// // // //FIND INDEX OF CASE STUDY
-// function findCaseIndex(e) {
-//     return cases.findIndex(x => x.href === e);
-// }
-
-// // //CALLED WHEN BUTTON HAS DATA-CS
-// function nextStudy(e) {
-//     document.body.scrollTop = 0;
-//     navContainer.classList.add('cs-active');
-//     contentContainer.innerHTML = caseStudyConstructor(cases[e]);
-// }
-
-// function nextPage(e, element) {
-//     let next = findCaseIndex(e);
-//     let cs = gethref(element, 'data-cs');
-
-//     locationHref(e);
-//     //IF IT IS A CASE STUDY
-//     if (cs === '') {
-//         nextStudy(next);
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-// document.addEventListener('click', function (e) {
-//     var current = e.target;
-//     let href = gethref(current, 'data-href');
-//     if (current.matches("button")) {
-//         nextPage(href,current);
-//     }
-// });
-
-
-
-
-// window.addEventListener('beforeunload', function (e) {
-//     // e.preventDefault();
-//     return reset();
-// });
-
-// window.addEventListener('hashchange', reset, false);
-
-
-
-
-//INJECT EACH CASE STUDY INTO A SECTION WITH ITS ID AND DISPLAY NONE ALL OF THEM ON LOAD

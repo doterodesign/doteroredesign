@@ -1,5 +1,7 @@
-$primary-red: #EE7777;
-$primary-red-darken: #cc6464;
+$primary-red: rgb(255, 87, 87);
+$primary-orange: rgb(255, 171, 87);
+$primary-red-darken: rgb(231, 52, 52);
+$primary-green: hsl(124, 100%, 36%);
 $heart: #ec0000;
 $primary-white: #FFFFFF;
 $primary-grey: rgb(62, 62, 62);
@@ -11,6 +13,10 @@ $cuny-primary: #FFB81C;
 $cuny-secondary: #FFD780;
 $cuny-primary-light: rgb(255, 199, 77);
 $cuny-primary-blue: #1D3A83;
+$salvation-primary-red: #E41E2E;
+$sex-yellow: rgb(255,241,45);
+$sex-blue: rgb(89,182,193);
+$sex-red: rgb(204,29,80);
 
 .blah-primary {
     background: $blah-primary;
@@ -56,10 +62,39 @@ $cuny-primary-blue: #1D3A83;
     color: $cuny-primary-blue;
 }
 
+.primary-white {
+    background: $primary-white;
+    color: $primary-black;
+}
 .primary-white-text {
     color: $primary-white;
 }
 
 .primary-black-text {
     color: $primary-black;
+}
+
+
+.salvation-primary-red {
+    background: $salvation-primary-red;
+    color: $primary-white;
+}
+
+.sex-yellow {
+    background: $sex-yellow;
+    color: $primary-black;
+}
+.sex-blue {
+    background: $sex-blue;
+    color: $primary-white;
+}
+.sex-blue-text {
+    color: $sex-blue;
+}
+.sex-red {
+    background: $sex-red;
+    color: $primary-white;
+}
+.sex-red-text {
+    color: $sex-red;
 }

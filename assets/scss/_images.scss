@@ -4,6 +4,7 @@ img {
 
 %image__container {
         width: 100vw;
+        min-height: 20rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
         justify-content: center;
@@ -11,6 +12,7 @@ img {
         grid-column-gap: 3rem;
         padding: 0 2rem;
         text-align: end;
+        align-content:center;
 
         @media screen and (min-width: $breakpoint-sm) {
             & {
@@ -46,4 +48,9 @@ img {
             grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
             padding: 0;
         }
+}
+
+
+.safesex {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
 }

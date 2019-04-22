@@ -1,10 +1,16 @@
+%font-secondary {
+    font-family: gelo, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 h1 {
     font-size: calc(2.5rem + ((1vw - 3.2px) * 0.7143));
 }
 
 h2 {
     font-size: calc(1.75rem + ((1vw - 3.2px) * 0.3571));
-    font-weight: 300;
+    // font-weight: 300;
 }
 
 h3,p {
@@ -20,6 +26,16 @@ h4 {
 p {
     font-weight: 400;
     line-height: 150%;
+}
+
+a {
+    color: $primary-black;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+        color: $primary-red;
+    }
 }
 
 @media (min-width:1440px) {
@@ -45,7 +61,7 @@ p {
 }
 
 .section-name {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 800;
     margin-bottom: 1rem;
 }
@@ -66,12 +82,24 @@ image-caption {
 }
 
 current-section {
-	position: fixed;
-	height: min-content;
-	width: min-content;
-	right: 0;
-	padding-right: 4rem;
+    display: flex;
+    position: absolute;
+	height: 60px;
+	width: max-content;
+    right: 0;
+	margin-right: 2rem;
 	font-weight: 600;
-	/* font-size: 1.2rem; */
-	text-transform: uppercase;
+	font-size: 1rem; 
+    text-transform: uppercase;
+    color: $primary-grey;
+    align-items: center;
+
+    
+
+    @media screen and (min-width: $breakpoint-md) {
+        & {
+            font-size: 1.2rem; 
+            margin-right: 3rem;
+        }
+    }
 }
