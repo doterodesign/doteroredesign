@@ -5,11 +5,12 @@ var homeContainer = document.getElementById('home');
 var cunyfirstContainer = document.getElementById('cunyfirst');
 var salvationArmyContainer = document.getElementById('salvationarmy');
 var safeSexContainer = document.getElementById('safesex');
+var gladwellContainer = document.getElementById('gladwell');
 //NAVIGATION INFORMATION
 var navigation =
 {
-    intro: 'Hey I\'m Dimitri!</br><h2>Designer | Climber | Learner</h2>',
-    description: 'Creating fluid experiences for users that businesses love. </br><bold>Currently open to new opportunities!</bold>',
+    intro: '<h1>Hey, </br>I\'m Dimitri!</h1><h2>Product Designer</h2> <h2>Visual Designer</h2> <h2>Wannabe Developer</h2> <h2>Always Learning</h2>',
+    description: 'I help communicate clear user experiences and brand messaging with easy to understand designs',
     love: 'Coded with love',
     primaryButton: 'learn more',
     about: 'about',
@@ -139,7 +140,7 @@ var cases = [
         protoSub: 'Brief walkthrough',
         protoContent: 'Because the app is a concept and not fully fleshed out, this is a walkthrough of the barebones functionality. You\'ll walk through the basic onboarding process and get to explore how to interact with the messaging and call features (sorry swiping the messages up is not in this prototype).',
 
-        proto: '<iframe style="border: none;" src="https://marvelapp.com/458gfhe?emb=1&iosapp=false&frameless=false"></iframe>',
+        proto: '<iframe title="BLAH Walkthrough Preview" style="border: none;" src="https://marvelapp.com/458gfhe?emb=1&iosapp=false&frameless=false"></iframe>',
     },
 
     {
@@ -273,7 +274,7 @@ var visual = [
          //HOMEPAGE SETUP
          project: 'Salvation Army',
          href: 'salvationarmy',
-         name: 'Modular Rebranding: Salvation Army',
+         name: 'Rebranding Salvation Army',
          platform: 'Print and Web',
          role: 'Designer | Branding | Art Direction',
          description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
@@ -348,10 +349,48 @@ var visual = [
 
 
         images: [
-            'teen-safe-sex/safe-sex-1',
-            'teen-safe-sex/safe-sex-2',
-            'teen-safe-sex/safe-sex-3',
-            'teen-safe-sex/safe-sex-4',
+            'teen-safe-sex/safesex',
+        ],
+    },
+
+    {
+        //SAFE SEX CAMPAIGN
+         //HOMEPAGE SETUP
+         project: 'Malcolm Gladwell',
+         href: 'gladwell',
+         name: 'Gladwell Cover Redesigns',
+         platform: 'Print',
+         role: 'Designer | Art Direction | Typography',
+         description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
+         descColor: 'primary-black-text',
+         image: 'gladwell/gladwell-hero.png',
+         primaryColor: 'primary-white',
+         supportColor: 'sex-blue',
+         secondaryColor: 'sex-red',
+         buttonColor: 'cuny-primary',
+         
+        //CASE STUDY SETUP
+        overview: 'I’ve always been interested in psychology and how the mind works. In junior high, my friend and I came up with a concept to share your thoughts without being identified (similar to Twitter). </br></br>Fast forward to today, I’ve taken a new approach on this concept with an offline app that allows you to share your thoughts without fear of the information being stored, manipulated, or read by someone else.',
+
+        problem: "Many people do not have an outlet to express their feelings without judgement. Although social media seems like a good option to vent, as we've seen in recent news, many of those thoughts are used against the people that expressed themselves in the past.",
+
+        goal: 'I set out to create a space where people can express themselves off of social media without feeling judged or having their words used against them.',
+
+        approach: 'I conducted interviews with family and friends about mental health and self-expression, as well as tested the concept to see how people felt about its practicality.',
+
+        solution: "With people expressing themselves in both written and spoken form, I created a vent and forget system that never stores or records anything a user says or does in the app. After venting, the user is less likely to remember what they were upset about and without reference to why, they move on faster.",
+
+        tools: [
+            'Illustrator',
+            'Indesign',
+            'Photoshop',
+        ],
+
+         //IMAGES
+
+
+        images: [
+            'gladwell/gladwell',
         ],
     },
 ]

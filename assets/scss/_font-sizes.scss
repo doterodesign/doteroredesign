@@ -2,24 +2,39 @@
     font-family: gelo, serif;
     font-weight: 700;
     font-style: normal;
+    font-display: auto;
 }
 
-h1 {
+%font-xl {
     font-size: calc(2.5rem + ((1vw - 3.2px) * 0.7143));
+}
+%font-lg {
+    font-size: calc(1.75rem + ((1vw - 3.2px) * 0.3571));
+}
+%font-md {
+    font-size: calc(1rem + ((1vw - 3.2px) * 0.1786));
+}
+%font-sm {
+    font-size: calc(0.8125rem + ((1vw - 3.2px) * 0.1593));
+}
+
+
+h1 {
+    @extend %font-xl;
 }
 
 h2 {
-    font-size: calc(1.75rem + ((1vw - 3.2px) * 0.3571));
+    @extend %font-md;
     // font-weight: 300;
 }
 
 h3,p {
-    font-size: calc(1rem + ((1vw - 3.2px) * 0.1786));
+    @extend %font-md;
     font-weight: 800;
 }
 
 h4 {
-    font-size: calc(0.8125rem + ((1vw - 3.2px) * 0.1593));
+    @extend %font-sm;
     font-weight: 800;
 }
 
@@ -31,6 +46,7 @@ p {
 a {
     color: $primary-black;
     text-decoration: none;
+    -webkit-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
 
     &:hover {
@@ -61,9 +77,8 @@ a {
 }
 
 .section-name {
-    font-size: 1.2rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: .6rem;
 }
 
 
@@ -73,6 +88,7 @@ image-caption {
     font-size: .75rem;
     margin-top: .5rem;
     font-weight: 600;
+    z-index: 2;
 
     color: $primary-grey;
 
@@ -82,9 +98,14 @@ image-caption {
 }
 
 current-section {
+    // @extend %font-secondary;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
 	height: 60px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
 	width: max-content;
     right: 0;
 	margin-right: 2rem;
@@ -92,13 +113,14 @@ current-section {
 	font-size: 1rem; 
     text-transform: uppercase;
     color: $primary-grey;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     
 
     @media screen and (min-width: $breakpoint-md) {
         & {
-            font-size: 1.2rem; 
             margin-right: 3rem;
         }
     }

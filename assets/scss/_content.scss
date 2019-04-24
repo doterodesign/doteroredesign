@@ -9,33 +9,16 @@
     //PROJECT PREVIEW CONTAINER
 
     .project-preview {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 100%;
-        height: calc(100% - $nav-height);
-        min-height: 40rem;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-       
-
-        //SET BACKGROUND COLOR FOR EACH PREVIEW
-
-        .video {
-            width: auto;
-            max-width: 100%;
-            margin: auto;
-        }
-
-        .video + .info-container{
-            margin-top: 0;
-        }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        min-height: -webkit-max-content;
+        min-height: -moz-max-content;
+        min-height: max-content;
+        height: 90vh;
+        max-height: 90vh;
+        width: 100vw;
+        padding: 1rem 2rem;
 
         & .info-container {
             display: -webkit-box;
@@ -47,7 +30,13 @@
                     flex-direction: column;
 
             h2 {
-                margin-bottom: 1.25rem;
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+                margin-top: 1.2rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
             }
         }
     }
@@ -58,10 +47,18 @@
             -ms-flex-item-align: end;
                 align-self: flex-end;
         }
+
+        .project-preview {
+           & .info-container h2 {
+                font-size: 2rem;
+                margin-bottom: 1.25rem;
+            }
+        }
     }
 
     @media screen and (min-width: $breakpoint) {
         $nav-height: 80px;
+
 
         #content-container {
             width: calc(100% - #{$intro-width});
@@ -69,9 +66,9 @@
         }
 
         .project-preview {
+            width: 100%;
             height: 90vh;
-            min-height: max-content;
-            padding: 0 3rem;
+            padding: 2rem 4rem 1rem 4rem;
         }
     }
 

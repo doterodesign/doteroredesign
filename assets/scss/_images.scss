@@ -3,8 +3,8 @@ img {
 }
 
 %image__container {
-        width: 100vw;
-        min-height: 20rem;
+        width: 100%;
+        min-height: 0rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
         justify-content: center;
@@ -12,7 +12,6 @@ img {
         grid-column-gap: 3rem;
         padding: 0 2rem;
         text-align: end;
-        align-content:center;
 
         @media screen and (min-width: $breakpoint-sm) {
             & {
@@ -23,34 +22,41 @@ img {
 
 .image__container {
 
+    min-height: 60rem;
+
+        *:not(&-full) > img {
+            height: 100%;
+            object-fit: contain;
+        }
+
         &-xs {
             @extend %image__container;
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 22rem));
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 22rem));
         }
 
         &-sm {
             @extend %image__container;
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 25rem));
         }
 
         &-md {
             @extend %image__container;
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 30rem));
         }
 
         &-lg {
             @extend %image__container;
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 40rem));
         }
 
         &-full {
             @extend %image__container;
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
             padding: 0;
         }
 }
 
-
-.safesex {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
+.section-title {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
 }

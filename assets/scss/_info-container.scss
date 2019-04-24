@@ -1,24 +1,6 @@
 .info-container {
     position: relative;
-    // transform: scale(.85);
-    // transition: transform .1s ease-in-out;
     overflow: visible;
-    margin: 0 2rem 2rem 2rem;
-
-
-    @media screen and (min-height: $breakpoint-md) {
-        // transform: scale(1);
-        
-    }
-
-    @media screen and (min-width: $breakpoint-sm) {  
-        // transform: scale(1);
-        margin: 2rem;
-    }
-
-    @media screen and (min-width: $breakpoint-xl) {
-        margin: 2rem 6rem;
-    }
 
     p {
         max-width: 98%;
@@ -30,10 +12,8 @@
     }
 
     p:last-of-type {
-        margin-bottom: 2rem;
         
         @media screen and (min-width: $breakpoint-sm) {  
-                margin-bottom: 3rem;
                 max-width: 70%;
         }
 

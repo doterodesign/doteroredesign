@@ -100,11 +100,24 @@ document.addEventListener('click', function (e) {
         location.hash = target.getAttribute('data-href');
     }
 
+    if (target.matches('#main-logo')) {
+        location.hash = "#home";
+    }
+
     if (target.matches('#mobile-menu')) {
         $('#nav-container').toggleClass('nav-active');
         $('body').toggleClass('noScroll');
         $('nav').toggleClass('active');
-        $('#social-media').toggleClass('active');
+        $('#myBar').toggle();
+
+
+        if (!$('#social-media').hasClass('active')) {
+            $('#social-media').fadeOut(0).delay(600).appendTo('nav').addClass('active').fadeIn(300);
+            $('#content-container').fadeOut(0);
+        } else {
+            $('#social-media').appendTo('#nav-container .info-container p').removeClass('active');
+            $('#content-container').fadeIn(0);
+        }
     }
 })
 

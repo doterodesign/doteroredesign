@@ -4,8 +4,12 @@ function csVisualConstructor(p) {
     caseStudy +=
         `
     <section class="cs-container">
+
+    <svg class="button circle-arrow back-button ${p.buttonColor}" data-href="#" width="49" height="40" viewBox="0 0 49 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 20H46M46 20L28 2M46 20L28 38" stroke-width="4" stroke-linecap="round"/>
+    </svg>
         <section class="content__full" data-section-name="Let's Begin!">
-            <section id="opening" class="content__block-info ${p.secondaryColor}">
+            <section class="content__block-info ${p.secondaryColor}">
                 <h2>${p.name}</h2>
                 <h3>${p.project} <title-caption> (${p.platform})</title-caption></h3>
                 <h4>${p.role}</h4>
@@ -18,7 +22,7 @@ function csVisualConstructor(p) {
     </section>
 
 
-        <section id="spoilers" class="content__block content__block-list" data-section-name="Project Summary">
+        <section class="content__block content__block-list" data-section-name="Project Summary">
             <h2 class="section-name">Project Summary <title-caption class="${p.secondaryColor}-text"></br>Even visuals need some context</title-caption></h2>
                     <article>
                         <h4 class='bold ${p.secondaryColor}-text'>Problem</h4>
@@ -54,13 +58,12 @@ function csVisualConstructor(p) {
         `
                 </article>
         </section>
-
-        <section class="image__container-full ${p.href}">
         `
     
         for (var j in p.images) {  
             caseStudy +=
         `
+        <section class="image__container-full ${p.href}">
             <picture>
 
                 <source media="(min-width: 789px)"
@@ -73,13 +76,10 @@ function csVisualConstructor(p) {
             
                 <img src="images/${p.images[j]}-sm.png">
             </picture>
+                    </section>
         `
         }
-        caseStudy +=
-                
-        `
-        </section>
-        `
+
     return caseStudy;
 }
 

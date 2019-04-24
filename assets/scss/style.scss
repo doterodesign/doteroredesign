@@ -20,7 +20,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+       -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            font-display: auto;
 }
 
 body {
@@ -41,3 +45,55 @@ hl {
  bold {
      font-weight: 800;
  }
+
+/* LOADING BAR */
+#overlay{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(255, 255, 255, 1);
+    transition: 1s 0.4s;
+    -webkit-transition: 1s 0.4s;
+    -moz-transition: 1s 0.4s;
+    -ms-transition: 1s 0.4s;
+    -o-transition: 1s 0.4s;
+
+
+    & #logo-loading {
+
+        &.logo {
+            width: 4rem;
+            height: auto;
+        }
+
+        margin: -4rem auto 0 auto;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+
+        animation: scrollindicator 3s infinite;
+        -webkit-animation: scrollindicator 3s infinite;
+    }
+}
+
+
+  @-webkit-keyframes scrollindicator {
+    0% {opacity: 1}
+    70% {opacity: 0}
+    100% {opacity: 1}
+}   
+
+
+@keyframes scrollindicator {
+    0% {opacity: 1}
+    70% {opacity: 0}
+    100% {opacity: 1}
+}
