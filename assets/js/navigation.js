@@ -22,7 +22,9 @@ function reset() {
     window.scrollTo(0, 0);
 
     //RESET CURRENT SECTION INDICATOR
-    $('current-section').empty();
+    if (!location.hash === location.hash) {
+        $('current-section').empty();
+    }
 
     //RESET CASE STUDY PROGRESS BAR
     caseStudy = false;
@@ -56,7 +58,7 @@ function active() {
     sectionStart.forEach(function (el) {
         var sectionName = new ScrollMagic.Scene({
             triggerElement: el,
-            triggerHook: .2,
+            triggerHook: .4,
             reverse: true
         })
             .addTo(controller);
@@ -74,7 +76,6 @@ function active() {
             reset();
         })
     });
-
 }
 
 
