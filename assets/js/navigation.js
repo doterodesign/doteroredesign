@@ -3,28 +3,25 @@ var sectionStart;
 
 var navContainer = $('#nav-container');
 
-var children = $(contentContainer).children();
+
+var children = Array.from($(contentContainer).children());
 var noHash = location.hash.replace(/^#/, '');
-// var activeElement = $(location.hash).attr('id');
 var activeElement = $(location.hash);
 var activeChildren = $(activeElement).children();
-var currentSectionPlaceholder = document.querySelector('current-section');
 var caseStudy = false;
 
 var controller = new ScrollMagic.Controller();
 
 
 
-
 function reset() {
+
 
     //RESET SCROLL POSITION TO 0
     window.scrollTo(0, 0);
 
-    //RESET CURRENT SECTION INDICATOR
-    if (!location.hash === location.hash) {
-        $('current-section').empty();
-    }
+
+    // $('#current-section').empty();
 
     //RESET CASE STUDY PROGRESS BAR
     caseStudy = false;
@@ -53,33 +50,8 @@ function active() {
     $(navContainer).addClass('cs-active');
     $(location.hash).show();
 
-
-    //CURRENT SECTION INDICATOR
-    sectionStart.forEach(function (el) {
-        var sectionName = new ScrollMagic.Scene({
-            triggerElement: el,
-            triggerHook: .4,
-            reverse: true
-        })
-            .addTo(controller);
-        
-        sectionName.on("enter", function () {
-            let name = $(el).data('section-name');
-            $('current-section').html(name);
-        })
-        sectionName.on("leave", function () {
-            let name = $(el).data('section-name');
-            $('current-section').html(name);
-        })
-        $(window).on("hashchange", function () {
-            sectionName.destroy();
-            reset();
-        })
-    });
+    setCurrentSection();
 }
-
-
-    
 
 function progressBar() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -87,6 +59,36 @@ function progressBar() {
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+
+function setCurrentSection() {
+       //CURRENT SECTION INDICATOR
+       sectionStart.forEach(function (el) {
+        var sectionName = new ScrollMagic.Scene({
+            triggerElement: el,
+            triggerHook: .4,
+            reverse: true
+        })
+            .addTo(controller);
+        
+           sectionName.on("enter", function () {
+               let name = $(el).data('section-name');
+               $('#current-section').html(name);
+           });
+           sectionName.on("leave", function () {
+               let name = $(el).data('section-name');
+               $('#current-section').html(name);
+           });
+        //    sectionName.on("hashchange", function () {
+        //        $('#current-section').empty();
+        //    });
+    });
+}
+
+
+
+
+//EVENT LISTNERS
 
 window.addEventListener('scroll', function () {
     if (caseStudy) { 
@@ -96,6 +98,7 @@ window.addEventListener('scroll', function () {
 
 
 document.addEventListener('click', function (e) {
+    
     target = e.target;
     if (target.matches('.button')) {
         location.hash = target.getAttribute('data-href');
@@ -122,4 +125,8 @@ document.addEventListener('click', function (e) {
     }
 })
 
-window.addEventListener('hashchange', reset, false);
+window.addEventListener('hashchange', function () {
+    reset();
+});
+
+

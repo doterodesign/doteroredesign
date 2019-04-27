@@ -106,6 +106,10 @@
     .content__article {
         @extend %content;
         grid-template-columns: 1fr repeat(8, 1fr) 1fr;
+        max-width: $breakpoint-p;
+        margin: 0 auto;
+
+
         grid-column-gap: 0;
         grid-row-gap: .5rem;
 
@@ -146,7 +150,8 @@
   .prototype {
       & > * {
         width: 100%;
-        height: calc(100vh - #{$nav-height});
+        height: calc(100vh);
+        padding: 2rem 0;
 
         @media screen and (min-width: $breakpoint) {
             height: calc(95vh - #{$nav-height});

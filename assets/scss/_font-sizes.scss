@@ -85,19 +85,15 @@ a {
 
 image-caption {
     display: block;
-    font-size: .75rem;
-    margin-top: .5rem;
+    font-size: .6rem;
+    // margin-top: .3rem;
     font-weight: 600;
     z-index: 2;
 
     color: $primary-grey;
-
-    &::before {
-        content: '*';
-    }
 }
 
-current-section {
+#current-section {
     // @extend %font-secondary;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -116,6 +112,7 @@ current-section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 1;
 
     
 
