@@ -12,13 +12,13 @@
     }
 
     p:last-of-type {
-        
-        @media screen and (min-width: $breakpoint-sm) {  
-                max-width: 70%;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            max-width: 70%;
         }
 
         @media screen and (min-width: $breakpoint) {
-                max-width: 450px;
+            max-width: 450px;
         }
     }
 }

@@ -8,12 +8,15 @@
 %font-xl {
     font-size: calc(2.5rem + ((1vw - 3.2px) * 0.7143));
 }
+
 %font-lg {
     font-size: calc(1.75rem + ((1vw - 3.2px) * 0.3571));
 }
+
 %font-md {
     font-size: calc(1rem + ((1vw - 3.2px) * 0.1786));
 }
+
 %font-sm {
     font-size: calc(0.8125rem + ((1vw - 3.2px) * 0.1593));
 }
@@ -28,7 +31,8 @@ h2 {
     // font-weight: 300;
 }
 
-h3,p {
+h3,
+p {
     @extend %font-md;
     font-weight: 800;
 }
@@ -58,15 +62,19 @@ a {
     h1 {
         font-size: 3rem;
     }
+
     h2 {
         font-size: 2rem;
     }
+
     h3 {
         font-size: 1.125rem;
     }
+
     h4 {
         font-size: .875rem;
     }
+
     p {
         font-size: 1rem;
     }
@@ -99,22 +107,22 @@ image-caption {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-	height: 60px;
-	width: -webkit-max-content;
-	width: -moz-max-content;
-	width: max-content;
+    height: 60px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     right: 0;
-	margin-right: 2rem;
-	font-weight: 600;
-	font-size: 1rem; 
+    margin-right: 2rem;
+    font-weight: 800;
+    font-size: 1rem;
     text-transform: uppercase;
     color: $primary-grey;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     z-index: 1;
 
-    
+
 
     @media screen and (min-width: $breakpoint-md) {
         & {

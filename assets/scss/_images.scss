@@ -3,66 +3,76 @@ img {
 }
 
 %image__container {
-        width: 100%;
-        min-height: 20rem;
-        display: inline-grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
-        justify-content: center;
-        grid-row-gap: 3rem;
-        grid-column-gap: 3rem;
-        padding: 0 2rem;
-        text-align: end;
+    width: 100%;
+    min-height: 20rem;
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-row-gap: 3rem;
+    grid-column-gap: 3rem;
+    padding: 0 2rem;
+    text-align: end;
 
-        // .image__container section:last-child {
-        //     grid-row: 1 / -1;
-        //     flex-grow: 2;
-        // }
+    // .image__container section:last-child {
+    //     grid-row: 1 / -1;
+    //     flex-grow: 2;
+    // }
 
-        // .content__article + & {
-        //     padding: 2rem 0;
-        // }
+    // .content__article + & {
+    //     padding: 2rem 0;
+    // }
 
-        @media screen and (min-width: $breakpoint-sm) {
-            & {
-                width: 100%;
-            }
-        }   
+    @media screen and (min-width: $breakpoint-sm) {
+        & {
+            width: 100%;
+        }
+    }
 }
 
 .image__container {
 
     min-height: 60rem;
 
-        *:not(&-full) > img {
-            height: 100%;
-            object-fit: contain;
-        }
+    *:not(&-full)>img {
+        height: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
 
-        &-xs {
-            @extend %image__container;
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 17rem));
-        }
+    &-xs {
+        @extend %image__container;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
 
-        &-sm {
-            @extend %image__container;
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 25rem));
-        }
 
-        &-md {
-            @extend %image__container;
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 30rem));
-        }
+    }
 
-        &-lg {
-            @extend %image__container;
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 40rem));
-        }
+    &-sm {
+        @extend %image__container;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 19rem));
+    }
 
-        &-full {
-            @extend %image__container;
-            grid-template-columns: 1fr;
-            padding: 0;
-        }
+    &-md {
+        @extend %image__container;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 30rem));
+    }
+
+    &-lg {
+        @extend %image__container;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 40rem));
+    }
+
+    &-xl {
+        @extend %image__container;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 60rem));
+    }
+
+    &-full {
+        @extend %image__container;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
 }
 
 .section-title {

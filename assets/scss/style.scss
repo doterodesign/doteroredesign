@@ -15,53 +15,55 @@
     font-family: nunito-sans, sans-serif;
     font-size: 16px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-text-size-adjust: 100%;
-       -moz-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-            font-display: auto;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-display: auto;
 }
 
 body {
     background: $primary-white;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 
 hl {
     color: $primary-black;
     // font-weight: 600;
- }
+}
 
- .active {
-     display: block;
- }
+.active {
+    display: block;
+}
 
- bold {
-     font-weight: 800;
- }
+bold {
+    font-weight: 800;
+}
 
 /* LOADING BAR */
-#overlay{
+#overlay {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position:fixed;
-    z-index:99999;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    background:rgba(255, 255, 255, 1);
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 1);
     transition: 1s 0.4s;
     -webkit-transition: 1s 0.4s;
     -moz-transition: 1s 0.4s;
     -ms-transition: 1s 0.4s;
     -o-transition: 1s 0.4s;
+    width: 100vw;
+    height: 100vh;
 
 
     & #logo-loading {
@@ -73,10 +75,10 @@ hl {
 
         margin: -4rem auto 0 auto;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -ms-flex-item-align: center;
-            align-self: center;
+        align-self: center;
 
         animation: scrollindicator 3s infinite;
         -webkit-animation: scrollindicator 3s infinite;
@@ -84,15 +86,31 @@ hl {
 }
 
 
-  @-webkit-keyframes scrollindicator {
-    0% {opacity: 1}
-    70% {opacity: 0}
-    100% {opacity: 1}
-}   
+@-webkit-keyframes scrollindicator {
+    0% {
+        opacity: 1
+    }
+
+    70% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
 
 
 @keyframes scrollindicator {
-    0% {opacity: 1}
-    70% {opacity: 0}
-    100% {opacity: 1}
+    0% {
+        opacity: 1
+    }
+
+    70% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
 }

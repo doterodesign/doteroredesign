@@ -17,9 +17,11 @@ const blah = (cs) => {
     let future = content__article(cs.future);
     let lesson = content__article(cs.lesson);
     let proto = content__article(cs.proto);
+    // let next = content__article(cs.nextProject);
 
 
     //IMAGES
+    let img__stat = images(cs.img.stat);
     let img__sketch = images(cs.img.sketch);
     let img__cover = images(cs.img.cover);
     let img__prototype = prototype(cs.proto);
@@ -38,6 +40,7 @@ const blah = (cs) => {
         ${intro}
         ${img__sketch}
         ${user}
+        ${img__stat}
         ${cr}
         ${img__goal}
         ${goal}
@@ -49,12 +52,14 @@ const blah = (cs) => {
         ${lesson}
         ${proto}
         ${img__prototype}
+        
         `
        
     blahContainer.innerHTML = comp;
 }
 
 blah(cs__blah);
+nextProject(cs__blah);
     
 
 
@@ -73,9 +78,10 @@ const cunyfirst = (cs) => {
     let navigation = content__article(cs.navigation);
     let navigationFeedback = content__article(cs.navigation.feedback);
     let dynamicContent = content__article(cs.dynamicContent);
-    // let future = content__article(cs.future);
+    let testing = content__article(cs.testing);
     let lesson = content__article(cs.lesson);
     let proto = content__article(cs.proto);
+    // let next = content__article(cs.nextProject);
 
 
     // IMAGES
@@ -85,7 +91,8 @@ const cunyfirst = (cs) => {
     let img__wireframe = images(cs.img.wireframe);
     let img__navigation = images(cs.img.navigation);
     let img__dynamic = images(cs.img.dynamic);
-    let img__prototype = button(cs.proto.p);
+    let img__testing = images(cs.img.testing);
+    let img__prototype = button(cs.proto);
   
 
 
@@ -109,6 +116,8 @@ const cunyfirst = (cs) => {
         ${navigationFeedback}
         ${dynamicContent}
         ${img__dynamic}
+        ${testing}
+        ${img__testing}
         ${lesson}
         ${proto}
         ${img__prototype}
@@ -118,19 +127,27 @@ const cunyfirst = (cs) => {
 }
 
 cunyfirst(cs__cunyfirst);
+nextProject(cs__cunyfirst);
 
 
 //SALVATION ARMY
 const salvationarmy = (cs) => {
     let mas = master(cs);
-    let img = images(cs.img);
+    let viewMore = content__article(cs.viewMore);
+    let behance = button(cs.viewMore);
+    let img__full = images(cs.img.full);
+    let img__lg = images(cs.img.lg);
+    // let next = content__article(cs.nextProject);
 
     let comp = '';
 
     comp +=
         `
         ${mas}
-        ${img}
+        ${img__full}
+        ${img__lg}
+        ${viewMore}
+        ${behance}
         `
     
     salvationarmyContainer.innerHTML = comp;
@@ -138,14 +155,18 @@ const salvationarmy = (cs) => {
 }
 
 salvationarmy(cs__salvationarmy);
+nextProject(cs__salvationarmy);
 
 
 
 //GLADWELL
 const gladwell = (cs) => {
     let mas = master(cs);
+    let viewMore = content__article(cs.viewMore);
+    let behance = button(cs.viewMore);
     let img__full = images(cs.img.full);
     let img__lg = images(cs.img.lg);
+    // let next = content__article(cs.nextProject);
 
     let comp = '';
 
@@ -154,6 +175,8 @@ const gladwell = (cs) => {
         ${mas}
         ${img__lg}
         ${img__full}
+        ${viewMore}
+        ${behance}
         `
     
     gladwellContainer.innerHTML = comp;
@@ -161,3 +184,7 @@ const gladwell = (cs) => {
 }
 
 gladwell(cs__gladwell);
+nextProject(cs__gladwell);
+
+
+

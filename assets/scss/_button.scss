@@ -6,6 +6,7 @@ button {
     padding: .75rem 4rem;
     text-align: center;
     border: 0px solid $primary-grey;
+    -webkit-box-shadow: inset 0px 0px 0px 3px $primary-red;
     box-shadow: inset 0px 0px 0px 3px $primary-red;
     border-radius: 16px;
     font-size: 1rem;
@@ -14,26 +15,31 @@ button {
     border-collapse: collapse;
     width: 70%;
     white-space: nowrap;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
     min-width: max-content;
     max-width: 220px;
 
     @media screen and (min-width: $breakpoint-sm) {
         width: 28%;
     }
+
     @media screen and (min-width: $breakpoint) {
         padding: .8rem 5rem;
         width: 100%;
     }
+
     @media screen and (min-width: $breakpoint-lg) {
         padding: 1rem 5rem;
     }
 
-    & + & {
+    &+& {
         margin: 1rem .5rem 0 0rem;
 
         @media screen and (min-width: $breakpoint-sm) {
             margin: 1rem .5rem 0 1rem;
         }
+
         @media screen and (min-width: $breakpoint) {
             margin: 1rem .5rem 0 0rem;
         }
@@ -46,13 +52,16 @@ button {
     &.primary {
         @include background($primary-red);
         color: $primary-white;
+        -webkit-box-shadow: inset 0px 0px 0px 3px $primary-red;
         box-shadow: inset 0px 0px 0px 3px $primary-red;
 
 
-        #nav-container &:focus, #nav-container &:hover {
+        #nav-container &:focus,
+        #nav-container &:hover {
             @include background($primary-white);
             color: $primary-black;
             border-color: $primary-red;
+            -webkit-transition: border-color, color, background .3s ease-in-out;
             transition: border-color, color, background .3s ease-in-out;
         }
     }
@@ -63,73 +72,94 @@ button {
         // border: 6px solid $primary-grey;
         // border-radius: 10px;
 
-        
-        #nav-container &:focus, #nav-container &:hover {
+
+        #nav-container &:focus,
+        #nav-container &:hover {
             @include background($primary-red);
             color: $primary-white;
+            -webkit-transition: color, background .3s ease-in-out;
             transition: color, background .3s ease-in-out;
         }
     }
 
     &.blah-primary {
         @include background($blah-primary);
+        -webkit-box-shadow: inset 0px 0px 0px 3px $primary-white;
         box-shadow: inset 0px 0px 0px 3px $primary-white;
 
-        &:focus, &:hover {
+        &:focus,
+        &:hover {
             @include background($blah-secondary);
+            -webkit-transition: color, background .3s ease-in-out;
             transition: color, background .3s ease-in-out;
         }
     }
-    
-    &.cuny-primary{
+
+    &.cuny-primary {
         @include background($cuny-primary);
         color: $primary-white;
+        -webkit-box-shadow: inset 0px 0px 0px 3px $primary-white;
         box-shadow: inset 0px 0px 0px 3px $primary-white;
 
-        &:focus, &:hover {
+        &:focus,
+        &:hover {
             @include background($cuny-secondary);
             color: $primary-black;
+            -webkit-transition: color, background .3s ease-in-out;
             transition: color, background .3s ease-in-out;
         }
     }
 
     &.blah-secondary {
         @include background($blah-secondary);
+        -webkit-box-shadow: inset 0px 0px 0px 3px $primary-white;
         box-shadow: inset 0px 0px 0px 3px $primary-white;
 
-        &:focus, &:hover {
+        &:focus,
+        &:hover {
             @include background($blah-primary);
+            -webkit-transition: color, background .3s ease-in-out;
             transition: color, background .3s ease-in-out;
         }
     }
-    
-    &.cuny-secondary{
+
+    &.cuny-secondary {
         @include background($cuny-secondary);
         color: $primary-black;
+        -webkit-box-shadow: inset 0px 0px 0px 3px $primary-white;
         box-shadow: inset 0px 0px 0px 3px $primary-white;
 
-        &:focus, &:hover {
+        &:focus,
+        &:hover {
             @include background($cuny-primary);
             color: $primary-white;
+            -webkit-transition: color, background .3s ease-in-out;
             transition: color, background .3s ease-in-out;
         }
     }
 }
 
 .text-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: $primary-grey;
-    align-items:center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     padding: 1.3rem 4rem;
-    height:2rem;
+    height: 2rem;
     text-align: center;
     background: $primary-white;
     border: 2px solid $primary-grey;
     border-radius: 1rem;
     color: $primary-black;
     font-weight: 600;
-    transition: all .3s ease-in-out; 
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     justify-self: center;
 
     &:hover {
@@ -137,21 +167,25 @@ button {
         border: 2px solid $primary-black;
         color: $primary-white;
     }
-   
-}   
+
+}
 
 .circle-arrow {
     min-width: 4rem;
     min-height: 4rem;
     border-radius: 50%;
     padding: 1rem;
+    -ms-flex-item-align: end;
     align-self: flex-end;
     background: rgba($primary-grey, .5);
     stroke: $primary-black;
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    -webkit-transform: scale(.8);
     transform: scale(.8);
 
-    &.back-button, &.next-button {
+    &.back-button,
+    &.next-button {
         position: fixed;
         bottom: 0;
         right: 0;
@@ -161,11 +195,13 @@ button {
     }
 
     &.next-button {
+        -webkit-transform: rotate(0deg) scale(.7);
         transform: rotate(0deg) scale(.7);
         margin-right: 1rem;
     }
 
     &.back-button {
+        -webkit-transform: rotate(180deg) scale(.7);
         transform: rotate(180deg) scale(.7);
         margin-right: 1rem;
         margin-bottom: 5.5rem;
@@ -174,7 +210,11 @@ button {
             content: 'prev';
             display: block;
             position: absolute;
+            height: -webkit-max-content;
+            height: -moz-max-content;
             height: max-content;
+            width: -webkit-max-content;
+            width: -moz-max-content;
             width: max-content;
             color: #000;
             font-size: 1rem;
@@ -183,17 +223,22 @@ button {
     }
 
     @media screen and (min-width: $breakpoint-sm) {
-        &.back-button, &.next-button {
+
+        &.back-button,
+        &.next-button {
+            -webkit-transform: rotate(180deg) scale(.85);
             transform: rotate(180deg) scale(.85);
             margin-bottom: 2rem;
         }
 
         &.next-button {
+            -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
             margin-right: 3rem;
         }
 
         &.back-button {
+            -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
             right: 0;
             // margin-left: 0px;
@@ -204,10 +249,12 @@ button {
 
     @media screen and (min-width: $breakpoint) {
         & {
+            -webkit-transform: scale(1);
             transform: scale(1);
 
 
-            &.back-button, &.next-button {
+            &.back-button,
+            &.next-button {
                 margin-bottom: 3rem;
             }
         }
@@ -218,4 +265,9 @@ button {
         stroke: $primary-white;
         opacity: 1;
     }
+}
+
+
+.fade {
+    visibility: hidden;
 }

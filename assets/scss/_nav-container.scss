@@ -3,20 +3,20 @@ $intro-width: 40%;
 $nav-height: 60px;
 
 #nav-container {
-        display: grid;
-        width: 100vw;
-        grid-template-columns: 1fr;
-        grid-template-rows: 60px minmax(-webkit-max-content,1fr);
-        grid-template-rows: 60px minmax(max-content,1fr);
-        -ms-flex-line-pack: start;
-            align-content: start;
-        overflow: hidden;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px minmax(-webkit-max-content, 1fr);
+    grid-template-rows: 60px minmax(max-content, 1fr);
+    -ms-flex-line-pack: start;
+    align-content: start;
+    overflow: hidden;
 
 
     & nav {
         position: fixed;
         display: grid;
-        width: 100%;
+        width: 100vw;
         height: $nav-height;
         grid-row: 1 / 2;
         background: $primary-white;
@@ -25,10 +25,10 @@ $nav-height: 60px;
         -webkit-transition: height .4s ease-in-out;
         transition: height .4s ease-in-out;
 
-        & > #nav__items {
+        &>#nav__items {
             display: grid;
             -ms-flex-line-pack: center;
-                align-content: center;
+            align-content: center;
             grid-row-gap: 2rem;
             padding: 8rem 2rem;
             min-height: -webkit-max-content;
@@ -43,7 +43,9 @@ $nav-height: 60px;
         .menu-nav {
             height: 100%;
             display: grid;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             grid-template-columns: 1fr 1fr;
 
             & #mobile-menu {
@@ -52,13 +54,13 @@ $nav-height: 60px;
                 margin-top: 1rem;
                 z-index: 10;
             }
-    
+
             & #main-logo {
                 width: 3rem;
                 height: $nav-height;
                 -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
                 z-index: 1;
                 grid-column: 2 / -1;
                 justify-self: end;
@@ -84,6 +86,7 @@ $nav-height: 60px;
 
             & .menu-nav {
                 grid-template-columns: 1fr 1fr;
+                // width: 100vw;
 
                 & #main-logo {
                     display: block;
@@ -107,22 +110,22 @@ $nav-height: 60px;
                     }
                 }
             }
-    
+
 
             & #current-section {
                 display: none;
             }
 
-            & + .info-container {
+            &+.info-container {
                 display: hidden;
-                opacity:0;
+                opacity: 0;
 
                 & .social-icons {
                     opacity: 1;
                 }
             }
 
-            & > #nav__items {
+            &>#nav__items {
                 -webkit-transition: opacity .2s ease-in-out .3s;
                 transition: opacity .2s ease-in-out .3s;
                 opacity: 1;
@@ -144,10 +147,11 @@ $nav-height: 60px;
                 }
             }
         }
-        
+
 
         @media screen and (min-width: $breakpoint) {
             & {
+                width: 100%;
                 position: absolute;
             }
         }
@@ -158,9 +162,9 @@ $nav-height: 60px;
         display: grid;
         grid-row: 2 / -1;
         margin: 0;
-        padding: 3rem 2rem 2rem 2rem;
+        padding: 0rem 2rem 2rem 2rem;
         -ms-flex-line-pack: center;
-            align-content: center;
+        align-content: center;
         grid-row-gap: .5rem;
         min-height: 80vh;
 
@@ -170,6 +174,7 @@ $nav-height: 60px;
             font-size: 2.6rem;
             margin-bottom: 1rem;
         }
+
         & h2 {
             font-size: 1.2rem;
             font-weight: 800;
@@ -182,7 +187,7 @@ $nav-height: 60px;
 
         & button {
             -ms-flex-item-align: center;
-                align-self: center;
+            align-self: center;
             justify-self: flex-start;
         }
 
@@ -202,12 +207,12 @@ $nav-height: 60px;
             font-size: 1rem;
             font-weight: 600;
         }
-    
+
         & .love {
             position: absolute;
             bottom: 0;
-            margin-bottom:2rem;
-            margin-left:2rem;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
             color: $heart;
             font-weight: 600;
 
@@ -239,7 +244,7 @@ $nav-height: 60px;
         }
     }
 
-      //IF A CASE STUDY IS ACTIVE
+    //IF A CASE STUDY IS ACTIVE
 
     &.cs-active {
 
@@ -252,10 +257,13 @@ $nav-height: 60px;
 
             & nav {
                 & .menu-nav {
-                    grid-template-columns: 1fr 1fr; 
+                    grid-template-columns: 1fr 1fr;
 
                     & #main-logo {
-                        display: none;
+                        display: block;
+                        grid-column: 1 / 2;
+                        justify-self: start;
+                        margin-left: 2rem;
                     }
                 }
 
@@ -271,19 +279,21 @@ $nav-height: 60px;
             @media screen and (min-width: $breakpoint) {
                 & nav {
                     & .menu-nav {
-                        grid-template-columns: 1fr 1fr 1fr; 
-    
+                        grid-template-columns: 1fr 1fr 1fr;
+
                         & #main-logo {
                             display: block;
                             grid-column: 2 / 3;
                             justify-self: center;
                             margin-right: 0;
+                            margin-left: 0;
                         }
                     }
 
                     &.active {
                         & .menu-nav {
                             grid-template-columns: 1fr 1fr;
+
                             & #main-logo {
                                 display: block;
                                 grid-column: 2 / 3;
@@ -292,25 +302,25 @@ $nav-height: 60px;
                             }
                         }
                     }
-                }   
+                }
             }
 
             &.nav-active {
                 height: 100vh;
             }
         }
-          
+
         .info-container {
             display: none;
             width: 80px;
-                }
+        }
 
-        & + #content-container {
+        &+#content-container {
             padding-top: $nav-height;
             width: 100%;
         }
 
-        @media screen and (min-width: $breakpoint-sm){
+        @media screen and (min-width: $breakpoint-sm) {
             & nav #main-logo {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -318,12 +328,12 @@ $nav-height: 60px;
             }
         }
 
-        @media screen and (min-width: $breakpoint){
+        @media screen and (min-width: $breakpoint) {
             width: 100vw;
             height: $nav-height;
-        
 
-            & + #content-container {
+
+            &+#content-container {
                 margin-left: 0;
             }
         }
@@ -361,7 +371,7 @@ $nav-height: 60px;
     position: relative;
     width: 100%;
     -ms-flex-item-align: bottom;
-        align-self: bottom;
+    align-self: bottom;
     margin: 1rem 0 1.5rem 0;
     z-index: 2;
 
@@ -372,24 +382,24 @@ $nav-height: 60px;
         padding-left: 2rem;
         z-index: 9999;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
 
-        & > * {
+        &>* {
             margin: 0 1rem 0 0;
             padding: .5rem;
         }
 
-        @media screen and (min-width: $breakpoint){
+        @media screen and (min-width: $breakpoint) {
             & {
                 -webkit-box-pack: start;
-                    -ms-flex-pack: start;
-                        justify-content: start;
+                -ms-flex-pack: start;
+                justify-content: start;
             }
         }
     }
 
-    & > * {
+    &>* {
         padding: 0 2rem 0 0;
     }
 }
@@ -422,4 +432,10 @@ a {
         fill: $primary-red;
         stroke: $primary-red;
     }
+}
+
+
+#main-logo,
+.button {
+    cursor: pointer;
 }

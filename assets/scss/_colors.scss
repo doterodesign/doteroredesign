@@ -2,7 +2,7 @@ $primary-red: rgb(255, 87, 87);
 $primary-orange: rgb(255, 171, 87);
 $primary-red-darken: rgb(231, 52, 52);
 $primary-green: hsl(124, 100%, 36%);
-$heart: #ec0000;
+$heart: #ED1C24;
 $primary-white: #FFFFFF;
 $primary-grey: rgb(62, 62, 62);
 $primary-black: #1e1e1e;
@@ -14,9 +14,11 @@ $cuny-secondary: #FFD780;
 $cuny-primary-light: rgb(255, 199, 77);
 $cuny-primary-blue: #1D3A83;
 $salvation-primary-red: #E41E2E;
+$salvation-secondary: rgb(9,16,6);
 $sex-yellow: #FFF22D;
 $sex-blue: #4FB9EF;
 $sex-red: #CC1C54;
+$gladwell-blue: rgba(22, 149, 225, 1);
 
 .blah-primary {
     background: $blah-primary;
@@ -30,6 +32,13 @@ $sex-red: #CC1C54;
 .blah-primary-light {
     background: $blah-primary-light;
     color: $primary-white;
+}
+
+.blah-primary-text {
+    color: $blah-primary;
+}
+.blah-secondary-text{
+    color: $blah-secondary;
 }
 
 .cuny-primary {
@@ -47,19 +56,16 @@ $sex-red: #CC1C54;
     color: $primary-white;
 }
 
-.blah-primary-text {
-    color: $blah-primary;
-}
-.blah-secondary-text{
-    color: $blah-secondary;
-}
-
 .cuny-primary-text {
     color: $cuny-primary;
 }
 
 .cuny-primary-blue-text {
     color: $cuny-primary-blue;
+}
+.gladwell-blue {
+    background:$gladwell-blue;
+    color: $primary-white;
 }
 
 .primary-white {
@@ -77,6 +83,11 @@ $sex-red: #CC1C54;
 
 .salvation-primary-red {
     background: $salvation-primary-red;
+    color: $primary-white;
+}
+
+.salvation-secondary{
+    background: $salvation-secondary;
     color: $primary-white;
 }
 

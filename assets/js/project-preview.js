@@ -14,7 +14,7 @@ function navConstructor(p) {
                 <svg id="main-logo" enable-background="new 0 0 60 60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill="#231f20" fill-rule="evenodd"><path d="m30 0-30 30 30 30 30-30zm-26.7 30 26.7-26.7 26.7 26.7-26.7 26.7z"/><g transform="translate(23.617021 11.489362)"><path d="m2.4 31.3v-25.5l12.2 12.8-2.1 2.2c.8.2 1.5.6 2.2 1l3.1-3.2-17.7-18.5v36.9l4.9-5.1c-.5-.6-.8-1.4-1.1-2.2z"/><path d="m14.7 21.8-1.6 1.7c1.4.8 2.4 2.4 2.4 4.2 0 2.7-2.2 4.8-4.8 4.8-1.7 0-3.2-.9-4.1-2.3l-1.6 1.7c1.3 1.7 3.3 2.9 5.7 2.9 3.9 0 7.1-3.2 7.1-7.1-.1-2.5-1.3-4.7-3.1-5.9"/><path d="m10.5 22.8 2-2.1c-.6-.2-1.2-.2-1.8-.2-3.9 0-7.1 3.2-7.1 7.1 0 .7.1 1.4.3 2.1l2-2c0-2.7 2.1-4.8 4.6-4.9"/><path d="m5.9 27.7-2 2c.2.8.6 1.5 1.1 2.2l1.6-1.7c-.4-.7-.7-1.6-.7-2.5"/><path d="m10.5 22.8h.2c.9 0 1.7.2 2.4.6l1.6-1.7c-.7-.5-1.4-.8-2.2-1z"/></g></g>
                 </svg>
 
-                <h2 class="current-section"></h2>
+                <h2 id="current-section"></h2>
             </div>
 
             <div class="progress-bar" id="myBar"></div>
@@ -55,8 +55,8 @@ function templateConstructor(p) {
         //INTRO PROJECT TEMPLATE
         projects +=
         `
-        <section class="project-preview ${p[i].primaryColor}">
-        <div class="image__container-lg">
+        <section class="project-preview ${p[i].primaryColor}" data-project-name='${p[i].href}'>
+        <div class="image__container-md">
             <img src="images/${p[i].image}" alt="">
         </div>
             <div class="info-container">
@@ -193,6 +193,16 @@ const prototype = (section) => {
 
 const button = (section) => {
     return `
-    <a href="${section}" class="button text-button" target="_blank">Prototype</a> 
+    <a href="${section.p}" class="text-button" target="_blank" rel=”noopener noreferrer”>${section.name}</a> 
     `
 }
+
+
+var nextProject = (ne) => {
+    projectPreviews = Array.from(document.querySelectorAll('.project-preview'))
+    let nextPro = projectPreviews.find(n => ne.next == $(n).attr('data-project-name'));
+    // $(nextPro).attr('data-section-name', `next project: ${$(nextPro).data('project-name')}`)
+    let cu = $(`#${ne.href}`);
+    return $(nextPro).clone().appendTo(cu);
+}
+
