@@ -1,0 +1,84 @@
+
+    //CONTENT CONTAINER
+
+    #content-container {
+        width: 100%;
+        height: auto;
+    }
+
+    //PROJECT PREVIEW CONTAINER
+
+    .project-preview {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        min-height: -webkit-max-content;
+        min-height: -moz-max-content;
+        min-height: max-content;
+        height: 90vh;
+        max-height: 90vh;
+        width: 100vw;
+        padding: 1rem 2rem;
+
+        & .info-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+
+            h2 {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+                margin-top: 1.2rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+
+    @media screen and (min-width: $breakpoint-sm) {
+        button {
+            -ms-flex-item-align: end;
+                align-self: flex-end;
+        }
+
+        .project-preview {
+           & .info-container h2 {
+                font-size: 2rem;
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint) {
+        $nav-height: 80px;
+
+
+        #content-container {
+            width: calc(100% - #{$intro-width});
+            margin-left: $intro-width;
+        }
+
+        .project-preview {
+            width: 100%;
+            height: 90vh;
+            padding: 2rem 4rem 1rem 4rem;
+        }
+    }
+
+    @media screen and(min-width: $breakpoint-lg) and (min-height: $breakpoint-lg) {
+        .video {
+            height: 60%;
+        }
+    }
+
+
+    .noScroll {
+        overflow: hidden;
+    }
