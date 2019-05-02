@@ -19,6 +19,9 @@ $sex-yellow: #FFF22D;
 $sex-blue: #4FB9EF;
 $sex-red: #CC1C54;
 $gladwell-blue: rgba(22, 149, 225, 1);
+$ipc-blue:#00549F;
+$ipc-blue-lighten: #398FDB;
+$ipc_yellow: #FFB100;
 
 .blah-primary {
     background: $blah-primary;
@@ -65,6 +68,18 @@ $gladwell-blue: rgba(22, 149, 225, 1);
 }
 .gladwell-blue {
     background:$gladwell-blue;
+    color: $primary-white;
+}
+.ipc-blue {
+    background:$ipc_blue;
+    color: $primary-white;
+}
+.ipc-blue-lighten {
+    background:$ipc_blue-lighten;
+    color: $primary-white;
+}
+.ipc-yellow {
+    background:$ipc_yellow;
     color: $primary-white;
 }
 

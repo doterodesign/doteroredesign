@@ -3,6 +3,7 @@ var navContainer = document.getElementById('nav-container');
 var blahContainer = document.getElementById('blah');
 var homeContainer = document.getElementById('home');
 var cunyfirstContainer = document.getElementById('cunyfirst');
+var ipcContainer = document.getElementById('ipc');
 var salvationarmyContainer = document.getElementById('salvationarmy');
 // var safeSexContainer = document.getElementById('safesex');
 var gladwellContainer = document.getElementById('gladwell');
@@ -224,7 +225,7 @@ var cases = [
     {
         //HOMEPAGE SETUP
         project: 'CUNYfirst',
-        next: 'salvationarmy',
+        next: 'ipc',
         prev: 'blah',
         href: 'cunyfirst',
         name: 'Rethinking CUNYfirst',
@@ -475,6 +476,296 @@ var cases = [
 
         },
     },
+    
+
+    //IPC
+    {
+        //HOMEPAGE SETUP
+        project: 'International Paralympic Committee',
+        next: 'salvationarmy',
+        prev: 'cunyfirst',
+        href: 'ipc',
+        name: 'Restructuring IPC News',
+        platform: 'Web & Mobile',
+        role: 'Product Designer | UX/UI | A.I.',
+        description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
+        descColor: 'primary-white-text',
+        image: 'paralympic/paralympic-landing-page.jpg',
+        primaryColor: 'ipc-blue',
+        supportColor: 'ipc-yellow',
+        secondaryColor: 'ipc-blue-lighten',
+        buttonColor: 'ipc-blue',
+
+
+        //CASE STUDY SETUP
+        summary: {
+            overview: 'Athletics is popular now more than ever and with technology, disabled athletes have better chances in participating in physical activities.</br></br> The International Paralympic Committee\'s efforts to bring athletics to disabled athletes is amazing but with a bounce rate of over 40%, their site needs to be updated immediately.',
+                
+            problem: 'Sadly, this great organization has a severely outdated site that they keep up with daily. There is so much potential for improvement and they deserve a better site.',
+            
+            goal: 'I wanted to explore the homepage and news story pages of the site. With multiple types of news being the main priority, creating good flow throughout these pages is essential.',
+            
+            approach: 'Competitor/user research, persona development, journey mapping, I.A. restructuring, and creating a mini design system helped to give direction.',
+            
+            lesson: 'I\'d love to do this project again with a small team. The process was extremely overwhelming and the end result could be much better. I plan on returning to this project but the process taught me a lot about research and time prioritization.',
+
+            solution: 'Originally starting as a full-page redesign, the depth of this project landed me into creating a mini-design system and prototypes of the home and news pages.',
+        },
+       
+        tools: [
+            'Sketch',
+            'Figma',
+            'Overflow',
+        ],
+
+        img: {
+
+            introduction: {
+                size: 'full',
+                
+                "images": [
+                    {
+                        name: 'paralympic/homepage-comparison.png',
+                        caption: 'Current vs. revised homepage design (relatively positioned)',
+                    },
+                ]
+            },
+
+            goal: {
+                size: 'lg',
+                
+                "images": [
+                    {
+                        name: 'paralympic/paralympic-webtraffic.jpg',
+                        caption: 'Paralympic.org web traffic',
+                    },
+                ]
+            },
+          
+            persona: {
+                size: 'lg',
+                
+                "images": [
+                    {
+                        name: 'paralympic/persona-jim.jpg',
+                        caption: 'Elder persona Jim',
+                    },
+                    {
+                        name: 'paralympic/persona-sarah.jpg',
+                        caption: 'Young athlete persona Sarah',
+                    },
+                    {
+                        name: 'paralympic/persona-liana.jpg',
+                        caption: 'Paralympic Supporter Liana',
+                    },
+                ]
+            },
+
+            olympic: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/olympic-menu.jpg',
+                        caption: 'Olympic.org mega navigation'
+                    },
+                ]
+            },
+            
+            nfl: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/nfl-header.png',
+                        caption: 'NFL live score tracker'
+                    },
+                ]
+            },
+
+            lpga: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/lpga-example.jpg',
+                        caption: 'LPGA homepage'
+                    },
+                ]
+            },
+
+            journey: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'paralympic/paralympic-journey-map.jpg',
+                        caption: 'Lego-Inspired journey map',
+                    },
+                ]
+            },
+
+            wireframe: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/desktop-mockup.jpg',
+                        caption: 'Hand sketches of desktop mockups',
+                    },
+                    {
+                        name: 'paralympic/paralympic-wireframe1.svg',
+                        caption: 'Starting wireframes of homepage',
+                    },
+                ]
+            },
+
+            sitemap: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'paralympic/paralympic-sitemap.png',
+                        caption: 'Sitemap of Navigation Structure',
+                    },
+                ]
+            },
+
+            userflow: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/competitions-userflow.png',
+                        caption: 'Userflow of competitiions section',
+                    },
+                    {
+                        name: 'paralympic/news-userflow.png',
+                        caption: 'Userflow of news',
+                    },
+                ]
+            },
+
+            preview: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'paralympic/page-previews.jpg',
+                        caption: 'V1 Page previews (not finals)',
+                    },
+                ]
+            },
+
+            final: {
+                size: 'full',
+
+                "images": [
+                    {
+                        name: 'paralympic/final-layouts.png',
+                        caption: 'Final layout structure for home and article',
+                    },
+                ]
+            },
+        },
+
+        //INTRODUCTION
+        introduction: {
+            name: 'introduction',
+            heading: 'Outdated site for a modern organization',
+            content: 'With technology developing at a rapid pace, responsiveness and ease of use have become critical to a positive experience. Paralympic.org\'s navigation and functionality is severely outdated, negatively impacting access to content.',
+        },
+
+        //PROBLEM
+        problem: {
+            name: 'Problems',
+            heading: 'Hitting the pain points',
+            content: 'The main pain points of users that I\'ve gathered speaking to various users are a non-responsive design, hard to access information, and not knowing if you qualify to take a course until very moment you go to apply. Nothing a little information re-organization can\'t fix!',
+        },
+
+        //GOAL
+        goal: {
+            name: 'Goal',
+            heading: 'Start with the important content: Homepage and News',
+            content: 'A bounce rate is how often a user leaves right after landing on the site. As you\'d guess, a high bounce rate means a low retention rate.</br></br> To fix that issue, creating a compelling homepage, as well as reformatting the content such as articles and video is a great start to improving their retention rate. To start, I took a look at their direct and indirect competitors within the televised sports industry.',
+        },
+
+        //COMPETITOR RESEARCH
+        cr: {
+            competitors: {
+                name: 'Competitor Research',
+
+                olympics: {
+                    name: 'CR: Olympics',
+                    heading: 'Main Competitor: Olympic.org',
+                    content: 'With a clean and modern design, detailed navigation, and mostly responsive design, there\'s a lot to like. However, with non-responsive imagery for small screens and two-four clicks to drill down through the mobile navigation, it showed me what not to do for mega-navigations on mobile screens.'
+                },
+                lpga: {
+                    name: 'CR: lgpa',
+                    heading: 'Indirect Competitor: LGPA',
+                    content: 'With inconsistent information architecture and scattered content, a hidden secondary navigation, non-predictive search bar, and a transparent background on the navigation causing visibility issues, this was my least favorite competitor. It showed that although some of their features were modern such as a transparent nav background, it can\'t be implemented everywhere.',
+                },
+                nfl: {
+                    name: 'CR: NFL',
+                    heading: 'Indirect Competitor: NFL',
+                    content: 'The NFL\'s scoreboard in the header is the main positive feature found on the site. Other than that, I found the scattered and unstructured content hard to consume. The news section, although it features content different from that of the homepage, does not also include the homepage articles and news. This leads to information being distributed in two places and all the content may not be seen by a user. Why write something for it to not be seen?',
+                },
+            },
+        },
+
+        //USER RESEARCH
+        ur: {
+            name: 'User Research',
+            heading: 'Developing Personas',
+            content: 'After getting an idea of core features I may need to include, I crafted a few personas that match the target audiences. The Paralympic events have a broad audience and not all are disabled. I included ages, disabilities (or lack of one), and basic information about each person.'
+        },
+
+        //JOURNEY   
+        journey: {
+            name: 'Journey Maps',
+            heading: 'Inspired by Lego\'s Journey Mapping',
+            content: 'Lego developed a journey map experience that allows you to describe users feelings before knowing the product, during an encounter, and after modifications based on their feedback. This type of map stakeholders get an idea of what users seek in a concise manner.',
+        },
+
+        //USERFLOWS AND SITEMAPS
+        userflow: {
+            name: 'Userflows and Sitemap',
+            heading: 'Critical information architecture development',
+            content: 'Knowing the users helped in determining the flow of news and events because it guided me to create experiences for both sighted and non-sighted people. I also included the sitemap I created before knowing what I was getting myself into and changing the project\'s scope.'
+        },
+
+        //WIREFRAMES
+        wireframe: {
+            name: 'Wireframes',
+            heading: 'Defining the foundations (low-fi wires)',
+            content: 'I struggled with changing my design to hi-fidelity after realizing my initial structure was not user friendly. With over three iterations, this is where I started changing the project\'s scope from the whole site to only the homepage, article page, and creating a component library/mini-design system.',
+        },
+
+        //DYNAMIC CONTENT
+        designsystem: {
+            name: 'Design System',
+            heading: 'Crafting component libraries and design systems are fun',
+            content: 'Learning to begin crafting a design system was a great experience. It gave constraints that created a more efficient workflow in the long run. It\'s not complete but does gives a good idea of the overall structure and direction I was taking for the site. Check out that system below.',
+            p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=0%3A1&viewport=98%2C263%2C0.05&scaling=contain',
+        },
+
+        //PROTOTYPE
+        proto: {
+            name: 'Prototype',
+            heading: 'Brief walkthrough of desktop/mobile homepage & news',
+            content: 'I incorporated the dropdowns and points of contact a user encounters while searching for content, specifically news. You\'ll be able to navigate the hompage and linking out to an article.',
+            p: 'https://www.figma.com/proto/dhwt35X2dmleBEXl4F6QAj0U/CUNYFIRST-sample-ifgma?node-id=138%3A14936&viewport=562%2C-660%2C0.25&scaling=scale-down',
+
+        },
+
+        //LESSON
+        lesson: {
+            name: 'Lesson',
+            heading: 'Know the complete scope of the project',
+            content: 'I\'ll be honest and say I thought it wouldn\'t be as challenging as it was. I would do this project much differently in the future but I learned to incorporate journey maps, personas, and developing design systems along the way. In realizing how large the project actually was, I re-evaluated where I should start and landed on what you saw above.</br></br> Thanks for coming along on this one with me. It was definitely a learning experience.'
+        },
+    },
+
 
     //SALVATION ARMY
     {

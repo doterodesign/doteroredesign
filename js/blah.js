@@ -2,8 +2,9 @@
 
 const cs__blah = cases[0];
 const cs__cunyfirst = cases[1];
-const cs__salvationarmy = cases[2];
-const cs__gladwell = cases[3];
+const cs__ipc = cases[2];
+const cs__salvationarmy = cases[3];
+const cs__gladwell = cases[4];
 
 const blah = (cs) => {
 
@@ -87,8 +88,8 @@ const cunyfirst = (cs) => {
     // IMAGES
     let img__introduction = images(cs.img.introduction);
     let img__sketch = images(cs.img.sketch);
-    let img__userflow = images(cs.img.userflow);
     let img__wireframe = images(cs.img.wireframe);
+    let img__userflow = images(cs.img.userflow);
     let img__navigation = images(cs.img.navigation);
     let img__dynamic = images(cs.img.dynamic);
     let img__testing = images(cs.img.testing);
@@ -128,6 +129,81 @@ const cunyfirst = (cs) => {
 
 cunyfirst(cs__cunyfirst);
 nextProject(cs__cunyfirst);
+
+
+//IPC (INTERNATIONAL PARALYMPIC COMMITTEE
+const ipc = (cs) => {
+    let mas = master(cs);
+    let intro = content__article(cs.introduction);
+    let problem = content__article(cs.problem);
+    let goal = content__article(cs.goal);
+    // let cr = content__article(cs.cr);
+    let olympics = content__article(cs.cr.competitors.olympics);
+    let lpga = content__article(cs.cr.competitors.lpga);
+    let nfl = content__article(cs.cr.competitors.nfl);
+    let ur = content__article(cs.ur);
+    let journey = content__article(cs.journey);
+    let userflow = content__article(cs.userflow);
+    let wireframe = content__article(cs.wireframe);
+    let designsystem = content__article(cs.designsystem);
+    let lesson = content__article(cs.lesson);
+    let proto = content__article(cs.proto);
+
+    // IMAGES
+    let img__introduction = images(cs.img.introduction);
+    let img__goal = images(cs.img.goal);
+    let img__persona = images(cs.img.persona);
+    let img__nfl = images(cs.img.nfl);
+    let img__lpga = images(cs.img.lpga);
+    let img__olympic = images(cs.img.olympic);
+    let img__journey = images(cs.img.journey);
+    let img__sitemap = images(cs.img.sitemap);
+    let img__userflow = images(cs.img.userflow);
+    let img__wireframe = images(cs.img.wireframe);
+    let img__designsystem = button(cs.designsystem);
+    let img__proto = button(cs.proto);
+    let img__preview = images(cs.img.preview);
+    let img__final = images(cs.img.final);
+
+    let comp = '';
+
+    comp +=
+        `
+        ${mas}
+        ${intro}
+        ${img__introduction}
+        ${problem}
+        ${img__goal}
+        ${goal}
+        ${olympics}
+        ${img__olympic}
+        ${lpga}
+        ${img__lpga}
+        ${nfl}
+        ${img__nfl}
+        ${ur}
+        ${img__persona}
+        ${journey}
+        ${img__journey}
+        ${userflow}
+        ${img__sitemap}
+        ${img__userflow}
+        ${wireframe}
+        ${img__wireframe}
+        ${img__preview}
+        ${designsystem}
+        ${img__designsystem}
+        ${img__final}
+        ${proto}
+        ${img__proto}
+        ${lesson}
+        `
+    
+    ipcContainer.innerHTML = comp;
+}
+
+ipc(cs__ipc);
+nextProject(cs__ipc);
 
 
 //SALVATION ARMY
