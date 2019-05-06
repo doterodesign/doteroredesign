@@ -92,20 +92,20 @@ function setCurrentSection() {
             });
     })
 
-    lastSection = Array.from(document.querySelectorAll(`${location.hash} [data-project-name]`));
+
+    lastSection = Array.from(document.querySelectorAll(`${location.hash}[data-case] [data-project-name]`));
     lastSection.forEach(e => {
 
         hideButtons = new ScrollMagic.Scene({
             triggerElement: e,
-            triggerHook: '5',
+            triggerHook: '.3',
             reverse: true
         })
             .addTo(controller)
-    
-        
+
         hideButtons.on("enter", function () {
             $('.back-button, .next-button').hide();
-            // $('#current-section').html(`next project: ${$(e).data('project-name')}`)
+            $('#current-section').html(`next project: ${$(e).data('project-name')}`)
         });
         hideButtons.on("leave", function () {
             $('.back-button, .next-button').show();
@@ -120,6 +120,7 @@ function setCurrentSection() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    $('#current-section').empty();
     reset();
     setCurrentSection();
 });

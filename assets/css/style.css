@@ -98,6 +98,21 @@ table {
   color: #FFFFFF;
 }
 
+.ipc-blue {
+  background: #00549F;
+  color: #FFFFFF;
+}
+
+.ipc-blue-lighten {
+  background: #398FDB;
+  color: #FFFFFF;
+}
+
+.ipc-yellow {
+  background: #FFB100;
+  color: #FFFFFF;
+}
+
 .primary-white {
   background: #FFFFFF;
   color: #1e1e1e;
@@ -216,6 +231,7 @@ image-caption {
   font-size: 0.6rem;
   font-weight: 600;
   z-index: 2;
+  text-align: center;
   color: #3e3e3e;
 }
 
@@ -651,6 +667,7 @@ section {
   justify-self: flex-start;
 }
 #nav-container .info-container p:first-of-type {
+  max-width: 30rem;
   font-size: 1rem;
 }
 #nav-container .info-container p:last-of-type {

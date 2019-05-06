@@ -34,11 +34,12 @@ function navConstructor(p) {
         <section class="info-container">
             <h1>${p.intro}</h1>
             <p class='semi-bold'>${p.description}</p>
+            <p>Message me at <a href="mailto:doterodesign@gmail.com">doterodesign@gmail.com</a></p>
             <div id="social-media">
-                <a href="https://www.linkedin.com/in/dimitri-otero/" target="_blank" aria-label="Dimitri Otero Linkedin"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-linkedin"></use></svg></a>
-                <a href="https://www.behance.net/doterodesign" target="_blank" aria-label="Dimitri Otero Behance"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-behance"></use></svg></a>
-                <a href="https://www.instagram.com/doterodesign/" target="_blank" aria-label="Dimitri Otero Instagram"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-instagram"></use></svg></a>
-                <a href="https://www.pinterest.com/doterodesign/" target="_blank" aria-label="Dimitri Otero Pinterest"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-pinterest"></use></svg></a>
+                <a href="https://www.linkedin.com/in/dimitri-otero/" target="_blank" rel=”noreferrer” aria-label="Dimitri Otero Linkedin"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-linkedin"></use></svg></a>
+                <a href="https://www.behance.net/doterodesign" target="_blank" rel=”noreferrer” aria-label="Dimitri Otero Behance"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-behance"></use></svg></a>
+                <a href="https://www.instagram.com/doterodesign/" target="_blank" rel=”noreferrer” aria-label="Dimitri Otero Instagram"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-instagram"></use></svg></a>
+                <a href="https://www.pinterest.com/doterodesign/" target="_blank" rel=”noreferrer” aria-label="Dimitri Otero Pinterest"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-pinterest"></use></svg></a>
             </div>
             <h4 class="love">Hand-coded with love</h4>
         </section>
@@ -193,7 +194,7 @@ const prototype = (section) => {
 
 const button = (section) => {
     return `
-    <a href="${section.p}" class="text-button" target="_blank" rel=”noopener noreferrer”>${section.name}</a> 
+    <a href="${section.p}" class="text-button" target="_blank" rel=”noreferrer”>${section.name}</a> 
     `
 }
 
@@ -201,7 +202,7 @@ const button = (section) => {
 var nextProject = (ne) => {
     projectPreviews = Array.from(document.querySelectorAll('.project-preview'))
     let nextPro = projectPreviews.find(n => ne.next == $(n).attr('data-project-name'));
-    // $(nextPro).attr('data-section-name', `next project: ${$(nextPro).data('project-name')}`)
+    // $(nextPro).attr('data-section-name', `next p-roject: ${$(nextPro).data('project-name')}`)
     let cu = $(`#${ne.href}`);
     return $(nextPro).clone().appendTo(cu);
 }
