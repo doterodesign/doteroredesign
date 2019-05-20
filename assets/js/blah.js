@@ -24,7 +24,6 @@ const blah = (cs) => {
     //IMAGES
     let img__stat = images(cs.img.stat);
     let img__sketch = images(cs.img.sketch);
-    let img__sneakpeak = images(cs.img.sneakpeak);
     let img__cover = images(cs.img.cover);
     let img__prototype = prototype(cs.proto);
     let img__feature1 = images(cs.img.feature1);
@@ -41,7 +40,6 @@ const blah = (cs) => {
         ${img__cover}
         ${intro}
         ${img__sketch}
-        ${img__sneakpeak}
         ${user}
         ${img__stat}
         ${cr}
@@ -76,6 +74,7 @@ const cunyfirst = (cs) => {
     let user = content__article(cs.ur);
     let problem = content__article(cs.problem);
     let goal = content__article(cs.goal);
+    let sneakpeak = content__article(cs.sneakpeak);
     let userflow = content__article(cs.userflow);
     let wireframe = content__article(cs.wireframe);
     let navigation = content__article(cs.navigation);
@@ -84,12 +83,12 @@ const cunyfirst = (cs) => {
     let testing = content__article(cs.testing);
     let lesson = content__article(cs.lesson);
     let proto = content__article(cs.proto);
-    // let next = content__article(cs.nextProject);
 
 
     // IMAGES
     let img__introduction = images(cs.img.introduction);
     let img__sketch = images(cs.img.sketch);
+    let img__sneakpeak = images(cs.img.sneakpeak);
     let img__wireframe = images(cs.img.wireframe);
     let img__userflow = images(cs.img.userflow);
     let img__navigation = images(cs.img.navigation);
@@ -110,6 +109,8 @@ const cunyfirst = (cs) => {
         ${problem}
         ${img__sketch}
         ${goal}
+        ${sneakpeak}
+        ${img__sneakpeak}
         ${userflow}
         ${img__userflow}
         ${wireframe}

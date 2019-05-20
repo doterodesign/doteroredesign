@@ -73,9 +73,7 @@ function templateConstructor(p) {
     return projects;
 };
 
-var csVisual = templateConstructor(visual);
 homeContainer.innerHTML = templateConstructor(cases);
-homeContainer.insertAdjacentHTML('beforeend',csVisual);
 
 
 

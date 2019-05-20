@@ -75,13 +75,12 @@ function setCurrentSection() {
         current = new ScrollMagic.Scene({
             triggerElement: e,
             triggerHook: .3,
-            reverse: true
+            reverse: true,
+            offset: 0,
         })
 
             .addTo(controller)
-            // .addIndicators()
-        
-        
+            
             current.on("enter", function () {
                 let name = $(e).data('section-name');
                 $('#current-section').html(name);

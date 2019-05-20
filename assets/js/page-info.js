@@ -10,8 +10,8 @@ var gladwellContainer = document.getElementById('gladwell');
 //NAVIGATION INFORMATION
 var navigation =
 {
-    intro: '<h1>Hey, </br>I\'m Dimitri!</h1><h2>Product Designer</h2> <h2>Visual Designer</h2> <h2>Always Learning</h2>',
-    description: 'I work to help create clear user experiences and branding between companies and their clients.</br></br> With a background in product-design and photo-retouching, I aim to bring unique experiences with a focus on usability.',
+    intro: '<h1>Hey, </br>I\'m Dimitri!</h1><h2>UX | UI | Product Designer</h2> <h2>Visual Designer</h2> <h2>Always Learning</h2>',
+    description: 'I work to help create clear user experiences and branding between companies and their users.</br></br> With a background in product-design and photo-retouching, I aim to bring unique experiences with a focus on usability.',
     love: 'Coded with love',
     primaryButton: 'learn more',
     about: 'about',
@@ -43,7 +43,7 @@ var cases = [
 
         //CASE STUDY SETUP
         summary: {
-            overview: 'Being in and out of the CUNY System for almost a decade, I\'ve had the opportunity to experience a majority of their products (no, it\'s not a prison). The technologies of CUNYfirst have not changed in almost a decade (confirmed with faculty). </br></br> With technologies like React, Node.js, and Amazon Web Services, this product can be revamped and functional for students. This is my take on a mobile redesign of CUNYfirst.',
+            overview: 'The ed-tech space, although growing rapidly in educating people, hasn’t expanded far into the day-to-day applications that students and employees use like Asana or Monday has for business teams.</br></br> What if there was a universal application specifically made for students and staff of Universities or schools to better communication, resources, and functionality to all users?',
         
             problem: "More users handle everything on their phone and with no mobile capabilities, the product is harder to access. CUNYfirst is a distributed product to many Universities and as new tech appears, they might turn to more modern products as current users in the CUNY system continue to deal with a bug-ridden product.",
     
@@ -102,6 +102,21 @@ var cases = [
                     {
                         name: 'cunyfirst/cunyfirst-screen-sketches.png',
                         caption: 'Initial screen concept sketches',
+                    },
+                ]
+            },
+
+            sneakpeak: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'cunyfirst/cunyfirst-main-dashboard.png',
+                        caption: 'Sneakpeak: Desktop Main Dashboard',
+                    },
+                    {
+                        name: 'cunyfirst/cunyfirst-course-dashboard.png',
+                        caption: 'Sneakpeak: Desktop Course Dashboard',
                     },
                 ]
             },
@@ -211,7 +226,14 @@ var cases = [
         goal: {
             name: 'Goal',
             heading: 'Mobile Web App for CUNYfirst',
-            content: 'I decided to focus on the mobile version of the website. Many users know that CUNYfirst has an app but do not use it because of its limited functionality and inability to log in properly (rejects your account occasionally).</br></br> I plan to make the mobile version the goto for most student activities as more people have phones than computers.'
+            content: 'I decided to focus on the mobile version of the website. Many users know that CUNYfirst has an app but do not use it because of its limited functionality and inability to log in properly (rejects your account occasionally).</br></br> I plan to make the mobile version the goto for most student activities as more people have phones than computers.',
+        },
+
+        //SNEAKPEAK
+        sneakpeak: {
+            name: 'Sneakpeak',
+            heading: 'The desktop is not forgotten',
+            content: 'SNEAKPEAK! Before moving forward, I wanted to give a sneakpeak into the desktop version and show it\'s being worked on. Back to the study!',
         },
 
         //USER RESEARCH
@@ -318,18 +340,7 @@ var cases = [
         ],
     
 
-         img: {
-            
-            sneakpeak: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'cunyfirst/cunyfirst-main-dashboard.png',
-                        caption: 'Sneakpeak: Desktop Course Dashboard',
-                    },
-                ]
-            },
+        img: {
 
             cover: {
                 size: 'full',
@@ -358,7 +369,7 @@ var cases = [
             },
 
             sketch: {
-                size: 'sm',
+                size: 'md',
                 
                 "images": [
                     {
@@ -498,7 +509,7 @@ var cases = [
         href: 'ipc',
         name: 'Restructuring IPC News',
         platform: 'Web & Mobile',
-        role: 'Product Designer | UX/UI | A.I.',
+        role: 'Design System | UX/UI | A.I.',
         description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
         descColor: 'primary-white-text',
         image: 'paralympic/paralympic-landing-page.jpg',
@@ -783,7 +794,7 @@ var cases = [
          //HOMEPAGE SETUP
          project: 'Salvation Army',
          next: 'gladwell',
-         prev: 'cunyfirst',
+         prev: 'blah',
          href: 'salvationarmy',
          name: 'Rebranding Salvation Army',
          platform: 'Print and Web',
@@ -864,7 +875,7 @@ var cases = [
     {
          //HOMEPAGE SETUP
          project: 'Malcolm Gladwell',
-         next: 'blah',
+         next: 'cunyfirst',
          prev: 'salvationarmy',
          href: 'gladwell',
          name: 'Gladwell Cover Redesigns',
@@ -952,47 +963,3 @@ var cases = [
     },
 ]
 
-var visual = [
-
-
-    // {
-    //     //SAFE SEX CAMPAIGN
-    //      //HOMEPAGE SETUP
-    //      project: 'Safe Sex Campaign',
-    //      href: 'safesex',
-    //      name: 'Male Teen STD Awareness Posters',
-    //      platform: 'Print',
-    //      role: 'Designer | Art Direction',
-    //      description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
-    //      descColor: 'primary-black-text',
-    //      image: 'teen-safe-sex/hero-image.svg',
-    //      primaryColor: 'sex-yellow',
-    //      supportColor: 'sex-blue',
-    //      secondaryColor: 'sex-blue',
-    //      buttonColor: 'cuny-primary',
-         
-    //     //CASE STUDY SETUP
-    //     overview: 'I’ve always been interested in psychology and how the mind works. In junior high, my friend and I came up with a concept to share your thoughts without being identified (similar to Twitter). </br></br>Fast forward to today, I’ve taken a new approach on this concept with an offline app that allows you to share your thoughts without fear of the information being stored, manipulated, or read by someone else.',
-
-    //     problem: "Many people do not have an outlet to express their feelings without judgement. Although social media seems like a good option to vent, as we've seen in recent news, many of those thoughts are used against the people that expressed themselves in the past.",
-
-    //     goal: 'I set out to create a space where people can express themselves off of social media without feeling judged or having their words used against them.',
-
-    //     approach: 'I conducted interviews with family and friends about mental health and self-expression, as well as tested the concept to see how people felt about its practicality.',
-
-    //     solution: "With people expressing themselves in both written and spoken form, I created a vent and forget system that never stores or records anything a user says or does in the app. After venting, the user is less likely to remember what they were upset about and without reference to why, they move on faster.",
-
-    //     tools: [
-    //         'Illustrator',
-    //         'Indesign',
-    //         'Photoshop',
-    //     ],
-
-    //      //IMAGES
-
-
-    //     images: [
-    //         'teen-safe-sex/safesex',
-    //     ],
-    // },
-]
