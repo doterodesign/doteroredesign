@@ -1,10 +1,11 @@
 
 
-const cs__blah = cases[1];
-const cs__cunyfirst = cases[0];
-const cs__ipc = cases[2];
-const cs__salvationarmy = cases[3];
-const cs__gladwell = cases[4];
+const cs__blah = cases[2];
+const cs__cunyfirst = cases[1];
+const cs__cored = cases[0];
+const cs__ipc = cases[3];
+const cs__salvationarmy = cases[4];
+const cs__gladwell = cases[5];
 
 const blah = (cs) => {
 
@@ -131,6 +132,67 @@ const cunyfirst = (cs) => {
 
 cunyfirst(cs__cunyfirst);
 nextProject(cs__cunyfirst);
+
+
+//CORED
+
+const cored = (cs) => {
+
+    let mas = master(cs);
+    let intro = content__article(cs.introduction);
+    let user = content__article(cs.ur);
+    let problem = content__article(cs.problem);
+    let goal = content__article(cs.goal);
+    let sneakpeak = content__article(cs.sneakpeak);
+    let userflow = content__article(cs.userflow);
+    let wireframe = content__article(cs.wireframe);
+    let navigation = content__article(cs.navigation);
+    // let navigationFeedback = content__article(cs.navigation.feedback);
+    let dynamicContent = content__article(cs.dynamicContent);
+    let testing = content__article(cs.testing);
+    let lesson = content__article(cs.lesson);
+    let proto = content__article(cs.proto);
+
+
+    // IMAGES
+    let img__introduction = images(cs.img.introduction);
+    let img__sketch = images(cs.img.sketch);
+    let img__sneakpeak = images(cs.img.sneakpeak);
+    let img__wireframe = images(cs.img.wireframe);
+    let img__userflow = images(cs.img.userflow);
+    let img__navigation = images(cs.img.navigation);
+    let img__dynamic = images(cs.img.dynamic);
+    let img__testing = images(cs.img.testing);
+    let img__prototype = button(cs.proto);
+  
+
+
+    let comp = '';
+
+    comp +=
+        `
+        ${mas}
+        ${intro}
+        ${sneakpeak}
+        ${img__sneakpeak}
+        ${problem}
+        ${goal}
+        ${navigation}
+        ${img__navigation}
+        ${dynamicContent}
+        ${img__dynamic}
+        ${testing}
+        ${img__testing}
+        ${lesson}
+        ${proto}
+        ${img__prototype}
+        `
+       
+    coredContainer.innerHTML = comp;
+}
+
+cored(cs__cored);
+nextProject(cs__cored);
 
 
 //IPC (INTERNATIONAL PARALYMPIC COMMITTEE

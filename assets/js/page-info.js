@@ -3,6 +3,7 @@ var navContainer = document.getElementById('nav-container');
 var blahContainer = document.getElementById('blah');
 var homeContainer = document.getElementById('home');
 var cunyfirstContainer = document.getElementById('cunyfirst');
+var coredContainer = document.getElementById('cored');
 var ipcContainer = document.getElementById('ipc');
 var salvationarmyContainer = document.getElementById('salvationarmy');
 // var safeSexContainer = document.getElementById('safesex');
@@ -22,43 +23,45 @@ var navigation =
 // PREVIEW PROJECTS
 var cases = [
 
-    //CUNYFIRST
+    //CORED
     {
         //HOMEPAGE SETUP
-        project: 'CUNYfirst',
-        next: 'blah',
+        project: 'CorEd',
+        next: 'cunyfirst',
         prev: 'gladwell',
-        href: 'cunyfirst',
-        name: 'Rethinking Education Portals <br> (Update in Progress)',
+        href: 'cored',
+        name: 'Rethinking Education Portals',
         platform: 'Progressive Web App',
-        role: 'Product Designer | UX/UI | A.I.',
-        description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
-        descColor: 'primary-black-text',
-        image: 'cunyfirst/cunyfirst-login.gif',
-        primaryColor: 'cuny-primary',
-        supportColor: 'cuny-primary-light',
-        secondaryColor: 'cuny-primary-blue',
-        buttonColor: 'cuny-primary',
+        role: 'Product Designer | UX/UI | I.A. | Founder',
+        // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
+        descColor: 'primary-white-text',
+        image: 'cunyfirst/cored-login-mockup.png',
+        primaryColor: 'core-primary',
+        supportColor: 'core-primary',
+        secondaryColor: 'core-secondary',
+        buttonColor: 'core-primary',
 
 
         //CASE STUDY SETUP
         summary: {
-            overview: '**Due to updating this case study, some text may not directly align to the imagery. Stay tuned for the overhaul! <br><br>The ed-tech space, although growing rapidly in educating people, hasn’t expanded far into the day-to-day applications that students and employees use like Asana or Monday has for business teams.</br></br> What if there was a universal application specifically made for students and staff of Universities or schools to better communication, resources, and functionality to all users?',
+            overview: ' This is an update to my CUNYfirst case study. Some of the text is the same. Skim through that study to get the full picture of the project. </br></br>The ed-tech space, although growing rapidly in educating people, hasn’t expanded far into the day-to-day applications that students and employees use like Asana or Monday has for business teams.</br></br> What if there was a universal application specifically made for students and staff of Universities or schools to better communication, resources, and functionality to all users?',
         
-            problem: "More users handle everything on their phone and with no mobile capabilities, the product is harder to access. CUNYfirst is a distributed product to many Universities and as new tech appears, they might turn to more modern products as current users in the CUNY system continue to deal with a bug-ridden product.",
+            problem: 'Most education portals do not meet accessibility and responsive standards needed for modern applications. After observing platforms like CUNYfirst, Blackboard, and PupilPath, I found critical usability issues that made the application very hard to use on both the mobile and desktop platforms.',
     
-            goal: 'I chose to design a mobile version of CUNYfirst. The aim is to have all the functionality of the current site in mobile form with less navigation and clicks to achieve user goals.',
+            goal: 'Design and create a progressive web app that will allow complete flexibility in use for students and faculty while providing optimal, standardized accessibility practices. Currently on designing the student side of the portal.',
     
-            approach: 'I.A. Restructuring, auditing the current site, consolidating features, user research and testing, new approaches to mobile navigation, and a lot of trial and error.',
+            approach: 'I.A. Restructuring, auditing competitor applications, find core features, user research and testing, and a lot of trial and error.',
     
-            lesson: 'Not all practical/useful features are liked by users. Even though some features make the product easy to use, a user still may not like it because of how it looks or how much screen space it takes up.',
+            lesson: 'Iteration, competitor research, and user-testing is key to creating a product people would enjoy using.',
 
-            solution: "The user base is massive for this app so I took a gestureless approach to the web app. Through buttons and easily digestable information, the user doesn't feel overwhelmed by the amount of accessible content. I'm currently working on a more refined approach to the navigation.",
+            solution: "Found the core features needed for students and tested multiple types of navigation for quick and easy to use features. Faculty platform is in progress.",
         },
        
         tools: [
             'Figma',
             'Overflow',
+            'Protopie',
+            'Zero Height',
             'Illustrator',
             'Principle'
         ],
@@ -110,10 +113,6 @@ var cases = [
                 size: 'xl',
 
                 "images": [
-                    {
-                        name: 'cunyfirst/cunyfirst-course-dashboard.png',
-                        caption: 'Initial V1 Course Dashboard Design',
-                    },
                     {
                         name: 'cunyfirst/desktop-overview.png',
                         caption: 'Sneakpeak: Desktop Main Dashboard',
@@ -216,6 +215,272 @@ var cases = [
                         name: 'cunyfirst/planner_v5.png',
                         caption: 'V5 of Current Courses',
                     },
+                    {
+                        name: 'cunyfirst/planner_v6.png',
+                        caption: 'V6 of Current Courses',
+                    },
+                ]
+            },
+        },
+
+        //INTRODUCTION
+        introduction: {
+            name: 'introduction',
+            heading: 'Wrapping our heads around education portals',
+            content: 'Education portals are primary used to keep track of grades, apply for coures, distrubute assignments, and other basic academic activities. Platforms like Canvas provide great support for the K-12 Community but for college, there is currently no good solutions. Platforms for college need to handle finances, transcript transfers, account holds, and other features on top of the features mentioned previously.'
+        },
+
+        //PROBLEM
+        problem: {
+            name: 'Problems',
+            heading: 'Hitting the pain points',
+            content: 'In my CUNYfirst case study, I mentioned we\'d need to just restructure information architecture. After working on this for the past seven months, making sure the information is structured properly is important, but so is observing the different kinds of users. How do we create a platform that is consolidated while compensating for multiple types of users like students, faculty, part-time teachers and giving them different permissions?',
+        },
+
+        //GOAL
+        goal: {
+            name: 'Goal',
+            heading: 'Progressive Web App',
+            content: 'My current goal is to establish a design system that I\'m calling the CORE System that will allow for building complex, flexible components for each type of user of the platform. Initially this was being designed as a mobile app but upon researching progressive web apps and them becoming more popular, I\'d love to see if this can be a good use case for that technology.',
+        },
+
+        //SNEAKPEAK
+        sneakpeak: {
+            name: 'Sneakpeak',
+            heading: 'The desktop is not forgotten',
+            content: 'As this is still more about the mobile version of the site, I wanted to show my current exploration of the desktop version of the application.',
+        },
+
+        //USER RESEARCH
+        ur: {
+            name: 'User Research',
+            heading: 'Surrounded by users!',
+            content: 'I used CUNYfirst as my foundation for my feature choices as it is the platform I have the most experience with. Having used CUNY products and for almost 10 years and being surrounded by users of other education applications, getting feedback on different platforms was fairly easy.</br></br> With casual interviews and observing students and staff, I felt confident to move forward with planning out the I.A. and userflows.',
+        },
+
+        //USERFLOWS
+        userflow: {
+            name: 'Userflows',
+            heading: 'Focus on userflows = Clear directions',
+            content: 'Going through all of CUNYfirst and recording each function a user can perform took forever! However, after examining, consolidating, and elimating duplicating functionality for three of the primary screens (finances, academics, courses), I created foundational userflows for those categories.</br></br> They gave me enough of the information architecture to begin producing wireframes for the primary layouts.'
+        },
+
+        //WIREFRAMES
+        wireframe: {
+            name: 'Wireframes',
+            heading: 'Defining the foundations (low-fi wires)',
+            content: 'Sketching these screens were/are challenging because my goal was to reduce the amount of clicks from 1-15 clicks to 1-5 clicks for any given action. Most actions would fall within 1-2 clicks.</br></br> Consolidating the information in a way that allowed for minimal actions required the information for each category to be shown all at once when that category is displayed. Otherwise, users may get annoyed or lost in a maze of menus and dropdowns, eventually disregarding the app.',
+        },
+
+        //NAVIGATION
+        navigation: {
+            name: 'Nav Design',
+            heading: 'Testing different types of navigation',
+            content: 'I tested button-only, tabular, dropdown, and iconic navigation and decided a combination of all three depending on the type of infomration being accessed. With button-only navigation, users felt the space was cluttered but functional. I have not gotten a large amount of feedback on the tabular and dropdown navigation but will be testing soon for those observations!',
+        },
+
+        //DYNAMIC CONTENT
+        dynamicContent: {
+            name: 'Dynamic Content',
+            heading: 'Componentization and manipulation',
+            content: 'Reloading all the content everytime we click a button drives everyone crazy. This application is a perfect use case for component-driven design. It would allow developers and designers to build flexible units and combine them to create complex design systems and allowing for a fast turnaround after user testing.</br></br>',
+        },
+
+        //USER TESTING
+        testing: {
+            name: 'User Testing',
+            heading: 'Test and Repeat',
+            content: 'Initial designs are never perfect and this project is no exception. I\'m currently on my fifth version of testing.</br></br> Testing is part of the process so designs are bound to change. The navigation, consolidation of information, and overall aesthetic are still improving, but the design has come a long way since the initial designs.',
+        },
+
+        //LESSON LEARNED
+        lesson: {
+            name: 'Lessons Learned',
+            heading: 'Branding, navigating complex interfaces, and user testing',
+            content: 'Designing components is difficult. I learned that a component needs the perfect balance of flexibility of uses with having specific uses. Too abstracted and the component can become overwhelming. Too focused and we may end up repeating code since two components can use the same features. As the project progresses, I can\'t wait to learn more about the relationship between code, design, and how to structure them to work cohesively.',
+        },
+
+        //PROTOTYPE
+        proto: {
+            name: 'Prototype',
+            heading: 'Brief walkthrough',
+            content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function.',
+            p: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/In-progress?node-id=1%3A4886&viewport=1994%2C1387%2C0.31970152258872986&scaling=min-zoom',
+
+        },
+    },
+
+    //CUNYFIRST
+    {
+        //HOMEPAGE SETUP
+        project: 'CUNYfirst',
+        next: 'blah',
+        prev: 'cored',
+        href: 'cunyfirst',
+        name: 'Rethinking CUNYfirst',
+        platform: 'Mobile',
+        role: 'Product Designer | UX/UI | I.A.',
+        description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
+        descColor: 'primary-black-text',
+        image: 'cunyfirst/cunyfirst-login.gif',
+        primaryColor: 'cuny-primary',
+        supportColor: 'cuny-primary-light',
+        secondaryColor: 'cuny-primary-blue',
+        buttonColor: 'cuny-primary',
+
+
+        //CASE STUDY SETUP
+        summary: {
+            overview: 'The ed-tech space, although growing rapidly in educating people, hasn’t expanded far into the day-to-day applications that students and employees use like Asana or Monday has for business teams.</br></br> What if there was a universal application specifically made for students and staff of Universities or schools to better communication, resources, and functionality to all users?',
+        
+            problem: "More users handle everything on their phone and with no mobile capabilities, the product is harder to access. CUNYfirst is a distributed product to many Universities and as new tech appears, they might turn to more modern products as current users in the CUNY system continue to deal with a bug-ridden product.",
+    
+            goal: 'I chose to design a mobile version of CUNYfirst. The aim is to have all the functionality of the current site in mobile form with less navigation and clicks to achieve user goals.',
+    
+            approach: 'I.A. Restructuring, auditing the current site, consolidating features, user research and testing, new approaches to mobile navigation, and a lot of trial and error.',
+    
+            lesson: 'Not all practical/useful features are liked by users. Even though some features make the product easy to use, a user still may not like it because of how it looks or how much screen space it takes up.',
+
+            solution: "The user base is massive for this app so I took a gestureless approach to the web app. Through buttons and easily digestable information, the user doesn't feel overwhelmed by the amount of accessible content. I'm currently working on a more refined approach to the navigation.",
+        },
+       
+        tools: [
+            'Figma',
+            'Overflow',
+            'Illustrator',
+            'Principle'
+        ],
+
+        img: {
+
+            introduction: {
+                size: 'sm',
+                
+                "images": [
+                    {
+                        name: 'cunyfirst/current.png',
+                        caption: 'Current web (desktop) CUNYfirst',
+                    },
+                    {
+                        name: 'cunyfirst/current-mobile.png',
+                        caption: 'Current web (mobile) CUNYfirst',
+                    },
+                ]
+            },
+
+            sketch: {
+                size: 'md',
+
+                "images": [
+                    {
+                        name: 'cunyfirst/cunyfirst-screen-sketches.png',
+                        caption: 'Initial screen concept sketches',
+                    },
+                ]
+            },
+
+            sneakpeak: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'cunyfirst/cunyfirst-course-dashboard.png',
+                        caption: 'Initial V1 Course Dashboard Design',
+                    },
+                ]
+            },
+
+            userflow: {
+                size: 'md',
+
+                "images": [
+                    {
+                        name: 'cunyfirst/cunyfirst-sitemap-sketch.png',
+                        caption: 'Planning the sitemap and userflows',
+                    },
+                    {
+                        name: 'cunyfirst/finances-flowchart.png',
+                        caption: '',
+                    },
+                    {
+                        name: 'cunyfirst/courses-flowchart.png',
+                        caption: '',
+                    },
+                    {
+                        name: 'cunyfirst/academics-flowchart.png',
+                        caption: '',
+                    },
+                ]
+            },
+
+            wireframe: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'cunyfirst/wireframe-1.svg',
+                        caption: 'Empty state, courses state, information state, alert state',
+                    },
+                    {
+                        name: 'cunyfirst/wireframe-2.svg',
+                        caption: 'Secondary courses state, information state 2, courses state 2',
+                    },
+                ]
+            },
+
+            navigation: {
+                size: 'sm',
+
+                "images": [
+                    {
+                        name: 'cunyfirst/navigation-v1.png',
+                        caption: 'Button Navigation',
+                    },
+                ]
+            },
+
+            dynamic: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'cunyfirst/overview-screens-v1.png',
+                        caption: 'Primary screen samples',
+                    },
+                    {
+                        name: 'cunyfirst/extra-screens-v1.png',
+                        caption: 'More screen samples',
+                    },
+                ]
+            },
+            testing: {
+                size: 'xs',
+
+                "images": [
+                    {
+                        name: 'cunyfirst/planner_v1.png',
+                        caption: 'V1 of Current Courses',
+                    },
+                    {
+                        name: 'cunyfirst/planner_v2.png',
+                        caption: 'V2 of Current Courses',
+                    },
+                    {
+                        name: 'cunyfirst/planner_v3.png',
+                        caption: 'V3 of Current Courses',
+                    },
+                    {
+                        name: 'cunyfirst/planner_v4.png',
+                        caption: 'V4 of Current Courses',
+                    },
+                    {
+                        name: 'cunyfirst/planner_v5.png',
+                        caption: 'V5 of Current Courses',
+                    },
+                    {
+                        name: 'cunyfirst/planner_v6.png',
+                        caption: 'V6 of Current Courses',
+                    },
                 ]
             },
         },
@@ -306,7 +571,7 @@ var cases = [
         proto: {
             name: 'Prototype',
             heading: 'Brief walkthrough',
-            content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function. <br></br> P.S. I\'m working on the desktop version along side the mobile and it\'s looking good!',
+            content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function. <br></br> P.S. I\'m now working on the desktop version along side the mobile and it\'s looking good!',
             p: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/In-progress?node-id=1%3A4886&viewport=1994%2C1387%2C0.31970152258872986&scaling=min-zoom',
 
         },
@@ -887,7 +1152,7 @@ var cases = [
     {
          //HOMEPAGE SETUP
          project: 'Malcolm Gladwell',
-         next: 'cunyfirst',
+         next: 'cored',
          prev: 'salvationarmy',
          href: 'gladwell',
          name: 'Gladwell Cover Redesigns',

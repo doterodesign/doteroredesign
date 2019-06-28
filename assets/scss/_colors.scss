@@ -13,6 +13,8 @@ $cuny-primary: #FFB81C;
 $cuny-secondary: #FFD780;
 $cuny-primary-light: rgb(255, 199, 77);
 $cuny-primary-blue: #1D3A83;
+$core-secondary: #0E5390;
+$core-primary: #1077D1;
 $salvation-primary-red: #E41E2E;
 $salvation-secondary: rgb(9,16,6);
 $sex-yellow: #FFF22D;
@@ -42,6 +44,15 @@ $ipc_yellow: #FFB100;
 }
 .blah-secondary-text{
     color: $blah-secondary;
+}
+
+.core-primary {
+    background: $core-primary;
+    color: $primary-white;
+}
+.core-secondary {
+    background: $core-secondary;
+    color: $primary-white;
 }
 
 .cuny-primary {

@@ -70,6 +70,16 @@ table {
   color: #05A8FF;
 }
 
+.core-primary {
+  background: #1077D1;
+  color: #FFFFFF;
+}
+
+.core-secondary {
+  background: #0E5390;
+  color: #FFFFFF;
+}
+
 .cuny-primary {
   background: #FFB81C;
   color: #1e1e1e;
