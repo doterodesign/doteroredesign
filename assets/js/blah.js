@@ -39,7 +39,6 @@ const blah = (cs) => {
         ${mas}
         ${img__cover}
         ${intro}
-        ${img__sketch}
         ${user}
         ${img__stat}
         ${cr}

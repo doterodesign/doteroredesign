@@ -202,7 +202,7 @@ a:hover {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   h3 {
@@ -579,7 +579,7 @@ section {
   #nav-container nav .menu-nav #main-logo {
     grid-column: 2/3;
     justify-self: center;
-    margin-right: 0px;
+    margin-right: -1rem;
   }
 }
 #nav-container nav.active {
@@ -590,6 +590,7 @@ section {
   grid-template-columns: 1fr 1fr;
 }
 #nav-container nav.active .menu-nav #main-logo {
+  width: 4rem;
   display: block;
   justify-self: end;
   margin-right: 2rem;
@@ -789,7 +790,7 @@ section {
   #nav-container nav .menu-nav #main-logo {
     grid-column: 2/3;
     justify-self: end;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 }
 
@@ -997,9 +998,14 @@ a .icon {
   .content__block-list {
     grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     grid-column-gap: 3rem;
+    max-width: 1384px;
   }
   .content__block-list p {
     max-width: 100%;
+    font-size: 1.15rem;
+  }
+  .content__block-list h4 {
+    font-size: 1rem;
   }
 }
 .content__block .section-name {
@@ -1075,7 +1081,7 @@ a .icon {
 @media screen and (min-width: 1384px) {
   .content__article .section-name,
 .content__article title-caption {
-    grid-column: 4/span 4;
+    grid-column: 2/span 8;
   }
 }
 .content__article title-caption {
@@ -1094,7 +1100,8 @@ a .icon {
 }
 @media screen and (min-width: 1384px) {
   .content__article p {
-    grid-column: 4/span 4;
+    grid-column: 2/span 8;
+    font-size: 1.15rem;
   }
 }
 
@@ -1166,6 +1173,8 @@ img {
 }
 .image__container-md {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 30rem));
+  max-width: 1384px;
+  justify-self: center;
 }
 .image__container-lg {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 40rem));

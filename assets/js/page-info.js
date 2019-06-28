@@ -29,8 +29,8 @@ var cases = [
         next: 'blah',
         prev: 'gladwell',
         href: 'cunyfirst',
-        name: 'Rethinking CUNYfirst',
-        platform: 'Mobile-Only',
+        name: 'Rethinking Education Portals <br> (Update in Progress)',
+        platform: 'Progressive Web App',
         role: 'Product Designer | UX/UI | A.I.',
         description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
         descColor: 'primary-black-text',
@@ -43,7 +43,7 @@ var cases = [
 
         //CASE STUDY SETUP
         summary: {
-            overview: 'The ed-tech space, although growing rapidly in educating people, hasn’t expanded far into the day-to-day applications that students and employees use like Asana or Monday has for business teams.</br></br> What if there was a universal application specifically made for students and staff of Universities or schools to better communication, resources, and functionality to all users?',
+            overview: '**Due to updating this case study, some text may not directly align to the imagery. Stay tuned for the overhaul! <br><br>The ed-tech space, although growing rapidly in educating people, hasn’t expanded far into the day-to-day applications that students and employees use like Asana or Monday has for business teams.</br></br> What if there was a universal application specifically made for students and staff of Universities or schools to better communication, resources, and functionality to all users?',
         
             problem: "More users handle everything on their phone and with no mobile capabilities, the product is harder to access. CUNYfirst is a distributed product to many Universities and as new tech appears, they might turn to more modern products as current users in the CUNY system continue to deal with a bug-ridden product.",
     
@@ -111,12 +111,20 @@ var cases = [
 
                 "images": [
                     {
-                        name: 'cunyfirst/cunyfirst-main-dashboard.png',
+                        name: 'cunyfirst/cunyfirst-course-dashboard.png',
+                        caption: 'Initial V1 Course Dashboard Design',
+                    },
+                    {
+                        name: 'cunyfirst/desktop-overview.png',
                         caption: 'Sneakpeak: Desktop Main Dashboard',
                     },
                     {
-                        name: 'cunyfirst/cunyfirst-course-dashboard.png',
-                        caption: 'Sneakpeak: Desktop Course Dashboard',
+                        name: 'cunyfirst/desktop-course-active.png',
+                        caption: 'Sneakpeak: Desktop Active Course',
+                    },
+                    {
+                        name: 'cunyfirst/desktop-transcript-overview.png',
+                        caption: 'Sneakpeak: Desktop Transcript Overview',
                     },
                 ]
             },
@@ -160,12 +168,12 @@ var cases = [
             },
 
             navigation: {
-                size: 'sm',
+                size: 'md',
 
                 "images": [
                     {
                         name: 'cunyfirst/navigation.png',
-                        caption: 'Primary and secondary selection buttons',
+                        caption: 'Main Navigation Points',
                     },
                 ]
             },
@@ -175,12 +183,12 @@ var cases = [
 
                 "images": [
                     {
-                        name: 'cunyfirst/extra-screens.png',
-                        caption: 'Primary and secondary selection buttons',
+                        name: 'cunyfirst/overview-screens.png',
+                        caption: 'Primary screen samples',
                     },
                     {
-                        name: 'cunyfirst/selections.png',
-                        caption: 'Primary screen samples',
+                        name: 'cunyfirst/extra-screens.png',
+                        caption: 'Primary and secondary selection buttons',
                     },
                 ]
             },
@@ -190,19 +198,23 @@ var cases = [
                 "images": [
                     {
                         name: 'cunyfirst/planner_v1.png',
-                        caption: 'V1 of planner/courses screen',
+                        caption: 'V1 of Current Courses',
                     },
                     {
                         name: 'cunyfirst/planner_v2.png',
-                        caption: 'V2 of planner/courses screen',
+                        caption: 'V2 of Current Courses',
                     },
                     {
                         name: 'cunyfirst/planner_v3.png',
-                        caption: 'V3 of planner/courses screen',
+                        caption: 'V3 of Current Courses',
                     },
                     {
                         name: 'cunyfirst/planner_v4.png',
-                        caption: 'V4 of planner/courses screen',
+                        caption: 'V4 of Current Courses',
+                    },
+                    {
+                        name: 'cunyfirst/planner_v5.png',
+                        caption: 'V5 of Current Courses',
                     },
                 ]
             },
@@ -294,8 +306,8 @@ var cases = [
         proto: {
             name: 'Prototype',
             heading: 'Brief walkthrough',
-            content: 'Take a walk through the screens I\'ve completed. Not everything can be navigated, but it will give a general idea of how the app may function.',
-            p: 'https://www.figma.com/proto/dhwt35X2dmleBEXl4F6QAj0U/CUNYFIRST-sample-ifgma?node-id=138%3A14936&viewport=562%2C-660%2C0.25&scaling=scale-down',
+            content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function. <br></br> P.S. I\'m working on the desktop version along side the mobile and it\'s looking good!',
+            p: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/In-progress?node-id=1%3A4886&viewport=1994%2C1387%2C0.31970152258872986&scaling=min-zoom',
 
         },
     },
@@ -776,7 +788,7 @@ var cases = [
             name: 'Prototype',
             heading: 'Brief walkthrough of desktop/mobile homepage & news',
             content: 'I incorporated the dropdowns and points of contact a user encounters while searching for content, specifically news. You\'ll be able to navigate the hompage and linking out to an article.',
-            p: 'https://www.figma.com/proto/dhwt35X2dmleBEXl4F6QAj0U/CUNYFIRST-sample-ifgma?node-id=138%3A14936&viewport=562%2C-660%2C0.25&scaling=scale-down',
+            p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=92%3A2271&viewport=174%2C274%2C0.0853344202041626&scaling=scale-down',
 
         },
 
@@ -794,7 +806,7 @@ var cases = [
          //HOMEPAGE SETUP
          project: 'Salvation Army',
          next: 'gladwell',
-         prev: 'blah',
+         prev: 'ipc',
          href: 'salvationarmy',
          name: 'Rebranding Salvation Army',
          platform: 'Print and Web',

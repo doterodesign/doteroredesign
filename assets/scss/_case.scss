@@ -55,10 +55,16 @@
             & {
                 grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
                 grid-column-gap: 3rem;
+                max-width: $breakpoint-lg;
             }
 
             p {
                 max-width: 100%;
+                font-size: 1.15rem;
+            }
+
+            h4 {
+                font-size: 1rem;
             }
         }
     }
@@ -143,7 +149,7 @@
         }
 
         @media screen and (min-width: $breakpoint-lg) {
-            grid-column: 4 / span 4;
+            grid-column: 2 / span 8;
         }
     }
 
@@ -162,7 +168,8 @@
         }
 
         @media screen and (min-width: $breakpoint-lg) {
-            grid-column: 4 / span 4;
+            grid-column: 2 / span 8;
+            font-size: 1.15rem;
         }
     }
 }
