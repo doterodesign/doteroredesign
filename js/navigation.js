@@ -64,6 +64,11 @@ function progressBar() {
     document.getElementById("myBar").style.width = scrolled + "%";
 }
 
+window.addEventListener('DOMContentLoaded', function () {
+    $('#current-section').empty();
+    reset();
+    setCurrentSection();
+}, false);
 
 function setCurrentSection() {
     controller = controller.destroy(true);
@@ -75,13 +80,12 @@ function setCurrentSection() {
         current = new ScrollMagic.Scene({
             triggerElement: e,
             triggerHook: .3,
-            reverse: true
+            reverse: true,
+            offset: 0,
         })
 
             .addTo(controller)
-            // .addIndicators()
-        
-        
+            
             current.on("enter", function () {
                 let name = $(e).data('section-name');
                 $('#current-section').html(name);
@@ -119,15 +123,6 @@ function setCurrentSection() {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    $('#current-section').empty();
-    reset();
-    setCurrentSection();
-});
-
-
-
-
 //EVENT LISTNERS
 
 //ON SCROLL MOVE PROGRESS BAR
@@ -141,14 +136,23 @@ window.addEventListener('scroll', function () {
 document.addEventListener('click', function (e) {
     //IF TARGET IS CLASS BUTTON, GET DATA ATTRIBUTE HREF
     target = e.target;
-    if (target.matches('.button')) {
+    e.stopPropagation();
+    if (target.matches('.case') || target.matches('.case__image') || target.matches('.case__content') || target.matches('.button')) {
         location.hash = target.getAttribute('data-href');
+        console.log(location.hash)
     }
 
     //IF TARGET IS MAIN-LOGO, LOCATION.HASH = #HOME
     if (target.matches('#main-logo')) {
         location.hash = "#home";
     }
+
+    //SCROLL BACK TO TOP OF PAGE
+    if (target.matches('.top-button')) {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    }
+
 
 
     
@@ -178,5 +182,3 @@ window.addEventListener('hashchange', function () {
     setCurrentSection() 
     reset();
 });
-
-

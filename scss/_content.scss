@@ -62,7 +62,12 @@
 
         #content-container {
             width: calc(100% - #{$intro-width});
-            margin-left: $intro-width;
+            margin-left: calc(#{$intro-width} + 20px);
+            border-left: 2px solid $cr-neutral-100;
+        }
+
+        #nav-container.cs-active + #content-container {
+            border-left: none;
         }
 
         .project-preview {
@@ -81,4 +86,72 @@
 
     .noScroll {
         overflow: hidden;
+    }
+
+
+
+
+    #preview-content {
+        position: relative;
+        display: grid;
+        width: inherit;
+        height: auto;
+        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+        grid-column-gap: 1rem;
+        grid-row-gap: 2.5rem;
+        padding: 1rem 1rem;
+
+        @media screen and (min-width: $breakpoint) {
+            & {
+                grid-column-gap: 4rem;
+                padding: 1rem 4rem;
+                grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+            }
+         }
+
+        & section {
+            height: auto;
+        }
+        
+        & .case {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            border-bottom: 2px solid #aaa;
+            transition: transform .2s ease-in-out;
+
+            &:nth-last-of-type(n - 1) {
+                border-bottom: 2px solid $cr-blue-base;
+            }
+            &:nth-last-of-type(2n) {
+                border-bottom: 2px solid $cr-yellow-base;
+            }
+            &:nth-last-of-type(3n) {
+                border-bottom: 2px solid $cr-red-base;
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(.95);
+            }
+          
+          &__image {
+           height: 15rem;
+           width: 100%;
+          } 
+          
+          &__content {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            margin: 1rem 0rem;
+            align-content: space-between;
+
+            .content__description {
+                margin: 2rem 0rem;
+            }
+          }
+            
+          &__name {
+            align-self: end;
+          }
+        }
     }

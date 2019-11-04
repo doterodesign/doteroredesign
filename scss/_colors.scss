@@ -13,6 +13,8 @@ $cuny-primary: #FFB81C;
 $cuny-secondary: #FFD780;
 $cuny-primary-light: rgb(255, 199, 77);
 $cuny-primary-blue: #1D3A83;
+$core-secondary: #0E5390;
+$core-primary: #1077D1;
 $salvation-primary-red: #E41E2E;
 $salvation-secondary: rgb(9,16,6);
 $sex-yellow: #FFF22D;
@@ -42,6 +44,15 @@ $ipc_yellow: #FFB100;
 }
 .blah-secondary-text{
     color: $blah-secondary;
+}
+
+.core-primary {
+    background: $core-primary;
+    color: $primary-white;
+}
+.core-secondary {
+    background: $core-secondary;
+    color: $primary-white;
 }
 
 .cuny-primary {
@@ -124,3 +135,35 @@ $ipc_yellow: #FFB100;
 .sex-red-text {
     color: $sex-red;
 }
+
+//BASE COLORS
+$cr-blue-base: #455FA8;
+$cr-yellow-base: #EAB331;
+$cr-red-base: #D13137;
+$cr-black-base: #111214;
+$cr-white-base: #FFFFFF;
+$cr-neutral-800: #3D4148;
+$cr-neutral-700: #535861;
+$cr-neutral-600: #696F7A;
+$cr-neutral-500: #808692;
+$cr-neutral-400: #9A9EA8;
+$cr-neutral-300: #B3B7BE;
+$cr-neutral-200: #CCCFD4;
+$cr-neutral-100: #E6E7E9;
+
+
+//COLOR OVERIDE STYLES
+.cr-blue-base{color: $cr-blue-base}
+.cr-yellow-base{color: $cr-yellow-base}
+.cr-red-base{color: $cr-red-base}
+.cr-white-base{color: $cr-white-base}
+.cr-black-base{color: $cr-black-base}
+.cr-neutral-700 {color: $cr-neutral-700};
+.cr-neutral-800 {color: $cr-neutral-800};
+.cr-neutral-600 {color: $cr-neutral-600};
+.cr-neutral-500 {color: $cr-neutral-500};
+.cr-neutral-400 {color: $cr-neutral-400};
+.cr-neutral-300 {color: $cr-neutral-300};
+.cr-neutral-500 {color: $cr-neutral-500};
+.cr-neutral-200 {color: $cr-neutral-200};
+.cr-neutral-100 {color: $cr-neutral-100};

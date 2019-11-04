@@ -1,18 +1,36 @@
 .cs-container {
     display: grid;
-    grid-row-gap: 6rem;
+    grid-row-gap: 3rem;
     grid-template-columns: 100vw;
     margin-bottom: 4rem;
     min-height: -webkit-max-content;
     min-height: -moz-max-content;
     min-height: max-content;
+
+    @media screen and (min-width: $breakpoint-sm) {
+    & {
+        margin-bottom: 8rem;
+        grid-row-gap: 6rem; 
+       }
+    }
+
+    @media screen and (min-width: $breakpoint) {
+        & {
+            grid-row-gap: 6rem; 
+       }
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+        & {
+            grid-row-gap: 9rem; 
+       }
+    }
 }
 
 
 %content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-    grid-column-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-column-gap: 6rem;
 }
 
 
@@ -23,11 +41,12 @@
     margin: 0 auto;
 
     &-list {
-        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-        display: grid;
-        padding: 0 5%;
-        grid-row-gap: 3rem;
-        grid-column-gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        display:grid;
+        padding:0 2rem;
+        grid-column-gap: 1rem;
+        flex-flow: column wrap;
+       
 
         h4 {
             margin-bottom: .5rem;
@@ -43,7 +62,7 @@
 
         @media screen and (min-width: $breakpoint-md) {
             & {
-                grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+                grid-template-columns: 1fr 1fr 1fr;
             }
 
             p {
@@ -55,10 +74,16 @@
             & {
                 grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
                 grid-column-gap: 3rem;
+                max-width: $breakpoint-lg;
             }
 
             p {
                 max-width: 100%;
+                font-size: 1.15rem;
+            }
+
+            h4 {
+                font-size: 1rem;
             }
         }
     }
@@ -108,6 +133,9 @@
     @extend %content;
     grid-column-gap: 0px;
     padding: 0;
+    // max-height: calc(100vh - ( #{$nav-height} + 160px));
+    margin: 0;
+    height: 70vh;
 
     & .image__container-lg {
         max-height: 100vh;
@@ -115,7 +143,6 @@
 
     @media screen and (min-width: $breakpoint) {
         & {
-            max-height: calc(100vh - #{$nav-height});
 
             & .image__container-lg {
                 max-height: 100%;
@@ -132,18 +159,18 @@
 
 
     grid-column-gap: 0;
-    grid-row-gap: .5rem;
+    // grid-row-gap: .5rem;
 
     .section-name,
     title-caption {
         grid-column: 2 / span 8;
 
         @media screen and (min-width: $breakpoint) {
-            grid-column: 3 / span 5;
+            grid-column: 3 / span 6;
         }
 
         @media screen and (min-width: $breakpoint-lg) {
-            grid-column: 4 / span 4;
+            grid-column: 2 / span 8;
         }
     }
 
@@ -154,7 +181,7 @@
 
     p {
         grid-column: 2 / span 8;
-        font-size: 1.1rem;
+        // font-size: 1.1rem;
         line-height: 150%;
 
         @media screen and (min-width: $breakpoint) {
@@ -162,14 +189,15 @@
         }
 
         @media screen and (min-width: $breakpoint-lg) {
-            grid-column: 4 / span 4;
+            grid-column: 2 / span 8;
+            font-size: 1.15rem;
         }
     }
 }
 
-.content__article+.content__block {
-    margin: 4rem 0;
-}
+// .content__article+.content__block {
+//     margin: 4rem 0;
+// }
 
 .prototype {
     &>* {

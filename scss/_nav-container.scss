@@ -1,16 +1,24 @@
 //NAV CONTAINER
-$intro-width: 40%;
+$intro-width: 440px;
 $nav-height: 60px;
 
 #nav-container {
     display: grid;
     width: 100vw;
+    height: 90vh;
     grid-template-columns: 1fr;
     grid-template-rows: 60px minmax(-webkit-max-content, 1fr);
     grid-template-rows: 60px minmax(max-content, 1fr);
     -ms-flex-line-pack: start;
     align-content: start;
     overflow: hidden;
+
+    @media screen and (min-width: $breakpoint) {
+        & {
+            height: 100vh;
+            max-height: 100vh;
+        }
+    }
 
 
     & nav {
@@ -62,19 +70,20 @@ $nav-height: 60px;
                 -ms-flex-align: center;
                 align-items: center;
                 z-index: 1;
-                grid-column: 2 / -1;
-                justify-self: end;
-                margin-right: 2rem;
+                grid-column: 1 / 2;
+                justify-self: start;
+                margin-left: 1rem;
             }
 
-            @media screen and (min-width: $breakpoint) {
+            @media screen and (min-width: $breakpoint-md) {
                 & {
                     grid-template-columns: 1fr 1fr 1fr;
 
                     & #main-logo {
-                        grid-column: 2 / 3;
-                        justify-self: center;
-                        margin-right: 0px;
+                        grid-column: 1 / 2;
+                        justify-self: start;
+                        
+                        margin-left: 1rem;
                     }
                 }
             }
@@ -89,21 +98,21 @@ $nav-height: 60px;
                 // width: 100vw;
 
                 & #main-logo {
+                    // width: 4rem;
                     display: block;
-                    justify-self: end;
-                    margin-right: 2rem;
+                    // justify-self: end;
+                    // margin-right: 2rem;
                 }
             }
 
-            @media screen and (min-width: $breakpoint) {
+            @media screen and (min-width: $breakpoint-sm) {
                 & {
-
                     & .menu-nav {
                         width: $intro-width;
                         position: fixed;
 
                         & #main-logo {
-                            grid-column: 2 / 3;
+                            grid-column: 2 / 2;
                             justify-self: end;
                             margin-right: 2rem;
                         }
@@ -159,14 +168,16 @@ $nav-height: 60px;
     }
 
     & .info-container {
-        display: grid;
-        grid-row: 2 / -1;
+        display: flex;
+        grid-row: 2/-1;
         margin: 0;
-        padding: 0rem 2rem 2rem 2rem;
+        padding: 0rem 2rem 0rem 1rem;
         -ms-flex-line-pack: center;
         align-content: center;
-        grid-row-gap: .5rem;
-        min-height: 80vh;
+        grid-row-gap: 0.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 2px solid $cr-neutral-100;
 
         & h1 {
             // @extend %font-secondary;
@@ -176,8 +187,6 @@ $nav-height: 60px;
         }
 
         & h2 {
-            font-size: 1.2rem;
-            font-weight: 800;
             color: $primary-grey;
 
             &:last-of-type {
@@ -236,7 +245,9 @@ $nav-height: 60px;
 
         @media screen and (min-width: $breakpoint) {
             & {
-                padding: 2rem;
+                // padding: 1rem 2rem;
+                border-bottom: none;
+
 
                 & h1 {
                     font-size: 2.8rem;
@@ -264,7 +275,7 @@ $nav-height: 60px;
                         display: block;
                         grid-column: 1 / 2;
                         justify-self: start;
-                        margin-left: 2rem;
+                        margin-left: 1.5rem;
                     }
                 }
 
@@ -284,7 +295,7 @@ $nav-height: 60px;
 
                         & #main-logo {
                             display: block;
-                            grid-column: 2 / 3;
+                            grid-column: 2 / 2;
                             justify-self: center;
                             margin-right: 0;
                             margin-left: 0;
@@ -297,9 +308,9 @@ $nav-height: 60px;
 
                             & #main-logo {
                                 display: block;
-                                grid-column: 2 / 3;
-                                justify-self: end;
-                                margin-right: 2rem;
+                                grid-column: 1 / 2;
+                                justify-self: start;
+                                margin-left: 2rem;
                             }
                         }
                     }
@@ -321,7 +332,7 @@ $nav-height: 60px;
             width: 100%;
         }
 
-        @media screen and (min-width: $breakpoint-sm) {
+        @media screen and (min-width: $breakpoint-md) {
             & nav #main-logo {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -355,11 +366,11 @@ $nav-height: 60px;
             & .menu-nav {
                 grid-template-columns: 1fr 1fr;
 
-                & #main-logo {
-                    grid-column: 2 / 3;
-                    justify-self: end;
-                    margin-right: 2rem;
-                }
+                // & #main-logo {
+                //     grid-column: 2 / 3;
+                //     justify-self: end;
+                //     margin-right: 1rem;
+                // }
             }
         }
     }
@@ -369,12 +380,26 @@ $nav-height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    grid-row-gap: 1rem;
     position: relative;
     width: 100%;
+    height: max-content;
     -ms-flex-item-align: bottom;
     align-self: bottom;
     margin: 1rem 0 1.5rem 0;
     z-index: 2;
+    justify-content: center;
+    flex-flow: wrap;
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > * {
+            padding: 0 0.5rem;
+        }
+    }
 
     &.active {
         position: fixed;
@@ -401,7 +426,14 @@ $nav-height: 60px;
     }
 
     &>* {
-        padding: 0 2rem 0 0;
+        padding: 0 0.25rem 0 0;
+    }
+
+    @media screen and (min-width: $breakpoint) {
+       & {
+            justify-content: space-between;
+            flex-flow: nowrap;
+       }
     }
 }
 

@@ -3,12 +3,12 @@
     "name": "Dimitri Otero Product Design Portfolio",
     "icons": [
       {
-        "src": "images/icons/main-logo-192.png",
+        "src": "favicon_io/android-chrome-192x192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "images/icons/main-logo-512.png",
+        "src": "favicon_io/android-chrome-512x512.png",
         "type": "image/png",
         "sizes": "512x512"
       }

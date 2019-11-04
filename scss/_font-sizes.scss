@@ -1,104 +1,225 @@
-%font-secondary {
-    font-family: gelo, serif;
-    font-weight: 700;
-    font-style: normal;
-    font-display: auto;
+// %font-secondary {
+//     font-family: nunito-sans, sans-serif;
+//     font-weight: 700;
+//     font-style: normal;
+//     font-display: auto;
+// }
+
+// %font-xl {
+//     font-size: calc(2.5rem + ((1vw - 3.2px) * 0.7143));
+// }
+
+// %font-lg {
+//     font-size: calc(1.75rem + ((1vw - 3.2px) * 0.3571));
+// }
+
+// %font-md {
+//     font-size: calc(1rem + ((1vw - 3.2px) * 0.1786));
+// }
+
+// %font-sm {
+//     font-size: calc(0.8125rem + ((1vw - 3.2px) * 0.1593));
+// }
+
+
+// h1 {
+//     @extend %font-xl;
+// }
+
+// h2 {
+//     @extend %font-md;
+//     font-size: calc(40px + (1vw - 3.2px) *0.1786);
+//     // font-weight: 300;
+// }
+
+// h3,
+// p {
+//     @extend %font-md;
+//     font-weight: 800;
+// }
+
+// h4 {
+//     @extend %font-sm;
+//     font-weight: 800;
+// }
+
+// p {
+//     font-weight: 400;
+//     line-height: 150%;
+// }
+
+// a {
+//     color: $primary-black;
+//     text-decoration: none;
+//     -webkit-transition: color .2s ease-in-out;
+//     transition: color .2s ease-in-out;
+
+//     &:hover {
+//         color: $primary-red;
+//     }
+// }
+
+// @media (min-width:1440px) {
+//     h1 {
+//         font-size: 3rem;
+//     }
+
+//     h2 {
+//         font-size: 1.5rem;
+//     }
+
+//     h3 {
+//         font-size: 1.125rem;
+//     }
+
+//     h4 {
+//         font-size: .875rem;
+//     }
+
+//     p {
+//         font-size: 1rem;
+//     }
+// }
+
+// .bold {
+//     font-weight: 900;
+// }
+
+$font-family: 'Nunito Sans', sans-serif;
+$min-vw: 320px;
+$max-vw: 1440px;
+
+
+@mixin fluid-type($property, $min-value, $max-value) {
+#{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+};
+
+@function strip-unit($number) {
+    @if type-of($number) == "number" and not unitless($number) {
+      @return $number / ($number * 0 + 1);
+    }
+  
+    @return $number;
+  }
+
+//MIXIN TO SIMPLIFY DEFINING font-sizeS
+
+@mixin font-size($line-height, $letter-spacing, $weight) {
+    font-family: $font-family;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    font-weight: $weight;
+    text-decoration: none;
 }
-
-%font-xl {
-    font-size: calc(2.5rem + ((1vw - 3.2px) * 0.7143));
-}
-
-%font-lg {
-    font-size: calc(1.75rem + ((1vw - 3.2px) * 0.3571));
-}
-
-%font-md {
-    font-size: calc(1rem + ((1vw - 3.2px) * 0.1786));
-}
-
-%font-sm {
-    font-size: calc(0.8125rem + ((1vw - 3.2px) * 0.1593));
-}
-
-
+  
+    
 h1 {
-    @extend %font-xl;
-}
+    @include font-size(114%, 1%, 700);
+    @include fluid-type(font-size, 40px, 60px);
+    };
 
 h2 {
-    @extend %font-md;
-    // font-weight: 300;
-}
-
-h3,
-p {
-    @extend %font-md;
-    font-weight: 800;
-}
-
+    @include font-size(100%, 2%, 900);
+    @include fluid-type(font-size, 27px, 40px);
+    };
+h3 {
+    @include font-size(100%, 2%, 900);
+    @include fluid-type(font-size, 18px, 26px);
+    };
 h4 {
-    @extend %font-sm;
-    font-weight: 800;
-}
-
+    @include font-size(115%, 2.5%, 400);
+    @include fluid-type(font-size, 20px, 24px);
+    };
+h5 {
+    @include font-size(120%, 2.5%, 400);
+    @include fluid-type(font-size, 16px, 20px);
+    };
 p {
-    font-weight: 400;
-    line-height: 150%;
-}
-
-a {
-    color: $primary-black;
+    @include font-size(150%, 2%, 400);
+    @include fluid-type(font-size, 16px, 20px);
+    };
+.cr-reg-14 {
+    @include font-size(150%, 2%, 400);
+    @include fluid-type(font-size, 14px, 14px);
+};
+.cr-reg-12 {
+    @include font-size(150%, 2%, 400);
+    @include fluid-type(font-size, 12px, 14px);
+    };
+.cr-link-14 {
+    @extend .cr-reg-14;
+    color: #455FA8;
     text-decoration: none;
-    -webkit-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
-
-    &:hover {
-        color: $primary-red;
-    }
 }
-
-@media (min-width:1440px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.125rem;
-    }
-
-    h4 {
-        font-size: .875rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
+.cr-link-12 {
+    @include font-size(125%, 2%, 400);
+    @include fluid-type(font-size, 12px, 12px);
+    text-decoration: none;
 }
+.cr-bold-12 {
+    @include font-size(120%, 2%, 700);
+    @include fluid-type(font-size, 12px, 12px);
+    };
+.cr-bold-8 {
+    @include font-size(100%, 2%, 900);
+    @include fluid-type(font-size, 8px, 8px);
+    };
+
+//font-sizeS
 
 .bold {
-    font-weight: 800;
+    font-weight: 900;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+.anchor-bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+}
+
+.title-case {
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+
+//TEXT ALIGNMENT
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
 }
 
 .section-name {
     font-weight: 800;
-    margin-bottom: .6rem;
+    margin-bottom: 3rem;
+    
+    &--project-name {
+        font-weight: 900;
+        text-transform: default;
+        @include fluid-type(font-size, 16px, 32px);
+        margin-bottom: 1rem;
+    }
 }
 
 
 
 image-caption {
     display: block;
-    font-size: .6rem;
-    // margin-top: .3rem;
+    @extend .cr-bold-12;
+    // font-size: .9rem;
+    margin-top: .2rem;
     font-weight: 600;
     z-index: 2;
     text-align: center;
-
     color: $primary-grey;
 }
 
@@ -112,7 +233,7 @@ image-caption {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    right: 0;
+    right: 0rem;
     margin-right: 2rem;
     font-weight: 800;
     font-size: 1rem;
@@ -125,8 +246,9 @@ image-caption {
 
 
 
-    @media screen and (min-width: $breakpoint-md) {
+    @media screen and (min-width: $breakpoint) {
         & {
+            left: 2rem;
             margin-right: 3rem;
         }
     }
