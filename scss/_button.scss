@@ -49,6 +49,7 @@ button {
         }
     }
 
+
     &.primary {
         @include background($primary-red);
         color: $primary-white;
@@ -289,4 +290,16 @@ button {
 
 .fade {
     visibility: hidden;
+}
+
+#social-media__cvresume > * {
+    // border: 2px solid #{$cr-blue-base};
+    // background-color: #{$cr-blue-base};
+    // color: #{$cr-white-base};
+
+    &:hover {
+        border: 2px solid #{$cr-blue-base};
+        color: #{$cr-white-base};
+        background-color: #{$cr-blue-base};
+    }
 }

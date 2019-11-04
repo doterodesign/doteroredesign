@@ -167,6 +167,10 @@ p {
 
 //font-sizeS
 
+span {
+    font-weight: 900;
+}
+
 .bold {
     font-weight: 900;
 }
@@ -200,13 +204,22 @@ p {
 
 .section-name {
     font-weight: 800;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @include fluid-type(font-size, 20px, 40px);
     
     &--project-name {
         font-weight: 900;
         text-transform: default;
         @include fluid-type(font-size, 16px, 32px);
         margin-bottom: 1rem;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        & {
+            margin-top: 0rem;
+            margin-bottom: 3rem;
+        }
     }
 }
 

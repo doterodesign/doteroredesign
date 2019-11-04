@@ -330,6 +330,10 @@ p {
   font-size: calc(8px + 0 * (100vw - 320px) / 1120);
 }
 
+span {
+  font-weight: 900;
+}
+
 .bold {
   font-weight: 900;
 }
@@ -363,13 +367,21 @@ p {
 
 .section-name {
   font-weight: 800;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: calc(20px + 20 * (100vw - 320px) / 1120);
 }
 .section-name--project-name {
   font-weight: 900;
   text-transform: default;
   font-size: calc(16px + 16 * (100vw - 320px) / 1120);
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 540px) {
+  .section-name {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
 }
 
 image-caption {
@@ -656,6 +668,12 @@ button.cuny-secondary:focus, button.cuny-secondary:hover {
   visibility: hidden;
 }
 
+#social-media__cvresume > *:hover {
+  border: 2px solid #455FA8;
+  color: #FFFFFF;
+  background-color: #455FA8;
+}
+
 .section-divider {
   width: 100%;
   font-weight: 900;
@@ -817,9 +835,6 @@ button.cuny-secondary:focus, button.cuny-secondary:hover {
   font-style: normal;
   font-size: 2.6rem;
   margin-bottom: 1rem;
-}
-#nav-container .info-container h2 {
-  color: #3e3e3e;
 }
 #nav-container .info-container h2:last-of-type {
   margin-bottom: 1rem;
@@ -1324,7 +1339,7 @@ a .icon {
 
 .content__article {
   grid-template-columns: 1fr repeat(8, 1fr) 1fr;
-  max-width: 1024px;
+  max-width: 1080px;
   margin: 0 auto;
   grid-column-gap: 0;
 }

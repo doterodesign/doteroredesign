@@ -35,7 +35,9 @@ function navConstructor(p) {
                 <h4 class="all-caps bold ">Dimitri Otero</h4>
                 <h4>Product Designer</h4>
             </div>
-            <div class="info-container--content"><h2>Listen to your needs</h2> <h2>Determine the scope</h2> <h2>Execute and release</h2></div>
+            <div class="info-container--content"><h2 class="cr-blue-base">Listen to your needs</h2> <h2 class="cr-yellow-base">Determine the scope</h2> <h2 class="cr-red-base">Execute and release</h2>
+
+            </div>
             
             
             <div id="social-media">
