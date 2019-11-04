@@ -232,7 +232,7 @@ var cases = [
         //GOAL
         goal: {
             name: 'Goal',
-            heading: 'Progressive Web App',
+            heading: 'Future goals involve a design system',
             content: 'My current goal is to establish a design system that I\'m calling the CORE System that will allow for building complex, flexible components for each type of user of the platform. Initially this was being designed as a mobile app but upon researching progressive web apps and them becoming more popular, I\'d love to see if this can be a good use case for that technology.',
         },
 
@@ -267,15 +267,15 @@ var cases = [
         //NAVIGATION
         navigation: {
             name: 'Nav Design',
-            heading: 'Testing different types of navigation',
-            content: 'I tested button-only, tabular, dropdown, and iconic navigation and decided a combination of all three depending on the type of infomration being accessed. With button-only navigation, users felt the space was cluttered but functional. I have not gotten a large amount of feedback on the tabular and dropdown navigation but will be testing soon for those observations!',
+            heading: 'I tested four types of navigation',
+            content: 'After testing button-only, tabular, dropdown, and iconic navigation, I decided on a combination of three depending on the type of information being accessed. With button-only navigation, users felt the space was cluttered but functional. I have not gotten a large amount of feedback on the tabular and dropdown navigation but will be testing soon for those observations!',
         },
 
         //DYNAMIC CONTENT
         dynamicContent: {
-            name: 'Dynamic Content',
-            heading: 'Componentization and manipulation',
-            content: 'Reloading all the content everytime we click a button drives everyone crazy. This application is a perfect use case for component-driven design. It would allow developers and designers to build flexible units and combine them to create complex design systems and allowing for a fast turnaround after user testing.</br></br>',
+            name: 'Business Goals',
+            heading: 'The business aspect was another factor to consider',
+            content: 'A white-label software is an all-in-one packaged product that companies and agencies can buy into and customize for their own uses. This means that the overall components and features have to be flexible enough for different use cases while still being able to complete the core-tasks of the software.<br><br>I took this approach because the platforms being used the most by universities is white-label. I wanted to design something that could replace the existing platforms so from a business perspective, this was at the core of corED.',
         },
 
         //USER TESTING
@@ -288,8 +288,8 @@ var cases = [
         //LESSON LEARNED
         lesson: {
             name: 'Lessons Learned',
-            heading: 'Branding, navigating complex interfaces, and user testing',
-            content: 'Designing components is difficult. I learned that a component needs the perfect balance of flexibility of uses with having specific uses. Too abstracted and the component can become overwhelming. Too focused and we may end up repeating code since two components can use the same features. As the project progresses, I can\'t wait to learn more about the relationship between code, design, and how to structure them to work cohesively.',
+            heading: 'Lessons Learned',
+            content: 'As I mentioned in the beginning, this project was big for one person...really big. I didn\'t get to tackle everything I hoped for because of school and other projects. However, I learned a ton about process development, presenting the work early for quicker and more consistent feedback, and designing a component system. I\'d love to create a design system for the current component set in the near future but for now, thanks for reading and feel free to ping me on Twitter or LinkedIn for feedback!',
         },
 
         //PROTOTYPE

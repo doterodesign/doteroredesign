@@ -183,7 +183,6 @@ const cored = (cs) => {
         ${testing}
         ${img__dynamic}
         ${img__sneakpeak}
-        ${goal}
         ${navigation}
         ${img__navigation}
         ${dynamicContent}
