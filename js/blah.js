@@ -140,6 +140,7 @@ const cored = (cs) => {
     let mas = master(cs);
     let intro = content__article(cs.introduction);
     let user = content__article(cs.ur);
+    let animation = funcCoredAnimation;
     let problem = content__article__no__title(cs.problem);
     let goal = content__article(cs.goal);
     let sneakpeak = content__article(cs.sneakpeak);
@@ -173,7 +174,9 @@ const cored = (cs) => {
         `
         ${mas}
         ${img__prototype}
-        ${intro}
+        ${img__dynamic}
+        ${img__sneakpeak}
+        ${animation}
         ${img__problem}
         ${problem}
         ${img__userflow}
@@ -181,8 +184,6 @@ const cored = (cs) => {
         ${img__wireframe}
         ${img__testing}
         ${testing}
-        ${img__dynamic}
-        ${img__sneakpeak}
         ${navigation}
         ${img__navigation}
         ${dynamicContent}

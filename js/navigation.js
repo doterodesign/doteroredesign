@@ -64,11 +64,6 @@ function progressBar() {
     document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-window.addEventListener('DOMContentLoaded', function () {
-    $('#current-section').empty();
-    reset();
-    setCurrentSection();
-}, false);
 
 function setCurrentSection() {
     controller = controller.destroy(true);
@@ -108,17 +103,24 @@ function setCurrentSection() {
             .addTo(controller)
 
         hideButtons.on("enter", function () {
-            $('.back-button, .next-button').hide();
+            $('.back-button, .next-button, .top-button').hide();
             $('#current-section').html(`next project: ${$(e).data('project-name')}`)
         });
         hideButtons.on("leave", function () {
-            $('.back-button, .next-button').show();
+            $('.back-button, .next-button, .top-button').show();
         });
         window.addEventListener("hashchange", function () {
-            $('.back-button, .next-button').show();
+            $('.back-button, .next-button, .top-button').show();
         });
     })
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    $('#current-section').empty();
+    reset();
+    setCurrentSection();
+});
 
 
 
@@ -136,10 +138,8 @@ window.addEventListener('scroll', function () {
 document.addEventListener('click', function (e) {
     //IF TARGET IS CLASS BUTTON, GET DATA ATTRIBUTE HREF
     target = e.target;
-    e.stopPropagation();
     if (target.matches('.case') || target.matches('.case__image') || target.matches('.case__content') || target.matches('.button')) {
         location.hash = target.getAttribute('data-href');
-        console.log(location.hash)
     }
 
     //IF TARGET IS MAIN-LOGO, LOCATION.HASH = #HOME
@@ -152,7 +152,6 @@ document.addEventListener('click', function (e) {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
     }
-
 
 
     

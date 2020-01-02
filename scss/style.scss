@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'breakpoints';
 @import 'colors';
+@import 'svgStyles';
 @import 'font-sizes';
 @import 'button';
 @import 'section';
@@ -13,22 +14,27 @@
 
 * {
     font-family: nunito-sans, sans-serif;
-    font-size: 16px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    font-display: auto;
+
+}
+
+#mockup-screen {
+    font-family: Roboto, sans-serif;
+    text-size-adjust: none;
+    font-size: none;
 }
 
 body {
     background: $primary-white;
     overflow-x: hidden;
+}
+
+#content-container > * {
+    display: none;
 }
 
 
@@ -114,3 +120,4 @@ bold {
         opacity: 1
     }
 }
+

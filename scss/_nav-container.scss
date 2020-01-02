@@ -395,6 +395,13 @@ $nav-height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 1rem;
+
+        @media screen and (min-width: $breakpoint) {
+            & {
+               margin-bottom: 0rem;
+            }
+        }
 
         & > * {
             padding: 0 0.5rem;

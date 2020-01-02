@@ -110,6 +110,11 @@ $max-vw: 1440px;
     letter-spacing: $letter-spacing;
     font-weight: $weight;
     text-decoration: none;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-display: auto;
 }
   
     

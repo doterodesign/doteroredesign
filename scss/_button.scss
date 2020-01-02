@@ -185,6 +185,7 @@ button {
     transition: all .2s ease-in-out;
     -webkit-transform: scale(.8);
     transform: scale(.8);
+    z-index: 999;
 
     &.back-button,
     &.next-button,
@@ -234,49 +235,49 @@ button {
         }
     }
 
-    @media screen and (min-width: $breakpoint-sm) {
+    // @media screen and (min-width: $breakpoint-sm) {
 
-        &.back-button,
-        &.next-button,
-        &.top-button {
-            -webkit-transform: rotate(180deg) scale(.85);
-            transform: rotate(180deg) scale(.85);
-            margin-bottom: 2rem;
-        }
-        &.top-button {
-            -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-            margin-right: 15rem;
-            margin-left: 0rem;
-            right: 0rem;
-        }
-        &.next-button {
-            -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-            margin-right: 3rem;
-        }
+    //     &.back-button,
+    //     &.next-button,
+    //     &.top-button {
+    //         -webkit-transform: rotate(180deg) scale(.85);
+    //         transform: rotate(180deg) scale(.85);
+    //         margin-bottom: 2rem;
+    //     }
+    //     &.top-button {
+    //         -webkit-transform: rotate(-90deg);
+    //         transform: rotate(-90deg);
+    //         margin-right: 15rem;
+    //         margin-left: 0rem;
+    //         right: 0rem;
+    //     }
+    //     &.next-button {
+    //         -webkit-transform: rotate(0deg);
+    //         transform: rotate(0deg);
+    //         margin-right: 3rem;
+    //     }
 
-        &.back-button {
-            -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-            right: 0;
-            // margin-left: 0px;
-            margin-right: 9rem;
-        }
+    //     &.back-button {
+    //         -webkit-transform: rotate(180deg);
+    //         transform: rotate(180deg);
+    //         right: 0;
+    //         // margin-left: 0px;
+    //         margin-right: 9rem;
+    //     }
 
-    }
+    // }
 
     @media screen and (min-width: $breakpoint) {
         & {
-            -webkit-transform: scale(1);
-            transform: scale(1);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
 
 
-            &.back-button,
-            &.next-button,
-            &.top-button {
-                margin-bottom: 3rem;
-            }
+            // &.back-button,
+            // &.next-button,
+            // &.top-button {
+            //     margin-bottom: 3rem;
+            // }
         }
     }
 
@@ -296,6 +297,7 @@ button {
     // border: 2px solid #{$cr-blue-base};
     // background-color: #{$cr-blue-base};
     // color: #{$cr-white-base};
+    padding: 1.25rem 1rem;
 
     &:hover {
         border: 2px solid #{$cr-blue-base};
