@@ -24,6 +24,7 @@
 
     &-list {
         grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        // font-size: .875rem;
         display: grid;
         padding: 0 5%;
         grid-row-gap: 3rem;

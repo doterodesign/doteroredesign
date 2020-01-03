@@ -65,22 +65,29 @@ function progressBar() {
 }
 
 
+
+//SCROLLMAGIC INITIALIZATION AND RULES
 function setCurrentSection() {
-    controller = controller.destroy(true);
-    controller = new ScrollMagic.Controller();
+    
 
     sectionStart = Array.from(document.querySelectorAll(`${location.hash} [data-section-name]`));
+    
+    controller.destroy(true);
+    controller = new ScrollMagic.Controller();
+    
     sectionStart.forEach(e => {
 
         current = new ScrollMagic.Scene({
             triggerElement: e,
-            triggerHook: .3,
+            triggerHook: .05,
             reverse: true,
             offset: 0,
+            refreshInterval: 100
         })
-
+            .addIndicators()
             .addTo(controller)
             
+        
             current.on("enter", function () {
                 let name = $(e).data('section-name');
                 $('#current-section').html(name);
@@ -116,6 +123,7 @@ function setCurrentSection() {
 }
 
 
+//ON CONTENT LOAD, EMPTY CURRENT SECTION, RESET FUNC., LOAD SCROLLMAGIC
 document.addEventListener('DOMContentLoaded', function () {
     $('#current-section').empty();
     reset();
@@ -177,6 +185,7 @@ document.addEventListener('click', function (e) {
     }
 })
 
+//ON HASHCHANGE, LOAD SCROLLMAGIC AND RESET PAGEA
 window.addEventListener('hashchange', function () {
     setCurrentSection() 
     reset();

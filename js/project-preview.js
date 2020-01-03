@@ -250,6 +250,39 @@ var nextProject = (ne) => {
     return $(nextPro).clone().appendTo(cu);
 }
 
+const imageEmbed = (image) => {
+    let c = '';
+    let img = image.images;
+
+    c +=
+    `
+    <section class="image__container-${image.size}">
+    `
+    for (let i in img) {
+        c +=
+        `
+           ${img[i].name}
+        `
+    }  
+    c +=
+    `
+    </section>
+    `
+    return c;
+}
+
+const contentWImage = (section, image) => {
+    return `
+    <section id="${section.id}" class="content-w-image" data-section-name="${section.name}">
+        <article class="content__article">
+            <h2 class="section-name">${section.heading}</h2>
+            <p class="cr-neutral-800">${section.content}</p>
+        </article>
+        ${imageEmbed(image)}
+    </section>
+   `
+}
+
 
 function coredAnimation() {
     let n = '';

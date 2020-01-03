@@ -1,3 +1,5 @@
+//FIRST ANIMATION
+
 function screenIntro() {
     let tl = gsap.timeline({defaults: {opacity: 0}});
 
@@ -8,6 +10,7 @@ function screenIntro() {
 
 var tlScreenIntro = screenIntro();
 
+//LOADS COURSES PAGE ANIMATION
 function coursesOverview() {
    let tl = gsap.timeline({defaults:{opacity: 0, ease: "expo. out", duration: 1}});
 
@@ -54,13 +57,15 @@ function coursesOverview() {
 
 var tlCoursesOverview = coursesOverview();
 
+
+//TOUCH INDICATOR ANIMATION
 function touchIndicatorClick() {
     let tl = gsap.timeline();
     
     tl.to(
         "#touch-indicator", {
         keyframes: [
-            {opacity: 0.2, duration: 0.5},
+            {opacity: 0.2, duration: 0.2},
             {scale: 0.8},
             {scale:1}
         ]
@@ -69,25 +74,27 @@ function touchIndicatorClick() {
     return tl;
 }
 
+//ANIMATION TO NAVIGATE COURSES
 function coursesNav() {
     let tl = gsap.timeline();
 
     tl.add(touchIndicatorClick)
-        .to("#course-overview-tooltip", {opacity: 1, duration: 1}, "+=1")
-        .fromTo("#touch-indicator", {x: 5, y: -10}, {x: -20, y: -40, duration: 0.6})
+        .to("#course-overview-tooltip", {opacity: 1, duration: 0.3}, "+=1")
+        .fromTo("#touch-indicator", {x: 5, y: -10}, {x: -20, y: -40, duration: 1})
         .add(touchIndicatorClick)
-      tl.to("#course-overview-tooltip", {opacity: 0, duration: 1}, "+=1")
+      tl.to("#course-overview-tooltip", {opacity: 0, duration: 0.3}, "+=1")
 
-    tl.paused( true );
     return tl;
 }
 
 var tlCoursesNav = coursesNav();
 
+
+//FINANCES ANIMATION
 function financesOverview() {
     let tl = gsap.timeline();
 
-    tl.to("#touch-indicator", {x: -205, y: 413, duration: 0.7})
+    tl.to("#touch-indicator", {x: -205, y: 413, duration: 1})
       .add(touchIndicatorClick)
     //sections
       .to(".class", {
@@ -128,17 +135,39 @@ function financesOverview() {
       .from(".finance-details", {opacity: 0, y: -50, stagger: 0.2, duration: 0.5}, "-=0.4")
 
 
-    tl.paused( true );
     return tl;
 }
 
 var tlFinancesOverview = financesOverview();
 
+
+//COMPILATION OF ABOVE ANIMATIONS INTO ONE ANIMATION
 var introAnimation = gsap.timeline();
 
     introAnimation.add(tlScreenIntro)
                   .add(tlCoursesOverview, ">-1.8")
-                  .add(tlCoursesNav.paused(false), ">+2")
-                  .add(tlFinancesOverview.paused(false), ">")
+                  .add(tlCoursesNav, ">+2")
+                  .add(tlFinancesOverview, ">")
                   
-    introAnimation.pause(4)
+introAnimation.pause(0);
+
+
+//LOAD ANIMATION INTO SCROLLMAGIC
+document.addEventListener("load", () => {
+  // cont = new ScrollMagic.Controller();
+  // create a scene with custom options and assign a handler to it.
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#main-animation",
+  duration: 100,
+  offset: 200,
+  triggerHook: "0.4",
+  reverse: false
+})
+  scene.setTween(introAnimation.play())
+  .addIndicators()
+  .addTo(controller)
+
+})
+
+
+

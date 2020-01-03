@@ -86,7 +86,7 @@
 // }
 
 $font-family: 'Nunito Sans', sans-serif;
-$min-vw: 320px;
+$min-vw: 200px;
 $max-vw: 1440px;
 
 
@@ -141,11 +141,11 @@ h5 {
     };
 p {
     @include font-size(150%, 2%, 400);
-    @include fluid-type(font-size, 16px, 20px);
+    @include fluid-type(font-size, 14px, 18px);
     };
 .cr-reg-14 {
     @include font-size(150%, 2%, 400);
-    @include fluid-type(font-size, 14px, 14px);
+    @include fluid-type(font-size, 14px, 16px);
 };
 .cr-reg-12 {
     @include font-size(150%, 2%, 400);
