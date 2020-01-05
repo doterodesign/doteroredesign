@@ -240,7 +240,7 @@ h1 {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-display: auto;
-  font-size: calc(40px + 20 * (100vw - 200px) / 1240);
+  font-size: calc(40px + 8 * (100vw - 200px) / 1240);
 }
 
 h2 {
@@ -254,7 +254,7 @@ h2 {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-display: auto;
-  font-size: calc(27px + 13 * (100vw - 200px) / 1240);
+  font-size: calc(27px + 9 * (100vw - 200px) / 1240);
 }
 
 h3 {
@@ -738,6 +738,12 @@ button.cuny-secondary:focus, button.cuny-secondary:hover {
     max-height: 100vh;
   }
 }
+#nav-container .info-container > .info-container--content {
+  margin: auto 0rem;
+}
+#nav-container .info-container > .info-container--content h5:last-child {
+  margin-top: 2rem;
+}
 #nav-container nav {
   position: fixed;
   display: grid;
@@ -1166,11 +1172,15 @@ a .icon {
   position: relative;
   display: grid;
   width: inherit;
+  max-width: 1384px;
   height: auto;
+  min-height: 100vh;
   grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   grid-column-gap: 1rem;
   grid-row-gap: 2.5rem;
   padding: 1rem 1rem;
+  justify-self: center;
+  margin: 0 auto;
 }
 @media screen and (min-width: 820px) {
   #preview-content {
@@ -1222,6 +1232,21 @@ a .icon {
 #preview-content .case__name {
   -ms-flex-item-align: end;
   align-self: end;
+}
+
+.prototype-embed {
+  position: relative;
+  width: 100vw;
+  height: 87vh;
+}
+.prototype-embed > * {
+  width: inherit;
+  height: inherit;
+}
+@media screen and (min-width: 540px) {
+  .prototype-embed {
+    height: 90vh;
+  }
 }
 
 .info-container {
@@ -1299,6 +1324,9 @@ a .icon {
   display: grid;
   padding: 0 2rem;
   grid-column-gap: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap;
 }
 .content__block-list h4 {
@@ -1376,6 +1404,8 @@ a .icon {
   height: 70vh;
 }
 .content__full .image__container-lg {
+  width: 100%;
+  max-width: 100%;
   max-height: 100vh;
 }
 @media screen and (min-width: 820px) {
@@ -1388,11 +1418,11 @@ a .icon {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  -ms-flex-line-pack: center;
   align-content: center;
   height: 100vh;
   width: 100vw;
   grid-row-gap: 2rem;
-  margin: 6rem 0rem 0rem 0rem;
 }
 @media screen and (min-width: 820px) {
   .content-w-image {
@@ -1400,11 +1430,19 @@ a .icon {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
 }
+.content-w-image > section.image__container-lg > * {
+  height: 100%;
+  text-align: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
 .content-w-image .content__article {
   align-self: center;
   grid-template-columns: 1fr;
   margin: 0 2rem;
   max-width: 600px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
 }
 @media screen and (min-width: 820px) {
@@ -1495,9 +1533,14 @@ img {
 }
 
 .image__container-full, .image__container-xl, .image__container-lg, .image__container-md, .image__container-sm, .image__container-xs {
-  width: 100%;
+  max-width: 1384px;
   min-height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
   -webkit-box-pack: center;
@@ -1507,18 +1550,8 @@ img {
   grid-column-gap: 3rem;
   padding: 0 2rem;
   text-align: end;
+  justify-self: center;
 }
-@media screen and (min-width: 540px) {
-  .image__container-full, .image__container-xl, .image__container-lg, .image__container-md, .image__container-sm, .image__container-xs {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 820px) {
-  .image__container-full > *, .image__container-xl > *, .image__container-lg > *, .image__container-md > *, .image__container-sm > *, .image__container-xs > * {
-    width: 100%;
-  }
-}
-
 .image__container {
   min-height: 50rem;
 }
@@ -1573,6 +1606,9 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0;
+}
+.image__container-full > * {
+  width: 100%;
 }
 
 .section-title {

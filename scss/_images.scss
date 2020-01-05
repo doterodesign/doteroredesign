@@ -3,11 +3,16 @@ img {
 }
 
 %image__container {
-    width: 100%;
+    max-width: $breakpoint-lg;
     min-height: 20rem;
     // display: inline-grid;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -16,6 +21,11 @@ img {
     grid-column-gap: 3rem;
     padding: 0 2rem;
     text-align: end;
+    justify-self: center;
+
+    // *:not(&-full) {
+    //     width: $breakpoint-lg;
+    // }
 
     // .image__container section:last-child {
     //     grid-row: 1 / -1;
@@ -28,14 +38,14 @@ img {
 
     @media screen and (min-width: $breakpoint-sm) {
         & {
-            width: 100%;
+            // width: 100%;
         }
     }
 
     @media screen and (min-width: $breakpoint) {
         & > * {
             // margin: 2rem;
-            width: 100%;
+            // width: 100%;
         }
     }
 }
@@ -44,11 +54,20 @@ img {
 
     min-height: 50rem;
 
-    *:not(&-full)>img {
-        height: 100%;
-        -o-object-fit: contain;
-        object-fit: contain;
+    // *:not(&-full)>img {
+    //     height: 100%;
+    //     -o-object-fit: contain;
+    //     object-fit: contain;
+    // }
+    *:not(&-full) {
+
+        & > img {
+            height: 100%;
+            -o-object-fit: contain;
+            object-fit: contain;
+        }
     }
+
 
 
     &-xs {
@@ -108,9 +127,13 @@ img {
 
     &-full {
         @extend %image__container;
+       
         display: grid;
         grid-template-columns: 1fr;
         padding: 0;
+        & > * {
+            width: 100%;
+        }
     }
 }
 

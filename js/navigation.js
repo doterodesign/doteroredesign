@@ -1,18 +1,9 @@
-var sectionStart;
-
-
 var navContainer = $('#nav-container');
-
-
 var children = Array.from($(contentContainer).children());
 var noHash = location.hash.replace(/^#/, '');
 var activeElement = $(location.hash);
 var activeChildren = $(activeElement).children();
 var caseStudy = false;
-
-var controller;
-var sectionStart;
-var current;
 
 
 window.scrollTo({
@@ -40,11 +31,12 @@ function reset() {
         $('#current-section').empty();
         $(navContainer).removeClass('cs-active');
         location.hash = '#home';
-        $(location.hash).delay(450).fadeIn(600);
+        $(location.hash).fadeIn(600);
     } else {
         active();
     }
 }
+    reset();
 
 
 //FUNCTION CHANGES ACTIVE CASE STUDY CONTAINER
@@ -53,8 +45,6 @@ function active() {
     $(children).hide();
     $(navContainer).addClass('cs-active');
     $(location.hash).delay(450).fadeIn(600);
-
-    // setCurrentSection();
 }
 
 function progressBar() {
@@ -66,75 +56,7 @@ function progressBar() {
 
 
 
-//SCROLLMAGIC INITIALIZATION AND RULES
-function setCurrentSection() {
-    
-
-    sectionStart = Array.from(document.querySelectorAll(`${location.hash} [data-section-name]`));
-    
-    controller.destroy(true);
-    controller = new ScrollMagic.Controller();
-    
-    sectionStart.forEach(e => {
-
-        current = new ScrollMagic.Scene({
-            triggerElement: e,
-            triggerHook: .05,
-            reverse: true,
-            offset: 0,
-            refreshInterval: 100
-        })
-            .addIndicators()
-            .addTo(controller)
-            
-        
-            current.on("enter", function () {
-                let name = $(e).data('section-name');
-                $('#current-section').html(name);
-              });
-            current.on("leave", function () {
-                let name = $(e).data('section-name');
-                $('#current-section').html(name);
-            });
-    })
-
-
-    lastSection = Array.from(document.querySelectorAll(`${location.hash}[data-case] [data-project-name]`));
-    lastSection.forEach(e => {
-
-        hideButtons = new ScrollMagic.Scene({
-            triggerElement: e,
-            triggerHook: '.3',
-            reverse: true
-        })
-            .addTo(controller)
-
-        hideButtons.on("enter", function () {
-            $('.back-button, .next-button, .top-button').hide();
-            $('#current-section').html(`next project: ${$(e).data('project-name')}`)
-        });
-        hideButtons.on("leave", function () {
-            $('.back-button, .next-button, .top-button').show();
-        });
-        window.addEventListener("hashchange", function () {
-            $('.back-button, .next-button, .top-button').show();
-        });
-    })
-}
-
-
-//ON CONTENT LOAD, EMPTY CURRENT SECTION, RESET FUNC., LOAD SCROLLMAGIC
-document.addEventListener('DOMContentLoaded', function () {
-    $('#current-section').empty();
-    reset();
-    setCurrentSection();
-});
-
-
-
-
 //EVENT LISTNERS
-
 //ON SCROLL MOVE PROGRESS BAR
 window.addEventListener('scroll', function () {
     if (caseStudy) { 
@@ -143,50 +65,48 @@ window.addEventListener('scroll', function () {
 })
 
 //ON CLICK FNUCTION
-document.addEventListener('click', function (e) {
-    //IF TARGET IS CLASS BUTTON, GET DATA ATTRIBUTE HREF
-    target = e.target;
-    if (target.matches('.case') || target.matches('.case__image') || target.matches('.case__content') || target.matches('.button')) {
-        location.hash = target.getAttribute('data-href');
-    }
+    document.addEventListener('click', function (e) {
+        //IF TARGET IS CLASS BUTTON, GET DATA ATTRIBUTE HREF
+        target = e.target;
+        if (target.matches('.case') || target.matches('.case__image') || target.matches('.case__content') || target.matches('.button')) {
+            location.hash = target.getAttribute('data-href');
+        }
 
-    //IF TARGET IS MAIN-LOGO, LOCATION.HASH = #HOME
-    if (target.matches('#main-logo')) {
-        location.hash = "#home";
-    }
+        //IF TARGET IS MAIN-LOGO, LOCATION.HASH = #HOME
+        if (target.matches('#main-logo')) {
+            location.hash = "#home";
+        }
 
-    //SCROLL BACK TO TOP OF PAGE
-    if (target.matches('.top-button')) {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-    }
+        //SCROLL BACK TO TOP OF PAGE
+        if (target.matches('.top-button')) {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        }
 
 
     
-    //IF TARGET MATCHES MOBILE-MENU
-    if (target.matches('#mobile-menu')) {
-        // TOGGLE NAV ACTIVE
-        $('#nav-container').toggleClass('nav-active');
-        // TOGGLE CLASS NOSCROLL
-        $('body').toggleClass('noScroll');
-         // TOGGLE CLASS ACTIVE ON NAV
-        $('nav').toggleClass('active');
-         // TOGGLE #MYBAR
-        $('#myBar').toggle();
+        //IF TARGET MATCHES MOBILE-MENU
+        if (target.matches('#mobile-menu')) {
+            // TOGGLE NAV ACTIVE
+            $('#nav-container').toggleClass('nav-active');
+            // TOGGLE CLASS NOSCROLL
+            $('body').toggleClass('noScroll');
+            // TOGGLE CLASS ACTIVE ON NAV
+            $('nav').toggleClass('active');
+            // TOGGLE #MYBAR
+            $('#myBar').toggle();
 
 
-        if (!$('#social-media').hasClass('active')) {
-            $('#social-media').fadeOut(0).delay(600).appendTo('nav').addClass('active').fadeIn(300);
-            $('#content-container').fadeOut(0);
-        } else {
-            $('#social-media').appendTo('#nav-container .info-container p').removeClass('active');
-            $('#content-container').fadeIn(0);
+            if (!$('#social-media').hasClass('active')) {
+                $('#social-media').fadeOut(0).delay(600).appendTo('nav').addClass('active').fadeIn(300);
+                $('#content-container').fadeOut(0);
+            } else {
+                $('#social-media').appendTo('#nav-container .info-container p').removeClass('active');
+                $('#content-container').fadeIn(0);
+            }
         }
-    }
-})
+    });
 
-//ON HASHCHANGE, LOAD SCROLLMAGIC AND RESET PAGEA
-window.addEventListener('hashchange', function () {
-    setCurrentSection() 
-    reset();
-});
+    window.addEventListener('hashchange', function () {
+        reset(); 
+    });

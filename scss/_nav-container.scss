@@ -20,6 +20,13 @@ $nav-height: 60px;
         }
     }
 
+    & .info-container > .info-container--content {
+        margin: auto 0rem;
+
+        & h5:last-child {
+            margin-top: 2rem; 
+        }
+    }
 
     & nav {
         position: fixed;

@@ -120,12 +120,12 @@ $max-vw: 1440px;
     
 h1 {
     @include font-size(114%, 1%, 700);
-    @include fluid-type(font-size, 40px, 60px);
+    @include fluid-type(font-size, 40px, 48px);
     };
 
 h2 {
     @include font-size(100%, 2%, 900);
-    @include fluid-type(font-size, 27px, 40px);
+    @include fluid-type(font-size, 27px, 36px);
     };
 h3 {
     @include font-size(100%, 2%, 900);

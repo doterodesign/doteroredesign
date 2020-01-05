@@ -30,7 +30,7 @@ var cases = [
         next: 'cunyfirst',
         prev: 'gladwell',
         href: 'cored',
-        name: 'My solution to an outdated college student portal platform ecosystem',
+        name: 'My solution to an outdated college student portal ecosystem',
         platform: 'Progressive Web App',
         role: 'Product Designer | UX/UI | I.A. | Founder',
         // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
@@ -522,7 +522,7 @@ var cases = [
                         </clipPath>
                         </defs>
                         </svg>`,
-                        caption: 'Gathering all products and features into one product'
+                        caption: 'Short Navigation Demo'
                     }
                 ]
             },
@@ -582,11 +582,11 @@ var cases = [
                 "images": [
                     {
                         name: 'cunyfirst/wireframe-1.svg',
-                        caption: 'Empty state, courses state, information state, alert state',
+                        caption: 'empty state, courses state, information state, alert state',
                     },
                     {
                         name: 'cunyfirst/wireframe-2.svg',
-                        caption: 'Secondary courses state, information state 2, courses state 2',
+                        caption: 'secondary courses state, information state 2, courses state 2',
                     },
                 ]
             },
@@ -659,7 +659,7 @@ var cases = [
         problem: {
             id: 'main-animation',
             name: 'Problem',
-            heading: 'Hitting the pain points',
+            heading: 'Hitting The Pain Points',
             content: 'I\'ve interviewed and casually spoken to many users throughout the years about what they would like in a student platform and how they interact with it on a daily basis. I was able to research and consolidate their needs based on the existing platform\'s features into the core-features necessary for their day-to-day use cases.',
         },
 
@@ -693,22 +693,22 @@ var cases = [
 
         //WIREFRAMES
         foundation: {
-            name: 'Wireframes',
-            heading: 'Defining the foundations (low-fi wires)',
+            name: 'Flows and Wires',
+            heading: 'Defining The Foundations',
             content: 'The user flows from the research created the foundation to start sketching from. I began with the mobile version because it gives the most constraints in information architecture and how to organize the content. Eventually landing on about 7 base screens for the majority of the content, I got to work on structuring the content.',
         },
 
         //NAVIGATION
         navigation: {
-            name: 'Nav Design',
-            heading: 'I tested four types of navigation',
+            name: 'Nav-Design',
+            heading: 'Testing Four Types Of Navigation',
             content: 'After testing button-only, tabular, dropdown, and iconic navigation, I decided on a combination of three depending on the type of information being accessed. With button-only navigation, users felt the space was cluttered but functional. I have not gotten a large amount of feedback on the tabular and dropdown navigation but will be testing soon for those observations!',
         },
 
         //DYNAMIC CONTENT
         dynamicContent: {
-            name: 'Business Goals',
-            heading: 'The business aspect was another factor to consider',
+            name: 'White-Label Software',
+            heading: 'Defining Business Goals',
             content: 'A white-label software is an all-in-one packaged product that companies and agencies can buy into and customize for their own uses. This means that the overall components and features have to be flexible enough for different use cases while still being able to complete the core-tasks of the software.<br><br>I took this approach because the platforms being used the most by universities is white-label. I wanted to design something that could replace the existing platforms so from a business perspective, this was at the core of corED.',
         },
 
@@ -729,9 +729,9 @@ var cases = [
         //PROTOTYPE
         proto: {
             name: 'Prototype',
-            heading: 'Brief walkthrough',
+            heading: 'Prototype Walkthrough',
             content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function.',
-            p: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/In-progress?node-id=1%3A4886&viewport=1994%2C1387%2C0.31970152258872986&scaling=min-zoom',
+            proto: '<iframe style="border: none;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FdVg3M7TD36D1EGTXUgxNSu0T%2FHi-Fidelity-Prototype%3Fnode-id%3D1%253A1113%26viewport%3D1572%252C1533%252C0.3458743393421173%26scaling%3Dscale-down" allowfullscreen></iframe>',
 
         },
     },

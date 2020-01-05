@@ -145,7 +145,7 @@ const cored = (cs) => {
     let goal = content__article(cs.goal);
     let sneakpeak = content__article(cs.sneakpeak);
     let userflow = content__article(cs.userflow);
-    let foundation = content__article__no__title(cs.foundation);
+    let foundation = content__article(cs.foundation);
     let navigation = content__article(cs.navigation);
     // let navigationFeedback = content__article(cs.navigation.feedback);
     let dynamicContent = content__article(cs.dynamicContent);
@@ -164,7 +164,7 @@ const cored = (cs) => {
     let img__navigation = images(cs.img.navigation);
     let img__dynamic = images(cs.img.dynamic);
     let img__testing = images(cs.img.testing);
-    let img__prototype = button(cs.proto);
+    let protoEmbed = prototypeEmbed(cs.proto);
   
 
 
@@ -173,21 +173,19 @@ const cored = (cs) => {
     comp +=
         `
         ${mas}
-        ${img__prototype}
         ${img__dynamic}
         ${img__sneakpeak}
         ${animation}
-        ${img__userflow}
+        ${proto}
+        ${protoEmbed}
         ${foundation}
+        ${img__userflow}
         ${img__wireframe}
         ${img__testing}
-        ${testing}
         ${navigation}
         ${img__navigation}
         ${dynamicContent}
         ${lesson}
-        ${proto}
-        ${img__prototype}
         `
        
     coredContainer.innerHTML = comp;
