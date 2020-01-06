@@ -1025,8 +1025,9 @@ button.cuny-secondary:focus, button.cuny-secondary:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 540px) {
   #social-media__socials {
     margin-bottom: 0rem;
   }
