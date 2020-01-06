@@ -1,59 +1,10 @@
-var navContainer = $('#nav-container');
-var children = Array.from($(contentContainer).children());
-var noHash = location.hash.replace(/^#/, '');
-var activeElement = $(location.hash);
-var activeChildren = $(activeElement).children();
-var caseStudy = false;
-
-
-window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth'
-})
-
-
-function reset() {
-    //RESET SCROLL POSITION TO 0
-    window.scrollTo(0, 0);
-
-
-    //RESET CASE STUDY PROGRESS BAR
-    caseStudy = false;
-    $('#myBar').css({ "width": "0px" });
-    
-
-    //HIDE ALL CHILDREN TO LOAD NEXT PAGE
-    $(children).hide();
-
-    //SET LOCATION TO HOME IF THERE IS NO HASH OR HASH === #HOME
-    if (location.hash == '' || location.hash === '#home') {
-        $('#current-section').empty();
-        $(navContainer).removeClass('cs-active');
-        location.hash = '#home';
-        $(location.hash).fadeIn(600);
-    } else {
-        active();
-    }
-}
-    reset();
-
-
-//FUNCTION CHANGES ACTIVE CASE STUDY CONTAINER
-function active() {
-    caseStudy = true;
-    $(children).hide();
-    $(navContainer).addClass('cs-active');
-    $(location.hash).delay(450).fadeIn(600);
-}
 
 function progressBar() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
 }
-
 
 
 //EVENT LISTNERS
@@ -64,10 +15,12 @@ window.addEventListener('scroll', function () {
     }
 })
 
+
+
 //ON CLICK FNUCTION
-    document.addEventListener('click', function (e) {
+    document.addEventListener('click', function (event) {
         //IF TARGET IS CLASS BUTTON, GET DATA ATTRIBUTE HREF
-        target = e.target;
+        let target = event.target;
         if (target.matches('.case') || target.matches('.case__image') || target.matches('.case__content') || target.matches('.button')) {
             location.hash = target.getAttribute('data-href');
         }
@@ -105,8 +58,4 @@ window.addEventListener('scroll', function () {
                 $('#content-container').fadeIn(0);
             }
         }
-    });
-
-    window.addEventListener('hashchange', function () {
-        reset(); 
     });

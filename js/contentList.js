@@ -1,15 +1,5 @@
-var contentContainer = document.getElementById('content-container');
-var navContainer = document.getElementById('nav-container');
-var blahContainer = document.getElementById('blah');
-var homeContainer = document.getElementById('home');
-var cunyfirstContainer = document.getElementById('cunyfirst');
-var coredContainer = document.getElementById('cored');
-var ipcContainer = document.getElementById('ipc');
-var salvationarmyContainer = document.getElementById('salvationarmy');
-// var safeSexContainer = document.getElementById('safesex');
-var gladwellContainer = document.getElementById('gladwell');
 //NAVIGATION INFORMATION
-var navigation =
+var homeContent =
 {
     intro: '<h1>Hey, </br>I\'m Dimitri!</h1><h2>UX | UI | Product Designer</h2> <h2>Visual Designer</h2> <h2>Always Learning</h2>',
     description: 'I work to help create clear user experiences and branding between companies and their users.</br></br> With a background in product-design and photo-retouching, I aim to bring unique experiences with a focus on usability.',
@@ -21,7 +11,7 @@ var navigation =
 }
 
 // PREVIEW PROJECTS
-var cases = [
+var caseStudies = [
 
     //CORED
     {
@@ -728,10 +718,10 @@ var cases = [
 
         //PROTOTYPE
         proto: {
-            name: 'Prototype',
+            name: 'View Prototype',
             heading: 'Prototype Walkthrough',
             content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function.',
-            proto: '<iframe style="border: none;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FdVg3M7TD36D1EGTXUgxNSu0T%2FHi-Fidelity-Prototype%3Fnode-id%3D1%253A1113%26viewport%3D1572%252C1533%252C0.3458743393421173%26scaling%3Dscale-down" allowfullscreen></iframe>',
+            proto: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/Hi-Fidelity-Prototype?node-id=1%3A1113&viewport=1572%2C1533%2C0.3458743393421173&scaling=contain',
 
         },
     },

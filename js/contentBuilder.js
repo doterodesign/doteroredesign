@@ -1,12 +1,3 @@
-
-
-const cs__blah = cases[2];
-const cs__cunyfirst = cases[1];
-const cs__cored = cases[0];
-const cs__ipc = cases[3];
-const cs__salvationarmy = cases[4];
-const cs__gladwell = cases[5];
-
 const blah = (cs) => {
 
     let mas = master(cs);
@@ -59,7 +50,6 @@ const blah = (cs) => {
 }
 
 blah(cs__blah);
-nextProject(cs__blah);
     
 
 
@@ -130,8 +120,6 @@ const cunyfirst = (cs) => {
 }
 
 cunyfirst(cs__cunyfirst);
-nextProject(cs__cunyfirst);
-
 
 //CORED
 
@@ -164,7 +152,7 @@ const cored = (cs) => {
     let img__navigation = images(cs.img.navigation);
     let img__dynamic = images(cs.img.dynamic);
     let img__testing = images(cs.img.testing);
-    let protoEmbed = prototypeEmbed(cs.proto);
+    let protoEmbed = button(cs.proto);
   
 
 
@@ -173,11 +161,10 @@ const cored = (cs) => {
     comp +=
         `
         ${mas}
+        ${protoEmbed}
         ${img__dynamic}
         ${img__sneakpeak}
         ${animation}
-        ${proto}
-        ${protoEmbed}
         ${foundation}
         ${img__userflow}
         ${img__wireframe}
@@ -186,14 +173,14 @@ const cored = (cs) => {
         ${img__navigation}
         ${dynamicContent}
         ${lesson}
+        ${proto}
+        ${protoEmbed}
         `
        
     coredContainer.innerHTML = comp;
 }
 
 cored(cs__cored);
-nextProject(cs__cored);
-
 
 //IPC (INTERNATIONAL PARALYMPIC COMMITTEE
 const ipc = (cs) => {
@@ -268,8 +255,6 @@ const ipc = (cs) => {
 }
 
 ipc(cs__ipc);
-nextProject(cs__ipc);
-
 
 //SALVATION ARMY
 const salvationarmy = (cs) => {
@@ -326,7 +311,6 @@ const gladwell = (cs) => {
 }
 
 gladwell(cs__gladwell);
-nextProject(cs__gladwell);
 
 
 

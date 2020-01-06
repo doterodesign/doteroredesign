@@ -52,7 +52,7 @@ function navConstructor(p) {
         `
     return nav;
 }
-navContainer.innerHTML = navConstructor(navigation);
+navContainer.innerHTML = navConstructor(homeContent);
 
 
 //PREVIEW CONSTRUCTOR
@@ -95,7 +95,7 @@ function templateConstructor(p) {
     return projects;
 };
 
-homeContainer.innerHTML = templateConstructor(cases);
+homeContainer.innerHTML = templateConstructor(caseStudies);
 
 
 

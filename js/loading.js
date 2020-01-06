@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-  setTimeout(function() {
-    $('#overlay').toggle('600');
+setTimeout(function () {
+    $("#overlay").toggle('600');
   });
-});

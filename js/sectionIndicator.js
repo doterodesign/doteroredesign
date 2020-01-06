@@ -1,4 +1,3 @@
-var controller = new ScrollMagic.Controller();
 var current = new ScrollMagic.Scene();
 
 function resetScrollMagic() {
@@ -49,10 +48,10 @@ function scrollMagic() {
 }
 // scrollMagic();
 
-window.addEventListener('DOMContentLoaded', function () { 
+// window.addEventListener('DOMContentLoaded', function () { 
     resetScrollMagic();
     scrollMagic();
-})
+// })
 
         //ON HASHCHANGE, LOAD SCROLLMAGIC AND RESET
 window.addEventListener('hashchange', function () {
