@@ -29,6 +29,8 @@ const blah = (cs) => {
     comp +=
         `
         ${mas}
+        ${proto}
+        ${img__prototype}
         ${intro}
         ${user}
         ${img__stat}
@@ -41,9 +43,6 @@ const blah = (cs) => {
         ${feature2}
         ${future}
         ${lesson}
-        ${proto}
-        ${img__prototype}
-        
         `
        
     blahContainer.innerHTML = comp;
@@ -54,7 +53,7 @@ blah(cs__blah);
 
 
 
-//CUNYFIRST
+// CUNYFIRST
 
 const cunyfirst = (cs) => {
 
@@ -119,9 +118,9 @@ const cunyfirst = (cs) => {
     cunyfirstContainer.innerHTML = comp;
 }
 
-cunyfirst(cs__cunyfirst);
+// cunyfirst(cs__cunyfirst);
 
-//CORED
+// CORED
 
 const cored = (cs) => {
 
@@ -166,6 +165,7 @@ const cored = (cs) => {
         ${img__sneakpeak}
         ${animation}
         ${foundation}
+        ${img__sketch}
         ${img__userflow}
         ${img__wireframe}
         ${img__testing}
@@ -222,7 +222,6 @@ const ipc = (cs) => {
         `
         ${mas}
         ${img__proto}
-        ${intro}
         ${img__introduction}
         ${problem}
         ${img__goal}
@@ -245,7 +244,6 @@ const ipc = (cs) => {
         ${img__preview}
         ${designsystem}
         ${img__designsystem}
-        ${img__final}
         ${proto}
         ${img__proto}
         ${lesson}

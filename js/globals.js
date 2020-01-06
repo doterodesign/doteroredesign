@@ -17,7 +17,7 @@ var caseStudies = [
     {
         //HOMEPAGE SETUP
         project: 'corED',
-        next: 'cunyfirst',
+        next: 'blah',
         prev: 'gladwell',
         href: 'cored',
         name: 'My solution to an outdated college student portal ecosystem',
@@ -518,12 +518,12 @@ var caseStudies = [
             },
 
             sketch: {
-                size: 'md',
+                size: 'lg',
 
                 "images": [
                     {
-                        name: 'cunyfirst/cunyfirst-screen-sketches.png',
-                        caption: 'Initial screen concept sketches',
+                        name: 'cunyfirst/combining-projects.svg',
+                        caption: 'Combining multiple standalone apps into one ecosystem',
                     },
                 ]
             },
@@ -534,15 +534,15 @@ var caseStudies = [
                 "images": [
                     {
                         name: 'cunyfirst/desktop-overview.png',
-                        caption: 'Sneakpeak: Desktop Main Dashboard',
+                        caption: 'Desktop Main Dashboard',
                     },
                     {
                         name: 'cunyfirst/desktop-course-active.png',
-                        caption: 'Sneakpeak: Desktop Active Course',
+                        caption: 'Desktop Active Course',
                     },
                     {
                         name: 'cunyfirst/desktop-transcript-overview.png',
-                        caption: 'Sneakpeak: Desktop Transcript Overview',
+                        caption: 'Desktop Transcript Overview',
                     },
                 ]
             },
@@ -553,15 +553,15 @@ var caseStudies = [
                 "images": [
                     {
                         name: 'cunyfirst/finances-flowchart.png',
-                        caption: '',
+                        caption: 'Finances Userflow',
                     },
                     {
                         name: 'cunyfirst/courses-flowchart.png',
-                        caption: '',
+                        caption: 'Courses Userflow',
                     },
                     {
                         name: 'cunyfirst/academics-flowchart.png',
-                        caption: '',
+                        caption: 'Academics Userflow',
                     },
                 ]
             },
@@ -572,11 +572,11 @@ var caseStudies = [
                 "images": [
                     {
                         name: 'cunyfirst/wireframe-1.svg',
-                        caption: 'empty state, courses state, information state, alert state',
+                        caption: 'empty state / courses state / information state / alert state',
                     },
                     {
                         name: 'cunyfirst/wireframe-2.svg',
-                        caption: 'secondary courses state, information state 2, courses state 2',
+                        caption: 'secondary courses state / information state 2 / courses state 2',
                     },
                 ]
             },
@@ -587,7 +587,7 @@ var caseStudies = [
                 "images": [
                     {
                         name: 'cunyfirst/navigation.png',
-                        caption: 'Main Navigation Points',
+                        caption: 'Primary types of navigation',
                     },
                 ]
             },
@@ -598,11 +598,11 @@ var caseStudies = [
                 "images": [
                     {
                         name: 'cunyfirst/overview-screens.png',
-                        caption: 'Primary screen samples',
+                        caption: 'current courses / academic overview / finances overview',
                     },
                     {
                         name: 'cunyfirst/extra-screens.png',
-                        caption: 'Primary and secondary selection buttons',
+                        caption: 'search courses / course details / course options',
                     },
                 ]
             },
@@ -721,284 +721,283 @@ var caseStudies = [
             name: 'Prototype',
             heading: 'Prototype Walkthrough',
             content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function.',
-            proto: '<iframe style="border: none;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FdVg3M7TD36D1EGTXUgxNSu0T%2FHi-Fidelity-Prototype%3Fnode-id%3D1%253A1113%26viewport%3D1572%252C1533%252C0.3458743393421173%26scaling%3Dscale-down" allowfullscreen></iframe>',
-
+            p: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/In-progress?node-id=1%3A4886&viewport=1994%2C1387%2C0.31970152258872986&scaling=min-zoom',
         },
     },
 
     //CUNYFIRST
-    {
-        //HOMEPAGE SETUP
-        project: 'CUNYfirst',
-        next: 'blah',
-        prev: 'cored',
-        href: 'cunyfirst',
-        name: 'Rethinking an outdated education portal – CUNYfirst',
-        platform: 'Mobile',
-        role: 'Product Designer | UX/UI | I.A.',
-        description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
-        descColor: 'primary-black-text',
-        image: 'cunyfirst/cunyfirst-login.gif',
-        primaryColor: 'cuny-primary',
-        supportColor: 'cuny-primary-light',
-        secondaryColor: 'cuny-primary-blue',
-        buttonColor: 'cuny-primary',
+        // {
+        //     //HOMEPAGE SETUP
+        //     project: 'CUNYfirst',
+        //     next: 'blah',
+        //     prev: 'cored',
+        //     href: 'cunyfirst',
+        //     name: 'Rethinking an outdated education portal – CUNYfirst',
+        //     platform: 'Mobile',
+        //     role: 'Product Designer | UX/UI | I.A.',
+        //     description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
+        //     descColor: 'primary-black-text',
+        //     image: 'cunyfirst/cunyfirst-login.gif',
+        //     primaryColor: 'cuny-primary',
+        //     supportColor: 'cuny-primary-light',
+        //     secondaryColor: 'cuny-primary-blue',
+        //     buttonColor: 'cuny-primary',
 
 
-        //CASE STUDY SETUP
-        summary: {
-            overview: 'The ed-tech space, although growing rapidly in educating people, hasn’t expanded far into the day-to-day applications that students and employees use like Asana or Monday has for business teams.</br></br> What if there was a universal application specifically made for students and staff of Universities or schools to better communication, resources, and functionality to all users?',
+        //     //CASE STUDY SETUP
+        //     summary: {
+        //         overview: 'The ed-tech space, although growing rapidly in educating people, hasn’t expanded far into the day-to-day applications that students and employees use like Asana or Monday has for business teams.</br></br> What if there was a universal application specifically made for students and staff of Universities or schools to better communication, resources, and functionality to all users?',
+            
+        //         problem: "More users handle everything on their phone and with no mobile capabilities, the product is harder to access. CUNYfirst is a distributed product to many Universities and as new tech appears, they might turn to more modern products as current users in the CUNY system continue to deal with a bug-ridden product.",
         
-            problem: "More users handle everything on their phone and with no mobile capabilities, the product is harder to access. CUNYfirst is a distributed product to many Universities and as new tech appears, they might turn to more modern products as current users in the CUNY system continue to deal with a bug-ridden product.",
-    
-            goal: 'I chose to design a mobile version of CUNYfirst. The aim is to have all the functionality of the current site in mobile form with less navigation and clicks to achieve user goals.',
-    
-            approach: 'I.A. Restructuring, auditing the current site, consolidating features, user research and testing, new approaches to mobile navigation, and a lot of trial and error.',
-    
-            lesson: 'Not all practical/useful features are liked by users. Even though some features make the product easy to use, a user still may not like it because of how it looks or how much screen space it takes up.',
+        //         goal: 'I chose to design a mobile version of CUNYfirst. The aim is to have all the functionality of the current site in mobile form with less navigation and clicks to achieve user goals.',
+        
+        //         approach: 'I.A. Restructuring, auditing the current site, consolidating features, user research and testing, new approaches to mobile navigation, and a lot of trial and error.',
+        
+        //         lesson: 'Not all practical/useful features are liked by users. Even though some features make the product easy to use, a user still may not like it because of how it looks or how much screen space it takes up.',
 
-            solution: "The user base is massive for this app so I took a gestureless approach to the web app. Through buttons and easily digestable information, the user doesn't feel overwhelmed by the amount of accessible content. I'm currently working on a more refined approach to the navigation.",
-        },
-       
-        tools: [
-            'Figma',
-            'Overflow',
-            'Illustrator',
-            'Principle'
-        ],
+        //         solution: "The user base is massive for this app so I took a gestureless approach to the web app. Through buttons and easily digestable information, the user doesn't feel overwhelmed by the amount of accessible content. I'm currently working on a more refined approach to the navigation.",
+        //     },
+        
+        //     tools: [
+        //         'Figma',
+        //         'Overflow',
+        //         'Illustrator',
+        //         'Principle'
+        //     ],
 
-        img: {
+        //     img: {
 
-            introduction: {
-                size: 'sm',
-                
-                "images": [
-                    {
-                        name: 'cunyfirst/current.png',
-                        caption: 'Current web (desktop) CUNYfirst',
-                    },
-                    {
-                        name: 'cunyfirst/current-mobile.png',
-                        caption: 'Current web (mobile) CUNYfirst',
-                    },
-                ]
-            },
+        //         introduction: {
+        //             size: 'sm',
+                    
+        //             "images": [
+        //                 {
+        //                     name: 'cunyfirst/current.png',
+        //                     caption: 'Current web (desktop) CUNYfirst',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/current-mobile.png',
+        //                     caption: 'Current web (mobile) CUNYfirst',
+        //                 },
+        //             ]
+        //         },
 
-            sketch: {
-                size: 'md',
+        //         sketch: {
+        //             size: 'md',
 
-                "images": [
-                    {
-                        name: 'cunyfirst/cunyfirst-screen-sketches.png',
-                        caption: 'Initial screen concept sketches',
-                    },
-                ]
-            },
+        //             "images": [
+        //                 {
+        //                     name: 'cunyfirst/cunyfirst-screen-sketches.png',
+        //                     caption: 'Initial screen concept sketches',
+        //                 },
+        //             ]
+        //         },
 
-            sneakpeak: {
-                size: 'xl',
+        //         sneakpeak: {
+        //             size: 'xl',
 
-                "images": [
-                    {
-                        name: 'cunyfirst/cunyfirst-course-dashboard.png',
-                        caption: 'Initial V1 Course Dashboard Design',
-                    },
-                ]
-            },
+        //             "images": [
+        //                 {
+        //                     name: 'cunyfirst/cunyfirst-course-dashboard.png',
+        //                     caption: 'Initial V1 Course Dashboard Design',
+        //                 },
+        //             ]
+        //         },
 
-            userflow: {
-                size: 'md',
+        //         userflow: {
+        //             size: 'md',
 
-                "images": [
-                    {
-                        name: 'cunyfirst/cunyfirst-sitemap-sketch.png',
-                        caption: 'Planning the sitemap and userflows',
-                    },
-                    {
-                        name: 'cunyfirst/finances-flowchart.png',
-                        caption: '',
-                    },
-                    {
-                        name: 'cunyfirst/courses-flowchart.png',
-                        caption: '',
-                    },
-                    {
-                        name: 'cunyfirst/academics-flowchart.png',
-                        caption: '',
-                    },
-                ]
-            },
+        //             "images": [
+        //                 {
+        //                     name: 'cunyfirst/cunyfirst-sitemap-sketch.png',
+        //                     caption: 'Planning the sitemap and userflows',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/finances-flowchart.png',
+        //                     caption: '',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/courses-flowchart.png',
+        //                     caption: '',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/academics-flowchart.png',
+        //                     caption: '',
+        //                 },
+        //             ]
+        //         },
 
-            wireframe: {
-                size: 'lg',
+        //         wireframe: {
+        //             size: 'lg',
 
-                "images": [
-                    {
-                        name: 'cunyfirst/wireframe-1.svg',
-                        caption: 'Empty state, courses state, information state, alert state',
-                    },
-                    {
-                        name: 'cunyfirst/wireframe-2.svg',
-                        caption: 'Secondary courses state, information state 2, courses state 2',
-                    },
-                ]
-            },
+        //             "images": [
+        //                 {
+        //                     name: 'cunyfirst/wireframe-1.svg',
+        //                     caption: 'Empty state, courses state, information state, alert state',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/wireframe-2.svg',
+        //                     caption: 'Secondary courses state, information state 2, courses state 2',
+        //                 },
+        //             ]
+        //         },
 
-            navigation: {
-                size: 'sm',
+        //         navigation: {
+        //             size: 'sm',
 
-                "images": [
-                    {
-                        name: 'cunyfirst/navigation-v1.png',
-                        caption: 'Button Navigation',
-                    },
-                ]
-            },
+        //             "images": [
+        //                 {
+        //                     name: 'cunyfirst/navigation-v1.png',
+        //                     caption: 'Button Navigation',
+        //                 },
+        //             ]
+        //         },
 
-            dynamic: {
-                size: 'xl',
+        //         dynamic: {
+        //             size: 'xl',
 
-                "images": [
-                    {
-                        name: 'cunyfirst/overview-screens-v1.png',
-                        caption: 'Primary screen samples',
-                    },
-                    {
-                        name: 'cunyfirst/extra-screens-v1.png',
-                        caption: 'More screen samples',
-                    },
-                ]
-            },
-            testing: {
-                size: 'xs',
+        //             "images": [
+        //                 {
+        //                     name: 'cunyfirst/overview-screens-v1.png',
+        //                     caption: 'Primary screen samples',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/extra-screens-v1.png',
+        //                     caption: 'More screen samples',
+        //                 },
+        //             ]
+        //         },
+        //         testing: {
+        //             size: 'xs',
 
-                "images": [
-                    {
-                        name: 'cunyfirst/planner_v1.png',
-                        caption: 'V1 of Current Courses',
-                    },
-                    {
-                        name: 'cunyfirst/planner_v2.png',
-                        caption: 'V2 of Current Courses',
-                    },
-                    {
-                        name: 'cunyfirst/planner_v3.png',
-                        caption: 'V3 of Current Courses',
-                    },
-                    {
-                        name: 'cunyfirst/planner_v4.png',
-                        caption: 'V4 of Current Courses',
-                    },
-                    {
-                        name: 'cunyfirst/planner_v5.png',
-                        caption: 'V5 of Current Courses',
-                    },
-                    {
-                        name: 'cunyfirst/planner_v6.png',
-                        caption: 'V6 of Current Courses',
-                    },
-                ]
-            },
-        },
+        //             "images": [
+        //                 {
+        //                     name: 'cunyfirst/planner_v1.png',
+        //                     caption: 'V1 of Current Courses',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/planner_v2.png',
+        //                     caption: 'V2 of Current Courses',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/planner_v3.png',
+        //                     caption: 'V3 of Current Courses',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/planner_v4.png',
+        //                     caption: 'V4 of Current Courses',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/planner_v5.png',
+        //                     caption: 'V5 of Current Courses',
+        //                 },
+        //                 {
+        //                     name: 'cunyfirst/planner_v6.png',
+        //                     caption: 'V6 of Current Courses',
+        //                 },
+        //             ]
+        //         },
+        //     },
 
-        //INTRODUCTION
-        introduction: {
-            name: 'introduction',
-            heading: 'Wrapping our heads around CUNYfirst',
-            content: 'CUNYfirst is a widely distributed student center created by The City University of New York (CUNY). Because of that, it would be difficult to spend the money it would take to reproduce the product with modern technology and get it redistributed to the current universities.</br></br> Sadly, this means students and staff deal with a genuinely bad user experience on 10 year old technology. I think there\'s a way to make this product efficiently without breaking the bank.'
-        },
+        //     //INTRODUCTION
+        //     introduction: {
+        //         name: 'introduction',
+        //         heading: 'Wrapping our heads around CUNYfirst',
+        //         content: 'CUNYfirst is a widely distributed student center created by The City University of New York (CUNY). Because of that, it would be difficult to spend the money it would take to reproduce the product with modern technology and get it redistributed to the current universities.</br></br> Sadly, this means students and staff deal with a genuinely bad user experience on 10 year old technology. I think there\'s a way to make this product efficiently without breaking the bank.'
+        //     },
 
-        //PROBLEM
-        problem: {
-            name: 'Problems',
-            heading: 'Hitting the pain points',
-            content: 'The main pain points of users I\'ve gathered speaking to various users are a non-responsive design, hard to access information, and not knowing if you qualify to take a course until very moment you go to apply. Nothing a little information re-organization can\'t fix!',
-        },
+        //     //PROBLEM
+        //     problem: {
+        //         name: 'Problems',
+        //         heading: 'Hitting the pain points',
+        //         content: 'The main pain points of users I\'ve gathered speaking to various users are a non-responsive design, hard to access information, and not knowing if you qualify to take a course until very moment you go to apply. Nothing a little information re-organization can\'t fix!',
+        //     },
 
-        //GOAL
-        goal: {
-            name: 'Goal',
-            heading: 'Mobile Web App for CUNYfirst',
-            content: 'I decided to focus on the mobile version of the website. Many users know that CUNYfirst has an app but do not use it because of its limited functionality and inability to log in properly (rejects your account occasionally).</br></br> I plan to make the mobile version the goto for most student activities as more people have phones than computers.',
-        },
+        //     //GOAL
+        //     goal: {
+        //         name: 'Goal',
+        //         heading: 'Mobile Web App for CUNYfirst',
+        //         content: 'I decided to focus on the mobile version of the website. Many users know that CUNYfirst has an app but do not use it because of its limited functionality and inability to log in properly (rejects your account occasionally).</br></br> I plan to make the mobile version the goto for most student activities as more people have phones than computers.',
+        //     },
 
-        //SNEAKPEAK
-        sneakpeak: {
-            name: 'Sneakpeak',
-            heading: 'The desktop is not forgotten',
-            content: 'SNEAKPEAK! Before moving forward, I wanted to give a sneakpeak into the desktop version and show it\'s being worked on. Back to the study!',
-        },
+        //     //SNEAKPEAK
+        //     sneakpeak: {
+        //         name: 'Sneakpeak',
+        //         heading: 'The desktop is not forgotten',
+        //         content: 'SNEAKPEAK! Before moving forward, I wanted to give a sneakpeak into the desktop version and show it\'s being worked on. Back to the study!',
+        //     },
 
-        //USER RESEARCH
-        ur: {
-            name: 'User Research',
-            heading: 'Surrounded by users!',
-            content: 'Having used CUNY products for almost 10 years and being surrounded by other users, getting feedback on the current website was fairly easy.</br></br> With casual interviews and observing students and staff using CUNYfirst, I felt confident to move forward with planning out the I.A. and userflows.',
-        },
+        //     //USER RESEARCH
+        //     ur: {
+        //         name: 'User Research',
+        //         heading: 'Surrounded by users!',
+        //         content: 'Having used CUNY products for almost 10 years and being surrounded by other users, getting feedback on the current website was fairly easy.</br></br> With casual interviews and observing students and staff using CUNYfirst, I felt confident to move forward with planning out the I.A. and userflows.',
+        //     },
 
-        //USERFLOWS
-        userflow: {
-            name: 'Userflows',
-            heading: 'Focus on userflows = Clear directions',
-            content: 'Going through all of CUNYfirst and recording each function a user can perform took forever! However, after examining, consolidating, and elimating duplicating functionality for three of the primary screens (finances, academics, courses), I created foundational userflows for those categories.</br></br> They gave me enough of the information architecture to begin producing wireframes for the primary layouts.'
-        },
+        //     //USERFLOWS
+        //     userflow: {
+        //         name: 'Userflows',
+        //         heading: 'Focus on userflows = Clear directions',
+        //         content: 'Going through all of CUNYfirst and recording each function a user can perform took forever! However, after examining, consolidating, and elimating duplicating functionality for three of the primary screens (finances, academics, courses), I created foundational userflows for those categories.</br></br> They gave me enough of the information architecture to begin producing wireframes for the primary layouts.'
+        //     },
 
-        //WIREFRAMES
-        wireframe: {
-            name: 'Wireframes',
-            heading: 'Defining the foundations (low-fi wires)',
-            content: 'Sketching these screens were/are challenging because my goal was to reduce the amount of clicks from 1-15 clicks to 1-5 clicks for any given action. Most actions would fall within 1-2 clicks.</br></br> Consolidating the information in a way that allowed for minimal actions required the information for each category to be shown all at once when that category is displayed. Otherwise, users may get annoyed or lost in a maze of menus and dropdowns, eventually disregarding the app.',
-        },
+        //     //WIREFRAMES
+        //     wireframe: {
+        //         name: 'Wireframes',
+        //         heading: 'Defining the foundations (low-fi wires)',
+        //         content: 'Sketching these screens were/are challenging because my goal was to reduce the amount of clicks from 1-15 clicks to 1-5 clicks for any given action. Most actions would fall within 1-2 clicks.</br></br> Consolidating the information in a way that allowed for minimal actions required the information for each category to be shown all at once when that category is displayed. Otherwise, users may get annoyed or lost in a maze of menus and dropdowns, eventually disregarding the app.',
+        //     },
 
-        //NAVIGATION
-        navigation: {
-            name: 'Nav Design',
-            heading: 'Button focused navigation',
-            content: 'To navigate this amount of information, dropdowns and gesture memorization were not great for optimal information accessibility.</br></br> Having the information upfront allows for efficient actions, more readability for screen readers, and an overall responsive-feeling experience.</br></br> How would users feel about it?',
-            feedback: {
-                name: 'Feedback on nav design',
-                heading: 'Button navigation not well received',
-                content: 'After testing with over 10 students, a majority had mixed feelings about the navigation. Did it function? Yes. Is it ugly? Kind of. Even though this design is efficient, many users pointed out it takes up too much screen space.</br></br> With inspiration from the Google Drive app, I plan on implementing hiding the secondary navigation for each category with a "more" button (like my back button here!).',
-            },
-        },
+        //     //NAVIGATION
+        //     navigation: {
+        //         name: 'Nav Design',
+        //         heading: 'Button focused navigation',
+        //         content: 'To navigate this amount of information, dropdowns and gesture memorization were not great for optimal information accessibility.</br></br> Having the information upfront allows for efficient actions, more readability for screen readers, and an overall responsive-feeling experience.</br></br> How would users feel about it?',
+        //         feedback: {
+        //             name: 'Feedback on nav design',
+        //             heading: 'Button navigation not well received',
+        //             content: 'After testing with over 10 students, a majority had mixed feelings about the navigation. Did it function? Yes. Is it ugly? Kind of. Even though this design is efficient, many users pointed out it takes up too much screen space.</br></br> With inspiration from the Google Drive app, I plan on implementing hiding the secondary navigation for each category with a "more" button (like my back button here!).',
+        //         },
+        //     },
 
-        //DYNAMIC CONTENT
-        dynamicContent: {
-            name: 'Dynamic Content',
-            heading: 'Componentization and manipulation',
-            content: 'Reloading all the content everytime we click a button drives everyone crazy. This application is a perfect use case for component-driven design. It would allow developers and designers to build flexible units and combine them to create complex design systems and allowing for a fast turnaround after user testing.</br></br>',
-        },
+        //     //DYNAMIC CONTENT
+        //     dynamicContent: {
+        //         name: 'Dynamic Content',
+        //         heading: 'Componentization and manipulation',
+        //         content: 'Reloading all the content everytime we click a button drives everyone crazy. This application is a perfect use case for component-driven design. It would allow developers and designers to build flexible units and combine them to create complex design systems and allowing for a fast turnaround after user testing.</br></br>',
+        //     },
 
-        //USER TESTING
-        testing: {
-            name: 'User Testing',
-            heading: 'Test and Repeat',
-            content: 'Initial designs are never perfect and this project is no exception. I\'m currently on my fourth version from testing.</br></br> Testing is part of the process so designs are bound to change. The navigation, consolidation of information, and overall aesthetic are still improving, but the design has come a long way since the initial designs.',
-        },
+        //     //USER TESTING
+        //     testing: {
+        //         name: 'User Testing',
+        //         heading: 'Test and Repeat',
+        //         content: 'Initial designs are never perfect and this project is no exception. I\'m currently on my fourth version from testing.</br></br> Testing is part of the process so designs are bound to change. The navigation, consolidation of information, and overall aesthetic are still improving, but the design has come a long way since the initial designs.',
+        //     },
 
-        //LESSON LEARNED
-        lesson: {
-            name: 'Lessons Learned',
-            heading: 'Branding, navigating complex interfaces, and user testing',
-            content: 'CUNY recently rebranded and are slowly creating a cohesive look between all their products. To ensure that CUNYfirst would fit into their wide array of products, following the guidelines were essential.</br></br> Thinking about new ways of navigation for this complex interface was a great experience as well. It opened me up to unconventional solutions that I have not seen before (they may be implemented elsewhere).</br></br> Those who did test it said it was easy to use; with the exception of the bugs in the prototype. With positive and negative feedback from users, I\'ll iterate over the current design for further improvement.',
-        },
+        //     //LESSON LEARNED
+        //     lesson: {
+        //         name: 'Lessons Learned',
+        //         heading: 'Branding, navigating complex interfaces, and user testing',
+        //         content: 'CUNY recently rebranded and are slowly creating a cohesive look between all their products. To ensure that CUNYfirst would fit into their wide array of products, following the guidelines were essential.</br></br> Thinking about new ways of navigation for this complex interface was a great experience as well. It opened me up to unconventional solutions that I have not seen before (they may be implemented elsewhere).</br></br> Those who did test it said it was easy to use; with the exception of the bugs in the prototype. With positive and negative feedback from users, I\'ll iterate over the current design for further improvement.',
+        //     },
 
-        //PROTOTYPE
-        proto: {
-            name: 'Prototype',
-            heading: 'Brief walkthrough',
-            content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function. <br></br> P.S. I\'m now working on the desktop version along side the mobile and it\'s looking good!',
-            p: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/In-progress?node-id=1%3A4886&viewport=1994%2C1387%2C0.31970152258872986&scaling=min-zoom',
+        //     //PROTOTYPE
+        //     proto: {
+        //         name: 'Prototype',
+        //         heading: 'Brief walkthrough',
+        //         content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function. <br></br> P.S. I\'m now working on the desktop version along side the mobile and it\'s looking good!',
+        //         p: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/In-progress?node-id=1%3A4886&viewport=1994%2C1387%2C0.31970152258872986&scaling=min-zoom',
 
-        },
-    },
+        //     },
+    // },
     
      //BLAH
      {
         //HOMEPAGE SETUP
         project: 'BLAH',
         next: 'ipc',
-        prev: 'cunyfirst',
+        prev: 'cored',
         href: 'blah',
         name: 'Rethinking Mental Self-Help',
         platform: 'Mobile App',
@@ -1135,53 +1134,53 @@ var caseStudies = [
         //INTRODUCTION
         introduction: {
             name: 'introduction',
-            heading: 'General and Social Anxiety from social media',
+            heading: 'General and Social Anxiety From Social Media',
             content: 'Have you ever felt like you have no one to speak to? Not because there\'s no one there to listen, but because you fear being judged. Even worse, you can get hurt if you do. Anxiety affects 25.1% of kids ages 13-18 but only 60% get treatment. Anxiety can be caused by many things and after speaking to many individuals around 20-24 about their teenage to adult years, many agreed social media made them more self-conscious, anxious, and depressed more often.',
         },
 
         //USER RESEARCH
         ur: {
             name: 'User Research',
-            heading: 'Who\'ll even use this? & demographic',
+            heading: 'Who\'ll Even Use This?',
             content: 'Even though anyone can use the app, based on the statistics I found, 18-29 year old females would be the main user demographic.</br></br>About 50% of all age groups imagine they would use an app for stress and anxiety relief, while only 8% on average use them regularly. The odds aren\'t looking great for long-term use of the app but let\'s be hopeful.',
         },
 
         //COMPETITOR RESEARCH
         cr: {
             name: 'Competitor Research',
-            heading: 'Phew! No competitors',
+            heading: 'Phew! No Competitors',
             content: 'Thankfully there\'s no one to compete with! Unlike apps such as Daylio, Uplifter, and Moodnotes, Blah does not track any progress of your emotions. Emotion tracking is pretty helpful for people with a therapist. It may not be effective for those that would rather vent and forget.',
         },
         
         //GOAL
         goal: {
             name: 'Goal',
-            heading: 'Why should I use BLAH?',
+            heading: 'Why Should I Use BLAH?',
             content: 'Many people do not have an outlet to express their feelings without judgement. Although social media seems like a good option to vent, as we\'ve seen in recent news, many of those thoughts are used against the people that expressed themselves in the past.</br></br> I set out to create a space where people can express themselves off of social media without feeling judged or having their words used against them.',
         },
 
         feature1: {
             name: 'No Permissions',
-            heading: 'No information storage = No permissions needed',
+            heading: 'No Stored Info = No Permissions Needed',
             content: 'I wouldn\'t want my thoughts recorded anywhere for anyone to grab; Would you? After a message is complete on BLAH, it gets swiped away and no information is stored. </br></br>The call feature behaves the same way. Nothing is recorded before, during, or after a call. It\'s just you yelling at your phone until you feel better. You won\'t hurt it\'s feelings, I promise.',
         },
         feature2: {
             name: 'Resource Accessability',
-            heading: 'Quick access to the best suicide prevention resource',
+            heading: 'Quick Access to Suicide Prevention Resources',
             content: 'The app does not replace therapy. I\'m a big advocate for getting help when people need it most. It is meant as a forgetful journal and not to replace human interaction and comfort. </br></br> If a user feels like harming themselves, I\’ve implemented a National Suicide Prevention Line contact button next to the BLAH call button. This button calls the hotline and should only be used in real emergencies.',
         },
        
         //future features
         future: {
             name: 'Future Features',
-            heading: 'What else can be added?',
+            heading: 'Other Features? Chatbot Therapy',
             content: 'Have you gone to therapy? It\'s expensive! It would be great to provide quality therapy to those that can\'t afford it.</br></br> I\'d love to test a chatbot custom to each user that adapts to how they speak and allow the user to reflect on their thoughts. Implementing this on both the message and phone features would be awesome but extremely difficult to filter out negative self-speak.</br></br>Through a guided thought process, the chatbots can help users come to their own conclusions and feel accomplished to have come closer to solving their current problem.',
         },
 
         //LESSON LEARNED
         lesson: {
             name: 'Lessons Learned',
-            heading: 'Sometimes simple is best',
+            heading: 'Sometimes Simple Is Best',
             content: 'I quickly started imagining what the app could potentially do in the future. After a while, I\'d realized that adding more features might disrupt the primary goal of venting because a user might explore too much.</br></br> However, there\'s no proof to that claim and hopefully I can make this app really happen to test it!',
         },
 
@@ -1394,14 +1393,14 @@ var caseStudies = [
         //PROBLEM
         problem: {
             name: 'Problems',
-            heading: 'Hitting the pain points',
+            heading: 'Hitting the Pain Points',
             content: 'The main pain points of users that I\'ve gathered are a non-responsive design, hard to access information, and an outdated design in general. Their current bounce rate is at 41% and although the content is informative, no one is accessing it because it is hard to find.',
         },
 
         //GOAL
         goal: {
             name: 'Goal',
-            heading: 'Start with the important content: Homepage and News',
+            heading: 'Goal: Homepage and News',
             content: 'A bounce rate is how often a user leaves right after landing on the site. As you\'d guess, a high bounce rate means a low retention rate.</br></br> Creating a compelling homepage, as well as reformatting the content such as articles and video is a great start to improving their retention rate. To start, I took a look at their direct and indirect competitors within the televised sports industry.',
         },
 
@@ -1412,7 +1411,7 @@ var caseStudies = [
 
                 olympics: {
                     name: 'CR: Olympics',
-                    heading: 'Main Competitor: Olympic.org',
+                    heading: 'Defining Competitors: Olympic.org',
                     content: 'With a clean and modern design, detailed navigation, and mostly responsive design, there\'s a lot to like. However, with non-responsive imagery for small screens and two-four clicks to drill down through the mobile navigation, it showed me what not to do for mega-navigations on mobile devices.'
                 },
                 lpga: {
@@ -1438,36 +1437,36 @@ var caseStudies = [
         //JOURNEY   
         journey: {
             name: 'Journey Maps',
-            heading: 'Inspired by Lego\'s Journey Mapping',
-            content: 'Lego developed a journey map experience that allows for describing users feelings before they know of the product, during an encounter, and after modifications based on their feedback. This type of map allows stakeholders get an idea of what users seek in a concise manner.',
+            heading: 'Journey Mapping: Lego Inspired',
+            content: 'This map developed by lego documents the user\'s feelings before they know of the product, during an encounter, and after modifications based on their feedback. This type of map allows stakeholders get an idea of what users seek in a concise manner.',
         },
 
         //USERFLOWS AND SITEMAPS
         userflow: {
             name: 'Userflows and Sitemap',
-            heading: 'Critical information architecture development',
+            heading: 'Defining the Foundations',
             content: 'Knowing the users helped in determining the flow of news and events because it guided me to organizing content for both sighted and non-sighted people. I also included the sitemap I created before knowing what I was getting myself into and changing the project\'s scope.'
         },
 
         //WIREFRAMES
         wireframe: {
             name: 'Wireframes',
-            heading: 'Defining the foundations (low-fi wires)',
+            heading: 'Initial Design Not Accessible',
             content: 'I struggled with changing my design to hi-fidelity after realizing my initial structure was not user friendly. With over three iterations, this is where I started changing the project\'s scope from the whole site to only the homepage, article page, and creating a component library/mini-design system.',
         },
 
         //DYNAMIC CONTENT
         designsystem: {
             name: 'Design System',
-            heading: 'Crafting component libraries and design systems are fun',
-            content: 'Learning to begin crafting a design system was a great experience. It gave constraints for a more efficient workflow in the long run. It\'s not complete but does gives a good idea of the overall structure and direction I was taking for the site. Check out that system below.',
+            heading: 'Crafting a Design System',
+            content: 'Learning to begin creating a design system was a great experience. It gave constraints for a more efficient workflow in the long run. It\'s not complete but does gives a good idea of the overall structure and direction I was taking for the site. Check out that system below.',
             p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=0%3A1&viewport=98%2C263%2C0.05&scaling=contain',
         },
 
         //PROTOTYPE
         proto: {
             name: 'Prototype',
-            heading: 'Brief walkthrough of desktop/mobile homepage & news',
+            heading: 'Short Walkthrough of Homepage & News',
             content: 'I incorporated the dropdowns and points of contact a user encounters while searching for content, specifically news. You\'ll be able to navigate the hompage and linking out to an article.',
             p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=92%3A2271&viewport=174%2C274%2C0.0853344202041626&scaling=scale-down',
 
@@ -1476,8 +1475,8 @@ var caseStudies = [
         //LESSON
         lesson: {
             name: 'Lesson',
-            heading: 'Know the complete scope of the project',
-            content: 'I\'ll be honest and say I thought it wouldn\'t be as challenging as it was. I would do this project much differently in the future but I learned to incorporate journey maps, personas, and developing design systems along the way. In realizing how large the project was, I re-evaluated where I should start and landed on what you saw above.</br></br> Thanks for coming along on this one with me. It was definitely a learning experience.'
+            heading: 'Know the Project\'s Complete Scope',
+            content: 'I\'ll be honest and say I thought it wouldn\'t be as challenging as it was. I would do this project much differently in the future but I learned to incorporate journey maps, personas, and developing design systems along the way. In realizing how large the project was, I re-evaluated where I should start and landed on what you saw above.</br></br> Thanks for coming along on this one with me. It was a great learning experience.'
         },
     },
 
@@ -1658,18 +1657,18 @@ var caseStudies = [
 
 
 //CASE STUDY POSITIONS IN JSON FILE
-const cs__blah = caseStudies[2];
-const cs__cunyfirst = caseStudies[1];
+const cs__blah = caseStudies[1];
+// const cs__cunyfirst = caseStudies[1];
 const cs__cored = caseStudies[0];
-const cs__ipc = caseStudies[3];
-const cs__salvationarmy = caseStudies[4];
-const cs__gladwell = caseStudies[5];
+const cs__ipc = caseStudies[2];
+const cs__salvationarmy = caseStudies[3];
+const cs__gladwell = caseStudies[4];
 
 //CONTENT PARENT CONTAINERS IN INDEX.HTML
 const contentContainer = document.getElementById('content-container');
 const blahContainer = document.getElementById('blah');
 const homeContainer = document.getElementById('home');
-const cunyfirstContainer = document.getElementById('cunyfirst');
+// const cunyfirstContainer = document.getElementById('cunyfirst');
 const coredContainer = document.getElementById('cored');
 const ipcContainer = document.getElementById('ipc');
 const salvationarmyContainer = document.getElementById('salvationarmy');

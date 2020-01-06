@@ -282,7 +282,7 @@ $nav-height: 60px;
                         display: block;
                         grid-column: 1 / 2;
                         justify-self: start;
-                        margin-left: 1.5rem;
+                        margin-left: 1rem;
                     }
                 }
 
@@ -402,7 +402,7 @@ $nav-height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
 
         @media screen and (min-width: $breakpoint) {
             & {

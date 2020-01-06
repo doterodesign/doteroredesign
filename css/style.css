@@ -47,7 +47,7 @@ table {
 }
 
 .blah-primary {
-  background: #24BDFF;
+  background: #FFB82F;
   color: #FFFFFF;
 }
 
@@ -62,7 +62,7 @@ table {
 }
 
 .blah-primary-text {
-  color: #24BDFF;
+  color: #FFB82F;
 }
 
 .blah-secondary-text {
@@ -103,7 +103,7 @@ table {
 }
 
 .gladwell-blue {
-  background: #1695e1;
+  background: #F6F6F6;
   color: #FFFFFF;
 }
 
@@ -555,7 +555,7 @@ button.secondary {
   transition: color, background 0.3s ease-in-out;
 }
 button.blah-primary {
-  background: #24BDFF;
+  background: #FFB82F;
   -webkit-box-shadow: inset 0px 0px 0px 3px #FFFFFF;
   box-shadow: inset 0px 0px 0px 3px #FFFFFF;
 }
@@ -582,7 +582,7 @@ button.blah-secondary {
   box-shadow: inset 0px 0px 0px 3px #FFFFFF;
 }
 button.blah-secondary:focus, button.blah-secondary:hover {
-  background: #24BDFF;
+  background: #FFB82F;
   -webkit-transition: color, background 0.3s ease-in-out;
   transition: color, background 0.3s ease-in-out;
 }
@@ -942,7 +942,7 @@ button.cuny-secondary:focus, button.cuny-secondary:hover {
   display: block;
   grid-column: 1/2;
   justify-self: start;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 #nav-container.cs-active nav.active .menu-nav #main-logo {
   display: block;
@@ -1025,7 +1025,6 @@ button.cuny-secondary:focus, button.cuny-secondary:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 @media screen and (min-width: 820px) {
   #social-media__socials {

@@ -14,32 +14,6 @@
 //     loadCdn("http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js")
 // })
 
-// import('js/loading.js')
-// .then((module) => {
-//     import('js/globals.js')
-//         .then((module) => {
-//             import('js/contentTemplates.js')
-//             .then((module) => {
-//                 import('js/contentBuilder.js')
-//                 .then((module) => {
-//                     import('js/reset.js')
-//                     .then((module) => {
-//                         import('js/navigation.js')
-//                         .then((module) => {
-//                             import('js/sectionIndicator.js')
-//                             .then((module) => {
-//                                 import('js/coredAnimation.js')
-//                                 .then((module) => {
-                                
-//                             })
-//                         })
-//                     })
-//                 })
-//             })
-//         })
-//     })
-// })
-
 
 function dynamicContent() {
     window.addEventListener("load", function () {
