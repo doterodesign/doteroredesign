@@ -39,6 +39,7 @@ function dynamicContent() {
         loadjscssfile("js/globals.js", "js")
         loadjscssfile("js/contentTemplates.js", "js")
         loadjscssfile("js/contentBuilder.js", "js")
+        loadjscssfile("js/homepageAnimation.js", "js")
         loadjscssfile("js/reset.js", "js")
         loadjscssfile("js/navigation.js", "js")
         loadjscssfile("js/sectionIndicator.js", "js")
