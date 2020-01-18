@@ -1,6 +1,24 @@
+const content__article = (section) => {
+    return `
+    <article class="content__article" data-section-name="${section.name}">
+        <h2 class="section-name section-name--project-name">${section.heading}</h2>
+        <p class="cr-neutral-800">${section.content}</p>
+    </article>
+   `
+}
+
+const content__article__no__title = (section) => {
+    return `
+    <article class="content__article" data-section-name="${section.name}">
+        <p class="cr-neutral-800">${section.content}</p>
+    </article>
+   `
+}
+
 //CONSTRUCT NAVIGATION
 function navConstructor(p) {
     let nav = '';
+    let text = p.process
         nav +=
         `
         <nav>
@@ -35,7 +53,6 @@ function navConstructor(p) {
             <h5 class="cr-red-base cr-bold-12">Hand-coded with love &hearts;</h5>
             </div>
             
-            
             <div id="social-media">
                 <div id="social-media__socials">
                     <a href="https://www.linkedin.com/in/dimitri-otero/" target="_blank" rel=”noreferrer” aria-label="Dimitri Otero Linkedin"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-linkedin"></use></svg></a>
@@ -53,6 +70,20 @@ function navConstructor(p) {
     return nav;
 }
 navContainer.innerHTML = navConstructor(homeContent);
+
+/* PROCESS SECTION ADDED TO HOMEPAGE ABOVE */
+{/* <section id="process" class="info-container" style="justify-content:start">
+<object id="process-animation" type="image/svg+xml" data="images/home/process-animation2.svg"></object>
+    <div class="info-container" style="overflow:scroll; grid-row-gap: 0">
+    `
+        for (var i in text) { 
+    nav +=
+        content__article(text[i])
+        }
+    nav +=
+    `
+    </div>
+</section> */}
 
 
 //PREVIEW CONSTRUCTOR
@@ -81,9 +112,9 @@ function templateConstructor(p) {
             <section class="case" data-project-name='${p[i].href}' data-href="${p[i].href}">
                 <img class="case__image ${p[i].primaryColor}" src="images/${p[i].image}" alt="" data-href="${p[i].href}">
                 <div class="case__content" data-href="${p[i].href}">
+                <p class="case__name cr-reg-16 bold cr-neutral-700">${p[i].project}</p> 
                     <p class="cr-bold-12 all-caps bold cr-neutral-600">${p[i].role}</p>
-                    <h4 class="content__description title-case">${p[i].name}</h4>
-                    <p class="case__name cr-reg-14 bold cr-neutral-700">${p[i].project}</p> 
+                    <h4 class="content__description title-case cr-neutral-800">${p[i].name}</h4>  
                 </div>
             </section>
         `
@@ -96,7 +127,6 @@ function templateConstructor(p) {
 };
 
 homeContainer.innerHTML = templateConstructor(caseStudies);
-
 
 
 
@@ -175,25 +205,6 @@ const master = (p) => {
     `
     return caseStudy;
 };
-
-
-
-const content__article = (section) => {
-    return `
-    <article class="content__article" data-section-name="${section.name}">
-        <h2 class="section-name section-name--project-name">${section.heading}</h2>
-        <p class="cr-neutral-800">${section.content}</p>
-    </article>
-   `
-}
-
-const content__article__no__title = (section) => {
-    return `
-    <article class="content__article" data-section-name="${section.name}">
-        <p class="cr-neutral-800">${section.content}</p>
-    </article>
-   `
-}
 
 const images = (section) => {
     let c = '';

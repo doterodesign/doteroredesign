@@ -168,6 +168,11 @@ table {
   color: #CC1C54;
 }
 
+.ft-green {
+  color: #1e1e1e;
+  background: #4CB83B;
+}
+
 .cr-blue-base {
   color: #455FA8;
 }
@@ -1558,6 +1563,7 @@ img {
   text-align: end;
   justify-self: center;
 }
+
 .image__container {
   min-height: 50rem;
 }
@@ -1596,7 +1602,6 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 40rem));
 }
 .image__container-lg > * {
-  margin: 1rem;
   min-width: 10rem;
   max-width: 40rem;
 }

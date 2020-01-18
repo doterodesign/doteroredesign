@@ -24,6 +24,7 @@ $gladwell-blue: #F6F6F6;
 $ipc-blue:#00549F;
 $ipc-blue-lighten: #398FDB;
 $ipc_yellow: #FFB100;
+$ft_green: #4CB83B;
 
 .blah-primary {
     background: $blah-primary;
@@ -134,6 +135,10 @@ $ipc_yellow: #FFB100;
 }
 .sex-red-text {
     color: $sex-red;
+}
+.ft-green {
+    color: $primary-black;
+    background: $ft_green;
 }
 
 //BASE COLORS

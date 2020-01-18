@@ -1,3 +1,124 @@
+// CORED
+
+const cored = (cs) => {
+
+    let mas = master(cs);
+    let intro = content__article(cs.introduction);
+    let user = content__article(cs.ur);
+    let animation = contentWImage(cs.problem, cs.img.problem);
+    // let problem = content__article__no__title(cs.problem);
+    let goal = content__article(cs.goal);
+    let sneakpeak = content__article(cs.sneakpeak);
+    let userflow = content__article(cs.userflow);
+    let foundation = content__article(cs.foundation);
+    let navigation = content__article(cs.navigation);
+    // let navigationFeedback = content__article(cs.navigation.feedback);
+    let dynamicContent = content__article(cs.dynamicContent);
+    let testing = content__article(cs.testing);
+    let lesson = content__article(cs.lesson);
+    let proto = content__article(cs.proto);
+
+
+    // IMAGES
+    let img__introduction = images(cs.img.introduction);
+    let img__sketch = images(cs.img.sketch);
+    let img__problem = images(cs.img.problem);
+    let img__sneakpeak = images(cs.img.sneakpeak);
+    let img__wireframe = images(cs.img.wireframe);
+    let img__userflow = images(cs.img.userflow);
+    let img__navigation = images(cs.img.navigation);
+    let img__dynamic = images(cs.img.dynamic);
+    let img__testing = images(cs.img.testing);
+    let protoEmbed = button(cs.proto);
+  
+
+
+    let comp = '';
+
+    comp +=
+        `
+        ${mas}
+        ${protoEmbed}
+        ${img__dynamic}
+        ${img__sneakpeak}
+        ${animation}
+        ${foundation}
+        ${img__sketch}
+        ${img__userflow}
+        ${img__wireframe}
+        ${img__testing}
+        ${navigation}
+        ${img__navigation}
+        ${dynamicContent}
+        ${lesson}
+        ${proto}
+        ${protoEmbed}
+        `
+       
+    coredContainer.innerHTML = comp;
+}
+cored(cs__cored);
+
+const fueltime = (cs) => {
+
+    let mas = master(cs);
+    let intro = content__article(cs.introduction);
+    let user = content__article(cs.ur);
+    let animation = contentWImage(cs.problem, cs.img.problem);
+    // let problem = content__article__no__title(cs.problem);
+    let goal = content__article(cs.goal);
+    let sneakpeak = content__article(cs.sneakpeak);
+    let userflow = content__article(cs.userflow);
+    let foundation = content__article(cs.foundation);
+    let navigation = content__article(cs.navigation);
+    // let navigationFeedback = content__article(cs.navigation.feedback);
+    let dynamicContent = content__article(cs.dynamicContent);
+    let testing = content__article(cs.testing);
+    let lesson = content__article(cs.lesson);
+    let proto = content__article(cs.proto);
+
+
+    // IMAGES
+    let img__introduction = images(cs.img.introduction);
+    let img__sketch = images(cs.img.sketch);
+    let img__problem = images(cs.img.problem);
+    let img__sneakpeak = images(cs.img.sneakpeak);
+    let img__wireframe = images(cs.img.wireframe);
+    let img__userflow = images(cs.img.userflow);
+    let img__navigation = images(cs.img.navigation);
+    let img__dynamic = images(cs.img.dynamic);
+    let img__testing = images(cs.img.testing);
+    let protoEmbed = button(cs.proto);
+  
+
+
+    let comp = '';
+
+    comp +=
+        `
+        ${mas}
+        ${protoEmbed}
+        ${img__dynamic}
+        ${img__sneakpeak}
+        ${animation}
+        ${foundation}
+        ${img__sketch}
+        ${img__userflow}
+        ${img__wireframe}
+        ${img__testing}
+        ${navigation}
+        ${img__navigation}
+        ${dynamicContent}
+        ${lesson}
+        ${proto}
+        ${protoEmbed}
+        `
+       
+    fueltimeContainer.innerHTML = comp;
+}
+fueltime(cs__fueltime);
+
+
 const blah = (cs) => {
 
     let mas = master(cs);
@@ -119,68 +240,6 @@ const cunyfirst = (cs) => {
 }
 
 // cunyfirst(cs__cunyfirst);
-
-// CORED
-
-const cored = (cs) => {
-
-    let mas = master(cs);
-    let intro = content__article(cs.introduction);
-    let user = content__article(cs.ur);
-    let animation = contentWImage(cs.problem, cs.img.problem);
-    // let problem = content__article__no__title(cs.problem);
-    let goal = content__article(cs.goal);
-    let sneakpeak = content__article(cs.sneakpeak);
-    let userflow = content__article(cs.userflow);
-    let foundation = content__article(cs.foundation);
-    let navigation = content__article(cs.navigation);
-    // let navigationFeedback = content__article(cs.navigation.feedback);
-    let dynamicContent = content__article(cs.dynamicContent);
-    let testing = content__article(cs.testing);
-    let lesson = content__article(cs.lesson);
-    let proto = content__article(cs.proto);
-
-
-    // IMAGES
-    let img__introduction = images(cs.img.introduction);
-    let img__sketch = images(cs.img.sketch);
-    let img__problem = images(cs.img.problem);
-    let img__sneakpeak = images(cs.img.sneakpeak);
-    let img__wireframe = images(cs.img.wireframe);
-    let img__userflow = images(cs.img.userflow);
-    let img__navigation = images(cs.img.navigation);
-    let img__dynamic = images(cs.img.dynamic);
-    let img__testing = images(cs.img.testing);
-    let protoEmbed = button(cs.proto);
-  
-
-
-    let comp = '';
-
-    comp +=
-        `
-        ${mas}
-        ${protoEmbed}
-        ${img__dynamic}
-        ${img__sneakpeak}
-        ${animation}
-        ${foundation}
-        ${img__sketch}
-        ${img__userflow}
-        ${img__wireframe}
-        ${img__testing}
-        ${navigation}
-        ${img__navigation}
-        ${dynamicContent}
-        ${lesson}
-        ${proto}
-        ${protoEmbed}
-        `
-       
-    coredContainer.innerHTML = comp;
-}
-
-cored(cs__cored);
 
 //IPC (INTERNATIONAL PARALYMPIC COMMITTEE
 const ipc = (cs) => {

@@ -35,19 +35,6 @@ img {
     // .content__article + & {
     //     padding: 2rem 0;
     // }
-
-    @media screen and (min-width: $breakpoint-sm) {
-        & {
-            // width: 100%;
-        }
-    }
-
-    @media screen and (min-width: $breakpoint) {
-        & > * {
-            // margin: 2rem;
-            // width: 100%;
-        }
-    }
 }
 
 .image__container {
@@ -109,7 +96,7 @@ img {
         @extend %image__container;
         grid-template-columns: repeat(auto-fit, minmax(10rem, 40rem));
         & > * {
-        margin: 1rem;
+        // margin: 1rem;
         min-width:10rem;
         max-width:40rem;
         }

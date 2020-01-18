@@ -17,12 +17,17 @@ window.addEventListener('scroll', function () {
 
 
 //ON CLICK FNUCTION
-    document.addEventListener('click', function (event) {
+document.addEventListener('click', function (event) {
+        let pat = /^https?:\/\//i;
         //IF TARGET IS CLASS BUTTON, GET DATA ATTRIBUTE HREF
         let target = event.target;
         if (target.matches('.case') || target.matches('.case__image') || target.matches('.case__content') || target.matches('.button')) {
             location.hash = target.getAttribute('data-href');
         }
+
+        if (location.hash == pat.test(urlString)) {
+            location.hash = target;
+        } 
 
         //IF TARGET IS MAIN-LOGO, LOCATION.HASH = #HOME
         if (target.matches('#main-logo')) {
@@ -57,4 +62,6 @@ window.addEventListener('scroll', function () {
                 $('#content-container').fadeIn(0);
             }
         }
+            // Cancel the default action
+        e.preventDefault();
     });

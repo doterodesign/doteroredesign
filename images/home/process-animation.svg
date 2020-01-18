@@ -1,6 +1,6 @@
-<svg width="460" height="341" viewBox="0 0 460 341" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="process-animation">
-<g id="main-container">
+<svg viewBox="0 0 460 341" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<g id="process--main-container">
 <g clip-path="url(#clip0)">
 <rect x="1.48" y="46.48" width="457.04" height="293.04" rx="6.52" fill="white"/>
 <g id="process__navbar">
@@ -257,7 +257,7 @@
 </g>
 <rect x="1.48" y="46.48" width="457.04" height="293.04" rx="6.52" stroke="#E6E7E9" stroke-width="2.96"/>
 </g>
-<g id="progress-bar">
+<g id="process-bar">
 <circle id="progress--section-1" cx="268" cy="15" r="14" fill="#E6E7E9"/>
 <circle id="progress--section-2" cx="326.213" cy="15" r="14" fill="#E6E7E9"/>
 <circle id="progress--section-3" cx="384.427" cy="15" r="14" fill="#E6E7E9"/>
@@ -274,9 +274,10 @@
 </g>
 <defs>
 <clipPath id="clip0">
+<rect width="460" height="340" rx="20" ry="20" fill="white"/>
 </clipPath>
 <clipPath id="clip1">
-<rect y="69" width="460" height="272" fill="white"/>
+<rect y="2" width="460" height="340" fill="white"/>
 </clipPath>
 <clipPath id="clip2">
 <rect x="0.5" y="101" width="459" height="482" fill="white"/>
