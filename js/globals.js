@@ -309,7 +309,7 @@ var caseStudies = [
         //HOMEPAGE SETUP
         project: 'International Paralympic Committee',
         next: 'cored',
-        prev: 'gladwell',
+        prev: 'blah',
         href: 'ipc',
         name: 'Restructuring IPC News',
         platform: 'Web & Mobile',
@@ -653,7 +653,7 @@ var caseStudies = [
             },
 
             problem: {
-                size: 'lg',
+                size: 'lg-svg',
 
                 "images": [
                     {
@@ -1308,7 +1308,7 @@ var caseStudies = [
      {
         //HOMEPAGE SETUP
         project: 'BLAH',
-        next: 'salvationarmy',
+        next: 'ipc',
         prev: 'cored',
         href: 'blah',
         name: 'Rethinking Mental Self-Help',

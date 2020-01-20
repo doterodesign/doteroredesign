@@ -8,7 +8,7 @@ img {
     // display: inline-grid;
     display:-webkit-box;
     display:-ms-flexbox;
-    display:flex;
+    display:grid;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
@@ -99,6 +99,19 @@ img {
         // margin: 1rem;
         min-width:10rem;
         max-width:40rem;
+        }
+    }
+    &-lg-svg {
+        @extend %image__container;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 40rem));
+        display: grid;
+        & > * {
+        // margin: 1rem;
+        min-width:10rem;
+        max-width:40rem;
+        height: 90vh;
+        display: flex;
+        flex-flow: column;
         }
     }
 

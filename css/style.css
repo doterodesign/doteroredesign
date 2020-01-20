@@ -1467,7 +1467,6 @@ a .icon {
   justify-items: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  height: 100vh;
   width: 100vw;
   grid-row-gap: 2rem;
 }
@@ -1586,12 +1585,12 @@ img {
   width: 100%;
 }
 
-.image__container-full, .image__container-xl, .image__container-lg, .image__container-md, .image__container-sm, .image__container-xs {
+.image__container-full, .image__container-xl, .image__container-lg-svg, .image__container-lg, .image__container-md, .image__container-sm, .image__container-xs {
   max-width: 1384px;
   min-height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: grid;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
@@ -1647,6 +1646,17 @@ img {
 .image__container-lg > * {
   min-width: 10rem;
   max-width: 40rem;
+}
+.image__container-lg-svg {
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 40rem));
+  display: grid;
+}
+.image__container-lg-svg > * {
+  min-width: 10rem;
+  max-width: 40rem;
+  height: 90vh;
+  display: flex;
+  flex-flow: column;
 }
 .image__container-xl {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 60rem));
