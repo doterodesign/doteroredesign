@@ -59,6 +59,7 @@ const cored = (cs) => {
 }
 cored(cs__cored);
 
+
 const fueltime = (cs) => {
 
     let mas = master(cs);
@@ -239,7 +240,7 @@ const cunyfirst = (cs) => {
     cunyfirstContainer.innerHTML = comp;
 }
 
-// cunyfirst(cs__cunyfirst);
+
 
 //IPC (INTERNATIONAL PARALYMPIC COMMITTEE
 const ipc = (cs) => {

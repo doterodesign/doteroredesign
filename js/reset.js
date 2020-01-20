@@ -23,7 +23,7 @@ function reset() {
         $('#current-section').empty();
         $(navContainer).removeClass('cs-active');
         location.hash = '#home';
-        $(location.hash).fadeIn(600);
+        $(location.hash).fadeIn(1000);
     } else {
         active();
     }

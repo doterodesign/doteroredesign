@@ -118,6 +118,8 @@ img {
         display: grid;
         grid-template-columns: 1fr;
         padding: 0;
+        clip-path: view-box;
+        align-content: center;
         & > * {
             width: 100%;
         }

@@ -109,12 +109,14 @@ function templateConstructor(p) {
         // </section>
         projects +=
         `
-            <section class="case" data-project-name='${p[i].href}' data-href="${p[i].href}">
-                <img class="case__image ${p[i].primaryColor}" src="images/${p[i].image}" alt="" data-href="${p[i].href}">
-                <div class="case__content" data-href="${p[i].href}">
-                <p class="case__name cr-reg-16 bold cr-neutral-700">${p[i].project}</p> 
-                    <p class="cr-bold-12 all-caps bold cr-neutral-600">${p[i].role}</p>
-                    <h4 class="content__description title-case cr-neutral-800">${p[i].name}</h4>  
+            <section class="case" data-project-name='${p[i].href}' data-href="${p[i].href}" data-disable="${p[i].disable}">
+                <div class="case-hover" data-disable="${p[i].disable}">
+                    <h3 class="all-caps">Coming Soon</h3>
+                </div>
+                <img class="case__image" src="images/${p[i].image}" alt="" data-disable="${p[i].disable}" data-href="${p[i].href}">
+                <div class="case__content" data-href="${p[i].href}" data-disable="${p[i].disable}">
+                    <p class="cr-bold-12 all-caps cr-neutral-600">${p[i].role}</p>
+                    <p class="case__name cr-reg-14 bold cr-neutral-700">${p[i].project}</p> 
                 </div>
             </section>
         `
@@ -125,6 +127,10 @@ function templateConstructor(p) {
         `
     return projects;
 };
+// CASE STUDY DESCRIPTION
+{/* <h2 class="case__name bold">${p[i].project}</h2>
+<p class="cr-bold-12 all-caps">${p[i].role}</p> */}
+// <h4 class="content__description title-case cr-neutral-800">${p[i].name}</h4>  
 
 homeContainer.innerHTML = templateConstructor(caseStudies);
 
@@ -157,7 +163,7 @@ const master = (p) => {
         <path d="M2 20H46M46 20L28 2M46 20L28 38" stroke-width="4" stroke-linecap="round"/>
     </svg>
         <section class="content__full" data-section-name="Let's begin!">
-            <section class="image__container-lg ${p.primaryColor}">
+            <section class="image__container-full ${p.primaryColor}">
                 <img class="video" src="images/${p.image}" alt="">
             </section>
         </section>
