@@ -128,7 +128,7 @@ h2 {
     @include fluid-type(font-size, 27px, 36px);
     };
 h3 {
-    @include font-size(100%, 2%, 900);
+    @include font-size(100%, 2%, 600);
     @include fluid-type(font-size, 18px, 26px);
     };
 h4 {
@@ -208,22 +208,22 @@ span {
 }
 
 .section-name {
-    font-weight: 800;
+    // font-weight: 800;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    @include fluid-type(font-size, 20px, 40px);
+    // @include fluid-type(font-size, 20px, 40px);
     
     &--project-name {
-        font-weight: 900;
+        // font-weight: 900;
         text-transform: default;
-        @include fluid-type(font-size, 16px, 32px);
+        // @include fluid-type(font-size, 16px, 32px);
         margin-bottom: 1rem;
     }
 
     @media screen and (min-width: $breakpoint-sm) {
         & {
             margin-top: 0rem;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
         }
     }
 }

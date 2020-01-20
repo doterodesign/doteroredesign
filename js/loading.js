@@ -1,3 +1,9 @@
-setTimeout(function () {
-    $("#overlay").toggle('600');
+function loading() {
+  setTimeout(function () {
+    if ($("#overlay").is(":visible")) {
+      $("#overlay").toggle('600');
+    }
   });
+}
+
+loading();

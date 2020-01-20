@@ -114,14 +114,17 @@ img {
 
     &-full {
         @extend %image__container;
-       
+        max-width: 100vw;
         display: grid;
         grid-template-columns: 1fr;
         padding: 0;
         clip-path: view-box;
-        align-content: center;
+        // align-content: center;
         & > * {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
         }
     }
 }

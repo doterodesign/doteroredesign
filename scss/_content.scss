@@ -108,9 +108,17 @@ $img-height: auto;
 
     @media screen and (min-width: $breakpoint-sm) {
         & {
-            grid-column-gap: 2rem;
-            padding: 1rem 2rem;
+            // grid-column-gap: 2rem;
+            padding: 1rem;
             grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        & {
+            grid-column-gap: 1rem;
+            padding: 1rem 1rem;
+            grid-template-columns: 1fr 1fr;
         }
     }
 
@@ -120,16 +128,18 @@ $img-height: auto;
 
     & .case {
         position:relative;
+        height: -webkit-min-content;
+        height: -moz-min-content;
         height: min-content;
         display: grid;
         // grid-template-rows: 80% 1fr;
-        border-bottom: 2px solid $cr-neutral-100;
+        // border-bottom: 2px solid $cr-neutral-100;
         -webkit-transition: -webkit-transform .2s ease-in-out;
         transition: -webkit-transform .2s ease-in-out;
         transition: transform .2s ease-in-out;
         transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 
-        &:hover:not([data-disable="true"]) {
+        &:active, &:hover, &:focus {
             cursor: pointer;
             -webkit-transform: scale(.95);
             transform: scale(.95);
@@ -141,21 +151,34 @@ $img-height: auto;
 
         &-hover[data-disable="true"] {
             content: "Coming Soon";
-            background: rgba(0,0,0,0.8);
+            background: rgba(0,0,0,0.9);
             position:absolute;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             height:100%;
             width: 100%;
             opacity: 0;
             z-index: 9999;
+            -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             text-align: center;
             color: #fff;
+            cursor: pointer;
 
 
-            &:hover {
+            &:active, &:hover, &:focus {
+                -webkit-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
                 opacity: 1;
             }

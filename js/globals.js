@@ -25,19 +25,586 @@ var homeContent =
 // PREVIEW PROJECTS
 var caseStudies = [
 
+    //ALUMINYZE
+    {
+    //HOMEPAGE SETUP
+    status: 'view website </br> <p>case study coming soon →</p>',
+    disable: 'true',
+    project: 'Aluminyze @ UX Design Collective',
+    next: 'cored',
+    prev: 'gladwell',
+    href: 'https://aluminyze.com/pages/order-now/builder',
+    buttonCTA: 'VIEW WEBSITE',
+    name: '<b style="font-size:1rem">Coming Soon</b><br>',
+    platform: 'Mobile',
+    role: '<bold class="cr-red-base">Intern</bold> | Component System | Prototyping',
+    // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
+    descColor: 'primary-white-text',
+    image: 'cover/aluminyze-cover.png',
+    primaryColor: 'ft-green',
+    supportColor: 'ft-green',
+    secondaryColor: 'core-secondary',
+    buttonColor: 'core-primary',
+
+
+    //CASE STUDY SETUP
+    summary: {
+        overview: 'I decided to take on designing a space that had the core-features necessary for a student to get through their college experience. </br></br>I\'ve only been able to tackle the mobile, student version of the platform but will take you through my overall learning experience into what creating a white-label software entails from both the design and technology perspective.</br></br> This difficult challenge resulted in a long process of research, feature consolidation, and testing. It made me appreciate why these softwares may not have been updated over the years. Let\'s begin the process!',
+    
+        problem: 'Most education portals do not meet accessibility and responsive standards needed for modern applications. After observing platforms like CUNYfirst, Blackboard, and PupilPath, I found critical usability issues that made the application very hard to use on both the mobile and desktop platforms.',
+
+        goal: 'Design and create a progressive web app that will allow complete flexibility in use for students and faculty while providing optimal, standardized accessibility practices. Currently on designing the student side of the portal.',
+
+        approach: 'I.A. Restructuring, auditing competitor applications, find core features, user research and testing, and a lot of trial and error.',
+
+        lesson: 'Iteration, competitor research, and user-testing is key to creating a product people would enjoy using.',
+
+        solution: "Found the core features needed for students and tested multiple types of navigation for quick and easy to use features. Faculty platform is in progress.",
+    },
+
+    tools: [
+        'Figma',
+        'Overflow',
+        'Protopie',
+        'Zero Height',
+        'Illustrator',
+        'Principle'
+    ],
+
+    img: {
+
+        introduction: {
+            size: 'sm',
+            
+            "images": [
+                {
+                    name: 'cunyfirst/current.png',
+                    caption: 'Current web (desktop) CUNYfirst',
+                },
+                {
+                    name: 'cunyfirst/current-mobile.png',
+                    caption: 'Current web (mobile) CUNYfirst',
+                },
+            ]
+        },
+
+        problem: {
+            size: 'lg',
+
+            "images": [
+                {}
+            ]
+        },
+
+        sketch: {
+            size: 'lg',
+
+            "images": [
+                {
+                    name: 'cunyfirst/combining-projects.svg',
+                    caption: 'Combining multiple standalone apps into one ecosystem',
+                },
+            ]
+        },
+
+        sneakpeak: {
+            size: 'xl',
+
+            "images": [
+                {
+                    name: 'cunyfirst/desktop-overview.png',
+                    caption: 'Desktop Main Dashboard',
+                },
+                {
+                    name: 'cunyfirst/desktop-course-active.png',
+                    caption: 'Desktop Active Course',
+                },
+                {
+                    name: 'cunyfirst/desktop-transcript-overview.png',
+                    caption: 'Desktop Transcript Overview',
+                },
+            ]
+        },
+
+        userflow: {
+            size: 'md',
+
+            "images": [
+                {
+                    name: 'cunyfirst/finances-flowchart.png',
+                    caption: 'Finances Userflow',
+                },
+                {
+                    name: 'cunyfirst/courses-flowchart.png',
+                    caption: 'Courses Userflow',
+                },
+                {
+                    name: 'cunyfirst/academics-flowchart.png',
+                    caption: 'Academics Userflow',
+                },
+            ]
+        },
+
+        wireframe: {
+            size: 'lg',
+
+            "images": [
+                {
+                    name: 'cunyfirst/wireframe-1.svg',
+                    caption: 'empty state / courses state / information state / alert state',
+                },
+                {
+                    name: 'cunyfirst/wireframe-2.svg',
+                    caption: 'secondary courses state / information state 2 / courses state 2',
+                },
+            ]
+        },
+
+        navigation: {
+            size: 'md',
+
+            "images": [
+                {
+                    name: 'cunyfirst/navigation.png',
+                    caption: 'Primary types of navigation',
+                },
+            ]
+        },
+
+        dynamic: {
+            size: 'xl',
+
+            "images": [
+                {
+                    name: 'cunyfirst/overview-screens.png',
+                    caption: 'current courses / academic overview / finances overview',
+                },
+                {
+                    name: 'cunyfirst/extra-screens.png',
+                    caption: 'search courses / course details / course options',
+                },
+            ]
+        },
+        testing: {
+            size: 'xs',
+
+            "images": [
+                {
+                    name: 'cunyfirst/planner_v1.png',
+                    caption: 'V1 of Current Courses',
+                },
+                {
+                    name: 'cunyfirst/planner_v2.png',
+                    caption: 'V2 of Current Courses',
+                },
+                {
+                    name: 'cunyfirst/planner_v3.png',
+                    caption: 'V3 of Current Courses',
+                },
+                {
+                    name: 'cunyfirst/planner_v4.png',
+                    caption: 'V4 of Current Courses',
+                },
+                {
+                    name: 'cunyfirst/planner_v5.png',
+                    caption: 'V5 of Current Courses',
+                },
+                {
+                    name: 'cunyfirst/planner_v6.png',
+                    caption: 'V6 of Current Courses',
+                },
+            ]
+        },
+    },
+
+    //INTRODUCTION
+    introduction: {
+        name: 'introduction',
+        heading: 'A lot of what exists is built on inaccessible older technologies',
+        content: 'The platforms that exist currently spread out their features into multiple softwares. This is because new products get developed separately due to the of the complexity of the legacy-code of the original platforms. It causes a break in the user experience when a user has to visit multiple platforms to complete different tasks.'
+    },
+
+    //PROBLEM
+    problem: {
+        id: 'main-animation',
+        name: 'Problem',
+        heading: 'Hitting The Pain Points',
+        content: 'I\'ve interviewed and casually spoken to many users throughout the years about what they would like in a student platform and how they interact with it on a daily basis. I was able to research and consolidate their needs based on the existing platform\'s features into the core-features necessary for their day-to-day use cases.',
+    },
+
+    //GOAL
+    goal: {
+        name: 'Goal',
+        heading: 'Future goals involve a design system',
+        content: 'My current goal is to establish a design system that I\'m calling the CORE System that will allow for building complex, flexible components for each type of user of the platform. Initially this was being designed as a mobile app but upon researching progressive web apps and them becoming more popular, I\'d love to see if this can be a good use case for that technology.',
+    },
+
+    //SNEAKPEAK
+    sneakpeak: {
+        name: 'Sneakpeak',
+        heading: 'The desktop is not forgotten',
+        content: 'As this is still more about the mobile version of the site, I wanted to show my current exploration of the desktop version of the application.',
+    },
+
+    //USER RESEARCH
+    ur: {
+        name: 'User Research',
+        heading: 'Surrounded by users!',
+        content: 'I used CUNYfirst as my foundation for my feature choices as it is the platform I have the most experience with. Having used CUNY products and for almost 10 years and being surrounded by users of other education applications, getting feedback on different platforms was fairly easy.</br></br> With casual interviews and observing students and staff, I felt confident to move forward with planning out the I.A. and userflows.',
+    },
+
+    //USERFLOWS
+    userflow: {
+        name: 'Userflows',
+        heading: 'Focus on userflows = Clear directions',
+        content: 'Going through all of CUNYfirst and recording each function a user can perform took forever! However, after examining, consolidating, and elimating duplicating functionality for three of the primary screens (finances, academics, courses), I created foundational userflows for those categories.</br></br> They gave me enough of the information architecture to begin producing wireframes for the primary layouts.'
+    },
+
+    //WIREFRAMES
+    foundation: {
+        name: 'Flows and Wires',
+        heading: 'Defining The Foundations',
+        content: 'The user flows from the research created the foundation to start sketching from. I began with the mobile version because it gives the most constraints in information architecture and how to organize the content. Eventually landing on about 7 base screens for the majority of the content, I got to work on structuring the content.',
+    },
+
+    //NAVIGATION
+    navigation: {
+        name: 'Nav-Design',
+        heading: 'Testing Four Types Of Navigation',
+        content: 'After testing button-only, tabular, dropdown, and iconic navigation, I decided on a combination of three depending on the type of information being accessed. With button-only navigation, users felt the space was cluttered but functional. I have not gotten a large amount of feedback on the tabular and dropdown navigation but will be testing soon for those observations!',
+    },
+
+    //DYNAMIC CONTENT
+    dynamicContent: {
+        name: 'White-Label Software',
+        heading: 'Defining Business Goals',
+        content: 'A white-label software is an all-in-one packaged product that companies and agencies can buy into and customize for their own uses. This means that the overall components and features have to be flexible enough for different use cases while still being able to complete the core-tasks of the software.<br><br>I took this approach because the platforms being used the most by universities is white-label. I wanted to design something that could replace the existing platforms so from a business perspective, this was at the core of corED.',
+    },
+
+    //USER TESTING
+    testing: {
+        name: 'User Testing',
+        heading: 'I tend to work in higher-fidelity to make testing feel like a real experience',
+        content: 'Working on my own, it allows me to gauge both the overall visual and functional design quickly. I make sure to tell anyone using it that it isn\'t in final form which I\'ve noticed, makes testers less frustrated if something doesn\'t work. </br></br>The tests I conducted revolved around information architecture and overall flow of the platform. Users needed to find their information quickly as some tasks require immediate attention. These tests helped me define features I may have missed, unnecessary ways of navigating, and overall improvements in information architecture.',
+    },
+
+    //LESSON LEARNED
+    lesson: {
+        name: 'Lessons Learned',
+        heading: 'Lessons Learned',
+        content: 'As I mentioned in the beginning, this project was big for one person...really big. I didn\'t get to tackle everything I hoped for because of school and other projects. However, I learned a ton about process development, presenting the work early for quicker and more consistent feedback, and designing a component system. I\'d love to create a design system for the current component set in the near future but for now, thanks for reading and feel free to ping me on Twitter or LinkedIn for feedback!',
+    },
+
+    //PROTOTYPE
+    proto: {
+        name: 'Prototype',
+        heading: 'Prototype Walkthrough',
+        content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function.',
+        p: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/In-progress?node-id=1%3A4886&viewport=1994%2C1387%2C0.31970152258872986&scaling=scale-down',
+    },
+    },
+
+    //IPC
+    {
+        //HOMEPAGE SETUP
+        project: 'International Paralympic Committee',
+        next: 'cored',
+        prev: 'gladwell',
+        href: 'ipc',
+        name: 'Restructuring IPC News',
+        platform: 'Web & Mobile',
+        role: 'RESEARCH | UX/UI | A.I. | Styleguide',
+        description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
+        descColor: 'primary-white-text',
+        image: 'cover/ipc-cover.jpg',
+        primaryColor: 'ipc-blue',
+        supportColor: 'ipc-yellow',
+        secondaryColor: 'ipc-blue-lighten',
+        buttonColor: 'ipc-blue',
+
+
+        //CASE STUDY SETUP
+        summary: {
+            overview: 'Athletics is popular now more than ever and with technology, disabled athletes have better chances in participating in physical activities.</br></br> The International Paralympic Committee\'s efforts to bring athletics to disabled athletes is amazing but with a bounce rate of over 40%, their site needs to be updated immediately.',
+                
+            problem: 'Sadly, this great organization has a severely outdated site that they keep up with daily. There is so much potential for improvement and they deserve a better web presence.',
+            
+            goal: 'I wanted to explore the homepage and news story pages of the site. With multiple types of news being the main priority, creating good flow throughout these pages is essential.',
+            
+            approach: 'Competitor/user research, persona development, journey mapping, I.A. restructuring, and creating a mini-design system helped to give direction.',
+            
+            lesson: 'I\'d love to do this project again with a small team. The process was extremely overwhelming and the end result could be much better. I plan on returning to this project but the process taught me a lot about research and time prioritization.',
+
+            solution: 'Originally starting as a full-page redesign, the depth of this project landed me into creating a mini-design system and prototypes of the home and news pages.',
+        },
+       
+        tools: [
+            'Sketch',
+            'Figma',
+            'Overflow',
+        ],
+
+        img: {
+
+            introduction: {
+                size: 'full',
+                
+                "images": [
+                    {
+                        name: 'paralympic/homepage-comparison.png',
+                        caption: 'Current vs. revised homepage design (relatively positioned)',
+                    },
+                ]
+            },
+
+            goal: {
+                size: 'lg',
+                
+                "images": [
+                    {
+                        name: 'paralympic/paralympic-webtraffic.jpg',
+                        caption: 'Paralympic.org web traffic',
+                    },
+                ]
+            },
+          
+            persona: {
+                size: 'lg',
+                
+                "images": [
+                    {
+                        name: 'paralympic/persona-jim.jpg',
+                        caption: 'Elder persona Jim',
+                    },
+                    {
+                        name: 'paralympic/persona-sarah.jpg',
+                        caption: 'Young athlete persona Sarah',
+                    },
+                    {
+                        name: 'paralympic/persona-liana.jpg',
+                        caption: 'Paralympic Supporter Liana',
+                    },
+                ]
+            },
+
+            olympic: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/olympic-menu.jpg',
+                        caption: 'Olympic.org mega navigation'
+                    },
+                ]
+            },
+            
+            nfl: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/nfl-header.png',
+                        caption: 'NFL live score tracker'
+                    },
+                ]
+            },
+
+            lpga: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/lpga-example.jpg',
+                        caption: 'LPGA homepage'
+                    },
+                ]
+            },
+
+            journey: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'paralympic/paralympic-journey-map.jpg',
+                        caption: 'Lego-Inspired journey map',
+                    },
+                ]
+            },
+
+            wireframe: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/desktop-mockup.jpg',
+                        caption: 'Hand sketches of desktop mockups',
+                    },
+                    {
+                        name: 'paralympic/paralympic-wireframe1.svg',
+                        caption: 'Starting wireframes of homepage',
+                    },
+                ]
+            },
+
+            sitemap: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'paralympic/paralympic-sitemap.png',
+                        caption: 'Sitemap of Navigation Structure',
+                    },
+                ]
+            },
+
+            userflow: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/competitions-userflow.png',
+                        caption: 'Userflow of competitiions section',
+                    },
+                    {
+                        name: 'paralympic/news-userflow.png',
+                        caption: 'Userflow of news',
+                    },
+                ]
+            },
+
+            preview: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'paralympic/page-previews.jpg',
+                        caption: 'V1 Page previews (not finals)',
+                    },
+                ]
+            },
+
+            final: {
+                size: 'full',
+
+                "images": [
+                    {
+                        name: 'paralympic/final-layouts.png',
+                        caption: 'Final layout structure for home and article',
+                    },
+                ]
+            },
+        },
+
+        //INTRODUCTION
+        introduction: {
+            name: 'introduction',
+            heading: 'Outdated site for a modern organization',
+            content: 'With technology developing at a rapid pace, responsiveness and ease of use have become critical to a positive experience. Paralympic.org\'s navigation and functionality is severely outdated, negatively impacting access to content.',
+        },
+
+        //PROBLEM
+        problem: {
+            name: 'Problems',
+            heading: 'Hitting the Pain Points',
+            content: 'The main pain points of users that I\'ve gathered are a non-responsive design, hard to access information, and an outdated design in general. Their current bounce rate is at 41% and although the content is informative, no one is accessing it because it is hard to find.',
+        },
+
+        //GOAL
+        goal: {
+            name: 'Goal',
+            heading: 'Goal: Homepage and News',
+            content: 'A bounce rate is how often a user leaves right after landing on the site. As you\'d guess, a high bounce rate means a low retention rate.</br></br> Creating a compelling homepage, as well as reformatting the content such as articles and video is a great start to improving their retention rate. To start, I took a look at their direct and indirect competitors within the televised sports industry.',
+        },
+
+        //COMPETITOR RESEARCH
+        cr: {
+            competitors: {
+                name: 'Competitor Research',
+
+                olympics: {
+                    name: 'CR: Olympics',
+                    heading: 'Defining Competitors: Olympic.org',
+                    content: 'With a clean and modern design, detailed navigation, and mostly responsive design, there\'s a lot to like. However, with non-responsive imagery for small screens and two-four clicks to drill down through the mobile navigation, it showed me what not to do for mega-navigations on mobile devices.'
+                },
+                lpga: {
+                    name: 'CR: lgpa',
+                    heading: 'Indirect Competitor: LGPA',
+                    content: 'With an inconsistent information architecture and scattered content, a hidden secondary navigation, non-predictive search bar, and a transparent background on the navigation, this was my least favorite competitor. It showed that although some of their features were modern such as a transparent nav background, it shouldn\'t be implemented everywhere.',
+                },
+                nfl: {
+                    name: 'CR: NFL',
+                    heading: 'Indirect Competitor: NFL',
+                    content: 'The NFL\'s scoreboard in the header is the main positive feature found on the site. Other than that, I found the scattered and unstructured content hard to consume. Although the news section features content different from the homepage, not all the "news" content on the homepage is featured in the news section.</br></br> This leads to information being distributed in two places and all the content may not be seen by a user. Why write something for it to not be seen?',
+                },
+            },
+        },
+
+        //USER RESEARCH
+        ur: {
+            name: 'User Research',
+            heading: 'Developing Personas',
+            content: 'After getting an idea of core features I may need to include, I crafted a few personas that match the target audiences. The Paralympic events have a broad audience and not all are disabled. I included ages, disabilities (or lack of one), and basic information about each person.'
+        },
+
+        //JOURNEY   
+        journey: {
+            name: 'Journey Maps',
+            heading: 'Journey Mapping: Lego Inspired',
+            content: 'This map developed by lego documents the user\'s feelings before they know of the product, during an encounter, and after modifications based on their feedback. This type of map allows stakeholders get an idea of what users seek in a concise manner.',
+        },
+
+        //USERFLOWS AND SITEMAPS
+        userflow: {
+            name: 'Userflows and Sitemap',
+            heading: 'Defining the Foundations',
+            content: 'Knowing the users helped in determining the flow of news and events because it guided me to organizing content for both sighted and non-sighted people. I also included the sitemap I created before knowing what I was getting myself into and changing the project\'s scope.'
+        },
+
+        //WIREFRAMES
+        wireframe: {
+            name: 'Wireframes',
+            heading: 'Initial Design Not Accessible',
+            content: 'I struggled with changing my design to hi-fidelity after realizing my initial structure was not user friendly. With over three iterations, this is where I started changing the project\'s scope from the whole site to only the homepage, article page, and creating a component library/mini-design system.',
+        },
+
+        //DYNAMIC CONTENT
+        designsystem: {
+            name: 'Design System',
+            heading: 'Crafting a Design System',
+            content: 'Learning to begin creating a design system was a great experience. It gave constraints for a more efficient workflow in the long run. It\'s not complete but does gives a good idea of the overall structure and direction I was taking for the site. Check out that system below.',
+            p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=0%3A1&viewport=98%2C263%2C0.05&scaling=contain',
+        },
+
+        //PROTOTYPE
+        proto: {
+            name: 'Prototype',
+            heading: 'Short Walkthrough of Homepage & News',
+            content: 'I incorporated the dropdowns and points of contact a user encounters while searching for content, specifically news. You\'ll be able to navigate the hompage and linking out to an article.',
+            p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=92%3A2271&viewport=174%2C274%2C0.0853344202041626&scaling=scale-down',
+
+        },
+
+        //LESSON
+        lesson: {
+            name: 'Lesson',
+            heading: 'Know the Project\'s Complete Scope',
+            content: 'I\'ll be honest and say I thought it wouldn\'t be as challenging as it was. I would do this project much differently in the future but I learned to incorporate journey maps, personas, and developing design systems along the way. In realizing how large the project was, I re-evaluated where I should start and landed on what you saw above.</br></br> Thanks for coming along on this one with me. It was a great learning experience.'
+        },
+    },
+
     //CORED
     {
         //HOMEPAGE SETUP
         project: 'corED',
         next: 'blah',
-        prev: 'gladwell',
+        prev: 'ipc',
         href: 'cored',
-        name: 'My solution to an outdated college student portal ecosystem',
+        name: 'My solution to an outdated college student portal',
         platform: 'Progressive Web App',
         role: 'Component System | UX/UI | I.A. | Founder',
         // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
         descColor: 'primary-white-text',
-        image: 'cover/cored-cover.svg',
+        image: 'cover/cored-cover.png',
         primaryColor: 'core-primary',
         supportColor: 'core-primary',
         secondaryColor: 'core-secondary',
@@ -541,7 +1108,7 @@ var caseStudies = [
             },
 
             sneakpeak: {
-                size: 'xl',
+                size: 'lg',
 
                 "images": [
                     {
@@ -605,7 +1172,7 @@ var caseStudies = [
             },
 
             dynamic: {
-                size: 'xl',
+                size: 'lg',
 
                 "images": [
                     {
@@ -741,7 +1308,7 @@ var caseStudies = [
      {
         //HOMEPAGE SETUP
         project: 'BLAH',
-        next: 'ipc',
+        next: 'salvationarmy',
         prev: 'cored',
         href: 'blah',
         name: 'Rethinking Mental Self-Help',
@@ -749,7 +1316,7 @@ var caseStudies = [
         role: 'UX/UI | Research | Founder',
         description: 'With mental health more important than ever, I strived to give people their voice back with this passion project.',
         descColor: 'primary-white-text',
-        image: 'cover/blah-cover.svg',
+        image: 'cover/blah-cover.png',
         primaryColor: 'blah-primary',
         supportColor: 'blah-primary-light',
         secondaryColor: 'blah-secondary',
@@ -937,583 +1504,18 @@ var caseStudies = [
         },
     },
 
-
-    //IPC
-    {
-        //HOMEPAGE SETUP
-        project: 'International Paralympic Committee',
-        next: 'salvationarmy',
-        prev: 'blah',
-        href: 'ipc',
-        name: 'Restructuring IPC News',
-        platform: 'Web & Mobile',
-        role: 'Design System | UX/UI | A.I.',
-        description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
-        descColor: 'primary-white-text',
-        image: 'cover/ipc-cover.jpg',
-        primaryColor: 'ipc-blue',
-        supportColor: 'ipc-yellow',
-        secondaryColor: 'ipc-blue-lighten',
-        buttonColor: 'ipc-blue',
-
-
-        //CASE STUDY SETUP
-        summary: {
-            overview: 'Athletics is popular now more than ever and with technology, disabled athletes have better chances in participating in physical activities.</br></br> The International Paralympic Committee\'s efforts to bring athletics to disabled athletes is amazing but with a bounce rate of over 40%, their site needs to be updated immediately.',
-                
-            problem: 'Sadly, this great organization has a severely outdated site that they keep up with daily. There is so much potential for improvement and they deserve a better web presence.',
-            
-            goal: 'I wanted to explore the homepage and news story pages of the site. With multiple types of news being the main priority, creating good flow throughout these pages is essential.',
-            
-            approach: 'Competitor/user research, persona development, journey mapping, I.A. restructuring, and creating a mini-design system helped to give direction.',
-            
-            lesson: 'I\'d love to do this project again with a small team. The process was extremely overwhelming and the end result could be much better. I plan on returning to this project but the process taught me a lot about research and time prioritization.',
-
-            solution: 'Originally starting as a full-page redesign, the depth of this project landed me into creating a mini-design system and prototypes of the home and news pages.',
-        },
-       
-        tools: [
-            'Sketch',
-            'Figma',
-            'Overflow',
-        ],
-
-        img: {
-
-            introduction: {
-                size: 'full',
-                
-                "images": [
-                    {
-                        name: 'paralympic/homepage-comparison.png',
-                        caption: 'Current vs. revised homepage design (relatively positioned)',
-                    },
-                ]
-            },
-
-            goal: {
-                size: 'lg',
-                
-                "images": [
-                    {
-                        name: 'paralympic/paralympic-webtraffic.jpg',
-                        caption: 'Paralympic.org web traffic',
-                    },
-                ]
-            },
-          
-            persona: {
-                size: 'lg',
-                
-                "images": [
-                    {
-                        name: 'paralympic/persona-jim.jpg',
-                        caption: 'Elder persona Jim',
-                    },
-                    {
-                        name: 'paralympic/persona-sarah.jpg',
-                        caption: 'Young athlete persona Sarah',
-                    },
-                    {
-                        name: 'paralympic/persona-liana.jpg',
-                        caption: 'Paralympic Supporter Liana',
-                    },
-                ]
-            },
-
-            olympic: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'paralympic/olympic-menu.jpg',
-                        caption: 'Olympic.org mega navigation'
-                    },
-                ]
-            },
-            
-            nfl: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'paralympic/nfl-header.png',
-                        caption: 'NFL live score tracker'
-                    },
-                ]
-            },
-
-            lpga: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'paralympic/lpga-example.jpg',
-                        caption: 'LPGA homepage'
-                    },
-                ]
-            },
-
-            journey: {
-                size: 'xl',
-
-                "images": [
-                    {
-                        name: 'paralympic/paralympic-journey-map.jpg',
-                        caption: 'Lego-Inspired journey map',
-                    },
-                ]
-            },
-
-            wireframe: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'paralympic/desktop-mockup.jpg',
-                        caption: 'Hand sketches of desktop mockups',
-                    },
-                    {
-                        name: 'paralympic/paralympic-wireframe1.svg',
-                        caption: 'Starting wireframes of homepage',
-                    },
-                ]
-            },
-
-            sitemap: {
-                size: 'xl',
-
-                "images": [
-                    {
-                        name: 'paralympic/paralympic-sitemap.png',
-                        caption: 'Sitemap of Navigation Structure',
-                    },
-                ]
-            },
-
-            userflow: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'paralympic/competitions-userflow.png',
-                        caption: 'Userflow of competitiions section',
-                    },
-                    {
-                        name: 'paralympic/news-userflow.png',
-                        caption: 'Userflow of news',
-                    },
-                ]
-            },
-
-            preview: {
-                size: 'xl',
-
-                "images": [
-                    {
-                        name: 'paralympic/page-previews.jpg',
-                        caption: 'V1 Page previews (not finals)',
-                    },
-                ]
-            },
-
-            final: {
-                size: 'full',
-
-                "images": [
-                    {
-                        name: 'paralympic/final-layouts.png',
-                        caption: 'Final layout structure for home and article',
-                    },
-                ]
-            },
-        },
-
-        //INTRODUCTION
-        introduction: {
-            name: 'introduction',
-            heading: 'Outdated site for a modern organization',
-            content: 'With technology developing at a rapid pace, responsiveness and ease of use have become critical to a positive experience. Paralympic.org\'s navigation and functionality is severely outdated, negatively impacting access to content.',
-        },
-
-        //PROBLEM
-        problem: {
-            name: 'Problems',
-            heading: 'Hitting the Pain Points',
-            content: 'The main pain points of users that I\'ve gathered are a non-responsive design, hard to access information, and an outdated design in general. Their current bounce rate is at 41% and although the content is informative, no one is accessing it because it is hard to find.',
-        },
-
-        //GOAL
-        goal: {
-            name: 'Goal',
-            heading: 'Goal: Homepage and News',
-            content: 'A bounce rate is how often a user leaves right after landing on the site. As you\'d guess, a high bounce rate means a low retention rate.</br></br> Creating a compelling homepage, as well as reformatting the content such as articles and video is a great start to improving their retention rate. To start, I took a look at their direct and indirect competitors within the televised sports industry.',
-        },
-
-        //COMPETITOR RESEARCH
-        cr: {
-            competitors: {
-                name: 'Competitor Research',
-
-                olympics: {
-                    name: 'CR: Olympics',
-                    heading: 'Defining Competitors: Olympic.org',
-                    content: 'With a clean and modern design, detailed navigation, and mostly responsive design, there\'s a lot to like. However, with non-responsive imagery for small screens and two-four clicks to drill down through the mobile navigation, it showed me what not to do for mega-navigations on mobile devices.'
-                },
-                lpga: {
-                    name: 'CR: lgpa',
-                    heading: 'Indirect Competitor: LGPA',
-                    content: 'With an inconsistent information architecture and scattered content, a hidden secondary navigation, non-predictive search bar, and a transparent background on the navigation, this was my least favorite competitor. It showed that although some of their features were modern such as a transparent nav background, it shouldn\'t be implemented everywhere.',
-                },
-                nfl: {
-                    name: 'CR: NFL',
-                    heading: 'Indirect Competitor: NFL',
-                    content: 'The NFL\'s scoreboard in the header is the main positive feature found on the site. Other than that, I found the scattered and unstructured content hard to consume. Although the news section features content different from the homepage, not all the "news" content on the homepage is featured in the news section.</br></br> This leads to information being distributed in two places and all the content may not be seen by a user. Why write something for it to not be seen?',
-                },
-            },
-        },
-
-        //USER RESEARCH
-        ur: {
-            name: 'User Research',
-            heading: 'Developing Personas',
-            content: 'After getting an idea of core features I may need to include, I crafted a few personas that match the target audiences. The Paralympic events have a broad audience and not all are disabled. I included ages, disabilities (or lack of one), and basic information about each person.'
-        },
-
-        //JOURNEY   
-        journey: {
-            name: 'Journey Maps',
-            heading: 'Journey Mapping: Lego Inspired',
-            content: 'This map developed by lego documents the user\'s feelings before they know of the product, during an encounter, and after modifications based on their feedback. This type of map allows stakeholders get an idea of what users seek in a concise manner.',
-        },
-
-        //USERFLOWS AND SITEMAPS
-        userflow: {
-            name: 'Userflows and Sitemap',
-            heading: 'Defining the Foundations',
-            content: 'Knowing the users helped in determining the flow of news and events because it guided me to organizing content for both sighted and non-sighted people. I also included the sitemap I created before knowing what I was getting myself into and changing the project\'s scope.'
-        },
-
-        //WIREFRAMES
-        wireframe: {
-            name: 'Wireframes',
-            heading: 'Initial Design Not Accessible',
-            content: 'I struggled with changing my design to hi-fidelity after realizing my initial structure was not user friendly. With over three iterations, this is where I started changing the project\'s scope from the whole site to only the homepage, article page, and creating a component library/mini-design system.',
-        },
-
-        //DYNAMIC CONTENT
-        designsystem: {
-            name: 'Design System',
-            heading: 'Crafting a Design System',
-            content: 'Learning to begin creating a design system was a great experience. It gave constraints for a more efficient workflow in the long run. It\'s not complete but does gives a good idea of the overall structure and direction I was taking for the site. Check out that system below.',
-            p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=0%3A1&viewport=98%2C263%2C0.05&scaling=contain',
-        },
-
-        //PROTOTYPE
-        proto: {
-            name: 'Prototype',
-            heading: 'Short Walkthrough of Homepage & News',
-            content: 'I incorporated the dropdowns and points of contact a user encounters while searching for content, specifically news. You\'ll be able to navigate the hompage and linking out to an article.',
-            p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=92%3A2271&viewport=174%2C274%2C0.0853344202041626&scaling=scale-down',
-
-        },
-
-        //LESSON
-        lesson: {
-            name: 'Lesson',
-            heading: 'Know the Project\'s Complete Scope',
-            content: 'I\'ll be honest and say I thought it wouldn\'t be as challenging as it was. I would do this project much differently in the future but I learned to incorporate journey maps, personas, and developing design systems along the way. In realizing how large the project was, I re-evaluated where I should start and landed on what you saw above.</br></br> Thanks for coming along on this one with me. It was a great learning experience.'
-        },
-    },
-
-    //ALUMINYZE
-    {
-    //HOMEPAGE SETUP
-    disable: 'true',
-    project: 'Aluminyze',
-    next: 'cored',
-    prev: 'gladwell',
-    href: '',
-    name: '<b style="font-size:1rem">Coming Soon</b><br>',
-    platform: 'Mobile',
-    role: 'Component System | UX/UI | Prototyping',
-    // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
-    descColor: 'primary-white-text',
-    image: 'cover/aluminyze-cover.png',
-    primaryColor: 'ft-green',
-    supportColor: 'ft-green',
-    secondaryColor: 'core-secondary',
-    buttonColor: 'core-primary',
-
-
-    //CASE STUDY SETUP
-    summary: {
-        overview: 'I decided to take on designing a space that had the core-features necessary for a student to get through their college experience. </br></br>I\'ve only been able to tackle the mobile, student version of the platform but will take you through my overall learning experience into what creating a white-label software entails from both the design and technology perspective.</br></br> This difficult challenge resulted in a long process of research, feature consolidation, and testing. It made me appreciate why these softwares may not have been updated over the years. Let\'s begin the process!',
-    
-        problem: 'Most education portals do not meet accessibility and responsive standards needed for modern applications. After observing platforms like CUNYfirst, Blackboard, and PupilPath, I found critical usability issues that made the application very hard to use on both the mobile and desktop platforms.',
-
-        goal: 'Design and create a progressive web app that will allow complete flexibility in use for students and faculty while providing optimal, standardized accessibility practices. Currently on designing the student side of the portal.',
-
-        approach: 'I.A. Restructuring, auditing competitor applications, find core features, user research and testing, and a lot of trial and error.',
-
-        lesson: 'Iteration, competitor research, and user-testing is key to creating a product people would enjoy using.',
-
-        solution: "Found the core features needed for students and tested multiple types of navigation for quick and easy to use features. Faculty platform is in progress.",
-    },
-
-    tools: [
-        'Figma',
-        'Overflow',
-        'Protopie',
-        'Zero Height',
-        'Illustrator',
-        'Principle'
-    ],
-
-    img: {
-
-        introduction: {
-            size: 'sm',
-            
-            "images": [
-                {
-                    name: 'cunyfirst/current.png',
-                    caption: 'Current web (desktop) CUNYfirst',
-                },
-                {
-                    name: 'cunyfirst/current-mobile.png',
-                    caption: 'Current web (mobile) CUNYfirst',
-                },
-            ]
-        },
-
-        problem: {
-            size: 'lg',
-
-            "images": [
-                {}
-            ]
-        },
-
-        sketch: {
-            size: 'lg',
-
-            "images": [
-                {
-                    name: 'cunyfirst/combining-projects.svg',
-                    caption: 'Combining multiple standalone apps into one ecosystem',
-                },
-            ]
-        },
-
-        sneakpeak: {
-            size: 'xl',
-
-            "images": [
-                {
-                    name: 'cunyfirst/desktop-overview.png',
-                    caption: 'Desktop Main Dashboard',
-                },
-                {
-                    name: 'cunyfirst/desktop-course-active.png',
-                    caption: 'Desktop Active Course',
-                },
-                {
-                    name: 'cunyfirst/desktop-transcript-overview.png',
-                    caption: 'Desktop Transcript Overview',
-                },
-            ]
-        },
-
-        userflow: {
-            size: 'md',
-
-            "images": [
-                {
-                    name: 'cunyfirst/finances-flowchart.png',
-                    caption: 'Finances Userflow',
-                },
-                {
-                    name: 'cunyfirst/courses-flowchart.png',
-                    caption: 'Courses Userflow',
-                },
-                {
-                    name: 'cunyfirst/academics-flowchart.png',
-                    caption: 'Academics Userflow',
-                },
-            ]
-        },
-
-        wireframe: {
-            size: 'lg',
-
-            "images": [
-                {
-                    name: 'cunyfirst/wireframe-1.svg',
-                    caption: 'empty state / courses state / information state / alert state',
-                },
-                {
-                    name: 'cunyfirst/wireframe-2.svg',
-                    caption: 'secondary courses state / information state 2 / courses state 2',
-                },
-            ]
-        },
-
-        navigation: {
-            size: 'md',
-
-            "images": [
-                {
-                    name: 'cunyfirst/navigation.png',
-                    caption: 'Primary types of navigation',
-                },
-            ]
-        },
-
-        dynamic: {
-            size: 'xl',
-
-            "images": [
-                {
-                    name: 'cunyfirst/overview-screens.png',
-                    caption: 'current courses / academic overview / finances overview',
-                },
-                {
-                    name: 'cunyfirst/extra-screens.png',
-                    caption: 'search courses / course details / course options',
-                },
-            ]
-        },
-        testing: {
-            size: 'xs',
-
-            "images": [
-                {
-                    name: 'cunyfirst/planner_v1.png',
-                    caption: 'V1 of Current Courses',
-                },
-                {
-                    name: 'cunyfirst/planner_v2.png',
-                    caption: 'V2 of Current Courses',
-                },
-                {
-                    name: 'cunyfirst/planner_v3.png',
-                    caption: 'V3 of Current Courses',
-                },
-                {
-                    name: 'cunyfirst/planner_v4.png',
-                    caption: 'V4 of Current Courses',
-                },
-                {
-                    name: 'cunyfirst/planner_v5.png',
-                    caption: 'V5 of Current Courses',
-                },
-                {
-                    name: 'cunyfirst/planner_v6.png',
-                    caption: 'V6 of Current Courses',
-                },
-            ]
-        },
-    },
-
-    //INTRODUCTION
-    introduction: {
-        name: 'introduction',
-        heading: 'A lot of what exists is built on inaccessible older technologies',
-        content: 'The platforms that exist currently spread out their features into multiple softwares. This is because new products get developed separately due to the of the complexity of the legacy-code of the original platforms. It causes a break in the user experience when a user has to visit multiple platforms to complete different tasks.'
-    },
-
-    //PROBLEM
-    problem: {
-        id: 'main-animation',
-        name: 'Problem',
-        heading: 'Hitting The Pain Points',
-        content: 'I\'ve interviewed and casually spoken to many users throughout the years about what they would like in a student platform and how they interact with it on a daily basis. I was able to research and consolidate their needs based on the existing platform\'s features into the core-features necessary for their day-to-day use cases.',
-    },
-
-    //GOAL
-    goal: {
-        name: 'Goal',
-        heading: 'Future goals involve a design system',
-        content: 'My current goal is to establish a design system that I\'m calling the CORE System that will allow for building complex, flexible components for each type of user of the platform. Initially this was being designed as a mobile app but upon researching progressive web apps and them becoming more popular, I\'d love to see if this can be a good use case for that technology.',
-    },
-
-    //SNEAKPEAK
-    sneakpeak: {
-        name: 'Sneakpeak',
-        heading: 'The desktop is not forgotten',
-        content: 'As this is still more about the mobile version of the site, I wanted to show my current exploration of the desktop version of the application.',
-    },
-
-    //USER RESEARCH
-    ur: {
-        name: 'User Research',
-        heading: 'Surrounded by users!',
-        content: 'I used CUNYfirst as my foundation for my feature choices as it is the platform I have the most experience with. Having used CUNY products and for almost 10 years and being surrounded by users of other education applications, getting feedback on different platforms was fairly easy.</br></br> With casual interviews and observing students and staff, I felt confident to move forward with planning out the I.A. and userflows.',
-    },
-
-    //USERFLOWS
-    userflow: {
-        name: 'Userflows',
-        heading: 'Focus on userflows = Clear directions',
-        content: 'Going through all of CUNYfirst and recording each function a user can perform took forever! However, after examining, consolidating, and elimating duplicating functionality for three of the primary screens (finances, academics, courses), I created foundational userflows for those categories.</br></br> They gave me enough of the information architecture to begin producing wireframes for the primary layouts.'
-    },
-
-    //WIREFRAMES
-    foundation: {
-        name: 'Flows and Wires',
-        heading: 'Defining The Foundations',
-        content: 'The user flows from the research created the foundation to start sketching from. I began with the mobile version because it gives the most constraints in information architecture and how to organize the content. Eventually landing on about 7 base screens for the majority of the content, I got to work on structuring the content.',
-    },
-
-    //NAVIGATION
-    navigation: {
-        name: 'Nav-Design',
-        heading: 'Testing Four Types Of Navigation',
-        content: 'After testing button-only, tabular, dropdown, and iconic navigation, I decided on a combination of three depending on the type of information being accessed. With button-only navigation, users felt the space was cluttered but functional. I have not gotten a large amount of feedback on the tabular and dropdown navigation but will be testing soon for those observations!',
-    },
-
-    //DYNAMIC CONTENT
-    dynamicContent: {
-        name: 'White-Label Software',
-        heading: 'Defining Business Goals',
-        content: 'A white-label software is an all-in-one packaged product that companies and agencies can buy into and customize for their own uses. This means that the overall components and features have to be flexible enough for different use cases while still being able to complete the core-tasks of the software.<br><br>I took this approach because the platforms being used the most by universities is white-label. I wanted to design something that could replace the existing platforms so from a business perspective, this was at the core of corED.',
-    },
-
-    //USER TESTING
-    testing: {
-        name: 'User Testing',
-        heading: 'I tend to work in higher-fidelity to make testing feel like a real experience',
-        content: 'Working on my own, it allows me to gauge both the overall visual and functional design quickly. I make sure to tell anyone using it that it isn\'t in final form which I\'ve noticed, makes testers less frustrated if something doesn\'t work. </br></br>The tests I conducted revolved around information architecture and overall flow of the platform. Users needed to find their information quickly as some tasks require immediate attention. These tests helped me define features I may have missed, unnecessary ways of navigating, and overall improvements in information architecture.',
-    },
-
-    //LESSON LEARNED
-    lesson: {
-        name: 'Lessons Learned',
-        heading: 'Lessons Learned',
-        content: 'As I mentioned in the beginning, this project was big for one person...really big. I didn\'t get to tackle everything I hoped for because of school and other projects. However, I learned a ton about process development, presenting the work early for quicker and more consistent feedback, and designing a component system. I\'d love to create a design system for the current component set in the near future but for now, thanks for reading and feel free to ping me on Twitter or LinkedIn for feedback!',
-    },
-
-    //PROTOTYPE
-    proto: {
-        name: 'Prototype',
-        heading: 'Prototype Walkthrough',
-        content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function.',
-        p: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/In-progress?node-id=1%3A4886&viewport=1994%2C1387%2C0.31970152258872986&scaling=scale-down',
-    },
-    },
-
     //FUELTIME
     {
         //HOMEPAGE SETUP
+        status: 'view prototype </br> <p>study coming soon →</p>',
         disable: 'true',
-        project: 'Fueltime',
+        project: 'Fueltime: @ Hack-a-thon (5 members)',
         next: 'blah',
         prev: 'cored',
-        href: '',
+        href: 'https://www.figma.com/proto/JESCUlrpGHV40L78WXrm2qNd/FuelTime-New-Order?node-id=233%3A564&viewport=104%2C387%2C0.3435290455818176&scaling=scale-down',
         name: '<b style="font-size:1rem">Coming Soon</b><br>Fuel Ordering Hack-a-thon',
         platform: 'Mobile',
-        role: 'UI Design | Prototype | Userflow',
+        role: 'UI Design | Full Prototype | Userflow',
         // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
         descColor: 'primary-white-text',
         image: 'cover/fueltime-cover.png',
@@ -2220,9 +2222,11 @@ var caseStudies = [
     {
          //HOMEPAGE SETUP
          project: 'Salvation Army',
+         status: 'view Style Guide →',
+         disable: 'true',
          next: 'gladwell',
-         prev: 'ipc',
-         href: 'salvationarmy',
+         prev: 'blah',
+         href: 'https://www.behance.net/gallery/76060487/Salvation-Army-Logo-Redesign-Styleguide-Concept',
          name: 'Rebranding Salvation Army',
          platform: 'Print and Web',
          role: 'Designer | Branding | Art Direction',
@@ -2298,17 +2302,111 @@ var caseStudies = [
         },
     },
 
+    //GLADWELL
+    {
+            //HOMEPAGE SETUP
+            project: 'Malcolm Gladwell',
+            status: 'view case study →',
+            disable: 'true',
+            next: 'cored',
+            prev: 'salvationarmy',
+            href: 'https://www.behance.net/gallery/76059619/Malcolm-Gladwell-Book-Cover-Redesigns',
+            name: 'Gladwell Cover Redesigns',
+            platform: 'Print',
+            role: 'Designer | Art Direction | Typography',
+            description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
+            descColor: 'primary-white-text',
+            image: 'cover/gladwell-cover.png',
+            primaryColor: 'gladwell-blue',
+            supportColor: 'sex-blue',
+            secondaryColor: 'sex-red',
+            buttonColor: 'cuny-primary',
+            
+           summary: {
+               overview: 'Gladwell\'s books are fantastic at explaining complex topics of human behavior with great, simple book covers.</br></br> I challenged myself to add some "life" into these covers. Even though the books aren\'t related, I set out to create a cohesive look for three of his most popular books.',
+               
+               problem: 'Although all the original covers work for their purpose, they don\'t pop from the shelf to stand out from other books in their category.',
+   
+               goal:  'Create a set of book covers for Malcolm Gladwell\'s three most popular books that are not related but can stand alone or as a set.',
+   
+               approach: 'A lot of exploration and sketching went into this project. I looked for colors that popped and wanted to create graphics that told the story of the title to enhance its meaning.',
+   
+               solution: 'I used the key words of each title to create the main graphic of the cover. All the covers are type only to not distract or confuse the viewer with imagery. The color palette consists of three main colors that span across all the covers as well.',
+           
+               lesson: 'Iterating over original ideas and exploration helps a lot. I went through about four rounds of multiple sketches before landing on these final covers. Explore and reap the benefits!',
+           },
+   
+           tools: [
+               'Illustrator',
+               'Indesign',
+               'Photoshop',
+           ],
+   
+            //IMAGES
+          
+           img: {
+               lg: {
+                   name: 'Front Covers',
+                   size: 'lg',
+   
+                   "images": [
+                       {
+                           name: 'gladwell/gladwell.png',
+                           caption: ''
+                       },
+   
+                       {
+                           name: 'gladwell/gladwell3.png',
+                           caption: ''
+                       },
+   
+                       {
+                           name: 'gladwell/gladwell5.png',
+                           caption: ''
+                       },
+                   ]
+               },
+               full: {
+                   name: 'Full Book Jacket',
+                   size: 'full',
+   
+                   'images': [
+                       {
+                           name: 'gladwell/gladwell2.png',
+                           caption: ''
+                       },
+                       {
+                           name: 'gladwell/gladwell4.png',
+                           caption: ''
+                       },
+                       {
+                           name: 'gladwell/gladwell6.png',
+                           caption: ''
+                       },
+                   ]
+               }
+           },
+   
+           viewMore: {
+               name: 'View Whole Project',
+               heading: 'Want to see more?',
+               content: 'Want to see the whole design process? Visit my behance to see the first versions and exploration of the concept.',
+               p: 'https://www.behance.net/gallery/76059619/Malcolm-Gladwell-Book-Cover-Redesigns',
+           },
+    },
+
      //KINGSTON 12
      {
         //HOMEPAGE SETUP
+        status: 'coming soon',
         disable: 'true',
         project: 'Kingston 12',
         next: '',
         prev: '',
         href: '',
-        name: 'MOD.UH.FIED',
+        name: 'Kingston 12',
         platform: 'Print and Web',
-        role: 'Branding',
+        role: 'Logo | Branding',
        //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
         descColor: 'primary-white-text',
         image: 'cover/kingston12-cover.svg',
@@ -2316,10 +2414,12 @@ var caseStudies = [
         supportColor: 'cuny-primary-light',
         secondaryColor: 'salvation-secondary',
            buttonColor: 'cuny-primary',
-   },
+    },
+     
      //MOD-UH-FIED
      {
         //HOMEPAGE SETUP
+        status: 'coming soon',
         disable: 'true',
         project: 'MOD.UH.FIED',
         next: '',
@@ -2327,7 +2427,7 @@ var caseStudies = [
         href: '',
         name: 'MOD.UH.FIED',
         platform: 'Print and Web',
-        role: 'Branding',
+        role: 'Logo | Branding',
        //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
         descColor: 'primary-white-text',
         image: 'cover/moduhfied-cover.jpeg',
@@ -2335,111 +2435,41 @@ var caseStudies = [
         supportColor: 'cuny-primary-light',
         secondaryColor: 'salvation-secondary',
            buttonColor: 'cuny-primary',
-   },
-
-    //GLADWELL
-    {
-         //HOMEPAGE SETUP
-         project: 'Malcolm Gladwell',
-         next: 'cored',
-         prev: 'salvationarmy',
-         href: 'gladwell',
-         name: 'Gladwell Cover Redesigns',
-         platform: 'Print',
-         role: 'Designer | Art Direction | Typography',
-         description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
-         descColor: 'primary-white-text',
-         image: 'cover/gladwell-cover.jpeg',
-         primaryColor: 'gladwell-blue',
-         supportColor: 'sex-blue',
-         secondaryColor: 'sex-red',
-         buttonColor: 'cuny-primary',
-         
-        summary: {
-            overview: 'Gladwell\'s books are fantastic at explaining complex topics of human behavior with great, simple book covers.</br></br> I challenged myself to add some "life" into these covers. Even though the books aren\'t related, I set out to create a cohesive look for three of his most popular books.',
-            
-            problem: 'Although all the original covers work for their purpose, they don\'t pop from the shelf to stand out from other books in their category.',
-
-            goal:  'Create a set of book covers for Malcolm Gladwell\'s three most popular books that are not related but can stand alone or as a set.',
-
-            approach: 'A lot of exploration and sketching went into this project. I looked for colors that popped and wanted to create graphics that told the story of the title to enhance its meaning.',
-
-            solution: 'I used the key words of each title to create the main graphic of the cover. All the covers are type only to not distract or confuse the viewer with imagery. The color palette consists of three main colors that span across all the covers as well.',
-        
-            lesson: 'Iterating over original ideas and exploration helps a lot. I went through about four rounds of multiple sketches before landing on these final covers. Explore and reap the benefits!',
-        },
-
-        tools: [
-            'Illustrator',
-            'Indesign',
-            'Photoshop',
-        ],
-
-         //IMAGES
-       
-        img: {
-            lg: {
-                name: 'Front Covers',
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'gladwell/gladwell.png',
-                        caption: ''
-                    },
-
-                    {
-                        name: 'gladwell/gladwell3.png',
-                        caption: ''
-                    },
-
-                    {
-                        name: 'gladwell/gladwell5.png',
-                        caption: ''
-                    },
-                ]
-            },
-            full: {
-                name: 'Full Book Jacket',
-                size: 'full',
-
-                'images': [
-                    {
-                        name: 'gladwell/gladwell2.png',
-                        caption: ''
-                    },
-                    {
-                        name: 'gladwell/gladwell4.png',
-                        caption: ''
-                    },
-                    {
-                        name: 'gladwell/gladwell6.png',
-                        caption: ''
-                    },
-                ]
-            }
-        },
-
-        viewMore: {
-            name: 'View Whole Project',
-            heading: 'Want to see more?',
-            content: 'Want to see the whole design process? Visit my behance to see the first versions and exploration of the concept.',
-            p: 'https://www.behance.net/gallery/76059619/Malcolm-Gladwell-Book-Cover-Redesigns',
-        },
     },
+     
+     //DOCTOR WITHOUT BORDERS
+     {
+        //HOMEPAGE SETUP
+        status: 'coming soon',
+        disable: 'true',
+        project: 'Doctors Without Borders',
+        next: '',
+        prev: '',
+        href: '',
+        name: 'Doctors Without Borders',
+        platform: 'Print and Web',
+        role: 'Logo | Branding',
+       //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
+        descColor: 'primary-white-text',
+        image: 'cover/dwb-cover.svg',
+        primaryColor: 'salvation-primary-red',
+        supportColor: 'cuny-primary-light',
+        secondaryColor: 'salvation-secondary',
+           buttonColor: 'cuny-primary',
+   },
 ]
 
 
 //CASE STUDY POSITIONS IN JSON FILE
 
 // const cs__cunyfirst = caseStudies[1];
-const cs__aluminyze = caseStudies[3];
-const cs__cored = caseStudies[0];
-const cs__blah = caseStudies[1];
-const cs__fueltime = caseStudies[4];
-const cs__ipc = caseStudies[2];
+// const cs__aluminyze = caseStudies[0];
+const cs__cored = caseStudies[2];
+const cs__blah = caseStudies[3];
+// const cs__fueltime = caseStudies[4];
+const cs__ipc = caseStudies[1];
 const cs__salvationarmy = caseStudies[5];
-const cs__gladwell = caseStudies[8];
+const cs__gladwell = caseStudies[6];
 
 //CONTENT PARENT CONTAINERS IN INDEX.HTML
 const contentContainer = document.getElementById('content-container');

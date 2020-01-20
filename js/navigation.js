@@ -21,10 +21,10 @@ window.addEventListener('scroll', function () {
         //IF TARGET IS CLASS BUTTON, GET DATA ATTRIBUTE HREF
         let target = event.target;
         let disabled = target.getAttribute('data-disable');
+        let disabledHref = target.getAttribute('href');
 
-        if (disabled === 'true') {
-             console.log("working")
-            return;
+        if (disabled === 'true' && disabledHref != '') {
+            window.open(target.getAttribute('href'), '_blank');
         }
 
         if (target.matches('.case') || target.matches('.case__image') || target.matches('.case__content') || target.matches('.button')) {

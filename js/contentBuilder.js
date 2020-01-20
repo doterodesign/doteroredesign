@@ -6,6 +6,7 @@ const cored = (cs) => {
     let intro = content__article(cs.introduction);
     let user = content__article(cs.ur);
     let animation = contentWImage(cs.problem, cs.img.problem);
+    // let test = contentWImageOther(cs.foundation, cs.img.sketch);
     // let problem = content__article__no__title(cs.problem);
     let goal = content__article(cs.goal);
     let sneakpeak = content__article(cs.sneakpeak);
@@ -60,64 +61,64 @@ const cored = (cs) => {
 cored(cs__cored);
 
 
-const fueltime = (cs) => {
+// const fueltime = (cs) => {
 
-    let mas = master(cs);
-    let intro = content__article(cs.introduction);
-    let user = content__article(cs.ur);
-    let animation = contentWImage(cs.problem, cs.img.problem);
-    // let problem = content__article__no__title(cs.problem);
-    let goal = content__article(cs.goal);
-    let sneakpeak = content__article(cs.sneakpeak);
-    let userflow = content__article(cs.userflow);
-    let foundation = content__article(cs.foundation);
-    let navigation = content__article(cs.navigation);
-    // let navigationFeedback = content__article(cs.navigation.feedback);
-    let dynamicContent = content__article(cs.dynamicContent);
-    let testing = content__article(cs.testing);
-    let lesson = content__article(cs.lesson);
-    let proto = content__article(cs.proto);
+//     let mas = master(cs);
+//     let intro = content__article(cs.introduction);
+//     let user = content__article(cs.ur);
+//     let animation = contentWImage(cs.problem, cs.img.problem);
+//     // let problem = content__article__no__title(cs.problem);
+//     let goal = content__article(cs.goal);
+//     let sneakpeak = content__article(cs.sneakpeak);
+//     let userflow = content__article(cs.userflow);
+//     let foundation = content__article(cs.foundation);
+//     let navigation = content__article(cs.navigation);
+//     // let navigationFeedback = content__article(cs.navigation.feedback);
+//     let dynamicContent = content__article(cs.dynamicContent);
+//     let testing = content__article(cs.testing);
+//     let lesson = content__article(cs.lesson);
+//     let proto = content__article(cs.proto);
 
 
-    // IMAGES
-    let img__introduction = images(cs.img.introduction);
-    let img__sketch = images(cs.img.sketch);
-    let img__problem = images(cs.img.problem);
-    let img__sneakpeak = images(cs.img.sneakpeak);
-    let img__wireframe = images(cs.img.wireframe);
-    let img__userflow = images(cs.img.userflow);
-    let img__navigation = images(cs.img.navigation);
-    let img__dynamic = images(cs.img.dynamic);
-    let img__testing = images(cs.img.testing);
-    let protoEmbed = button(cs.proto);
+//     // IMAGES
+//     let img__introduction = images(cs.img.introduction);
+//     let img__sketch = images(cs.img.sketch);
+//     let img__problem = images(cs.img.problem);
+//     let img__sneakpeak = images(cs.img.sneakpeak);
+//     let img__wireframe = images(cs.img.wireframe);
+//     let img__userflow = images(cs.img.userflow);
+//     let img__navigation = images(cs.img.navigation);
+//     let img__dynamic = images(cs.img.dynamic);
+//     let img__testing = images(cs.img.testing);
+//     let protoEmbed = button(cs.proto);
   
 
 
-    let comp = '';
+//     let comp = '';
 
-    comp +=
-        `
-        ${mas}
-        ${protoEmbed}
-        ${img__dynamic}
-        ${img__sneakpeak}
-        ${animation}
-        ${foundation}
-        ${img__sketch}
-        ${img__userflow}
-        ${img__wireframe}
-        ${img__testing}
-        ${navigation}
-        ${img__navigation}
-        ${dynamicContent}
-        ${lesson}
-        ${proto}
-        ${protoEmbed}
-        `
+//     comp +=
+//         `
+//         ${mas}
+//         ${protoEmbed}
+//         ${img__dynamic}
+//         ${img__sneakpeak}
+//         ${animation}
+//         ${foundation}
+//         ${img__sketch}
+//         ${img__userflow}
+//         ${img__wireframe}
+//         ${img__testing}
+//         ${navigation}
+//         ${img__navigation}
+//         ${dynamicContent}
+//         ${lesson}
+//         ${proto}
+//         ${protoEmbed}
+//         `
        
-    fueltimeContainer.innerHTML = comp;
-}
-fueltime(cs__fueltime);
+//     fueltimeContainer.innerHTML = comp;
+// }
+// fueltime(cs__fueltime);
 
 
 const blah = (cs) => {
@@ -177,68 +178,68 @@ blah(cs__blah);
 
 // CUNYFIRST
 
-const cunyfirst = (cs) => {
+// const cunyfirst = (cs) => {
 
-    let mas = master(cs);
-    let intro = content__article(cs.introduction);
-    let user = content__article(cs.ur);
-    let problem = content__article(cs.problem);
-    let goal = content__article(cs.goal);
-    let sneakpeak = content__article(cs.sneakpeak);
-    let userflow = content__article(cs.userflow);
-    let wireframe = content__article(cs.wireframe);
-    let navigation = content__article(cs.navigation);
-    let navigationFeedback = content__article(cs.navigation.feedback);
-    let dynamicContent = content__article(cs.dynamicContent);
-    let testing = content__article(cs.testing);
-    let lesson = content__article(cs.lesson);
-    let proto = content__article(cs.proto);
+//     let mas = master(cs);
+//     let intro = content__article(cs.introduction);
+//     let user = content__article(cs.ur);
+//     let problem = content__article(cs.problem);
+//     let goal = content__article(cs.goal);
+//     let sneakpeak = content__article(cs.sneakpeak);
+//     let userflow = content__article(cs.userflow);
+//     let wireframe = content__article(cs.wireframe);
+//     let navigation = content__article(cs.navigation);
+//     let navigationFeedback = content__article(cs.navigation.feedback);
+//     let dynamicContent = content__article(cs.dynamicContent);
+//     let testing = content__article(cs.testing);
+//     let lesson = content__article(cs.lesson);
+//     let proto = content__article(cs.proto);
 
 
-    // IMAGES
-    let img__introduction = images(cs.img.introduction);
-    let img__sketch = images(cs.img.sketch);
-    let img__sneakpeak = images(cs.img.sneakpeak);
-    let img__wireframe = images(cs.img.wireframe);
-    let img__userflow = images(cs.img.userflow);
-    let img__navigation = images(cs.img.navigation);
-    let img__dynamic = images(cs.img.dynamic);
-    let img__testing = images(cs.img.testing);
-    let img__prototype = button(cs.proto);
+//     // IMAGES
+//     let img__introduction = images(cs.img.introduction);
+//     let img__sketch = images(cs.img.sketch);
+//     let img__sneakpeak = images(cs.img.sneakpeak);
+//     let img__wireframe = images(cs.img.wireframe);
+//     let img__userflow = images(cs.img.userflow);
+//     let img__navigation = images(cs.img.navigation);
+//     let img__dynamic = images(cs.img.dynamic);
+//     let img__testing = images(cs.img.testing);
+//     let img__prototype = button(cs.proto);
   
 
 
-    let comp = '';
+//     let comp = '';
 
-    comp +=
-        `
-        ${mas}
-        ${img__prototype}
-        ${intro}
-        ${user}
-        ${problem}
-        ${img__sketch}
-        ${goal}
-        ${sneakpeak}
-        ${img__sneakpeak}
-        ${userflow}
-        ${img__userflow}
-        ${wireframe}
-        ${img__wireframe}
-        ${navigation}
-        ${img__navigation}
-        ${navigationFeedback}
-        ${dynamicContent}
-        ${img__dynamic}
-        ${testing}
-        ${img__testing}
-        ${lesson}
-        ${proto}
-        ${img__prototype}
-        `
+//     comp +=
+//         `
+//         ${mas}
+//         ${img__prototype}
+//         ${intro}
+//         ${user}
+//         ${problem}
+//         ${img__sketch}
+//         ${goal}
+//         ${sneakpeak}
+//         ${img__sneakpeak}
+//         ${userflow}
+//         ${img__userflow}
+//         ${wireframe}
+//         ${img__wireframe}
+//         ${navigation}
+//         ${img__navigation}
+//         ${navigationFeedback}
+//         ${dynamicContent}
+//         ${img__dynamic}
+//         ${testing}
+//         ${img__testing}
+//         ${lesson}
+//         ${proto}
+//         ${img__prototype}
+//         `
        
-    cunyfirstContainer.innerHTML = comp;
-}
+//     cunyfirstContainer.innerHTML = comp;
+// }
 
 
 
@@ -301,7 +302,6 @@ const ipc = (cs) => {
         ${img__userflow}
         ${wireframe}
         ${img__wireframe}
-        ${img__preview}
         ${designsystem}
         ${img__designsystem}
         ${proto}
@@ -315,31 +315,31 @@ const ipc = (cs) => {
 ipc(cs__ipc);
 
 //SALVATION ARMY
-const salvationarmy = (cs) => {
-    let mas = master(cs);
-    let viewMore = content__article(cs.viewMore);
-    let behance = button(cs.viewMore);
-    let img__full = images(cs.img.full);
-    let img__lg = images(cs.img.lg);
-    // let next = content__article(cs.nextProject);
+// const salvationarmy = (cs) => {
+//     let mas = master(cs);
+//     let viewMore = content__article(cs.viewMore);
+//     let behance = button(cs.viewMore);
+//     let img__full = images(cs.img.full);
+//     let img__lg = images(cs.img.lg);
+//     // let next = content__article(cs.nextProject);
 
-    let comp = '';
+//     let comp = '';
 
-    comp +=
-        `
-        ${mas}
-        ${behance}
-        ${img__lg}
-        ${viewMore}
-        ${behance}
-        `
+//     comp +=
+//         `
+//         ${mas}
+//         ${behance}
+//         ${img__lg}
+//         ${viewMore}
+//         ${behance}
+//         `
     
-    salvationarmyContainer.innerHTML = comp;
+//     salvationarmyContainer.innerHTML = comp;
 
-}
+// }
 
-salvationarmy(cs__salvationarmy);
-nextProject(cs__salvationarmy);
+// salvationarmy(cs__salvationarmy);
+// nextProject(cs__salvationarmy);
 
 
 
