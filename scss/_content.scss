@@ -127,6 +127,7 @@ $img-height: auto;
     }
 
     & .case {
+        opacity: 0;
         position:relative;
         height: -webkit-min-content;
         height: -moz-min-content;
@@ -151,7 +152,7 @@ $img-height: auto;
 
         &-hover[data-disable="true"] {
             content: "Coming Soon";
-            background: rgba(0,0,0,0.9);
+            background: rgba($cr-blue-base, 0.9);
             position:absolute;
             display: -webkit-box;
             display: -ms-flexbox;

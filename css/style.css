@@ -402,6 +402,10 @@ span {
   font-weight: 900;
 }
 
+.semi-bold {
+  font-weight: 700;
+}
+
 .all-caps {
   text-transform: uppercase;
 }
@@ -1200,6 +1204,7 @@ a .icon {
   height: auto;
 }
 #preview-content .case {
+  opacity: 0;
   position: relative;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -1220,7 +1225,7 @@ a .icon {
 }
 #preview-content .case-hover[data-disable=true] {
   content: "Coming Soon";
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(69, 95, 168, 0.9);
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1350,9 +1355,12 @@ a .icon {
   margin: 0rem;
   grid-template-columns: 1fr;
 }
-.cs-container > .content-w-image:first-of-type > .image__container-full {
-  height: 100vh;
+@media screen and (min-width: 700px) {
+  .cs-container > .content-w-image:first-of-type > .image__container-full {
+    height: 80vh;
+  }
 }
+
 .content__article, .content__full, .content__block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -1590,7 +1598,7 @@ img {
   min-height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: grid;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
@@ -1618,7 +1626,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
 }
 .image__container-xs > * {
-  margin: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
   min-width: 10rem;
   max-width: 15rem;
 }
@@ -1626,7 +1634,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 19rem));
 }
 .image__container-sm > * {
-  margin: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
   min-width: 10rem;
   max-width: 19rem;
 }
@@ -1636,7 +1644,7 @@ img {
   justify-self: center;
 }
 .image__container-md > * {
-  margin: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
   min-width: 10rem;
   max-width: 30rem;
 }
@@ -1644,6 +1652,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 40rem));
 }
 .image__container-lg > * {
+  margin: 1rem 1rem 2rem 1rem;
   min-width: 10rem;
   max-width: 40rem;
 }
@@ -1652,6 +1661,7 @@ img {
   display: grid;
 }
 .image__container-lg-svg > * {
+  margin: 1rem 1rem 2rem 1rem;
   min-width: 10rem;
   max-width: 40rem;
   height: 90vh;
@@ -1689,7 +1699,6 @@ img {
   width: 0%;
   position: fixed;
   left: 0;
-  top: 60px;
   height: 0.25rem;
   background: #32a456;
   background: -webkit-gradient(linear, left top, right top, from(#32a456), to(#48d943));

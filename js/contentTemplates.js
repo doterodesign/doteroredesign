@@ -38,7 +38,7 @@ function navConstructor(p) {
         <section class="info-container">
             <div class="info-container--content"><h2 class="cr-blue-base">Hi, I'm Dimitri!</h2> 
             <h5 class="cr-blue-base">A Product Designer based in NYC with a passion for design systems, user-testing, and designing intuitive experiences for users.</h5>
-            <h5 class="cr-red-base cr-bold-12">Hand-coded with love &hearts;</h5>
+            <h5 class="cr-red-base cr-bold-12">Hand-coded with &hearts;</h5>
             </div>
             
             <div id="social-media">
@@ -115,12 +115,12 @@ function templateConstructor(p) {
         `
             <section class="case" data-project-name='${p[i].href}' data-href="${p[i].href}" data-disable="${p[i].disable}">
                 <div class="case-hover" href="${p[i].href}" data-disable="${p[i].disable}" target="_blank" rel=”noreferrer”>
-                <h3 class="all-caps">${p[i].status}</h3>
+                <h5 class="all-caps bold">${p[i].status}</h5>
                     </div>
                 <img class="case__image" src="images/${p[i].image}" alt="" data-href="${p[i].href}">
                 <div class="case__content" ">
                     <p class="cr-bold-12 all-caps cr-neutral-600">${p[i].role}</p>
-                    <p class="case__name cr-reg-14 bold cr-neutral-800">${p[i].project}</p> 
+                    <p class="case__name cr-reg-14 cr-neutral-700">${p[i].project}</p> 
                 </div>
             </section>
         `

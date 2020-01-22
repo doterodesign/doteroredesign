@@ -28,9 +28,9 @@ var caseStudies = [
     //ALUMINYZE
     {
     //HOMEPAGE SETUP
-    status: 'view website </br> <p>case study coming soon →</p>',
+    status: 'view application</br> <p>case study coming soon</p>',
     disable: 'true',
-    project: 'Aluminyze @ UX Design Collective',
+    project: 'Client: Aluminyze @ UX Design Collective',
     next: 'cored',
     prev: 'gladwell',
     href: 'https://aluminyze.com/pages/order-now/builder',
@@ -307,7 +307,7 @@ var caseStudies = [
     //IPC
     {
         //HOMEPAGE SETUP
-        project: 'International Paralympic Committee',
+        project: 'I.P.C.',
         next: 'cored',
         prev: 'blah',
         href: 'ipc',
@@ -1507,9 +1507,9 @@ var caseStudies = [
     //FUELTIME
     {
         //HOMEPAGE SETUP
-        status: 'view prototype </br> <p>study coming soon →</p>',
+        status: 'view prototype</br> <p>case study coming soon</p>',
         disable: 'true',
-        project: 'Fueltime: @ Hack-a-thon (5 members)',
+        project: 'FUELTIME: @ Hack-a-thon (5 members)',
         next: 'blah',
         prev: 'cored',
         href: 'https://www.figma.com/proto/JESCUlrpGHV40L78WXrm2qNd/FuelTime-New-Order?node-id=233%3A564&viewport=104%2C387%2C0.3435290455818176&scaling=scale-down',
@@ -2222,7 +2222,7 @@ var caseStudies = [
     {
          //HOMEPAGE SETUP
          project: 'Salvation Army',
-         status: 'view Style Guide →',
+         status: 'view Style Guide</br><p>Behance</p>',
          disable: 'true',
          next: 'gladwell',
          prev: 'blah',
@@ -2306,7 +2306,7 @@ var caseStudies = [
     {
             //HOMEPAGE SETUP
             project: 'Malcolm Gladwell',
-            status: 'view case study →',
+            status: 'view case study</br><p>Behance</p>',
             disable: 'true',
             next: 'cored',
             prev: 'salvationarmy',

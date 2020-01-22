@@ -33,12 +33,14 @@
         grid-template-columns: 1fr;
 
         & > .image__container-full {
-            height: 100vh;
+            // height: 100vh;
         }
     
-        @media screen and (min-width: $breakpoint-lg) {
+        @media screen and (min-width: $breakpoint-md) {
             & {
-                // margin:2rem;
+                & > .image__container-full {
+                    height: 80vh;
+                }
            }
         }
     }
