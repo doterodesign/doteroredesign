@@ -31,15 +31,92 @@
         padding: 0rem;
         margin: 0rem;
         grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
 
         & > .image__container-full {
-            // height: 100vh;
+            height: 60vh;
+            width: 100vw;
+        }
+
+        & > .content__article {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+            grid-column-gap: 2rem;
+
+            & > .cs__details {
+                padding: 0 2rem;
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                & > * {
+                    margin-bottom: 1rem;
+                    flex-basis: 100%;
+                    // white-space: nowrap;
+                }
+            }
+
+            .cs__name-title {
+                max-width: 600px;
+                padding: 0 2rem;
+                margin-bottom: 2rem;
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                & > .cs__details {
+                    justify-content: center;
+                    & > * {
+                        flex-basis: 50%;
+                    }
+                }
+    
+            }
+
+            @media screen and (min-width: $breakpoint) {
+                & > .cs__details {
+                    & > * {
+                        flex-basis: 80%;
+                    }
+                }
+    
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+               padding: 0;
+               max-width: 94vw;
+
+               grid-template-columns: 50vw 1fr;
+
+               & > .cs__details {
+                   justify-content: flex-end;
+
+                    & > * {
+                       margin: 1rem;
+                       flex-basis: 50%;
+                    }
+               }
+               & .cs__name-title {
+                    padding: 0rem;
+
+                    & > h2 {
+                        margin-bottom: 3rem;
+                    }
+
+                    & > p {
+                        color: $cr-neutral-700;
+                    }
+                }
+            }
+
         }
     
         @media screen and (min-width: $breakpoint-md) {
             & {
                 & > .image__container-full {
-                    height: 80vh;
+                    
+                    height: 60vh;
                 }
            }
         }

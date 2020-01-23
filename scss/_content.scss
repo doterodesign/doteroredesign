@@ -152,7 +152,7 @@ $img-height: auto;
 
         &-hover[data-disable="true"] {
             content: "Coming Soon";
-            background: rgba($cr-blue-base, 0.9);
+            background: rgba($cr-blue-base, 0.95);
             position:absolute;
             display: -webkit-box;
             display: -ms-flexbox;

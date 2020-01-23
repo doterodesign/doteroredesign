@@ -2,7 +2,7 @@ const content__article = (section) => {
     return `
     <article class="content__article" data-section-name="${section.name}">
     <h3 class="section-name section-name--project-name bold">${section.heading}</h3>
-    <p class="cr-neutral-800">${section.content}</p>
+    <p class="cr-neutral-700">${section.content}</p>
     </article>
    `
 }
@@ -10,7 +10,7 @@ const content__article = (section) => {
 const content__article__no__title = (section) => {
     return `
     <article class="content__article" data-section-name="${section.name}">
-        <p class="cr-neutral-800">${section.content}</p>
+        <p class="cr-neutral-700">${section.content}</p>
     </article>
    `
 }
@@ -115,7 +115,7 @@ function templateConstructor(p) {
         `
             <section class="case" data-project-name='${p[i].href}' data-href="${p[i].href}" data-disable="${p[i].disable}">
                 <div class="case-hover" href="${p[i].href}" data-disable="${p[i].disable}" target="_blank" rel=”noreferrer”>
-                <h5 class="all-caps bold">${p[i].status}</h5>
+                <h5 class="all-caps bold cr-white-base">${p[i].status}</h5>
                     </div>
                 <img class="case__image" src="images/${p[i].image}" alt="" data-href="${p[i].href}">
                 <div class="case__content" ">
@@ -171,43 +171,62 @@ const master = (p) => {
                 <img class="video" src="images/${p.image}" alt="">
             </section>
             <article class="content__article" data-section-name="Let's Begin!">
-            <h3 class="section-name">${p.project} <title-caption></title-caption></h3>
-            <h4 class="section-name section-name--project-name">${p.name}</h4>
-            <p>${p.summary.overview}</p>
-            </article>
-        </section>
+           
+            <div class="cs__name-title">          
+            <h3 class="section-name">${p.project}</h3>
+                    <h2 class="section-name section-name--project-name">${p.name}</h2>
+                    <p>${p.summary.overview}</p>
+            </div>
+            <div class="cs__details">
+            `
+            //INPUT ALL TOOLS USED IN THE PROJECT
+            for (var j in p.csDetails) {
+                caseStudy +=
+                        `
+                <div>
+                    <h5 class="cr-bold-12 all-caps cr-black-base">${p.csDetails[j].name}</h5>
+                    <p class="cr-reg-14 cr-neutral-600">${p.csDetails[j].description}</p>
+                </div>
+                `
+                }
+                caseStudy +=
+                    `
+                </article>
+                </section>
+        
 
         <section class="content__block content__block-list" data-section-name="Spoilers">
                     <article>
                         <h4 class='bold ${p.secondaryColor}-text cr-bold-12 all-caps'>Problem</h4>
-                        <p class="cr-reg-14">${p.summary.problem}</p>
+                        <p class="cr-reg-14 cr-neutral-700">${p.summary.problem}</p>
                     </article>
                     <article>
                         <h4 class='bold ${p.secondaryColor}-text cr-bold-12 all-caps'>Goal</h4>
-                        <p class="cr-reg-14">${p.summary.goal}</p>
+                        <p class="cr-reg-14 cr-neutral-700">${p.summary.goal}</p>
                     </article>
                     <article>
                         <h4 class='bold ${p.secondaryColor}-text cr-bold-12 all-caps'>Approach</h4>
-                        <p class="cr-reg-14">${p.summary.approach}</p>
+                        <p class="cr-reg-14 cr-neutral-700">${p.summary.approach}</p>
                     </article>
                     <article>
                         <h4 class='bold ${p.secondaryColor}-text cr-bold-12 all-caps'>Solution</h4>
-                        <p class="cr-reg-14">${p.summary.solution}</p>
+                        <p class="cr-reg-14 cr-neutral-700">${p.summary.solution}</p>
                     </article>
                     <article>
                         <h4 class='bold ${p.secondaryColor}-text cr-bold-12 all-caps'>Lessons</h4>
-                            <p class="cr-reg-14">${p.summary.lesson}</p>                    
+                            <p class="cr-reg-14 cr-neutral-700">${p.summary.lesson}</p>                    
                         </article>
                     <article>
-                        <h4 class='bold ${p.secondaryColor}-text cr-bold-12 all-caps'>Tools Used</h4>
+                        
                         `
+                        // <h4 class='bold ${p.secondaryColor}-text cr-bold-12 all-caps'>Tools Used</h4>
     //INPUT ALL TOOLS USED IN THE PROJECT
-    for (var j in p.tools) {
-        caseStudy +=
-            `
-    <p class='list-item cr-reg-14'>${p.tools[j]}</p>
-    `
-    }
+    // for (var j in p.tools) {
+    //     caseStudy +=
+    //         `
+    // <p class='list-item cr-reg-14'>${p.tools[j]}</p>
+    // `
+    // }
     caseStudy +=
         `
                 </article>

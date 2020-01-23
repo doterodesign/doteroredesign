@@ -14,18 +14,30 @@ function homeload() {
 
         return homeAnimation;
 }
+
+homeload();
     
 function csPrevLoad() {
     let anim = new gsap.timeline();
     anim.fromTo(".case", {opacity: 0, y: 50, ease: "power2.in" }, { opacity: 1, y: 0, stagger: 0.3, ease: "power3.in", duration: 0.5});
-    anim.onComplete(anim.set('.case', { clearProps: 'transform' }))
+    // anim.onComplete(anim.set('.case', { clearProps: 'transform' }))
     return anim;
 }
 
-
-
-
-        homeload();
+$(".case").each(function (index, element){
+    var tl = new TimelineLite({paused:true});
+    tl.to(element, { scale: 0.95, duration: 0.1, ease: "power.in" })
+      .to(element > ".case-hover", {opacity: 1, duration: 0.2})
+    element.animation = tl;
+  })
+  
+  $(".case").mouseenter(function(){
+    this.animation.play();
+  })
+  
+  $(".case").mouseleave(function(){
+    this.animation.reverse();
+  })
         // csPrevLoad();
         
 document.addEventListener('hashchange', function () {

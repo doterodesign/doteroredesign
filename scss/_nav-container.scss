@@ -9,7 +9,6 @@ $nav-height: 60px;
     grid-template-columns: 1fr;
     grid-template-rows: 60px minmax(-webkit-max-content, 1fr);
     grid-template-rows: 60px minmax(max-content, 1fr);
-    -ms-flex-line-pack: start;
     align-content: start;
     overflow: hidden;
 
@@ -34,7 +33,9 @@ $nav-height: 60px;
         width: 100vw;
         height: $nav-height;
         grid-row: 1 / 2;
-        background: $primary-white;
+        background: rgba($primary-white, 0.7);
+        -webkit-backdrop-filter: blur(4px);
+                backdrop-filter: blur(4px);
         z-index: 9999;
         overflow: hidden;
         -webkit-transition: height .4s ease-in-out;
@@ -42,7 +43,6 @@ $nav-height: 60px;
 
         &>#nav__items {
             display: grid;
-            -ms-flex-line-pack: center;
             align-content: center;
             grid-row-gap: 2rem;
             padding: 8rem 2rem;
@@ -59,9 +59,10 @@ $nav-height: 60px;
             height: 100%;
             display: grid;
             -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
                     justify-content: space-between;
             grid-template-columns: 1fr 1fr;
+            -webkit-backdrop-filter: blur(2px);
+                    backdrop-filter: blur(2px);
 
             & #mobile-menu {
                 display: none;
@@ -74,7 +75,6 @@ $nav-height: 60px;
                 width: 3rem;
                 height: $nav-height;
                 -webkit-box-align: center;
-                -ms-flex-align: center;
                 align-items: center;
                 z-index: 1;
                 grid-column: 1 / 2;
@@ -175,15 +175,18 @@ $nav-height: 60px;
     }
 
     & .info-container {
+        display: -webkit-box;
         display: flex;
         grid-row: 2/-1;
         margin: 0;
         padding: 0rem 1rem 0rem 1rem;
-        -ms-flex-line-pack: center;
         align-content: center;
         grid-row-gap: 0.5rem;
-        flex-direction: column;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
         border-bottom: 2px solid $cr-neutral-100;
 
         & h1 {
@@ -202,7 +205,6 @@ $nav-height: 60px;
         }
 
         & button {
-            -ms-flex-item-align: center;
             align-self: center;
             justify-self: flex-start;
         }
@@ -271,7 +273,7 @@ $nav-height: 60px;
             position: fixed;
             width: 100vw;
             height: $nav-height;
-            background: $primary-white;
+            background: rgba($primary-white, 0.7);
             z-index: 9999;
 
             & nav {
@@ -342,7 +344,6 @@ $nav-height: 60px;
         @media screen and (min-width: $breakpoint-md) {
             & nav #main-logo {
                 display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
             }
         }
@@ -385,23 +386,27 @@ $nav-height: 60px;
 
 #social-media {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     grid-row-gap: 1rem;
     position: relative;
     width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
-    -ms-flex-item-align: bottom;
     align-self: bottom;
     margin: 1rem 0 1.5rem 0;
     z-index: 2;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     flex-flow: wrap;
 
     &__socials { 
+        display: -webkit-box; 
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
         margin-bottom: 1rem;
 
         @media screen and (min-width: $breakpoint-sm) {
@@ -422,7 +427,6 @@ $nav-height: 60px;
         padding-left: 2rem;
         z-index: 9999;
         -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
 
         &>* {
@@ -433,7 +437,6 @@ $nav-height: 60px;
         @media screen and (min-width: $breakpoint) {
             & {
                 -webkit-box-pack: start;
-                -ms-flex-pack: start;
                 justify-content: start;
             }
         }
@@ -445,7 +448,8 @@ $nav-height: 60px;
 
     @media screen and (min-width: $breakpoint) {
        & {
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                    justify-content: space-between;
             flex-flow: nowrap;
        }
     }
@@ -455,7 +459,6 @@ $nav-height: 60px;
 a {
     & .icon {
         display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
     }
 }
