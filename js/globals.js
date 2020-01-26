@@ -29,19 +29,23 @@ var caseStudies = [
     {
     //HOMEPAGE SETUP
     status: 'view application</br> <p>case study coming soon</p>',
-    disable: 'true',
-    project: 'Aluminyze',
-    next: 'cored',
-    prev: 'gladwell',
-    href: 'https://aluminyze.com/pages/order-now/builder',
+    // disable: 'true',
+    project: 'ALUMINYZE',
+    next: 'ipc',
+    prev: 'blah',
+    href: '#aluminyze',
     buttonCTA: 'VIEW WEBSITE',
-    name: '<b style="font-size:1rem">Coming Soon</b><br>',
+    name: 'Designing a responsive metal print ordering experience',
     platform: 'Mobile',
     role: '<bold class="cr-red-base">Intern</bold> | Component Library | Prototyping',
     csDetails: {
-        type: {
-            name: 'type',
-            description: 'Client',
+        length: {
+            name: 'Length',
+            description: '3 months',
+        },
+        industry: {
+            name: 'Industry',
+            description: 'Photography',
         },
         where: {
             name: 'Agency',
@@ -49,7 +53,7 @@ var caseStudies = [
         },
         role: {
             name: 'roles',
-            description: 'UX/UI<br>Prototyping<br>Component Library<br>',
+            description: 'UX/UI<br>Research<br>Prototyping<br>Component Library<br>',
         },
         tools: {
             name: 'tools',
@@ -67,41 +71,36 @@ var caseStudies = [
 
     //CASE STUDY SETUP
     summary: {
-        overview: 'I decided to take on designing a space that had the core-features necessary for a student to get through their college experience. </br></br>I\'ve only been able to tackle the mobile, student version of the platform but will take you through my overall learning experience into what creating a white-label software entails from both the design and technology perspective.</br></br> This difficult challenge resulted in a long process of research, feature consolidation, and testing. It made me appreciate why these softwares may not have been updated over the years. Let\'s begin the process!',
+        overview: 'We wanted to create a guided ordering for Aluminyze\'s clients to make the creating custom orders easier and more intuitive for a growing audience. With most of their competitors having a responsive site and application, standing out as a metal print company versus a traditional photo was a selling point.<br><br>When the client decided to create a responsive web experience versus only desktop, it was my job to research competitors, synthesize our user-testing for patterns and potential features, build out the component library, write the flow documentation, and create the prototypes used to present to the client and be a reference for the development team when we handed off.',
     
-        problem: 'Most education portals do not meet accessibility and responsive standards needed for modern applications. After observing platforms like CUNYfirst, Blackboard, and PupilPath, I found critical usability issues that made the application very hard to use on both the mobile and desktop platforms.',
+        problem: 'The client was doing a full rebrand and wanted to compete in the modern market for metal print ordering. The previous design was not completely responsive, accessible, or pleasant to use.',
 
-        goal: 'Design and create a progressive web app that will allow complete flexibility in use for students and faculty while providing optimal, standardized accessibility practices. Currently on designing the student side of the portal.',
+        goal: 'Because the client wanted the design to potentially be used for a mobile app, we needed to design reusable, modular components to help reduce development time for multiple use cases and expanding feature sets.',
 
-        approach: 'I.A. Restructuring, auditing competitor applications, find core features, user research and testing, and a lot of trial and error.',
+        approach: 'Competitive analysis, user-testing, information architecture, and feature consolidation were used to make sure we only designed what was necessary for users to complete their tasks.',
 
-        lesson: 'Iteration, competitor research, and user-testing is key to creating a product people would enjoy using.',
+        lesson: 'Working with a PM and dev team to ensure the product was able to be developed on schedule taught me client constraints and the difficulties one may face when selling an idea.',
 
-        solution: "Found the core features needed for students and tested multiple types of navigation for quick and easy to use features. Faculty platform is in progress.",
+        solution: "We found that mobile apps were great references for photo-editing applications with the growing use of Instagram and Snapchat. We used our user-testing and analysis of competitors to create a guided ordering experience so even older users wouldn't be overwhelmed with the process.",
     },
-
-    tools: [
-        'Figma',
-        'Overflow',
-        'Protopie',
-        'Zero Height',
-        'Illustrator',
-        'Principle'
-    ],
 
     img: {
 
         introduction: {
-            size: 'sm',
+            size: 'xl',
             
             "images": [
                 {
-                    name: 'cunyfirst/current.png',
-                    caption: 'Current web (desktop) CUNYfirst',
+                    name: 'aluminyze/single-image-flow.jpg',
+                    caption: 'User-journey for one prototype that was tested',
                 },
                 {
-                    name: 'cunyfirst/current-mobile.png',
-                    caption: 'Current web (mobile) CUNYfirst',
+                    name: 'aluminyze/after-thoughts.jpg',
+                    caption: 'Compilation of key observations from user testing',
+                },
+                {
+                    name: 'aluminyze/after-thoughts-summary.png',
+                    caption: 'Summary of all the most important observations during testing',
                 },
             ]
         },
@@ -110,126 +109,112 @@ var caseStudies = [
             size: 'lg',
 
             "images": [
-                {}
+                {
+                    name: 'aluminyze/dropdown-example.png',
+                    caption: 'Dropdown example: Not the best for small screens',
+                },
+                {
+                    name: 'aluminyze/modal-example.png',
+                    caption: 'Modal example: Heavy use of modals throughout the layout',
+                }
             ]
         },
 
-        sketch: {
-            size: 'lg',
-
-            "images": [
-                {
-                    name: 'cunyfirst/combining-projects.svg',
-                    caption: 'Combining multiple standalone apps into one ecosystem',
-                },
-            ]
-        },
-
-        sneakpeak: {
-            size: 'xl',
-
-            "images": [
-                {
-                    name: 'cunyfirst/desktop-overview.png',
-                    caption: 'Desktop Main Dashboard',
-                },
-                {
-                    name: 'cunyfirst/desktop-course-active.png',
-                    caption: 'Desktop Active Course',
-                },
-                {
-                    name: 'cunyfirst/desktop-transcript-overview.png',
-                    caption: 'Desktop Transcript Overview',
-                },
-            ]
-        },
-
-        userflow: {
-            size: 'md',
-
-            "images": [
-                {
-                    name: 'cunyfirst/finances-flowchart.png',
-                    caption: 'Finances Userflow',
-                },
-                {
-                    name: 'cunyfirst/courses-flowchart.png',
-                    caption: 'Courses Userflow',
-                },
-                {
-                    name: 'cunyfirst/academics-flowchart.png',
-                    caption: 'Academics Userflow',
-                },
-            ]
-        },
-
-        wireframe: {
-            size: 'lg',
-
-            "images": [
-                {
-                    name: 'cunyfirst/wireframe-1.svg',
-                    caption: 'empty state / courses state / information state / alert state',
-                },
-                {
-                    name: 'cunyfirst/wireframe-2.svg',
-                    caption: 'secondary courses state / information state 2 / courses state 2',
-                },
-            ]
-        },
-
-        navigation: {
-            size: 'md',
-
-            "images": [
-                {
-                    name: 'cunyfirst/navigation.png',
-                    caption: 'Primary types of navigation',
-                },
-            ]
-        },
-
-        dynamic: {
-            size: 'xl',
-
-            "images": [
-                {
-                    name: 'cunyfirst/overview-screens.png',
-                    caption: 'current courses / academic overview / finances overview',
-                },
-                {
-                    name: 'cunyfirst/extra-screens.png',
-                    caption: 'search courses / course details / course options',
-                },
-            ]
-        },
-        testing: {
+        mobileTest: {
             size: 'xs',
 
             "images": [
                 {
-                    name: 'cunyfirst/planner_v1.png',
-                    caption: 'V1 of Current Courses',
+                    name: 'aluminyze/mobile-dropdown-test-1.png',
+                    caption: 'Test for dropdowns in mobile layout',
                 },
                 {
-                    name: 'cunyfirst/planner_v2.png',
-                    caption: 'V2 of Current Courses',
+                    name: 'aluminyze/mobile-dropdown-test-2.png',
+                    caption: 'Alternate test for dropdown integration',
+                },
+            ]
+        },
+
+        v1: {
+            size: 'sm',
+
+            "images": [
+                {
+                    name: 'aluminyze/v1-editing.png',
+                    caption: 'v1 of editing feature',
                 },
                 {
-                    name: 'cunyfirst/planner_v3.png',
-                    caption: 'V3 of Current Courses',
+                    name: 'aluminyze/v1-finish.png',
+                    caption: 'v1 of choosing print finish',
                 },
                 {
-                    name: 'cunyfirst/planner_v4.png',
-                    caption: 'V4 of Current Courses',
+                    name: 'aluminyze/v1-image-selection.png',
+                    caption: 'v1 of uploading images from your device',
                 },
                 {
-                    name: 'cunyfirst/planner_v5.png',
-                    caption: 'V5 of Current Courses',
+                    name: 'aluminyze/v1-navigation.png',
+                    caption: 'v1 of primary navigation w/ footer-descriptors',
                 },
                 {
-                    name: 'cunyfirst/planner_v6.png',
-                    caption: 'V6 of Current Courses',
+                    name: 'aluminyze/v1-upload.png',
+                    caption: 'v1 of upload screen for clear CTA testing',
+                },
+            ]
+        },
+
+        v2: {
+            size: 'sm',
+
+            "images": [
+                {
+                    name: 'aluminyze/v2-home.png',
+                    caption: 'v2 of home screen',
+                },
+                {
+                    name: 'aluminyze/v2-finish.png',
+                    caption: 'v2 of choosing print finish',
+                },
+                {
+                    name: 'aluminyze/v2-edit.png',
+                    caption: 'v2 of editing features',
+                },
+                {
+                    name: 'aluminyze/v2-modal-cta.png',
+                    caption: 'v2 of modal example',
+                },
+                {
+                    name: 'aluminyze/v2-upload.png',
+                    caption: 'v1 of uploading images from your device',
+                },
+                {
+                    name: 'aluminyze/v2-save.png',
+                    caption: 'v2 of save functionality',
+                },
+            ]
+        },
+
+        mobileToDesktop: {
+            size: 'xl',
+
+            "images": [
+                {
+                    name: 'aluminyze/mobile-desktop-editing.png',
+                    caption: 'mobile to desktop for editing functionality',
+                },
+                {
+                    name: 'aluminyze/mobile-desktop-save.png',
+                    caption: 'mobile to desktop for save functionality',
+                },
+            ]
+        },
+
+        annotationExample: {
+            size: 'md',
+
+            "images": [
+                {
+                    name: 'aluminyze/annotation-example.png',
+                    caption: 'Annotation example for photos tray functionality',
                 },
             ]
         },
@@ -238,87 +223,62 @@ var caseStudies = [
     //INTRODUCTION
     introduction: {
         name: 'introduction',
-        heading: 'A lot of what exists is built on inaccessible older technologies',
-        content: 'The platforms that exist currently spread out their features into multiple softwares. This is because new products get developed separately due to the of the complexity of the legacy-code of the original platforms. It causes a break in the user experience when a user has to visit multiple platforms to complete different tasks.'
+        heading: 'User-Testing and Information Summary',
+        content: 'My first major task during my internship was to document our recorded user-testing and although it was my first time doing this, I came prepared. I proposed a method of documentation that AJ&Smart, a Design Sprint studio in Berlin, had created using the application Miro(visual below).<br><br>The team was open to a different method of documentation and allowed me to run with it. Here are some of the things that using Miro allowed us to do easily and quickly:<br><br><bold>1. Live collaboration during testing<br>2. User profiles<br>3. Detailed test summaries</bold>',
+        list: [
+            'Live collaboration during testing',
+            'User profiles',
+            'Detailed test summaries'
+        ]
     },
 
     //PROBLEM
     problem: {
-        id: 'main-animation',
         name: 'Problem',
-        heading: 'Hitting The Pain Points',
-        content: 'I\'ve interviewed and casually spoken to many users throughout the years about what they would like in a student platform and how they interact with it on a daily basis. I was able to research and consolidate their needs based on the existing platform\'s features into the core-features necessary for their day-to-day use cases.',
-    },
-
-    //GOAL
-    goal: {
-        name: 'Goal',
-        heading: 'Future goals involve a design system',
-        content: 'My current goal is to establish a design system that I\'m calling the CORE System that will allow for building complex, flexible components for each type of user of the platform. Initially this was being designed as a mobile app but upon researching progressive web apps and them becoming more popular, I\'d love to see if this can be a good use case for that technology.',
-    },
-
-    //SNEAKPEAK
-    sneakpeak: {
-        name: 'Sneakpeak',
-        heading: 'The desktop is not forgotten',
-        content: 'As this is still more about the mobile version of the site, I wanted to show my current exploration of the desktop version of the application.',
+        heading: 'Initial Designs Weren\'t Responsive',
+        content: 'The application was supposed to be desktop-only initially. The designer on the project before me came up with good solutions based on the information given by the client and the research that was done.<br><br>Although the client assured us it would not become responsive, towards the end of handing off the designs, the design was requested to be mobile-friendly. <bold>After testing, some features wouldn\'t translate well to mobile including:<br><br>1. Long dropdowns<br>2. Dependency on modals<br>3. Very tall buttons and inputs</bold>',
     },
 
     //USER RESEARCH
     ur: {
         name: 'User Research',
-        heading: 'Surrounded by users!',
-        content: 'I used CUNYfirst as my foundation for my feature choices as it is the platform I have the most experience with. Having used CUNY products and for almost 10 years and being surrounded by users of other education applications, getting feedback on different platforms was fairly easy.</br></br> With casual interviews and observing students and staff, I felt confident to move forward with planning out the I.A. and userflows.',
+        heading: 'Back to the Drawing Board',
+        content: 'After a lot of brainstorming and testing, we decided to start from scratch. By researching competitors like Adorama Pics and Shutterfly, we were able to access what features Aluminyze had versus what they have implemented.<br><br>We also checked out what mobile photo-editing apps were doing to see what features were being implemented specifically for mobile.<bold> From there, we began building out wireframes for major touch-points including:<br><br>1. Primary and secondary navigations<br>2. Image editing features<br>3. Selection states of customizable options</bold>',
     },
 
-    //USERFLOWS
-    userflow: {
-        name: 'Userflows',
-        heading: 'Focus on userflows = Clear directions',
-        content: 'Going through all of CUNYfirst and recording each function a user can perform took forever! However, after examining, consolidating, and elimating duplicating functionality for three of the primary screens (finances, academics, courses), I created foundational userflows for those categories.</br></br> They gave me enough of the information architecture to begin producing wireframes for the primary layouts.'
+    //INTERNALTESTING
+    internalTesting: {
+        name: 'Internal Testing',
+        heading: 'Development Requests & Component Flexibility',
+        content: 'After doing internal testing and presenting to the client for the designs above, the development team informed us that the designs must be flexible enough to be used for both desktop and mobile seamlessly. The dev team was building in Angular and because we were behind schedule, they did not want to have to build two sets of features.<br><br>This constraint was great in hindsight because we ended up continuing to research and modify our designs to work as truely modular components. Also, with how Figma components work, I structured them as you would in code. Some were heavily nested but it gave us insight into how things would shift and change while designing for desktop and tablets.',
     },
-
     //WIREFRAMES
-    foundation: {
-        name: 'Flows and Wires',
-        heading: 'Defining The Foundations',
-        content: 'The user flows from the research created the foundation to start sketching from. I began with the mobile version because it gives the most constraints in information architecture and how to organize the content. Eventually landing on about 7 base screens for the majority of the content, I got to work on structuring the content.',
+    mobileApproved: {
+        name: 'Mobile Approved',
+        heading: 'With mobile approved, desktop and tablet were relatively easy',
+        content: 'Once a majority of the heavy features like navigation, CTA\'s, and editing capabilities were approved, we began translating those designs to desktop. Because the mobile components were designed with modularity in-mind, we only had to shift the orientation of the navigation and create extended versions of other components to fit the larger screen sizes.',
     },
 
     //NAVIGATION
-    navigation: {
-        name: 'Nav-Design',
-        heading: 'Testing Four Types Of Navigation',
-        content: 'After testing button-only, tabular, dropdown, and iconic navigation, I decided on a combination of three depending on the type of information being accessed. With button-only navigation, users felt the space was cluttered but functional. I have not gotten a large amount of feedback on the tabular and dropdown navigation but will be testing soon for those observations!',
-    },
-
-    //DYNAMIC CONTENT
-    dynamicContent: {
-        name: 'White-Label Software',
-        heading: 'Defining Business Goals',
-        content: 'A white-label software is an all-in-one packaged product that companies and agencies can buy into and customize for their own uses. This means that the overall components and features have to be flexible enough for different use cases while still being able to complete the core-tasks of the software.<br><br>I took this approach because the platforms being used the most by universities is white-label. I wanted to design something that could replace the existing platforms so from a business perspective, this was at the core of corED.',
-    },
-
-    //USER TESTING
-    testing: {
-        name: 'User Testing',
-        heading: 'I tend to work in higher-fidelity to make testing feel like a real experience',
-        content: 'Working on my own, it allows me to gauge both the overall visual and functional design quickly. I make sure to tell anyone using it that it isn\'t in final form which I\'ve noticed, makes testers less frustrated if something doesn\'t work. </br></br>The tests I conducted revolved around information architecture and overall flow of the platform. Users needed to find their information quickly as some tasks require immediate attention. These tests helped me define features I may have missed, unnecessary ways of navigating, and overall improvements in information architecture.',
+    handoff: {
+        name: 'Handoff',
+        heading: 'Handoff to Development',
+        content: 'We began handing off to development once the mobile designs got approved so they could begin building out the components. Once the desktop designs were approved, I worked with the dev team to ensure that any questions about interactions, functionality, and logic were answered.<br><br>To help with this, my lead taught me an annotation method to document the states of components and describe how they would function. This was extremely helpful for both me to learn and the development team to refer to as they built. We used status symbols for each screen annotation to determine which were up to date and what needed to be reviewed.',
     },
 
     //LESSON LEARNED
     lesson: {
         name: 'Lessons Learned',
         heading: 'Lessons Learned',
-        content: 'As I mentioned in the beginning, this project was big for one person...really big. I didn\'t get to tackle everything I hoped for because of school and other projects. However, I learned a ton about process development, presenting the work early for quicker and more consistent feedback, and designing a component system. I\'d love to create a design system for the current component set in the near future but for now, thanks for reading and feel free to ping me on Twitter or LinkedIn for feedback!',
+        content: 'Balancing client needs with constraints in time and development was the most difficult aspect of the project. As deliverables shifted, being able to adjust quickly was essential to meet the deadline.<br><br>The visual branding guidelines were also being developed at the same time for the rest of the site so I had to make sure every color and text-block was a style because the guide could change at anytime (which it did multiple times).<bold>Other main takeaways include:<br><br>1. Tight naming and file structure for less confusion<br>2. Pixel-perfect components make development much easier<br>3. Always have a type and spacing system in place for functional constraints<br>4. Building a component library from scratch</bold>',
     },
 
     //PROTOTYPE
     proto: {
-        name: 'Prototype',
-        heading: 'Prototype Walkthrough',
-        content: 'This is an ongoing project and the screens are being updated constantly. Please disregard inconsistencies in elements since I hop on whenever I can to keep working. Not everything can be navigated, but it will give a general idea of how the app may function.',
-        p: 'https://www.figma.com/proto/dVg3M7TD36D1EGTXUgxNSu0T/In-progress?node-id=1%3A4886&viewport=1994%2C1387%2C0.31970152258872986&scaling=scale-down',
+        name: 'Visit Website',
+        heading: 'Visit the live site!',
+        content: 'This project is officially live! You can visit it using the button below. There\'s more to discuss about the project like building and maintaining the component library so feel free to reach out if you\'d like to learn more!',
+        p: 'https://aluminyze.com/pages/order-now/builder',
     },
     },
 
@@ -327,15 +287,15 @@ var caseStudies = [
         //HOMEPAGE SETUP
         project: 'I.P.C.',
         next: 'cored',
-        prev: 'blah',
+        prev: 'aluminyze',
         href: 'ipc',
         name: 'Restructuring IPC News',
         platform: 'Web & Mobile',
-        role: '<bold class="cr-red-base">Personal</bold> | RESEARCH | UX/UI | I.A. | Styleguide',
+        role: '<bold class="cr-red-base">UX/UI</bold> | RESEARCH | I.A. | Styleguide',
         csDetails: {
             type: {
-                name: 'type',
-                description: 'Personal',
+                name: 'Industry',
+                description: 'Sports',
             },
             platform: {
                 name: 'platform',
@@ -637,11 +597,11 @@ var caseStudies = [
         href: 'cored',
         name: 'My solution to an outdated college student portal',
         platform: 'Progressive Web App',
-        role: '<bold class="cr-red-base">Founder</bold> | UX/UI | I.A. | Component System',
+        role: '<bold class="cr-red-base">Lead Designer</bold> | UX/UI | I.A. | Component System',
         csDetails: {
             type: {
-                name: 'type',
-                description: 'Personal (pitch project)',
+                name: 'Industry',
+                description: 'Education',
             },
             platform: {
                 name: 'platform',
@@ -649,7 +609,7 @@ var caseStudies = [
             },
             role: {
                 name: 'roles',
-                description: 'Founder<br>UX/UI<br>I.A.<br>Component System',
+                description: 'Lead Designer<br>UX/UI<br>I.A.<br>Component System',
             },
             tools: {
                 name: 'tools',
@@ -1362,16 +1322,16 @@ var caseStudies = [
      {
         //HOMEPAGE SETUP
         project: 'BLAH',
-        next: 'ipc',
+        next: 'aluminyze',
         prev: 'cored',
         href: 'blah',
         name: 'Rethinking Mental Self-Help',
         platform: 'Mobile App',
-        role: '<bold class="cr-red-base">Founder</bold> | UX/UI | Research',
+        role: '<bold class="cr-red-base">Lead Designer</bold> | UX/UI | Research',
         csDetails: {
             type: {
-                name: 'type',
-                description: 'Personal',
+                name: 'Industry',
+                description: 'Mental Health',
             },
             platform: {
                 name: 'platform',
@@ -1379,7 +1339,7 @@ var caseStudies = [
             },
             role: {
                 name: 'roles',
-                description: 'Founder<br>UX/UI<br>Research',
+                description: 'Lead Designer<br>UX/UI<br>Research',
             },
             tools: {
                 name: 'tools',
@@ -2535,7 +2495,7 @@ var caseStudies = [
 //CASE STUDY POSITIONS IN JSON FILE
 
 // const cs__cunyfirst = caseStudies[1];
-// const cs__aluminyze = caseStudies[0];
+const cs__aluminyze = caseStudies[0];
 const cs__cored = caseStudies[2];
 const cs__blah = caseStudies[3];
 // const cs__fueltime = caseStudies[4];
@@ -2554,6 +2514,7 @@ const salvationarmyContainer = document.getElementById('salvationarmy');
 // var safeSexContainer = document.getElementById('safesex');
 const gladwellContainer = document.getElementById('gladwell');
 const fueltimeContainer = document.getElementById('fueltime');
+const aluminyzeContainer = document.getElementById('aluminyze');
 
 //NAVIGATION VARIABLES
 const navContainer = document.getElementById('nav-container');

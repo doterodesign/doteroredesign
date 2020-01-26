@@ -175,7 +175,7 @@ const master = (p) => {
             <div class="cs__name-title">          
             <h3 class="section-name">${p.project}</h3>
                     <h2 class="section-name section-name--project-name">${p.name}</h2>
-                    <p>${p.summary.overview}</p>
+                    <p class="cr-neutral-800">${p.summary.overview}</p>
             </div>
             <div class="cs__details">
             `
@@ -196,6 +196,10 @@ const master = (p) => {
         
 
         <section class="content__block content__block-list" data-section-name="Spoilers">
+                    <article>
+                        <h2>Spoilers</h2>
+                        <h4>It's okay, I won't notice</h4>
+                    </article>
                     <article>
                         <h4 class='bold ${p.secondaryColor}-text cr-bold-12 all-caps'>Problem</h4>
                         <p class="cr-reg-14 cr-neutral-700">${p.summary.problem}</p>
@@ -338,3 +342,18 @@ const prototypeEmbed = (p) => {
     </div>
     `
 }
+
+// const contentList = (p) => {
+//    let c = '';
+//     let list = p.list;
+//     `
+//     <section class="content__block content__block-list" data-section-name="Spoilers">
+//    for (let i in list) {
+//        c +=
+//        `
+//         <p class='list-item cr-reg-14'>${p.list[i]}</p>
+//        `
+//    }  
+//     `
+//     return c;
+// }

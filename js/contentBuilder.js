@@ -1,4 +1,57 @@
-// CORED
+//ALUMINYZE
+
+const aluminyze = (cs) => {
+
+    let mas = master(cs);
+    let intro = content__article(cs.introduction);
+    let research = content__article(cs.ur);
+    let problem = content__article(cs.problem);
+    let internalTesting = content__article(cs.internalTesting);
+    let mobileApproved = content__article(cs.mobileApproved);
+    let handoff = content__article(cs.handoff);
+    let lesson = content__article(cs.lesson);
+    let proto = content__article(cs.proto);
+
+
+    // IMAGES
+    let img__introduction = images(cs.img.introduction);
+    let img__v1Screens = images(cs.img.v1);
+    let img__v2Screens = images(cs.img.v2);
+    let img__problem = images(cs.img.problem);
+    let img__mobileTest = images(cs.img.mobileTest);
+    let img__mobileToDesktop = images(cs.img.mobileToDesktop);
+    let img__annotation = images(cs.img.annotationExample);
+    let protoEmbed = button(cs.proto);
+  
+
+
+    let comp = '';
+
+    comp +=
+        `
+        ${mas}
+        ${protoEmbed}
+        ${intro}
+        ${img__introduction}
+        ${problem}
+        ${img__problem}
+        ${img__mobileTest}
+        ${research}
+        ${img__v1Screens}
+        ${internalTesting}
+        ${img__v2Screens}
+        ${mobileApproved}
+        ${img__mobileToDesktop}
+        ${handoff}
+        ${img__annotation}
+        ${lesson}
+        ${proto}
+        ${protoEmbed}
+        `
+       
+    aluminyzeContainer.innerHTML = comp;
+}
+aluminyze(cs__aluminyze);
 
 const cored = (cs) => {
 
