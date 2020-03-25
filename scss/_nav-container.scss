@@ -5,7 +5,6 @@ $nav-height: 60px;
 #nav-container {
     display: grid;
     width: 100vw;
-    height: 90vh;
     grid-template-columns: 1fr;
     grid-template-rows: 60px minmax(-webkit-max-content, 1fr);
     grid-template-rows: 60px minmax(max-content, 1fr);
@@ -24,6 +23,85 @@ $nav-height: 60px;
 
         & h5:last-child {
             margin-top: 2rem; 
+        }
+    }
+
+
+    #homepage-info {
+        min-height:80vh;
+        
+        @media screen and (min-width: $breakpoint) {
+            & {
+                height:90vh;
+            }
+        }
+    }
+
+    #about-info {
+        display: none;
+        height:100%;
+        min-height: 90vh;
+        grid-row-gap: 1rem;
+
+        @media screen and (min-width: $breakpoint) {
+            margin: 2rem 0rem;
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            grid-template-columns: min-content 1fr;
+            margin: 0rem;
+        }
+
+        @media screen and (min-width: $breakpoint) {
+            grid-template-columns: 1fr;
+        }
+
+        & > div > p {
+            max-width: 100%;
+            font-size: 0.9rem !important; 
+            color: #3e3e3e !important;
+            max-width: 100% !important;
+        }
+
+        #about__portrait {
+            opacity: 0;
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+
+            @media screen and (min-width: $breakpoint) {
+                justify-self: start;
+            }
+
+            & > img {
+                width: 8rem;
+                height: 8rem;
+                border-radius: 50%;
+                background: #f2f2f2;
+                border: 0rem solid none;
+                align-self: start;
+                justify-self: center;
+            }
+        }
+
+        #about__content {
+            
+
+            @media screen and (min-width: $breakpoint-sm) {
+                & {
+                    padding: 0rem 4rem;
+                }
+            }
+            @media screen and (min-width: $breakpoint) {
+                & {
+                    padding: 0rem;
+                }
+            }
+        }
+
+        &.active {
+            display: grid;
         }
     }
 
@@ -53,6 +131,21 @@ $nav-height: 60px;
             opacity: 0;
             -webkit-transition: opacity .2s ease-in-out .3s;
             transition: opacity .2s ease-in-out .3s;
+        }
+
+        #about {
+            display: none;
+            align-self: center;
+            justify-self: flex-end;
+            grid-column: 3 / 3;
+            padding-right: 2rem;
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+                color: $cr-yellow-base;
+                transition: color 0.2s ease-in-out;
+            }
         }
 
         .menu-nav {
@@ -89,7 +182,6 @@ $nav-height: 60px;
                     & #main-logo {
                         grid-column: 1 / 2;
                         justify-self: start;
-                        
                         margin-left: 1rem;
                     }
                 }
@@ -120,8 +212,9 @@ $nav-height: 60px;
 
                         & #main-logo {
                             grid-column: 2 / 2;
-                            justify-self: end;
-                            margin-right: 2rem;
+                            // justify-self: end;
+                            margin-right: 0rem;
+                            margin-left: 0rem;
                         }
                     }
                 }
@@ -304,10 +397,10 @@ $nav-height: 60px;
 
                         & #main-logo {
                             display: block;
-                            grid-column: 2 / 2;
-                            justify-self: center;
-                            margin-right: 0;
-                            margin-left: 0;
+                            grid-column: 1 / 2;
+                            // justify-self: center;
+                            // margin-right: 0;
+                            // margin-left: 0;
                         }
                     }
 

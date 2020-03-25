@@ -200,6 +200,10 @@ $img-height: auto;
             align-content: space-between;
             // grid-row-gap: 0.5rem;
 
+            &:first-child {
+                margin-top: 2rem;
+            }
+
             .content__description {
                 margin: 2rem 0rem;
             }

@@ -28,7 +28,7 @@ var caseStudies = [
     //ALUMINYZE
     {
     //HOMEPAGE SETUP
-    status: 'view application</br> <p>case study coming soon</p>',
+    // status: 'view application</br> <p>case study coming soon</p>',
     // disable: 'true',
     project: 'ALUMINYZE',
     next: 'ipc',
@@ -38,6 +38,7 @@ var caseStudies = [
     name: 'Designing a responsive metal print ordering experience',
     platform: 'Mobile',
     role: '<bold class="cr-red-base">Intern</bold> | Component Library | Prototyping',
+    purpose: 'Simplifying the online photo ordering experience',
     csDetails: {
         length: {
             name: 'Length',
@@ -62,7 +63,7 @@ var caseStudies = [
     },
     // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
     descColor: 'primary-white-text',
-    image: 'cover/aluminyze-cover.png',
+    image: 'cover/aluminyze-cover-v2.png',
     primaryColor: 'ft-green',
     supportColor: 'ft-green',
     secondaryColor: 'core-secondary',
@@ -88,6 +89,8 @@ var caseStudies = [
 
         introduction: {
             size: 'xl',
+            bgColor: 'none',
+           
             
             "images": [
                 {
@@ -107,21 +110,25 @@ var caseStudies = [
 
         problem: {
             size: 'lg',
+            bgColor: '#DAE2F4',
+            bgState: 'true',
 
             "images": [
+                {
+                    name: 'aluminyze/modal-example.png',
+                    caption: 'Modal example and initial design for image editing feature',
+                },
                 {
                     name: 'aluminyze/dropdown-example.png',
                     caption: 'Dropdown example: Not the best for small screens',
                 },
-                {
-                    name: 'aluminyze/modal-example.png',
-                    caption: 'Modal example: Heavy use of modals throughout the layout',
-                }
             ]
         },
 
         mobileTest: {
             size: 'xs',
+            bgColor: '#DAE2F4',
+            bgState: 'true',
 
             "images": [
                 {
@@ -136,7 +143,9 @@ var caseStudies = [
         },
 
         v1: {
-            size: 'sm',
+            size: 'xs',
+            bgColor: 'rgba(127, 196, 175, 0.4)',
+            bgState: 'true',
 
             "images": [
                 {
@@ -163,7 +172,9 @@ var caseStudies = [
         },
 
         v2: {
-            size: 'sm',
+            size: 'xs',
+            bgColor: '#F4E9D9',
+            bgState: 'true',
 
             "images": [
                 {
@@ -195,6 +206,8 @@ var caseStudies = [
 
         mobileToDesktop: {
             size: 'xl',
+            bgColor: '#F4E9D9',
+            bgState: 'true',
 
             "images": [
                 {
@@ -209,7 +222,8 @@ var caseStudies = [
         },
 
         annotationExample: {
-            size: 'md',
+            size: 'lg',
+            bgColor: 'none',
 
             "images": [
                 {
@@ -292,6 +306,7 @@ var caseStudies = [
         name: 'Restructuring IPC News',
         platform: 'Web & Mobile',
         role: '<bold class="cr-red-base">UX/UI</bold> | RESEARCH | I.A. | Styleguide',
+        purpose: 'An accessibility-friendly news experience',
         csDetails: {
             type: {
                 name: 'Industry',
@@ -344,6 +359,7 @@ var caseStudies = [
 
             introduction: {
                 size: 'full',
+                bgColor: 'none',
                 
                 "images": [
                     {
@@ -598,6 +614,7 @@ var caseStudies = [
         name: 'My solution to an outdated college student portal',
         platform: 'Progressive Web App',
         role: '<bold class="cr-red-base">Lead Designer</bold> | UX/UI | I.A. | Component System',
+        purpose: 'Moderning the college student portal experience',
         csDetails: {
             type: {
                 name: 'Industry',
@@ -1328,6 +1345,7 @@ var caseStudies = [
         name: 'Rethinking Mental Self-Help',
         platform: 'Mobile App',
         role: '<bold class="cr-red-base">Lead Designer</bold> | UX/UI | Research',
+        purpose: 'An offline approach to emotional venting',
         csDetails: {
             type: {
                 name: 'Industry',
@@ -1541,13 +1559,14 @@ var caseStudies = [
         //HOMEPAGE SETUP
         status: 'view prototype</br> <p>case study coming soon</p>',
         disable: 'true',
-        project: 'FUELTIME: @ Hack-a-thon (5 members)',
+        project: 'FUELTIME – Hack-a-thon (5 members)',
         next: 'blah',
         prev: 'cored',
         href: 'https://www.figma.com/proto/JESCUlrpGHV40L78WXrm2qNd/FuelTime-New-Order?node-id=233%3A564&viewport=104%2C387%2C0.3435290455818176&scaling=scale-down',
         name: '<b style="font-size:1rem">Coming Soon</b><br>Fuel Ordering Hack-a-thon',
         platform: 'Mobile',
         role: '<bold class="cr-red-base">Hack-a-thon</bold> | UI | Prototype | Userflow',
+        purpose: 'Winner for best designed fuel ordering startup',
         // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
         descColor: 'primary-white-text',
         image: 'cover/fueltime-cover.png',
@@ -2262,6 +2281,7 @@ var caseStudies = [
          name: 'Rebranding Salvation Army',
          platform: 'Print and Web',
          role: '<bold class="cr-red-base">Personal</bold> | Branding | Art Direction',
+         purpose: 'Expanding the brand of a growing non-profit',
         //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
          descColor: 'primary-white-text',
          image: 'cover/salvation-army-cover.svg',
@@ -2346,9 +2366,10 @@ var caseStudies = [
             name: 'Gladwell Cover Redesigns',
             platform: 'Print',
             role: '<bold class="cr-red-base">Personal</bold> | Art Direction | Typography',
+            purpose: 'Designing engaging covers for impactful books',
             description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
             descColor: 'primary-white-text',
-            image: 'cover/gladwell-cover.png',
+            image: 'cover/gladwell-cover.jpeg',
             primaryColor: 'gladwell-blue',
             supportColor: 'sex-blue',
             secondaryColor: 'sex-red',
@@ -2439,6 +2460,7 @@ var caseStudies = [
         name: 'Kingston 12',
         platform: 'Print and Web',
         role: '<bold class="cr-red-base">Client</bold> | Logo | Branding',
+        purpose: 'A logo for a family-owned Jamaican restaurant',
        //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
         descColor: 'primary-white-text',
         image: 'cover/kingston12-cover.svg',
@@ -2460,6 +2482,7 @@ var caseStudies = [
         name: 'MOD.UH.FIED',
         platform: 'Print and Web',
         role: '<bold class="cr-red-base">Client</bold> | Logo | Branding',
+        purpose: 'A logo for car enthusiast clothing',
        //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
         descColor: 'primary-white-text',
         image: 'cover/moduhfied-cover.jpeg',
@@ -2481,6 +2504,7 @@ var caseStudies = [
         name: 'Doctors Without Borders',
         platform: 'Print and Web',
         role: '<bold class="cr-red-base">Personal</bold> | Logo | Branding',
+        purpose: 'Logo design for a worldwide health organization',
        //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
         descColor: 'primary-white-text',
         image: 'cover/dwb-cover.svg',

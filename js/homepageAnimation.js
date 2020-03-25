@@ -1,3 +1,6 @@
+const aboutButton = document.getElementById("about");
+const logo = document.getElementById("main-logo");
+
 
 window.scrollTo({
     top: 0,
@@ -6,7 +9,8 @@ window.scrollTo({
 })   
 
 function homeload() {
-    let homeAnimation = new gsap.timeline({ onComplete: csPrevLoad }, {delay: 1});
+    let homeAnimation = new gsap.timeline();
+        homeAnimation.to(aboutButton, { duration: 0.2, text: 'about' })
         homeAnimation.fromTo(".info-container .info-container--content > *", { opacity: 0, y: 50, }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.3, ease: "power2.out" }, "+=1")
             .fromTo("#social-media__socials > *", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, stagger: 0.2, ease: "power3. out" }, "-=0.5")
             .fromTo("#social-media__cvresume", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, "-=0.2")
@@ -14,8 +18,9 @@ function homeload() {
 
         return homeAnimation;
 }
+var tlhomeload = homeload(); 
 
-homeload();
+tlhomeload;
     
 function csPrevLoad() {
     let anim = new gsap.timeline();
@@ -23,6 +28,49 @@ function csPrevLoad() {
     // anim.onComplete(anim.set('.case', { clearProps: 'transform' }))
     return anim;
 }
+var tlcsPrevLoad = csPrevLoad();
+
+function homepageContent() {
+  let anim = new gsap.timeline();
+
+  anim.add(tlhomeload)
+  anim.add(tlcsPrevLoad, ">")
+
+  return anim;
+}
+var tlhomepageContent = homepageContent();
+
+function aboutAnimation() {
+  let anim = new gsap.timeline();
+    anim.to("#about-info", { display: 'grid', opacity: 1 })
+    anim.fromTo("#about__portrait", { opacity: 0, x: -50 }, { opacity: 1, x: 0, duration: 0.5 })
+    anim.fromTo("#about__content", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.5 })
+  anim.to(aboutButton, { duration: 0.2, text: 'back' })
+
+  return anim
+}
+
+function aboutReverse() {
+  let anim = new gsap.timeline()
+  
+  if (aboutButton.innerText === 'about') {
+    anim.add(homeload().reverse(true))
+    anim.to('#homepage-info', { display: 'none', opacity: 0 }, ">")
+    anim.to('#about-info', { display: 'grid', opacity: 0 }, ">")
+    anim.add(aboutAnimation().play(), ">-0.3")
+  } else {
+    anim.add(aboutAnimation().reverse(true))
+    anim.to('#about-info', { display: 'none', opacity: 0 })
+    anim.to('#homepage-info', { display: 'flex', opacity: 1 }, ">")
+    anim.add(homeload().reversed(), ">")
+  }
+}
+
+aboutButton.addEventListener('click', function () {
+  aboutReverse();
+});
+
+
 
 $(".case").each(function (index, element){
     var tl = new TimelineLite({paused:true});
@@ -42,8 +90,7 @@ $(".case").each(function (index, element){
         
 document.addEventListener('hashchange', function () {
     if (location.hash === "#home") {
-        homeload();
-        // csPrevLoad();
+      tlhomepageContent;
         }
     });
 

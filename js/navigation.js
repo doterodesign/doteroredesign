@@ -22,7 +22,7 @@ window.addEventListener('scroll', function () {
         let target = event.target;
         let disabled = target.getAttribute('data-disable');
         let disabledHref = target.getAttribute('href');
-
+        
         if (disabled === 'true' && disabledHref != '') {
             window.open(target.getAttribute('href'), '_blank');
         }

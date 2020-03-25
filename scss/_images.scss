@@ -23,7 +23,11 @@ img {
     padding: 0 2rem;
     text-align: end;
     justify-self: center;
+    width: 100vw;
 
+    @media screen and (min-width: $breakpoint-sm) {
+        width: 90vw;
+    }
     // *:not(&-full) {
     //     width: $breakpoint-lg;
     // }
@@ -41,6 +45,8 @@ img {
 .image__container {
 
     min-height: 50rem;
+
+
 
     // *:not(&-full)>img {
     //     height: 100%;
@@ -146,4 +152,8 @@ img {
 .section-title {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
+}
+
+section[data-bgColor="true"] {
+    padding: 3rem 0rem;
 }

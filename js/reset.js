@@ -20,11 +20,13 @@ function reset() {
 
     //SET LOCATION TO HOME IF THERE IS NO HASH OR HASH === #HOME
     if (location.hash == '' || location.hash === '#home') {
+        $('#about').show();
         $('#current-section').empty();
         $(navContainer).removeClass('cs-active');
         location.hash = '#home';
         $(location.hash).fadeIn(1000);
     } else {
+        $('#about').hide();
         active();
     }
 }
