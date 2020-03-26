@@ -1400,6 +1400,9 @@ a .icon {
   position: relative;
   width: 100vw;
   height: 87vh;
+  max-width: 1384px;
+  display: flex;
+  justify-self: center;
 }
 .prototype-embed > * {
   width: inherit;

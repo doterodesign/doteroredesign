@@ -24,284 +24,579 @@ var homeContent =
 
 // PREVIEW PROJECTS
 var caseStudies = [
-
+    
     //ALUMINYZE
     {
-    //HOMEPAGE SETUP
-    // status: 'view application</br> <p>case study coming soon</p>',
-    // disable: 'true',
-    project: 'ALUMINYZE',
-    next: 'ipc',
-    prev: 'blah',
-    href: '#aluminyze',
-    buttonCTA: 'VIEW WEBSITE',
-    name: 'Designing a responsive metal print ordering experience',
-    platform: 'Mobile',
-    role: '<bold class="cr-red-base">Intern</bold> | Component Library | Prototyping',
-    purpose: 'Simplifying the online photo ordering experience',
-    csDetails: {
-        length: {
-            name: 'Length',
-            description: '3 months',
+        //HOMEPAGE SETUP
+        // status: 'view application</br> <p>case study coming soon</p>',
+        // disable: 'true',
+        project: 'ALUMINYZE',
+        next: '#house2homeBusiness',
+        prev: 'blah',
+        href: '#aluminyze',
+        buttonCTA: 'VIEW WEBSITE',
+        name: 'Designing a responsive metal print ordering experience',
+        platform: 'Mobile',
+        role: '<bold class="cr-red-base">Intern</bold> | Component Library | Prototyping',
+        purpose: 'Simplifying the online photo ordering experience',
+        csDetails: {
+            length: {
+                name: 'Length',
+                description: '3 months',
+            },
+            industry: {
+                name: 'Industry',
+                description: 'Photography',
+            },
+            where: {
+                name: 'Agency',
+                description: 'UX Design Collective',
+            },
+            role: {
+                name: 'roles',
+                description: 'UX/UI<br>Research<br>Prototyping<br>Component Library<br>',
+            },
+            tools: {
+                name: 'tools',
+                description: 'Figma<br>Miro<br>',
+            },
         },
-        industry: {
-            name: 'Industry',
-            description: 'Photography',
+        // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
+        descColor: 'primary-white-text',
+        image: 'cover/aluminyze-cover-v2.png',
+        primaryColor: 'ft-green',
+        supportColor: 'ft-green',
+        secondaryColor: 'core-secondary',
+        buttonColor: 'core-primary',
+
+
+        //CASE STUDY SETUP
+        summary: {
+            overview: 'We wanted to create a guided ordering for Aluminyze\'s clients to make the creating custom orders easier and more intuitive for a growing audience. With most of their competitors having a responsive site and application, standing out as a metal print company versus a traditional photo was a selling point.<br><br>When the client decided to create a responsive web experience versus only desktop, it was my job to research competitors, synthesize our user-testing for patterns and potential features, build out the component library, write the flow documentation, and create the prototypes used to present to the client and be a reference for the development team when we handed off.',
+        
+            problem: 'The client was doing a full rebrand and wanted to compete in the modern market for metal print ordering. The previous design was not completely responsive, accessible, or pleasant to use.',
+
+            goal: 'Because the client wanted the design to potentially be used for a mobile app, we needed to design reusable, modular components to help reduce development time for multiple use cases and expanding feature sets.',
+
+            approach: 'Competitive analysis, user-testing, information architecture, and feature consolidation were used to make sure we only designed what was necessary for users to complete their tasks.',
+
+            lesson: 'Working with a PM and dev team to ensure the product was able to be developed on schedule taught me client constraints and the difficulties one may face when selling an idea.',
+
+            solution: "We found that mobile apps were great references for photo-editing applications with the growing use of Instagram and Snapchat. We used our user-testing and analysis of competitors to create a guided ordering experience so even older users wouldn't be overwhelmed with the process.",
         },
-        where: {
-            name: 'Agency',
-            description: 'UX Design Collective',
-        },
-        role: {
-            name: 'roles',
-            description: 'UX/UI<br>Research<br>Prototyping<br>Component Library<br>',
-        },
-        tools: {
-            name: 'tools',
-            description: 'Figma<br>Miro<br>',
-        },
-    },
-    // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
-    descColor: 'primary-white-text',
-    image: 'cover/aluminyze-cover-v2.png',
-    primaryColor: 'ft-green',
-    supportColor: 'ft-green',
-    secondaryColor: 'core-secondary',
-    buttonColor: 'core-primary',
 
+        img: {
 
-    //CASE STUDY SETUP
-    summary: {
-        overview: 'We wanted to create a guided ordering for Aluminyze\'s clients to make the creating custom orders easier and more intuitive for a growing audience. With most of their competitors having a responsive site and application, standing out as a metal print company versus a traditional photo was a selling point.<br><br>When the client decided to create a responsive web experience versus only desktop, it was my job to research competitors, synthesize our user-testing for patterns and potential features, build out the component library, write the flow documentation, and create the prototypes used to present to the client and be a reference for the development team when we handed off.',
-    
-        problem: 'The client was doing a full rebrand and wanted to compete in the modern market for metal print ordering. The previous design was not completely responsive, accessible, or pleasant to use.',
-
-        goal: 'Because the client wanted the design to potentially be used for a mobile app, we needed to design reusable, modular components to help reduce development time for multiple use cases and expanding feature sets.',
-
-        approach: 'Competitive analysis, user-testing, information architecture, and feature consolidation were used to make sure we only designed what was necessary for users to complete their tasks.',
-
-        lesson: 'Working with a PM and dev team to ensure the product was able to be developed on schedule taught me client constraints and the difficulties one may face when selling an idea.',
-
-        solution: "We found that mobile apps were great references for photo-editing applications with the growing use of Instagram and Snapchat. We used our user-testing and analysis of competitors to create a guided ordering experience so even older users wouldn't be overwhelmed with the process.",
-    },
-
-    img: {
-
-        introduction: {
-            size: 'xl',
-            bgColor: 'none',
-           
+            introduction: {
+                size: 'xl',
+                bgColor: 'none',
             
-            "images": [
-                {
-                    name: 'aluminyze/single-image-flow.jpg',
-                    caption: 'User-journey for one prototype that was tested',
-                },
-                {
-                    name: 'aluminyze/after-thoughts.jpg',
-                    caption: 'Compilation of key observations from user testing',
-                },
-                {
-                    name: 'aluminyze/after-thoughts-summary.png',
-                    caption: 'Summary of all the most important observations during testing',
-                },
+                
+                "images": [
+                    {
+                        name: 'aluminyze/single-image-flow.jpg',
+                        caption: 'User-journey for one prototype that was tested',
+                    },
+                    {
+                        name: 'aluminyze/after-thoughts.jpg',
+                        caption: 'Compilation of key observations from user testing',
+                    },
+                    {
+                        name: 'aluminyze/after-thoughts-summary.png',
+                        caption: 'Summary of all the most important observations during testing',
+                    },
+                ]
+            },
+
+            problem: {
+                size: 'lg',
+                bgColor: '#DAE2F4',
+                bgState: 'true',
+
+                "images": [
+                    {
+                        name: 'aluminyze/modal-example.png',
+                        caption: 'Modal example and initial design for image editing feature',
+                    },
+                    {
+                        name: 'aluminyze/dropdown-example.png',
+                        caption: 'Dropdown example: Not the best for small screens',
+                    },
+                ]
+            },
+
+            mobileTest: {
+                size: 'xs',
+                bgColor: '#DAE2F4',
+                bgState: 'true',
+
+                "images": [
+                    {
+                        name: 'aluminyze/mobile-dropdown-test-1.png',
+                        caption: 'Test for dropdowns in mobile layout',
+                    },
+                    {
+                        name: 'aluminyze/mobile-dropdown-test-2.png',
+                        caption: 'Alternate test for dropdown integration',
+                    },
+                ]
+            },
+
+            v1: {
+                size: 'xs',
+                bgColor: 'rgba(127, 196, 175, 0.4)',
+                bgState: 'true',
+
+                "images": [
+                    {
+                        name: 'aluminyze/v1-editing.png',
+                        caption: 'v1 of editing feature',
+                    },
+                    {
+                        name: 'aluminyze/v1-finish.png',
+                        caption: 'v1 of choosing print finish',
+                    },
+                    {
+                        name: 'aluminyze/v1-image-selection.png',
+                        caption: 'v1 of uploading images from your device',
+                    },
+                    {
+                        name: 'aluminyze/v1-navigation.png',
+                        caption: 'v1 of primary navigation w/ footer-descriptors',
+                    },
+                    {
+                        name: 'aluminyze/v1-upload.png',
+                        caption: 'v1 of upload screen for clear CTA testing',
+                    },
+                ]
+            },
+
+            v2: {
+                size: 'xs',
+                bgColor: '#F4E9D9',
+                bgState: 'true',
+
+                "images": [
+                    {
+                        name: 'aluminyze/v2-home.png',
+                        caption: 'v2 of home screen',
+                    },
+                    {
+                        name: 'aluminyze/v2-finish.png',
+                        caption: 'v2 of choosing print finish',
+                    },
+                    {
+                        name: 'aluminyze/v2-edit.png',
+                        caption: 'v2 of editing features',
+                    },
+                    {
+                        name: 'aluminyze/v2-modal-cta.png',
+                        caption: 'v2 of modal example',
+                    },
+                    {
+                        name: 'aluminyze/v2-upload.png',
+                        caption: 'v1 of uploading images from your device',
+                    },
+                    {
+                        name: 'aluminyze/v2-save.png',
+                        caption: 'v2 of save functionality',
+                    },
+                ]
+            },
+
+            mobileToDesktop: {
+                size: 'xl',
+                bgColor: '#F4E9D9',
+                bgState: 'true',
+
+                "images": [
+                    {
+                        name: 'aluminyze/mobile-desktop-editing.png',
+                        caption: 'mobile to desktop for editing functionality',
+                    },
+                    {
+                        name: 'aluminyze/mobile-desktop-save.png',
+                        caption: 'mobile to desktop for save functionality',
+                    },
+                ]
+            },
+
+            annotationExample: {
+                size: 'lg',
+                bgColor: 'none',
+
+                "images": [
+                    {
+                        name: 'aluminyze/annotation-example.png',
+                        caption: 'Annotation example for photos tray functionality',
+                    },
+                ]
+            },
+        },
+
+        //INTRODUCTION
+        introduction: {
+            name: 'introduction',
+            heading: 'User-Testing and Information Summary',
+            content: 'My first major task during my internship was to document our recorded user-testing and although it was my first time doing this, I came prepared. I proposed a method of documentation that AJ&Smart, a Design Sprint studio in Berlin, had created using the application Miro(visual below).<br><br>The team was open to a different method of documentation and allowed me to run with it. Here are some of the things that using Miro allowed us to do easily and quickly:<br><br><bold>1. Live collaboration during testing<br>2. User profiles<br>3. Detailed test summaries</bold>',
+            list: [
+                'Live collaboration during testing',
+                'User profiles',
+                'Detailed test summaries'
             ]
         },
 
+        //PROBLEM
         problem: {
-            size: 'lg',
-            bgColor: '#DAE2F4',
-            bgState: 'true',
-
-            "images": [
-                {
-                    name: 'aluminyze/modal-example.png',
-                    caption: 'Modal example and initial design for image editing feature',
-                },
-                {
-                    name: 'aluminyze/dropdown-example.png',
-                    caption: 'Dropdown example: Not the best for small screens',
-                },
-            ]
+            name: 'Problem',
+            heading: 'Initial Designs Weren\'t Responsive',
+            content: 'The application was supposed to be desktop-only initially. The designer on the project before me came up with good solutions based on the information given by the client and the research that was done.<br><br>Although the client assured us it would not become responsive, towards the end of handing off the designs, the design was requested to be mobile-friendly. <bold>After testing, some features wouldn\'t translate well to mobile including:<br><br>1. Long dropdowns<br>2. Dependency on modals<br>3. Very tall buttons and inputs</bold>',
         },
 
-        mobileTest: {
-            size: 'xs',
-            bgColor: '#DAE2F4',
-            bgState: 'true',
-
-            "images": [
-                {
-                    name: 'aluminyze/mobile-dropdown-test-1.png',
-                    caption: 'Test for dropdowns in mobile layout',
-                },
-                {
-                    name: 'aluminyze/mobile-dropdown-test-2.png',
-                    caption: 'Alternate test for dropdown integration',
-                },
-            ]
+        //USER RESEARCH
+        ur: {
+            name: 'User Research',
+            heading: 'Back to the Drawing Board',
+            content: 'After a lot of brainstorming and testing, we decided to start from scratch. By researching competitors like Adorama Pics and Shutterfly, we were able to access what features Aluminyze had versus what they have implemented.<br><br>We also checked out what mobile photo-editing apps were doing to see what features were being implemented specifically for mobile.<bold> From there, we began building out wireframes for major touch-points including:<br><br>1. Primary and secondary navigations<br>2. Image editing features<br>3. Selection states of customizable options</bold>',
         },
 
-        v1: {
-            size: 'xs',
-            bgColor: 'rgba(127, 196, 175, 0.4)',
-            bgState: 'true',
-
-            "images": [
-                {
-                    name: 'aluminyze/v1-editing.png',
-                    caption: 'v1 of editing feature',
-                },
-                {
-                    name: 'aluminyze/v1-finish.png',
-                    caption: 'v1 of choosing print finish',
-                },
-                {
-                    name: 'aluminyze/v1-image-selection.png',
-                    caption: 'v1 of uploading images from your device',
-                },
-                {
-                    name: 'aluminyze/v1-navigation.png',
-                    caption: 'v1 of primary navigation w/ footer-descriptors',
-                },
-                {
-                    name: 'aluminyze/v1-upload.png',
-                    caption: 'v1 of upload screen for clear CTA testing',
-                },
-            ]
+        //INTERNALTESTING
+        internalTesting: {
+            name: 'Internal Testing',
+            heading: 'Development Requests & Component Flexibility',
+            content: 'After doing internal testing and presenting to the client for the designs above, the development team informed us that the designs must be flexible enough to be used for both desktop and mobile seamlessly. The dev team was building in Angular and because we were behind schedule, they did not want to have to build two sets of features.<br><br>This constraint was great in hindsight because we ended up continuing to research and modify our designs to work as truely modular components. Also, with how Figma components work, I structured them as you would in code. Some were heavily nested but it gave us insight into how things would shift and change while designing for desktop and tablets.',
+        },
+        //WIREFRAMES
+        mobileApproved: {
+            name: 'Mobile Approved',
+            heading: 'With mobile approved, desktop and tablet were relatively easy',
+            content: 'Once a majority of the heavy features like navigation, CTA\'s, and editing capabilities were approved, we began translating those designs to desktop. Because the mobile components were designed with modularity in-mind, we only had to shift the orientation of the navigation and create extended versions of other components to fit the larger screen sizes.',
         },
 
-        v2: {
-            size: 'xs',
-            bgColor: '#F4E9D9',
-            bgState: 'true',
-
-            "images": [
-                {
-                    name: 'aluminyze/v2-home.png',
-                    caption: 'v2 of home screen',
-                },
-                {
-                    name: 'aluminyze/v2-finish.png',
-                    caption: 'v2 of choosing print finish',
-                },
-                {
-                    name: 'aluminyze/v2-edit.png',
-                    caption: 'v2 of editing features',
-                },
-                {
-                    name: 'aluminyze/v2-modal-cta.png',
-                    caption: 'v2 of modal example',
-                },
-                {
-                    name: 'aluminyze/v2-upload.png',
-                    caption: 'v1 of uploading images from your device',
-                },
-                {
-                    name: 'aluminyze/v2-save.png',
-                    caption: 'v2 of save functionality',
-                },
-            ]
+        //NAVIGATION
+        handoff: {
+            name: 'Handoff',
+            heading: 'Handoff to Development',
+            content: 'We began handing off to development once the mobile designs got approved so they could begin building out the components. Once the desktop designs were approved, I worked with the dev team to ensure that any questions about interactions, functionality, and logic were answered.<br><br>To help with this, my lead taught me an annotation method to document the states of components and describe how they would function. This was extremely helpful for both me to learn and the development team to refer to as they built. We used status symbols for each screen annotation to determine which were up to date and what needed to be reviewed.',
         },
 
-        mobileToDesktop: {
-            size: 'xl',
-            bgColor: '#F4E9D9',
-            bgState: 'true',
-
-            "images": [
-                {
-                    name: 'aluminyze/mobile-desktop-editing.png',
-                    caption: 'mobile to desktop for editing functionality',
-                },
-                {
-                    name: 'aluminyze/mobile-desktop-save.png',
-                    caption: 'mobile to desktop for save functionality',
-                },
-            ]
+        //LESSON LEARNED
+        lesson: {
+            name: 'Lessons Learned',
+            heading: 'Lessons Learned',
+            content: 'Balancing client needs with constraints in time and development was the most difficult aspect of the project. As deliverables shifted, being able to adjust quickly was essential to meet the deadline.<br><br>The visual branding guidelines were also being developed at the same time for the rest of the site so I had to make sure every color and text-block was a style because the guide could change at anytime (which it did multiple times).<bold>Other main takeaways include:<br><br>1. Tight naming and file structure for less confusion<br>2. Pixel-perfect components make development much easier<br>3. Always have a type and spacing system in place for functional constraints<br>4. Building a component library from scratch</bold>',
         },
 
-        annotationExample: {
-            size: 'lg',
-            bgColor: 'none',
-
-            "images": [
-                {
-                    name: 'aluminyze/annotation-example.png',
-                    caption: 'Annotation example for photos tray functionality',
-                },
-            ]
+        //PROTOTYPE
+        proto: {
+            name: 'Visit Website',
+            heading: 'Visit the live site!',
+            content: 'This project is officially live! You can visit it using the button below. There\'s more to discuss about the project like building and maintaining the component library so feel free to reach out if you\'d like to learn more!',
+            p: 'https://aluminyze.com/pages/order-now/builder',
         },
     },
+     //HOUSE2HOME BUSINESS
+     {
+        //HOMEPAGE SETUP
+        // status: 'view application</br> <p>case study coming soon</p>',
+        // disable: 'true',
+        project: 'House2Home – Business Plan Discovery',
+        next: 'ipc',
+        prev: 'aluminyze',
+        href: '#house2homeBusiness',
+        buttonCTA: 'View MVP',
+        name: 'Planning ethical e-commerce practices',
+        platform: 'responsive',
+        role: '<bold class="cr-red-base">Lead Designer</bold> | Business Strategy | MVP Design',
+        purpose: 'Planning an ethical e-commerce platform',
+        csDetails: {
+            length: {
+                name: 'Length',
+                description: '3 Weeks',
+            },
+            industry: {
+                name: 'Industry',
+                description: 'E-commerce',
+            },
+            where: {
+                name: 'Design Challenge',
+                description: 'Bitesize UX',
+            },
+            role: {
+                name: 'roles',
+                description: 'Product<br>Business Strategy<br>Userflows<br>MVP Design<br>',
+            },
+            tools: {
+                name: 'tools',
+                description: 'Figma<br>Miro<br>',
+            },
+        },
+        // description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
+        descColor: 'primary-white-text',
+        image: 'cover/house2home-cover.svg',
+        primaryColor: 'ft-green',
+        supportColor: 'ft-green',
+        secondaryColor: 'core-secondary',
+        buttonColor: 'core-primary',
+    
+    
+        //CASE STUDY SETUP
+        summary: {
+            overview: 'Joe Formica of Bitesize UX created a great five day design challenge. With only user-research and a persona, the task was to design a home accessory starter-kit builder for people that moved into a new home.<br><br>Here\'s some insider information; I love a good challenge. However, in typical fashion, I wanted to make this a well-rounded project focusing on the business as a whole, as well as the initial challenge.<b> This decision increased the scope dramatically into planning an ethical e-commerce experience</b> geared towards helping customers stick to their objective and not go over budget. Not only that, it\'ll help them make smarter purchasing decisions through customizable and personalized results.<br><br><b>This case study is split into two parts.</b> This part focuses on business objectives, feature planning, and user research to give an in-depth look into what drove the design decisions made and what makes this platform different than other e-commerce sites like Target, Way Fair, and Amazon. The second part is all about creating the MVP and what I learned. I\'ll take you through the wireframes, how the kit-builder flow was implemented, feature design decisions, and the final designs. Let\'s get started!',
+        
+            problem: 'Customers have a hard time shopping for accessories for their new homes. Some reasons include overchoice, budget limitations, and being unsure of their own design choices.',
+    
+            goal: 'Create a platform to help reduce overchoice and help customers stay within their shopping objectives while staying in profit as a business.',
+    
+            approach: 'Define a bird\'s eye view of the business, discover core features needed for user objectives, map out a current e-commerce user experience, and create the user flow for the starter kit builder.',
+    
+            lesson: 'E-commerce is a money game. I think if businesses focused more on user needs and not primarily company profits, they\'d be able to build a platform on trust and not just low prices or deals. In short, the long game builds customer loyalty.',
+    
+            solution: "In simple terms, create the Zola of home accessories with budget in mind. Through wholesale agreements and commission-based profits, build a platform on trust that can be recommended by loyal, return customers",
+        },
+    
+        img: {
+    
+            persona: {
+                size: 'lg',
+                bgColor: '#DFF9D4',
+                bgState: 'true',
+                
+                "images": [
+                    {
+                        name: 'house2home/persona-frustrations.png',
+                        caption: 'The current frustrations of Amy, our persona',
+                    },
+                    {
+                        name: 'house2home/persona-behavior.png',
+                        caption: 'How and why Amy is looking to decorate her apartment',
+                    },
+                    {
+                        name: 'house2home/persona-goals.png',
+                        caption: 'What Amy wants to achieve for her apartment',
+                    },
+                ]
+            },
 
-    //INTRODUCTION
-    introduction: {
-        name: 'introduction',
-        heading: 'User-Testing and Information Summary',
-        content: 'My first major task during my internship was to document our recorded user-testing and although it was my first time doing this, I came prepared. I proposed a method of documentation that AJ&Smart, a Design Sprint studio in Berlin, had created using the application Miro(visual below).<br><br>The team was open to a different method of documentation and allowed me to run with it. Here are some of the things that using Miro allowed us to do easily and quickly:<br><br><bold>1. Live collaboration during testing<br>2. User profiles<br>3. Detailed test summaries</bold>',
-        list: [
-            'Live collaboration during testing',
-            'User profiles',
-            'Detailed test summaries'
-        ]
-    },
+            leanCanvas: {
+                size: 'xl',
+                bgColor: 'none',
+                // bgState: 'true',
+                
+                "images": [
+                    {
+                        name: 'house2home/lean-canvas.jpg',
+                        caption: 'Lean canvas to provide an overview of the business',
+                    },
+                ]
+            },
+    
+            hmw: {
+                size: 'xl',
+                bgColor: 'none',
+                // bgState: 'true',
+    
+                "images": [
+                    {
+                        name: 'house2home/priority-matrix.jpg',
+                        caption: 'Priority matrix determines the importance of the \'How Might We\' questions with votes',
+                    },
+                ]
+            },
+    
+            disneyPlanning: {
+                size: 'xl',
+                bgColor: 'none',
+                // bgState: 'true',
+    
+                "images": [
+                    {
+                        name: 'house2home/hmw-questions.jpg',
+                        caption: 'The selected questions form the priority matrix exercise',
+                    },
+                    {
+                        name: 'house2home/disney-planning-step1.jpg',
+                        caption: 'Creative, no-constraints solutions for the HMW questions',
+                    },
+                ]
+            },
+    
+            impactEffort: {
+                size: 'xl',
+                bgColor: 'none',
+                // bgState: 'true',
+    
+                "images": [
+                    {
+                        name: 'house2home/impact-effort.jpg',
+                        caption: 'Measuring the relative amount of impact and effort to implement features from the Disney exercise',
+                    },
+                ]
+            },
 
-    //PROBLEM
-    problem: {
-        name: 'Problem',
-        heading: 'Initial Designs Weren\'t Responsive',
-        content: 'The application was supposed to be desktop-only initially. The designer on the project before me came up with good solutions based on the information given by the client and the research that was done.<br><br>Although the client assured us it would not become responsive, towards the end of handing off the designs, the design was requested to be mobile-friendly. <bold>After testing, some features wouldn\'t translate well to mobile including:<br><br>1. Long dropdowns<br>2. Dependency on modals<br>3. Very tall buttons and inputs</bold>',
-    },
+            todo: {
+                size: 'lg',
+                bgColor: '#F4F5F7',
+                bgState: 'true',
+    
+                "images": [
+                    {
+                        name: 'house2home/mvp-todo-list.jpg',
+                        caption: 'Todo list of features in backlog, progress, and complete states for MVP design priorities',
+                    },
+                ]
+            },
+    
+            sitemap: {
+                size: 'lg',
+                bgColor: 'none',
+                // bgState: 'true',
+    
+                "images": [
+                    {
+                        name: 'house2home/sitemap.jpg',
+                        caption: 'Sitemap of the primary navigation structure',
+                    },
+                ]
+            },
+    
+            starterkit: {
+                size: 'xl',
+                bgColor: 'none',
+                // bgState: 'true',
+    
+                "images": [
+                    {
+                        name: 'house2home/starter-kit-flow.jpg',
+                        caption: 'An overview flow of how the starter kit tool would function (in-progress)',
+                    },
+                ]
+            },
 
-    //USER RESEARCH
-    ur: {
-        name: 'User Research',
-        heading: 'Back to the Drawing Board',
-        content: 'After a lot of brainstorming and testing, we decided to start from scratch. By researching competitors like Adorama Pics and Shutterfly, we were able to access what features Aluminyze had versus what they have implemented.<br><br>We also checked out what mobile photo-editing apps were doing to see what features were being implemented specifically for mobile.<bold> From there, we began building out wireframes for major touch-points including:<br><br>1. Primary and secondary navigations<br>2. Image editing features<br>3. Selection states of customizable options</bold>',
-    },
+            mindMap: {
+                size: 'xl',
+                bgColor: 'none',
+    
+                "images": [
+                    {
+                        name: 'house2home/feature-mind-map.jpg',
+                        caption: 'Brainstorming wizard solutions for the starter kit functionality',
+                    },
+                ]
+            },
 
-    //INTERNALTESTING
-    internalTesting: {
-        name: 'Internal Testing',
-        heading: 'Development Requests & Component Flexibility',
-        content: 'After doing internal testing and presenting to the client for the designs above, the development team informed us that the designs must be flexible enough to be used for both desktop and mobile seamlessly. The dev team was building in Angular and because we were behind schedule, they did not want to have to build two sets of features.<br><br>This constraint was great in hindsight because we ended up continuing to research and modify our designs to work as truely modular components. Also, with how Figma components work, I structured them as you would in code. Some were heavily nested but it gave us insight into how things would shift and change while designing for desktop and tablets.',
-    },
-    //WIREFRAMES
-    mobileApproved: {
-        name: 'Mobile Approved',
-        heading: 'With mobile approved, desktop and tablet were relatively easy',
-        content: 'Once a majority of the heavy features like navigation, CTA\'s, and editing capabilities were approved, we began translating those designs to desktop. Because the mobile components were designed with modularity in-mind, we only had to shift the orientation of the navigation and create extended versions of other components to fit the larger screen sizes.',
-    },
+            currentJourney: {
+                size: 'full',
+                bgColor: 'none',
+                // bgState: 'true',
+    
+                "images": [
+                    {
+                        name: 'house2home/journey-map-current.jpg',
+                        caption: 'mobile to desktop for editing functionality',
+                    },
+                ]
+            },
 
-    //NAVIGATION
-    handoff: {
-        name: 'Handoff',
-        heading: 'Handoff to Development',
-        content: 'We began handing off to development once the mobile designs got approved so they could begin building out the components. Once the desktop designs were approved, I worked with the dev team to ensure that any questions about interactions, functionality, and logic were answered.<br><br>To help with this, my lead taught me an annotation method to document the states of components and describe how they would function. This was extremely helpful for both me to learn and the development team to refer to as they built. We used status symbols for each screen annotation to determine which were up to date and what needed to be reviewed.',
-    },
+            homepagePreview: {
+                size: 'xl',
+                bgColor: '#075EBA',
+                bgState: 'true',
+    
+                "images": [
+                    {
+                        name: 'house2home/homepage-preview.jpg',
+                        caption: '<font color="#fff">Sneakpeak of the homepage with the starter kit tool in the MVP</font>',
+                    },
+                ]
+            },
+        },
+    
+        //INTRODUCTION
+        introduction: {
+            name: 'Persona',
+            heading: 'Where do we start? Our persona!',
+            content: 'Have you ever bought a personal gift for someone you didn\'t know? Of course not! So how can someone create a user-centered business for your customers if they don\'t understand their needs?<br><br>Luckily, someone else did all that hard research for us. Some key insights I took away from that research (including some not shown) were:<br><br><b>1. Choosing items is difficult due to overchoice<br>2. Staying within budget is essential<br>3. Pinterest is great for inspiration; not decisions<br>4. Choosing items for the specific home style is a challenge<br>5. Can\'t afford an interior designer</b>',
+            list: [
+                'Live collaboration during testing',
+                'User profiles',
+                'Detailed test summaries'
+            ]
+        },
+    
+        //PROBLEM
+        introduction2: {
+            name: 'Current Customer Journey',
+            heading: '',
+            content: 'You\'ve just met Amy, a 23 year old woman from Chicago. Combining her insights with quotes from other potential customers that are frustrated with their current shopping experiences, the journey below is something we can all relate to. It takes into account:<br><br><b>1. Having just moved and being inspired by Pinterest<br>2. Shopping on Wayfair and realizing how expensive it is<br>3. Being satisfied with most items but returning a lamp</b><br><br>We\'ve all bought an item that didn\'t fit our home and returned it, right? Well, what if your shopping experience was more customized for you? Would your choice satisfaction increase and lead to less returns?',
+        },
+    
+        //USER RESEARCH
+        leanCanvas: {
+            name: 'Lean Canvas',
+            heading: 'Lean Canvas – Getting a bird\'s eye view of the business',
+            content: 'Customer satisfaction is at the core of House2Home. Not only that, it cares about the customer\'s happiness with the products, as well as their financial well-being.<br><br>Name one e-commerce site that allows you to stick to a budget. You can\'t. They don\'t exist! That competitive advantage is what makes the idea of House2Home so exciting. Now why would they do that? Trust. They have your best interests in mind as a customer and no, it isn\'t a bunch of discounted items. They\'re curated, under $50 items chosen to fit any budget.<br><br>What we learn from the lean canvas includes:<br><br><b>1. The problem we\'re solving for<br>2. Unique value proposition of the company<br>3. Ideal customers & early adopters<br>4. Direct and indirect competitors<br>5. Key metrics<br>6. Competitive advantages<br>7. Cost structure<br>8. Revenue streams<br>9. Potential broad solutions.</b><br><br>That\'s a lot. What we don\'t know yet is what the focus should be on from a design perspective. <b>The next few steps were designed to discover the main features that are needed to test the main business model through an MVP.</b>',
+        },
+    
+        //INTERNALTESTING
+        priority: {
+            name: 'Priority Matrix',
+            heading: 'Priority Matrix w/ HMW – Asking broad questions',
+            content: '<b>I\'m going to break down the rest of the process as if you were to recreate these steps.</b> These next few exercises are to determine the features we should focus on for the MVP by importance, impact, and urgency.<br><br>Think of the How Might We exercise as bombarding your friend with questions too broad for an immediate answer. Then prioritize those by importance and how soon you need a solution.<b>The result are the most essential questions that need immediate answers.</b>',
+        },
+        //WIREFRAMES
+        disney: {
+            name: 'Disney Creative Design',
+            heading: 'Braindumping potential solutions',
+            content: 'I like to call this the Disney brain dump. It\'s based off Disney\'s first step of their creative thinking exercise. Once you know which HMW questions to focus on, <b>branch out potential solutions for each question without restrictions.</b><br><br>The example below is my braindump of ideas, no matter how difficult or simple they would be to implement. I then connected solutions that compliment each other to emphasize a particular solution\'s importance to the overall user and business goals (it looks like an investigation). <b>The best ideas get voted on and taken to the last step.</b>',
+        },
+    
+        //NAVIGATION
+        impact: {
+            name: 'Impact Matrix',
+            heading: 'Impact/Effort Matrix – How much work is it to build?',
+            content: 'This is the last steps of stickies! Using our chosen stickies from our Disney step, we organize the post-its by how much impact they\'ll provide for the company versus how much effort they require.<br><br>To get off the ground quickly, we need a sweetspot of key features. Those features include:<br><br><b>1. Item selection customization tool<br>2. Help users stay on a budget<br>3. Provide distinction between decor styles, rooms, and items<br>4. Personalized and accurate results through customer needs and preferences<br>5. Create a deep human relationship between the customer and brand</b><br><br>All of that would put enough on anyone\'s plate! But now we have a focus and I categorized each objective into a todo list format. The backlog are features we want, the in progress are features we need, and done, is well, done.',
+        },
+    
+        //Starter Kit
+        starterkit: {
+            name: 'Starter Kit',
+            heading: 'Starter Kit Builder Flow',
+            content: 'The result of all the above work was concluding the need for a tool on the site to help users customize their search options. The idea is still being tested and thought out but some of the categories include:<br><br><b>1. Home Size<br>2. Budget<br>3. Decor Styles<br>4. Max Item Count<br>5. Rooms<br>6. Product Categories</b><br><br>To tie in all the concepts we put on virtual stickies, the userflow below outlines the general structure of the tool. More flows such as budget conditionals, checkout, the full tool functionality, and regular searching still have to be documented to see how all the features integrate together.',
+        },
+    
+        //LESSON LEARNED
+        lesson: {
+            name: 'Lessons Learned',
+            heading: 'Lessons Learned',
+            content: 'All this work was done upfront to ensure that the MVP focused on the essential needs of the user and stayed within the goals of what House2Home would provide for customers. <b>Without this planning, the features that would have been built may not be the current data needed to proceed with creating a barebones, ethical e-commerce platform.</b>',
+        },
 
-    //LESSON LEARNED
-    lesson: {
-        name: 'Lessons Learned',
-        heading: 'Lessons Learned',
-        content: 'Balancing client needs with constraints in time and development was the most difficult aspect of the project. As deliverables shifted, being able to adjust quickly was essential to meet the deadline.<br><br>The visual branding guidelines were also being developed at the same time for the rest of the site so I had to make sure every color and text-block was a style because the guide could change at anytime (which it did multiple times).<bold>Other main takeaways include:<br><br>1. Tight naming and file structure for less confusion<br>2. Pixel-perfect components make development much easier<br>3. Always have a type and spacing system in place for functional constraints<br>4. Building a component library from scratch</bold>',
-    },
+        //LESSON LEARNED
+        nextsteps: {
+            name: 'Next Steps',
+            heading: 'Next Steps – Designing the MVP',
+            content: 'First off, thanks for going through the process with me. We got to understand the business from most angles which influenced the features that need to be implemented and tested in the MVP.<br><br>The next case study for this project will outline the whole design process of the MVP. <b>You can view my progress with the MVP below where you can test the homepage version of the starter kit builder tool.</b> However, I\'d like to build out a full experience to test with users that include all the filtering options to make the experience as customizable as possible. You\'ll be exposed to:<br><br><b>1. Homepage starter kit tool and fields<br>2. Personalized starter kit samples<br>3. Ability to add items + view your cart<br>4. Over budget functionality</b><br><br>Please reach if you have any questions or would like to learn more about my process. Enjoy the rest of the case studies! Oh, and check out the live Miro file that has all the planning that you saw above but with more explanations. Thanks!',
+        },
+    
+        //PROTOTYPE
+        proto: {
+            name: 'View MVP Prototype',
+            heading: 'Visit the live site!',
+            content: 'This project is officially live! You can visit it using the button below. There\'s more to discuss about the project like building and maintaining the component library so feel free to reach out if you\'d like to learn more!',
+            p: 'https://www.figma.com/proto/0ubMguscZ6bGS9EneEjFit/House2Home?node-id=20%3A1202&viewport=-1918%2C3568%2C0.40846243500709534&scaling=scale-down-width',
+            embed: '<iframe src="https://miro.com/app/embed/o9J_kunrghM=/?" frameborder="0" scrolling="no" allowfullscreen></iframe>',
+        },
+        },
 
-    //PROTOTYPE
-    proto: {
-        name: 'Visit Website',
-        heading: 'Visit the live site!',
-        content: 'This project is officially live! You can visit it using the button below. There\'s more to discuss about the project like building and maintaining the component library so feel free to reach out if you\'d like to learn more!',
-        p: 'https://aluminyze.com/pages/order-now/builder',
-    },
-    },
+
 
     //IPC
     {
         //HOMEPAGE SETUP
         project: 'I.P.C.',
         next: 'cored',
-        prev: 'aluminyze',
+        prev: 'house2home',
         href: 'ipc',
         name: 'Restructuring IPC News',
         platform: 'Web & Mobile',
@@ -2519,11 +2814,12 @@ var caseStudies = [
 //CASE STUDY POSITIONS IN JSON FILE
 
 // const cs__cunyfirst = caseStudies[1];
+const cs__house2homeBusiness = caseStudies[1];
 const cs__aluminyze = caseStudies[0];
-const cs__cored = caseStudies[2];
-const cs__blah = caseStudies[3];
+const cs__cored = caseStudies[3];
+const cs__blah = caseStudies[4];
 // const cs__fueltime = caseStudies[4];
-const cs__ipc = caseStudies[1];
+const cs__ipc = caseStudies[2];
 const cs__salvationarmy = caseStudies[5];
 const cs__gladwell = caseStudies[6];
 
@@ -2539,6 +2835,7 @@ const salvationarmyContainer = document.getElementById('salvationarmy');
 const gladwellContainer = document.getElementById('gladwell');
 const fueltimeContainer = document.getElementById('fueltime');
 const aluminyzeContainer = document.getElementById('aluminyze');
+const house2homeBusinessContainer = document.getElementById('house2homeBusiness');
 
 //NAVIGATION VARIABLES
 const navContainer = document.getElementById('nav-container');

@@ -1,5 +1,69 @@
 //ALUMINYZE
 
+const house2homeBusiness = (cs) => {
+
+    let mas = master(cs);
+    let intro = content__article(cs.introduction);
+    let priority = content__article(cs.priority);
+    let intro2 = content__article__no__title(cs.introduction2);
+    let leanCanvas = content__article(cs.leanCanvas);
+    let disney = content__article(cs.disney);
+    let impact = content__article(cs.impact);
+    let starterkit = content__article(cs.starterkit);
+    let lesson = content__article(cs.lesson);
+    let nextsteps = content__article(cs.nextsteps);
+
+
+    // IMAGES
+    let img__leanCanvas = images(cs.img.leanCanvas);
+    let img__persona = images(cs.img.persona);
+    let img__impactEffort = images(cs.img.impactEffort);
+    let img__todo = images(cs.img.todo);
+    let img__hmw = images(cs.img.hmw);
+    let img__disneyPlanning = images(cs.img.disneyPlanning);
+    let img__sitemap = images(cs.img.sitemap);
+    let img__starterkit = images(cs.img.starterkit);
+    let img__mindMap = images(cs.img.mindMap);
+    let img__currentJourney = images(cs.img.currentJourney);
+    let img__homepagePreview = images(cs.img.homepagePreview);
+    let protoEmbed = prototypeEmbed(cs.proto);
+    let mvpEmbed = button(cs.proto);
+
+
+    let comp = '';
+
+    comp +=
+        `
+        ${mas}
+        ${mvpEmbed}
+        ${intro}
+        ${img__persona}
+        ${intro2}
+        ${img__currentJourney}
+        ${leanCanvas}
+        ${img__leanCanvas}
+        ${priority}
+        ${img__hmw}
+        ${disney}
+        ${img__disneyPlanning}
+        ${impact}
+        ${img__impactEffort}
+        ${img__todo}
+        ${img__sitemap}
+        ${img__mindMap}
+        ${starterkit}
+        ${img__starterkit}
+        ${lesson}
+        ${img__homepagePreview}
+        ${nextsteps}
+        ${mvpEmbed}
+        ${protoEmbed}
+        `
+       
+    house2homeBusinessContainer.innerHTML = comp;
+}
+house2homeBusiness(cs__house2homeBusiness);
+
 const aluminyze = (cs) => {
 
     let mas = master(cs);

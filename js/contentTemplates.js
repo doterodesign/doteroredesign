@@ -353,7 +353,7 @@ const contentWImage = (section, image) => {
 
 const prototypeEmbed = (p) => {
     return `<div class="prototype-embed">
-        ${p.proto}
+        ${p.embed}
     </div>
     `
 }
