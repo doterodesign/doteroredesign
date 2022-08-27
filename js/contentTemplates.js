@@ -64,7 +64,7 @@ function navConstructor(p) {
                     <a href="https://www.pinterest.com/doterodesign/" target="_blank" rel=”noreferrer” aria-label="Dimitri Otero Pinterest"><svg class="icon social-icons"><use xlink:href="images/sprites.svg#icon-pinterest"></use></svg></a>
                 </div>
                 <div id="social-media__cvresume">
-                    <a href="http://bit.ly/2VkqHlr" class="text-button" target="_blank" rel=”noreferrer” aria-label="Dimitri Otero Resume and CV">Download Resume/CV</a> 
+                    <a href="http://bit.ly/2VkqHlr" class="text-button" target="_blank" rel=”noreferrer” aria-label="Dimitri Otero Resume and CV">Download Resume</a> 
                 </div>
             </div>
             

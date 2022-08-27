@@ -1,5 +1,5 @@
 //NAVIGATION INFORMATION
-var homeContent =
+const homeContent =
 {
     intro: '<h1>Hey, </br>I\'m Dimitri!</h1><h2>UX | UI | Product Designer</h2> <h2>Visual Designer</h2> <h2>Always Learning</h2>',
     description: 'I work to help create clear user experiences and branding between companies and their users.</br></br> With a background in product-design and photo-retouching, I aim to bring unique experiences with a focus on usability.',
@@ -23,7 +23,7 @@ var homeContent =
 }
 
 // PREVIEW PROJECTS
-var caseStudies = [
+const caseStudies = [
     
     //ALUMINYZE
     {
@@ -31,8 +31,8 @@ var caseStudies = [
         // status: 'view application</br> <p>case study coming soon</p>',
         // disable: 'true',
         project: 'ALUMINYZE',
-        next: '#house2homeBusiness',
-        prev: 'blah',
+        next: 'house2homeBusiness',
+        prev: 'ipc',
         href: '#aluminyze',
         buttonCTA: 'VIEW WEBSITE',
         name: 'Designing a responsive metal print ordering experience',
@@ -43,6 +43,10 @@ var caseStudies = [
             length: {
                 name: 'Length',
                 description: '3 months',
+            },
+            capacity: {
+                name: 'Capacity',
+                description: 'Full-time',
             },
             industry: {
                 name: 'Industry',
@@ -301,7 +305,7 @@ var caseStudies = [
         // status: 'view application</br> <p>case study coming soon</p>',
         // disable: 'true',
         project: 'House2Home – Business Plan Discovery',
-        next: 'ipc',
+        next: 'cored',
         prev: 'aluminyze',
         href: '#house2homeBusiness',
         buttonCTA: 'View MVP',
@@ -312,7 +316,11 @@ var caseStudies = [
         csDetails: {
             length: {
                 name: 'Length',
-                description: '3 Weeks',
+                description: '2 Days',
+            },
+            capacity: {
+                name: 'Capacity',
+                description: 'Exploration',
             },
             industry: {
                 name: 'Industry',
@@ -365,15 +373,15 @@ var caseStudies = [
                 "images": [
                     {
                         name: 'house2home/persona-frustrations.png',
-                        caption: 'The current frustrations of Amy, our persona',
+                        caption: 'The current frustrations of Amy, our persona (Bitesize UX Research)',
                     },
                     {
                         name: 'house2home/persona-behavior.png',
-                        caption: 'How and why Amy is looking to decorate her apartment',
+                        caption: 'How and why Amy is looking to decorate her apartment (Bitesize UX Research)',
                     },
                     {
                         name: 'house2home/persona-goals.png',
-                        caption: 'What Amy wants to achieve for her apartment',
+                        caption: 'What Amy wants to achieve for her apartment (Bitesize UX Research)',
                     },
                 ]
             },
@@ -589,328 +597,22 @@ var caseStudies = [
         },
         },
 
-
-
-    //IPC
-    {
-        //HOMEPAGE SETUP
-        project: 'I.P.C.',
-        next: 'cored',
-        prev: 'house2home',
-        href: 'ipc',
-        name: 'Restructuring IPC News',
-        platform: 'Web & Mobile',
-        role: '<bold class="cr-red-base">UX/UI</bold> | RESEARCH | I.A. | Styleguide',
-        purpose: 'An accessibility-friendly news experience',
-        csDetails: {
-            type: {
-                name: 'Industry',
-                description: 'Sports',
-            },
-            platform: {
-                name: 'platform',
-                description: 'Responsive Website',
-            },
-            role: {
-                name: 'roles',
-                description: 'UX/UI<br>Research<br>Information Architecture<br>Component System',
-            },
-            tools: {
-                name: 'tools',
-                description: 'Figma<br>Sketch<br>Overflow',
-            },
-        },
-        description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
-        descColor: 'primary-white-text',
-        image: 'cover/ipc-cover.jpg',
-        primaryColor: 'ipc-blue',
-        supportColor: 'ipc-yellow',
-        secondaryColor: 'ipc-blue-lighten',
-        buttonColor: 'ipc-blue',
-
-
-        //CASE STUDY SETUP
-        summary: {
-            overview: 'Athletics is popular now more than ever and with technology, disabled athletes have better chances in participating in physical activities.</br></br> The International Paralympic Committee\'s efforts to bring athletics to disabled athletes is amazing but with a bounce rate of over 40%, their site needs to be updated immediately.',
-                
-            problem: 'Sadly, this great organization has a severely outdated site that they keep up with daily. There is so much potential for improvement and they deserve a better web presence.',
-            
-            goal: 'I wanted to explore the homepage and news story pages of the site. With multiple types of news being the main priority, creating good flow throughout these pages is essential.',
-            
-            approach: 'Competitor/user research, persona development, journey mapping, I.A. restructuring, and creating a mini-design system helped to give direction.',
-            
-            lesson: 'I\'d love to do this project again with a small team. The process was extremely overwhelming and the end result could be much better. I plan on returning to this project but the process taught me a lot about research and time prioritization.',
-
-            solution: 'Originally starting as a full-page redesign, the depth of this project landed me into creating a mini-design system and prototypes of the home and news pages.',
-        },
-       
-        tools: [
-            'Sketch',
-            'Figma',
-            'Overflow',
-        ],
-
-        img: {
-
-            introduction: {
-                size: 'full',
-                bgColor: 'none',
-                
-                "images": [
-                    {
-                        name: 'paralympic/homepage-comparison.png',
-                        caption: 'Current vs. revised homepage design (relatively positioned)',
-                    },
-                ]
-            },
-
-            goal: {
-                size: 'lg',
-                
-                "images": [
-                    {
-                        name: 'paralympic/paralympic-webtraffic.jpg',
-                        caption: 'Paralympic.org web traffic',
-                    },
-                ]
-            },
-          
-            persona: {
-                size: 'lg',
-                
-                "images": [
-                    {
-                        name: 'paralympic/persona-jim.jpg',
-                        caption: 'Elder persona Jim',
-                    },
-                    {
-                        name: 'paralympic/persona-sarah.jpg',
-                        caption: 'Young athlete persona Sarah',
-                    },
-                    {
-                        name: 'paralympic/persona-liana.jpg',
-                        caption: 'Paralympic Supporter Liana',
-                    },
-                ]
-            },
-
-            olympic: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'paralympic/olympic-menu.jpg',
-                        caption: 'Olympic.org mega navigation'
-                    },
-                ]
-            },
-            
-            nfl: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'paralympic/nfl-header.png',
-                        caption: 'NFL live score tracker'
-                    },
-                ]
-            },
-
-            lpga: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'paralympic/lpga-example.jpg',
-                        caption: 'LPGA homepage'
-                    },
-                ]
-            },
-
-            journey: {
-                size: 'xl',
-
-                "images": [
-                    {
-                        name: 'paralympic/paralympic-journey-map.jpg',
-                        caption: 'Lego-Inspired journey map',
-                    },
-                ]
-            },
-
-            wireframe: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'paralympic/desktop-mockup.jpg',
-                        caption: 'Hand sketches of desktop mockups',
-                    },
-                    {
-                        name: 'paralympic/paralympic-wireframe1.svg',
-                        caption: 'Starting wireframes of homepage',
-                    },
-                ]
-            },
-
-            sitemap: {
-                size: 'xl',
-
-                "images": [
-                    {
-                        name: 'paralympic/paralympic-sitemap.png',
-                        caption: 'Sitemap of Navigation Structure',
-                    },
-                ]
-            },
-
-            userflow: {
-                size: 'lg',
-
-                "images": [
-                    {
-                        name: 'paralympic/competitions-userflow.png',
-                        caption: 'Userflow of competitiions section',
-                    },
-                    {
-                        name: 'paralympic/news-userflow.png',
-                        caption: 'Userflow of news',
-                    },
-                ]
-            },
-
-            preview: {
-                size: 'xl',
-
-                "images": [
-                    {
-                        name: 'paralympic/page-previews.jpg',
-                        caption: 'V1 Page previews (not finals)',
-                    },
-                ]
-            },
-
-            final: {
-                size: 'full',
-
-                "images": [
-                    {
-                        name: 'paralympic/final-layouts.png',
-                        caption: 'Final layout structure for home and article',
-                    },
-                ]
-            },
-        },
-
-        //INTRODUCTION
-        introduction: {
-            name: 'introduction',
-            heading: 'Outdated site for a modern organization',
-            content: 'With technology developing at a rapid pace, responsiveness and ease of use have become critical to a positive experience. Paralympic.org\'s navigation and functionality is severely outdated, negatively impacting access to content.',
-        },
-
-        //PROBLEM
-        problem: {
-            name: 'Problems',
-            heading: 'Hitting the Pain Points',
-            content: 'The main pain points of users that I\'ve gathered are a non-responsive design, hard to access information, and an outdated design in general. Their current bounce rate is at 41% and although the content is informative, no one is accessing it because it is hard to find.',
-        },
-
-        //GOAL
-        goal: {
-            name: 'Goal',
-            heading: 'Goal: Homepage and News',
-            content: 'A bounce rate is how often a user leaves right after landing on the site. As you\'d guess, a high bounce rate means a low retention rate.</br></br> Creating a compelling homepage, as well as reformatting the content such as articles and video is a great start to improving their retention rate. To start, I took a look at their direct and indirect competitors within the televised sports industry.',
-        },
-
-        //COMPETITOR RESEARCH
-        cr: {
-            competitors: {
-                name: 'Competitor Research',
-
-                olympics: {
-                    name: 'CR: Olympics',
-                    heading: 'Defining Competitors: Olympic.org',
-                    content: 'With a clean and modern design, detailed navigation, and mostly responsive design, there\'s a lot to like. However, with non-responsive imagery for small screens and two-four clicks to drill down through the mobile navigation, it showed me what not to do for mega-navigations on mobile devices.'
-                },
-                lpga: {
-                    name: 'CR: lgpa',
-                    heading: 'Indirect Competitor: LGPA',
-                    content: 'With an inconsistent information architecture and scattered content, a hidden secondary navigation, non-predictive search bar, and a transparent background on the navigation, this was my least favorite competitor. It showed that although some of their features were modern such as a transparent nav background, it shouldn\'t be implemented everywhere.',
-                },
-                nfl: {
-                    name: 'CR: NFL',
-                    heading: 'Indirect Competitor: NFL',
-                    content: 'The NFL\'s scoreboard in the header is the main positive feature found on the site. Other than that, I found the scattered and unstructured content hard to consume. Although the news section features content different from the homepage, not all the "news" content on the homepage is featured in the news section.</br></br> This leads to information being distributed in two places and all the content may not be seen by a user. Why write something for it to not be seen?',
-                },
-            },
-        },
-
-        //USER RESEARCH
-        ur: {
-            name: 'User Research',
-            heading: 'Developing Personas',
-            content: 'After getting an idea of core features I may need to include, I crafted a few personas that match the target audiences. The Paralympic events have a broad audience and not all are disabled. I included ages, disabilities (or lack of one), and basic information about each person.'
-        },
-
-        //JOURNEY   
-        journey: {
-            name: 'Journey Maps',
-            heading: 'Journey Mapping: Lego Inspired',
-            content: 'This map developed by lego documents the user\'s feelings before they know of the product, during an encounter, and after modifications based on their feedback. This type of map allows stakeholders get an idea of what users seek in a concise manner.',
-        },
-
-        //USERFLOWS AND SITEMAPS
-        userflow: {
-            name: 'Userflows and Sitemap',
-            heading: 'Defining the Foundations',
-            content: 'Knowing the users helped in determining the flow of news and events because it guided me to organizing content for both sighted and non-sighted people. I also included the sitemap I created before knowing what I was getting myself into and changing the project\'s scope.'
-        },
-
-        //WIREFRAMES
-        wireframe: {
-            name: 'Wireframes',
-            heading: 'Initial Design Not Accessible',
-            content: 'I struggled with changing my design to hi-fidelity after realizing my initial structure was not user friendly. With over three iterations, this is where I started changing the project\'s scope from the whole site to only the homepage, article page, and creating a component library/mini-design system.',
-        },
-
-        //DYNAMIC CONTENT
-        designsystem: {
-            name: 'Design System',
-            heading: 'Crafting a Design System',
-            content: 'Learning to begin creating a design system was a great experience. It gave constraints for a more efficient workflow in the long run. It\'s not complete but does gives a good idea of the overall structure and direction I was taking for the site. Check out that system below.',
-            p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=0%3A1&viewport=98%2C263%2C0.05&scaling=contain',
-        },
-
-        //PROTOTYPE
-        proto: {
-            name: 'Prototype',
-            heading: 'Short Walkthrough of Homepage & News',
-            content: 'I incorporated the dropdowns and points of contact a user encounters while searching for content, specifically news. You\'ll be able to navigate the hompage and linking out to an article.',
-            p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=92%3A2271&viewport=174%2C274%2C0.0853344202041626&scaling=scale-down',
-
-        },
-
-        //LESSON
-        lesson: {
-            name: 'Lesson',
-            heading: 'Know the Project\'s Complete Scope',
-            content: 'I\'ll be honest and say I thought it wouldn\'t be as challenging as it was. I would do this project much differently in the future but I learned to incorporate journey maps, personas, and developing design systems along the way. In realizing how large the project was, I re-evaluated where I should start and landed on what you saw above.</br></br> Thanks for coming along on this one with me. It was a great learning experience.'
-        },
-    },
-
     //CORED
     {
         //HOMEPAGE SETUP
         project: 'corED',
         next: 'blah',
-        prev: 'ipc',
+        prev: 'house2homeBusiness',
         href: 'cored',
         name: 'My solution to an outdated college student portal',
         platform: 'Progressive Web App',
         role: '<bold class="cr-red-base">Lead Designer</bold> | UX/UI | I.A. | Component System',
         purpose: 'Moderning the college student portal experience',
         csDetails: {
+            capacity: {
+                name: 'Capacity',
+                description: 'Exploration',
+            },
             type: {
                 name: 'Industry',
                 description: 'Education',
@@ -1634,7 +1336,7 @@ var caseStudies = [
      {
         //HOMEPAGE SETUP
         project: 'BLAH',
-        next: 'aluminyze',
+        next: 'ipc',
         prev: 'cored',
         href: 'blah',
         name: 'Rethinking Mental Self-Help',
@@ -1642,6 +1344,10 @@ var caseStudies = [
         role: '<bold class="cr-red-base">Lead Designer</bold> | UX/UI | Research',
         purpose: 'An offline approach to emotional venting',
         csDetails: {
+            capacity: {
+                name: 'Capacity',
+                description: 'Exploration',
+            },
             type: {
                 name: 'Industry',
                 description: 'Mental Health',
@@ -1846,6 +1552,318 @@ var caseStudies = [
             heading: 'Brief walkthrough',
             content: 'Because the app is a concept and not fully fleshed out, this is a walkthrough of the barebones functionality. You\'ll walk through the basic onboarding process and get to explore how to interact with the messaging and call features (sorry swiping the messages up is not in this prototype).',
             p: '<iframe title="BLAH Walkthrough Preview" style="border: none; overflow-y: scroll" src="https://marvelapp.com/458gfhe?emb=1&iosapp=true&frameless=false"></iframe>',
+        },
+    },
+
+    //IPC
+    {
+        //HOMEPAGE SETUP
+        project: 'I.P.C.',
+        next: 'aluminyze',
+        prev: 'blah',
+        href: 'ipc',
+        name: 'Restructuring IPC News',
+        platform: 'Web & Mobile',
+        role: '<bold class="cr-red-base">UX/UI</bold> | RESEARCH | I.A. | Styleguide',
+        purpose: 'An accessibility-friendly news experience',
+        csDetails: {
+            capacity: {
+                name: 'Capacity',
+                description: 'Exploration',
+            },
+            type: {
+                name: 'Industry',
+                description: 'Sports',
+            },
+            platform: {
+                name: 'platform',
+                description: 'Responsive Website',
+            },
+            role: {
+                name: 'roles',
+                description: 'UX/UI<br>Research<br>Information Architecture<br>Component System',
+            },
+            tools: {
+                name: 'tools',
+                description: 'Figma<br>Sketch<br>Overflow',
+            },
+        },
+        description: 'With decade old technology, CUNY has not developed a mobile platform for their most distributed software. This is my mobile solution.',
+        descColor: 'primary-white-text',
+        image: 'cover/ipc-cover.jpg',
+        primaryColor: 'ipc-blue',
+        supportColor: 'ipc-yellow',
+        secondaryColor: 'ipc-blue-lighten',
+        buttonColor: 'ipc-blue',
+
+
+        //CASE STUDY SETUP
+        summary: {
+            overview: 'Athletics is popular now more than ever and with technology, disabled athletes have better chances in participating in physical activities.</br></br> The International Paralympic Committee\'s efforts to bring athletics to disabled athletes is amazing but with a bounce rate of over 40%, their site needs to be updated immediately.',
+                
+            problem: 'Sadly, this great organization has a severely outdated site that they keep up with daily. There is so much potential for improvement and they deserve a better web presence.',
+            
+            goal: 'I wanted to explore the homepage and news story pages of the site. With multiple types of news being the main priority, creating good flow throughout these pages is essential.',
+            
+            approach: 'Competitor/user research, persona development, journey mapping, I.A. restructuring, and creating a mini-design system helped to give direction.',
+            
+            lesson: 'I\'d love to do this project again with a small team. The process was extremely overwhelming and the end result could be much better. I plan on returning to this project but the process taught me a lot about research and time prioritization.',
+
+            solution: 'Originally starting as a full-page redesign, the depth of this project landed me into creating a mini-design system and prototypes of the home and news pages.',
+        },
+        
+        tools: [
+            'Sketch',
+            'Figma',
+            'Overflow',
+        ],
+
+        img: {
+
+            introduction: {
+                size: 'full',
+                bgColor: 'none',
+                
+                "images": [
+                    {
+                        name: 'paralympic/homepage-comparison.png',
+                        caption: 'Current vs. revised homepage design (relatively positioned)',
+                    },
+                ]
+            },
+
+            goal: {
+                size: 'lg',
+                
+                "images": [
+                    {
+                        name: 'paralympic/paralympic-webtraffic.jpg',
+                        caption: 'Paralympic.org web traffic',
+                    },
+                ]
+            },
+            
+            persona: {
+                size: 'lg',
+                
+                "images": [
+                    {
+                        name: 'paralympic/persona-jim.jpg',
+                        caption: 'Elder persona Jim',
+                    },
+                    {
+                        name: 'paralympic/persona-sarah.jpg',
+                        caption: 'Young athlete persona Sarah',
+                    },
+                    {
+                        name: 'paralympic/persona-liana.jpg',
+                        caption: 'Paralympic Supporter Liana',
+                    },
+                ]
+            },
+
+            olympic: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/olympic-menu.jpg',
+                        caption: 'Olympic.org mega navigation'
+                    },
+                ]
+            },
+            
+            nfl: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/nfl-header.png',
+                        caption: 'NFL live score tracker'
+                    },
+                ]
+            },
+
+            lpga: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/lpga-example.jpg',
+                        caption: 'LPGA homepage'
+                    },
+                ]
+            },
+
+            journey: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'paralympic/paralympic-journey-map.jpg',
+                        caption: 'Lego-Inspired journey map',
+                    },
+                ]
+            },
+
+            wireframe: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/desktop-mockup.jpg',
+                        caption: 'Hand sketches of desktop mockups',
+                    },
+                    {
+                        name: 'paralympic/paralympic-wireframe1.svg',
+                        caption: 'Starting wireframes of homepage',
+                    },
+                ]
+            },
+
+            sitemap: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'paralympic/paralympic-sitemap.png',
+                        caption: 'Sitemap of Navigation Structure',
+                    },
+                ]
+            },
+
+            userflow: {
+                size: 'lg',
+
+                "images": [
+                    {
+                        name: 'paralympic/competitions-userflow.png',
+                        caption: 'Userflow of competitiions section',
+                    },
+                    {
+                        name: 'paralympic/news-userflow.png',
+                        caption: 'Userflow of news',
+                    },
+                ]
+            },
+
+            preview: {
+                size: 'xl',
+
+                "images": [
+                    {
+                        name: 'paralympic/page-previews.jpg',
+                        caption: 'V1 Page previews (not finals)',
+                    },
+                ]
+            },
+
+            final: {
+                size: 'full',
+
+                "images": [
+                    {
+                        name: 'paralympic/final-layouts.png',
+                        caption: 'Final layout structure for home and article',
+                    },
+                ]
+            },
+        },
+
+        //INTRODUCTION
+        introduction: {
+            name: 'introduction',
+            heading: 'Outdated site for a modern organization',
+            content: 'With technology developing at a rapid pace, responsiveness and ease of use have become critical to a positive experience. Paralympic.org\'s navigation and functionality is severely outdated, negatively impacting access to content.',
+        },
+
+        //PROBLEM
+        problem: {
+            name: 'Problems',
+            heading: 'Hitting the Pain Points',
+            content: 'The main pain points of users that I\'ve gathered are a non-responsive design, hard to access information, and an outdated design in general. Their current bounce rate is at 41% and although the content is informative, no one is accessing it because it is hard to find.',
+        },
+
+        //GOAL
+        goal: {
+            name: 'Goal',
+            heading: 'Goal: Homepage and News',
+            content: 'A bounce rate is how often a user leaves right after landing on the site. As you\'d guess, a high bounce rate means a low retention rate.</br></br> Creating a compelling homepage, as well as reformatting the content such as articles and video is a great start to improving their retention rate. To start, I took a look at their direct and indirect competitors within the televised sports industry.',
+        },
+
+        //COMPETITOR RESEARCH
+        cr: {
+            competitors: {
+                name: 'Competitor Research',
+
+                olympics: {
+                    name: 'CR: Olympics',
+                    heading: 'Defining Competitors: Olympic.org',
+                    content: 'With a clean and modern design, detailed navigation, and mostly responsive design, there\'s a lot to like. However, with non-responsive imagery for small screens and two-four clicks to drill down through the mobile navigation, it showed me what not to do for mega-navigations on mobile devices.'
+                },
+                lpga: {
+                    name: 'CR: lgpa',
+                    heading: 'Indirect Competitor: LGPA',
+                    content: 'With an inconsistent information architecture and scattered content, a hidden secondary navigation, non-predictive search bar, and a transparent background on the navigation, this was my least favorite competitor. It showed that although some of their features were modern such as a transparent nav background, it shouldn\'t be implemented everywhere.',
+                },
+                nfl: {
+                    name: 'CR: NFL',
+                    heading: 'Indirect Competitor: NFL',
+                    content: 'The NFL\'s scoreboard in the header is the main positive feature found on the site. Other than that, I found the scattered and unstructured content hard to consume. Although the news section features content different from the homepage, not all the "news" content on the homepage is featured in the news section.</br></br> This leads to information being distributed in two places and all the content may not be seen by a user. Why write something for it to not be seen?',
+                },
+            },
+        },
+
+        //USER RESEARCH
+        ur: {
+            name: 'User Research',
+            heading: 'Developing Personas',
+            content: 'After getting an idea of core features I may need to include, I crafted a few personas that match the target audiences. The Paralympic events have a broad audience and not all are disabled. I included ages, disabilities (or lack of one), and basic information about each person.'
+        },
+
+        //JOURNEY   
+        journey: {
+            name: 'Journey Maps',
+            heading: 'Journey Mapping: Lego Inspired',
+            content: 'This map developed by lego documents the user\'s feelings before they know of the product, during an encounter, and after modifications based on their feedback. This type of map allows stakeholders get an idea of what users seek in a concise manner.',
+        },
+
+        //USERFLOWS AND SITEMAPS
+        userflow: {
+            name: 'Userflows and Sitemap',
+            heading: 'Defining the Foundations',
+            content: 'Knowing the users helped in determining the flow of news and events because it guided me to organizing content for both sighted and non-sighted people. I also included the sitemap I created before knowing what I was getting myself into and changing the project\'s scope.'
+        },
+
+        //WIREFRAMES
+        wireframe: {
+            name: 'Wireframes',
+            heading: 'Initial Design Not Accessible',
+            content: 'I struggled with changing my design to hi-fidelity after realizing my initial structure was not user friendly. With over three iterations, this is where I started changing the project\'s scope from the whole site to only the homepage, article page, and creating a component library/mini-design system.',
+        },
+
+        //DYNAMIC CONTENT
+        designsystem: {
+            name: 'Design System',
+            heading: 'Crafting a Design System',
+            content: 'Learning to begin creating a design system was a great experience. It gave constraints for a more efficient workflow in the long run. It\'s not complete but does gives a good idea of the overall structure and direction I was taking for the site. Check out that system below.',
+            p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=0%3A1&viewport=98%2C263%2C0.05&scaling=contain',
+        },
+
+        //PROTOTYPE
+        proto: {
+            name: 'Prototype',
+            heading: 'Short Walkthrough of Homepage & News',
+            content: 'I incorporated the dropdowns and points of contact a user encounters while searching for content, specifically news. You\'ll be able to navigate the hompage and linking out to an article.',
+            p: 'https://www.figma.com/proto/PJSDl4Ycf7G2AYPtBXdtota1/IPC-Design-System?node-id=92%3A2271&viewport=174%2C274%2C0.0853344202041626&scaling=scale-down',
+
+        },
+
+        //LESSON
+        lesson: {
+            name: 'Lesson',
+            heading: 'Know the Project\'s Complete Scope',
+            content: 'I\'ll be honest and say I thought it wouldn\'t be as challenging as it was. I would do this project much differently in the future but I learned to incorporate journey maps, personas, and developing design systems along the way. In realizing how large the project was, I re-evaluated where I should start and landed on what you saw above.</br></br> Thanks for coming along on this one with me. It was a great learning experience.'
         },
     },
 
@@ -2742,72 +2760,6 @@ var caseStudies = [
                p: 'https://www.behance.net/gallery/76059619/Malcolm-Gladwell-Book-Cover-Redesigns',
            },
     },
-
-     //KINGSTON 12
-     {
-        //HOMEPAGE SETUP
-        status: 'coming soon',
-        disable: 'true',
-        project: 'Kingston 12',
-        next: '',
-        prev: '',
-        href: '',
-        name: 'Kingston 12',
-        platform: 'Print and Web',
-        role: '<bold class="cr-red-base">Client</bold> | Logo | Branding',
-        purpose: 'A logo for a family-owned Jamaican restaurant',
-       //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
-        descColor: 'primary-white-text',
-        image: 'cover/kingston12-cover.svg',
-        primaryColor: 'salvation-primary-red',
-        supportColor: 'cuny-primary-light',
-        secondaryColor: 'salvation-secondary',
-           buttonColor: 'cuny-primary',
-    },
-     
-     //MOD-UH-FIED
-     {
-        //HOMEPAGE SETUP
-        status: 'coming soon',
-        disable: 'true',
-        project: 'MOD.UH.FIED',
-        next: '',
-        prev: '',
-        href: '',
-        name: 'MOD.UH.FIED',
-        platform: 'Print and Web',
-        role: '<bold class="cr-red-base">Client</bold> | Logo | Branding',
-        purpose: 'A logo for car enthusiast clothing',
-       //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
-        descColor: 'primary-white-text',
-        image: 'cover/moduhfied-cover.jpeg',
-        primaryColor: 'salvation-primary-red',
-        supportColor: 'cuny-primary-light',
-        secondaryColor: 'salvation-secondary',
-           buttonColor: 'cuny-primary',
-    },
-     
-     //DOCTOR WITHOUT BORDERS
-     {
-        //HOMEPAGE SETUP
-        status: 'coming soon',
-        disable: 'true',
-        project: 'Doctors Without Borders',
-        next: '',
-        prev: '',
-        href: '',
-        name: 'Doctors Without Borders',
-        platform: 'Print and Web',
-        role: '<bold class="cr-red-base">Personal</bold> | Logo | Branding',
-        purpose: 'Logo design for a worldwide health organization',
-       //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
-        descColor: 'primary-white-text',
-        image: 'cover/dwb-cover.svg',
-        primaryColor: 'salvation-primary-red',
-        supportColor: 'cuny-primary-light',
-        secondaryColor: 'salvation-secondary',
-           buttonColor: 'cuny-primary',
-   },
 ]
 
 
@@ -2816,10 +2768,10 @@ var caseStudies = [
 // const cs__cunyfirst = caseStudies[1];
 const cs__house2homeBusiness = caseStudies[1];
 const cs__aluminyze = caseStudies[0];
-const cs__cored = caseStudies[3];
-const cs__blah = caseStudies[4];
+const cs__cored = caseStudies[2];
+const cs__blah = caseStudies[3];
 // const cs__fueltime = caseStudies[4];
-const cs__ipc = caseStudies[2];
+const cs__ipc = caseStudies[4];
 const cs__salvationarmy = caseStudies[5];
 const cs__gladwell = caseStudies[6];
 
@@ -2845,3 +2797,75 @@ var caseStudy = false;
 
 //SCROLLMAGIC INITIALIZATION
 var controller = new ScrollMagic.Controller();
+
+
+
+
+
+//OLD CASE STUDIES
+
+//      //KINGSTON 12
+//      {
+//         //HOMEPAGE SETUP
+//         status: 'coming soon',
+//         disable: 'true',
+//         project: 'Kingston 12',
+//         next: '',
+//         prev: '',
+//         href: '',
+//         name: 'Kingston 12',
+//         platform: 'Print and Web',
+//         role: '<bold class="cr-red-base">Client</bold> | Logo | Branding',
+//         purpose: 'A logo for a family-owned Jamaican restaurant',
+//        //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
+//         descColor: 'primary-white-text',
+//         image: 'cover/kingston12-cover.svg',
+//         primaryColor: 'salvation-primary-red',
+//         supportColor: 'cuny-primary-light',
+//         secondaryColor: 'salvation-secondary',
+//            buttonColor: 'cuny-primary',
+//     },
+     
+//      //MOD-UH-FIED
+//      {
+//         //HOMEPAGE SETUP
+//         status: 'coming soon',
+//         disable: 'true',
+//         project: 'MOD.UH.FIED',
+//         next: '',
+//         prev: '',
+//         href: '',
+//         name: 'MOD.UH.FIED',
+//         platform: 'Print and Web',
+//         role: '<bold class="cr-red-base">Client</bold> | Logo | Branding',
+//         purpose: 'A logo for car enthusiast clothing',
+//        //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
+//         descColor: 'primary-white-text',
+//         image: 'cover/moduhfied-cover.jpeg',
+//         primaryColor: 'salvation-primary-red',
+//         supportColor: 'cuny-primary-light',
+//         secondaryColor: 'salvation-secondary',
+//            buttonColor: 'cuny-primary',
+//     },
+     
+//      //DOCTOR WITHOUT BORDERS
+//      {
+//         //HOMEPAGE SETUP
+//         status: 'coming soon',
+//         disable: 'true',
+//         project: 'Doctors Without Borders',
+//         next: '',
+//         prev: '',
+//         href: '',
+//         name: 'Doctors Without Borders',
+//         platform: 'Print and Web',
+//         role: '<bold class="cr-red-base">Personal</bold> | Logo | Branding',
+//         purpose: 'Logo design for a worldwide health organization',
+//        //  description: 'Modular branding is extremely helpful for brands that have a hand in many areas of interest. When searching for help, people want to know who to go to right away and although the current Salvation Army logo is immediately recognizable, seeing it doesn\'t mean immediate help. </br></br> This is my take on creating a logo and system that is simple, modular, and connects well with the brand\'s overall mission statement while catering their branding to the specific areas they provide help to.',
+//         descColor: 'primary-white-text',
+//         image: 'cover/dwb-cover.svg',
+//         primaryColor: 'salvation-primary-red',
+//         supportColor: 'cuny-primary-light',
+//         secondaryColor: 'salvation-secondary',
+//            buttonColor: 'cuny-primary',
+//    },
